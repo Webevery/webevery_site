@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/webevery_site/static/css/main.7acaea2f.css",
+    "main.js": "/webevery_site/static/js/main.c1d52d32.js",
+    "index.html": "/webevery_site/index.html",
+    "main.7acaea2f.css.map": "/webevery_site/static/css/main.7acaea2f.css.map",
+    "main.c1d52d32.js.map": "/webevery_site/static/js/main.c1d52d32.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.c1d52d32.js"
+  ]
+}
