@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/969.5daa869d.chunk.js","mappings":"mLAMA,EAJoB,WAClB,OAAO,wCACR,C","sources":["pages/OurProjects/OurProjects.jsx"],"sourcesContent":["import React from 'react';\n\nconst OurProjects = () => {\n  return <div>OurProjects</div>;\n};\n\nexport default OurProjects;\n"],"names":[],"sourceRoot":""}
