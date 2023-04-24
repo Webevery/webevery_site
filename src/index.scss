@@ -1,4 +1,4 @@
-@import-normalize;
+// @import-normalize;
 
 body {
   margin: 0;
@@ -19,6 +19,7 @@ code {
   outline: none;
   margin: 0;
   padding: 0;
+  // transition-duration: 1s;
 }
 
 ul,
@@ -35,4 +36,8 @@ img {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+section {
+  padding: 50px 20px;
 }
