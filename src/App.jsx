@@ -1,12 +1,12 @@
 import React, { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
-const Header = lazy(() => import('./commponents/Header/Header'));
-const Home = lazy(() => import('./pages/Home/Home'));
-const AboutUs = lazy(() => import('./pages/AboutUs/AboutUs'));
-const Contacts = lazy(() => import('./pages/Contacts/Contacts'));
-const OurProjects = lazy(() => import('./pages/OurProjects/OurProjects'));
-const NotFound = lazy(() => import('./pages/NotFound/NotFound'));
+const Header = lazy(() => import('./components/layout/Header'));
+const Home = lazy(() => import('./pages/Home'));
+const AboutUs = lazy(() => import('./pages/AboutUs'));
+const Contacts = lazy(() => import('./pages/Contacts'));
+const OurProjects = lazy(() => import('./pages/OurProjects'));
+const NotFound = lazy(() => import('./pages/NotFound'));
 
 const App = () => {
   return (
