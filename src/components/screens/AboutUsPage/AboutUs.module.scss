@@ -1,0 +1,42 @@
+.ourList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 32px;
+  column-gap: 32px;
+  transition-duration: 1s;
+}
+.superDev {
+  width: 250px;
+  //   overflow: hidden;
+  transition-duration: 1s;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.582);
+
+  & img {
+    margin-bottom: 12px;
+    // width: 250px;
+  }
+
+  & h3 {
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+.imgWrapper {
+  height: 250px;
+  overflow: hidden;
+  padding: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .superDev {
+    width: 200px;
+  }
+
+  .imgWrapper {
+    height: 200px;
+    overflow: hidden;
+  }
+}
