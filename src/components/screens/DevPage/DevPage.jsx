@@ -26,9 +26,9 @@ const DevPage = () => {
     <section className={s.devPage}>
       <div className={s.contentWrapper}>
         <div className={s.itemWrapper}>
-          {/* <div className={s.imgWrapper}> */}
-          <img src={item.photo} alt={item.name} />
-          {/* </div> */}
+          <div className={s.imgWrapper}>
+            <img src={item.photo} alt={item.name} />
+          </div>
           <h3>{item.name}</h3>
         </div>
         <p>
