@@ -1,18 +1,11 @@
-.headerHeader {
+.wrapperHeader {
   position: fixed;
   top: 0;
-  width: 100%;
-}
-
-.boxHeader {
-  position: fixed;
   height: 80px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding-left: 16px;
-  padding-right: 16px;
   backdrop-filter: blur(20px);
 
   background: transparent;
@@ -21,12 +14,12 @@
 .titleHeader {
   font-size: xx-large;
   color: var(--main_color);
-  color: white;
+  color: var(--light_color);
   font-weight: 700;
-  background-color: rgb(65, 74, 82);
+  background-color: var(--main_bg_color);
   padding: 8px;
   border-radius: 8px;
-  border: 1px solid white;
+  border: 1px solid var(--light_color);
 }
 
 .menuHeader {
@@ -44,6 +37,9 @@
   }
 }
 
-.wrapperBodyHeader {
-  padding: 80px 16px 16px 16px;
+.activeNavLinkHeader {
+  color: var(--light_color);
+  background-color: var(--main_bg_color);
+  padding: 4px;
+  border-radius: 8px;
 }
