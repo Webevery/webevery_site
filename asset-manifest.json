@@ -1,9 +1,7 @@
 {
   "files": {
-    "main.css": "/webevery_site/static/css/main.c52399de.css",
-    "main.js": "/webevery_site/static/js/main.714983e9.js",
-    "static/css/848.4a75f7da.chunk.css": "/webevery_site/static/css/848.4a75f7da.chunk.css",
-    "static/js/848.8880743f.chunk.js": "/webevery_site/static/js/848.8880743f.chunk.js",
+    "main.css": "/webevery_site/static/css/main.029a69a9.css",
+    "main.js": "/webevery_site/static/js/main.9d365f21.js",
     "static/js/859.f6f0c8a2.chunk.js": "/webevery_site/static/js/859.f6f0c8a2.chunk.js",
     "static/css/327.2f35e40a.chunk.css": "/webevery_site/static/css/327.2f35e40a.chunk.css",
     "static/js/327.a99d5fca.chunk.js": "/webevery_site/static/js/327.a99d5fca.chunk.js",
@@ -20,10 +18,8 @@
     "static/media/vitaliiPavlovskyi.jpeg": "/webevery_site/static/media/vitaliiPavlovskyi.1fb0cb593135ad1257a5.jpeg",
     "static/media/nataliiaBoiko.jpeg": "/webevery_site/static/media/nataliiaBoiko.90624831334955f84d4f.jpeg",
     "index.html": "/webevery_site/index.html",
-    "main.c52399de.css.map": "/webevery_site/static/css/main.c52399de.css.map",
-    "main.714983e9.js.map": "/webevery_site/static/js/main.714983e9.js.map",
-    "848.4a75f7da.chunk.css.map": "/webevery_site/static/css/848.4a75f7da.chunk.css.map",
-    "848.8880743f.chunk.js.map": "/webevery_site/static/js/848.8880743f.chunk.js.map",
+    "main.029a69a9.css.map": "/webevery_site/static/css/main.029a69a9.css.map",
+    "main.9d365f21.js.map": "/webevery_site/static/js/main.9d365f21.js.map",
     "859.f6f0c8a2.chunk.js.map": "/webevery_site/static/js/859.f6f0c8a2.chunk.js.map",
     "327.2f35e40a.chunk.css.map": "/webevery_site/static/css/327.2f35e40a.chunk.css.map",
     "327.a99d5fca.chunk.js.map": "/webevery_site/static/js/327.a99d5fca.chunk.js.map",
@@ -32,7 +28,7 @@
     "273.53884ee5.chunk.js.map": "/webevery_site/static/js/273.53884ee5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c52399de.css",
-    "static/js/main.714983e9.js"
+    "static/css/main.029a69a9.css",
+    "static/js/main.9d365f21.js"
   ]
 }
