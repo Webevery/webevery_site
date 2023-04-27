@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 
 import s from './AboutUs.module.scss';
 import { ourTeam } from '../../../data/ourTeam';
+// import { nanoid } from 'nanoid';
+
 import defaultPhoto from '../../../images/ourTeam/default.jpeg';
 
 const AboutUsPage = () => {

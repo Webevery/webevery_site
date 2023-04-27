@@ -1,18 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Secular+One&display=swap');
+
 .devPage {
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 32px;
   padding: 0px 24px 32px;
-  //   min-height: 100vh;
-  // position: relative;
-
-  & img {
-    width: 200px;
-    border: 2px solid white;
-    border-radius: 50%;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.582);
-  }
+  margin-top: 30px;
 
   & p {
     text-align: center;
@@ -36,6 +30,7 @@
 .imgWrapper {
   width: 208px;
   height: 208px;
+  border: 2px solid white;
   border-radius: 50%;
   background-color: white;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.582);
@@ -43,29 +38,78 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  overflow: hidden;
+  position: relative;
+
+  & img {
+    position: absolute;
+    top: 0px;
+  }
+}
+
+.quote {
+  font-family: Great + Vibes;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 1;
+
+  & span {
+    font-family: Secular + One;
+    font-size: 56px;
+  }
+}
+
+.quoteSvg {
+  width: 30px;
+  height: 30px;
+  fill: red;
 }
 
 .goBackLinc {
-  // position: absolute;
-  // bottom: 0px;
-  font-size: 8px;
+  // font-size: 8px;
+
+  font-weight: 700;
+  font-size: 12px;
+  background-color: var(--main_bg_color);
+  color: white;
+  display: block;
+  text-align: center;
+  margin-bottom: 12px;
+
+  padding: 8px 16px;
+  border-radius: 16px;
 }
 
 @media screen and (min-width: 768px) {
-  .devPage {
-    // display: flex;
-    // flex-direction: row;
-    // align-items: center;
-    // column-gap: 12px;
+  .contentWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 48px;
+  }
 
-    .contentWrapper {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      column-gap: 48px;
-    }
-    & img {
-      width: 600px;
-    }
+  .imgWrapper {
+    width: 240px;
+    height: 240px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .devPage {
+    padding: 0px 40px 32px;
+  }
+
+  .contentWrapper {
+    column-gap: 60px;
+  }
+
+  .imgWrapper {
+    width: 320px;
+    height: 320px;
+  }
+
+  .quote {
+    font-size: 32px;
   }
 }
