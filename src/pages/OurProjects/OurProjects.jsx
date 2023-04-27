@@ -1,7 +1,13 @@
 import React from 'react';
 
+import OurProjectsPage from 'components/screens/OurProjectsPage';
+
 const OurProjects = () => {
-  return <div>OurProjects</div>;
+  return (
+    <>
+      <OurProjectsPage />
+    </>
+  );
 };
 
 export default OurProjects;
