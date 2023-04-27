@@ -120,28 +120,29 @@ GitHub.
         |--components
             |--layout   - завантажуються на всіх роутах
                 |--Footer   - підвал сайту
-                |--Header   - шапка сайту                
+                |--Header   - шапка сайту
+                |--NavBar   - адаптивна шапка
                 |--SharedLayout   - в нього входять компоненти, які завантажуються на усіх Роутах крім NotFound
-            |--screens   - компоненти, які будуть завантажуватись на відповідну Page                
+            |--screens   - компоненти, які будуть завантажуватись на відповідну Page
                 |--AboutUsPage
                 |--ContactsPage
                 |--DevPage
                 |--HomePage
                 |--NotFoundPage
-                |--OurProjectsPage 
+                |--OurProjectsPage
             |--sections  - секції роута Home
                 |--ContactForm    - контактна форма
                 |--Hero   - основна мета сайту
-                |--Portfolio   - декілька наших проєктів                  
+                |--Portfolio   - декілька наших проєктів
             |--share //* inputs, buttons, list (перевикористовувані малі компоненти)
                 |--Button    - кнопка, в яку пропсами будуть задаватися необхідні властивості
-                |--Input    - поле вводу                
+                |--Input    - поле вводу
                 |--LanguageIcon    - іконка зміни мови
                 |--loaders   - декілька завантажувачів
-                    |--LoaderSuspense   - loader для відображення завантаження кожного роута 
+                    |--LoaderSuspense   - loader для відображення завантаження кожного роута
                 |--Logo     - логотип
                 |--Modal     - модальне вікно
-                |--SocialLink    - link на соціальні мережі 
+                |--SocialLink    - link на соціальні мережі
             |--ui   - функціонал для зручного користування юзера
                 |--BackToTop   - кнопка до гори (на базі Button з share)
         |--config   - налаштування конфігурації для додаткових пакетів
@@ -150,23 +151,23 @@ GitHub.
             |--index.js   - реекспорт
             |--navigations.data.js  - роути
             |--social.data.js  - соціальні мережі
-            |--video.data.js            
+            |--video.data.js
         |--hooks   - хуки
         |--images   - картинки, фото
         |--language   - для змiни мови
-        |--pages  - сюди будуть імпортуватися screens з відповідними назвами (розробники сюди НЕ ЛІЗУТЬ)            
+        |--pages  - сюди будуть імпортуватися screens з відповідними назвами (розробники сюди НЕ ЛІЗУТЬ)
             |--AboutUs
             |--Contacts
-            |--DevPage   
-            |--Home      
-            |--NotFound  
+            |--DevPage
+            |--Home
+            |--NotFound
             |--OurProjects
         |--service  -  для роботи з бекендом (на майбутнє)
         |--styles  - стилізація
             |--_variables - змінні
-        |--utils   - допоміжні функції                
+        |--utils   - допоміжні функції
         |--index.js  - файл запуску сайту
         |--index.scss   - глобальні стилі (розробники сюди НЕ ЛІЗУТЬ)
-        
+
 
 ## |--language - ????????????????????????????????
