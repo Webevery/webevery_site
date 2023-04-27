@@ -1,6 +1,6 @@
 import React from 'react';
 
-import AboutUsPage from '../../components/screens/AboutUsPage/AboutUsPage';
+import AboutUsPage from 'components/screens/AboutUsPage';
 
 const AboutUs = () => {
   return (

@@ -1,4 +1,4 @@
-import DevPage from '../../components/screens/DevPage/DevPage';
+import DevPage from 'components/screens/DevPage';
 
 const PersonalDevPage = () => {
   return (
