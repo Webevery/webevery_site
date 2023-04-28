@@ -1,0 +1,18 @@
+.buttonFeedback {
+  position: fixed;
+  text-transform: uppercase;
+  transform: rotate(-90deg) translate(0);
+  opacity: 1;
+  top: auto;
+  bottom: 135px;
+
+  @media (max-width: 1200) {
+    left: calc(-40px - (20 - 30) * (100vw - 1200px) / (1200 - 768));
+    height: auto;
+    font-size: 12px;
+    line-height: 25px;
+  }
+  @media (max-width: 1800) {
+    left: calc(-55px + (-40 + 20) * (100vw - 1800px) / (1800 - 1200));
+  }
+}
