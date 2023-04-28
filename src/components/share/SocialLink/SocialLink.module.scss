@@ -1,0 +1,102 @@
+.iconsListSocialLink {
+  display: flex;
+  column-gap: 15px;
+}
+
+.itemSocialLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: auto;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  // outline: 2px solid #ffffff;
+  outline: 2px solid #393939;
+  transition-property: outline-offset, outline-color, background-color;
+  transition-duration: 0.25s;
+  cursor: pointer;
+  &:hover {
+    outline-offset: 4px;
+    animation: shake 0.25s;
+  }
+}
+@keyframes shake {
+  10% {
+    transform: rotate(15deg);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+  30% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-15deg);
+  }
+}
+
+.iconSocialLink {
+  display: block;
+  width: 15px;
+  height: 15px;
+  // fill: #ffffff;
+  fill: #393939;
+}
+
+.instagram:hover {
+  outline: 2px solid #dc2743;
+  background-color: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  .iconSocialLink {
+    fill: #ffffff;
+  }
+}
+
+.facebook:hover {
+  background-color: #4267b2;
+  outline: 2px solid #4267b2;
+  .iconSocialLink {
+    fill: #ffffff;
+  }
+}
+
+.telegram:hover {
+  background-color: #229ed9;
+  outline: 2px solid #229ed9;
+  .iconSocialLink {
+    fill: #ffffff;
+  }
+}
+
+.linkedin:hover {
+  background-color: #0e76a8;
+  outline: 2px solid #0e76a8;
+  .iconSocialLink {
+    fill: #ffffff;
+  }
+}
