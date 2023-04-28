@@ -34,7 +34,11 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <button onClick={() => setNav(!nav)} className={styles.mobileBtnNav}>
+        <button
+          onClick={() => setNav(!nav)}
+          className={styles.mobileBtnNav}
+          aria-label="BurgerMenu"
+        >
           {nav ? (
             <AiOutlineMenu size={48} className={styles.btnOpenNav} />
           ) : (

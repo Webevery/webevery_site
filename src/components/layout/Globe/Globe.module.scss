@@ -28,7 +28,7 @@
     0px 0px 90px 0px rgba(0, 0, 0, 0.66);
   animation: rotate 36s infinite linear;
 
-  z-index: 10;
+  z-index: 5;
 }
 
 @keyframes rotate {
@@ -39,9 +39,10 @@
     background-position-x: 1000px;
   }
 }
+
 .containerGlobe {
-  color: #ffffff;
-  min-height: 100vh;
+  color: var(--light_color);
+  min-height: 100%;
   display: grid;
   place-items: center;
   perspective: 650px;
@@ -79,9 +80,10 @@
     font-weight: 500;
     font-family: 'Josefin Sans';
     width: max-content;
-    // -webkit-text-stroke: 1px #f5f5f5;
+    -webkit-text-stroke: 1px var(--light_color);
+    // color: var(--main_bg_color);
     // color: rgba(255, 255, 255, 0.3);
-    color: hsl(var(--hue), 75%, 75%);
+    color: hsl(var(--hue), 10%, 20%);
   }
 }
 
@@ -90,5 +92,16 @@
     --left: #{50px * $i * -1};
     --hue: #{360 / 24 * $i};
     --angle: #{360deg / 24 * $i};
+  }
+}
+
+@media (max-width: 768px) {
+  .earthGlobe {
+    width: 200px;
+    height: 200px;
+  }
+
+  .panelGlobe::before {
+    font-size: 50px;
   }
 }
