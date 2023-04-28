@@ -1,22 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import s from './AboutUs.module.scss';
-import { ourTeam } from '../../../data/ourTeam';
+import styles from './AboutUs.module.scss';
+import { ourTeam } from 'data/coworkers.data';
 // import { nanoid } from 'nanoid';
 
-import defaultPhoto from '../../../images/ourTeam/default.jpeg';
+import defaultPhoto from 'images/ourTeam/default.jpeg';
 
 const AboutUsPage = () => {
   const superDev = ourTeam.map(({ id, photo, name }) => {
     return (
-      <li className={s.superDev} key={id}>
-        <div className={s.imgWrapper}>
+      <li className={styles.superDev} key={id}>
+        <div className={styles.superDev__imgWrapper}>
           <img src={photo ? photo : defaultPhoto} alt={name} />
         </div>
 
         <h3> {name}</h3>
-        <Link className={s.clickMeLink} to={`${id}`}>
+        <Link className={styles.superDevClickMeLink} to={`${id}`}>
           Click me
         </Link>
       </li>
@@ -24,8 +24,8 @@ const AboutUsPage = () => {
   });
 
   return (
-    <section>
-      <ul className={s.ourList}>{superDev}</ul>
+    <section className={styles.superDev__section}>
+      <ul className={styles.superDevList}>{superDev}</ul>
     </section>
   );
 };

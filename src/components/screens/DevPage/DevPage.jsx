@@ -1,7 +1,8 @@
 import React from 'react';
-import s from './DevPage.module.scss';
+import styles from './DevPage.module.scss';
 
-import { ourTeam } from '../../../data/ourTeam';
+import { ourTeam } from 'data/coworkers.data';
+import defaultPhoto from 'images/ourTeam/default.jpeg';
 
 import { useParams, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
@@ -21,18 +22,17 @@ const DevPage = () => {
   }, [id]);
 
   return (
-    <section className={s.devPage}>
-      <div className={s.contentWrapper}>
-        <div className={s.itemWrapper}>
-          <div className={s.imgWrapper}>
-            <img src={item.photo} alt={item.name} />
+    <section className={styles.devPage}>
+      <div className={styles.devPage__contentWrapper}>
+        <div className={styles.devPage__itemWrapper}>
+          <div className={styles.devPage__imgWrapper}>
+            <img src={item.photo ? item.photo : defaultPhoto} alt={item.name} />
           </div>
           <h3>{item.name}</h3>
         </div>
-        {/* <ImQuotesLeft /> */}
-        <p className={s.quote}>{item.quote}</p>
+        <p className={styles.devPage__quote}>{item.quote}</p>
       </div>
-      <Link className={s.goBackLinc} to="/aboutUs">
+      <Link className={styles.devPage__goBackLinc} to="/aboutUs">
         Back to team
       </Link>
     </section>
