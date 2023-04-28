@@ -41,7 +41,7 @@
 
 .navLinkNav {
   -webkit-text-stroke: 1px var(--main_color);
-  color: transparent;
+  color: var(--light_color);
   &:hover {
     border-bottom: 2px solid var(--main_color);
   }
@@ -108,5 +108,34 @@
 
   .activeNavLinkNav {
     -webkit-text-stroke: 1px var(--light_color);
+  }
+
+  .btnOpenNav {
+    background-color: var(--main_bg_color);
+    border-radius: 8px;
+    color: var(--light_color);
+    padding: 4px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+    transform: scale(1);
+    animation: pulse 1000ms infinite;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+    100% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+  }
+
+  .btnCloseNav {
+    color: var(--light_color);
   }
 }

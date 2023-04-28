@@ -3,26 +3,30 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { NavLink } from 'react-router-dom';
 
 import { navData } from 'data';
-import css from './NavBar.module.scss';
+import styles from './NavBar.module.scss';
 
 const Navbar = () => {
   const [nav, setNav] = useState(true);
 
   return (
     <>
-      <header className={css.headerNav}>
+      <header className={styles.headerNav}>
         <NavLink to={`/`}>
-          <h1 className={css.titleNav}>Webevery</h1>
+          <h1 className={styles.titleNav}>Webevery</h1>
         </NavLink>
 
-        <ul className={nav ? css.menuNav : css.menuNav + ' ' + css.activeNav}>
+        <ul
+          className={
+            nav ? styles.menuNav : styles.menuNav + ' ' + styles.activeNav
+          }
+        >
           {navData.map(el => (
             <li key={el.id}>
               <NavLink
                 to={el.path}
                 onClick={() => setNav(true)}
                 className={({ isActive }) =>
-                  isActive ? css.activeNavLinkNav : css.navLinkNav
+                  isActive ? styles.activeNavLinkNav : styles.navLinkNav
                 }
               >
                 {el.title}
@@ -30,8 +34,12 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <button onClick={() => setNav(!nav)} className={css.mobileBtnNav}>
-          {nav ? <AiOutlineMenu size={48} /> : <AiOutlineClose size={48} />}
+        <button onClick={() => setNav(!nav)} className={styles.mobileBtnNav}>
+          {nav ? (
+            <AiOutlineMenu size={48} className={styles.btnOpenNav} />
+          ) : (
+            <AiOutlineClose size={48} className={styles.btnCloseNav} />
+          )}
         </button>
       </header>
     </>
