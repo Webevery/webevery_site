@@ -24,7 +24,7 @@ const AboutUsPage = () => {
   });
 
   return (
-    <section>
+    <section className={styles.superDev__section}>
       <ul className={styles.superDevList}>{superDev}</ul>
     </section>
   );

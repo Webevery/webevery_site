@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Secular+One&display=swap');
 
 .devPage {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,7 +12,6 @@
     flex-direction: column;
     align-items: center;
     row-gap: 12px;
-    height: 100%;
   }
 
   &__itemWrapper {
@@ -51,6 +50,7 @@
     line-height: 1;
     text-align: center;
   }
+
   &__goBackLinc {
     font-weight: 700;
     font-size: 12px;
@@ -59,7 +59,6 @@
     display: block;
     text-align: center;
     margin-bottom: 12px;
-
     padding: 8px 16px;
     border-radius: 16px;
   }
@@ -87,10 +86,6 @@
       width: 240px;
       height: 240px;
     }
-
-    &__goBackLinc {
-      margin-bottom: 24px;
-    }
   }
 }
 
@@ -106,9 +101,5 @@
 
   .devPage__quote {
     font-size: 32px;
-  }
-
-  .devPage__goBackLinc {
-    margin-bottom: 32px;
   }
 }
