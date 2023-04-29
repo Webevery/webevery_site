@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/webevery_site/static/css/main.64a76e17.css",
-    "main.js": "/webevery_site/static/js/main.10e07426.js",
-    "static/css/906.bbe537a0.chunk.css": "/webevery_site/static/css/906.bbe537a0.chunk.css",
-    "static/js/906.aeaccdf7.chunk.js": "/webevery_site/static/js/906.aeaccdf7.chunk.js",
+    "main.js": "/webevery_site/static/js/main.ad4bc77c.js",
+    "static/css/906.fb9032e5.chunk.css": "/webevery_site/static/css/906.fb9032e5.chunk.css",
+    "static/js/906.8054a82b.chunk.js": "/webevery_site/static/js/906.8054a82b.chunk.js",
     "static/css/876.dd08f04d.chunk.css": "/webevery_site/static/css/876.dd08f04d.chunk.css",
     "static/js/876.49db19c6.chunk.js": "/webevery_site/static/js/876.49db19c6.chunk.js",
     "static/css/254.0b884d6c.chunk.css": "/webevery_site/static/css/254.0b884d6c.chunk.css",
@@ -25,9 +25,9 @@
     "static/media/symbol-defs.svg": "/webevery_site/static/media/symbol-defs.34a90d4085f0beb6610097ee086371b3.svg",
     "index.html": "/webevery_site/index.html",
     "main.64a76e17.css.map": "/webevery_site/static/css/main.64a76e17.css.map",
-    "main.10e07426.js.map": "/webevery_site/static/js/main.10e07426.js.map",
-    "906.bbe537a0.chunk.css.map": "/webevery_site/static/css/906.bbe537a0.chunk.css.map",
-    "906.aeaccdf7.chunk.js.map": "/webevery_site/static/js/906.aeaccdf7.chunk.js.map",
+    "main.ad4bc77c.js.map": "/webevery_site/static/js/main.ad4bc77c.js.map",
+    "906.fb9032e5.chunk.css.map": "/webevery_site/static/css/906.fb9032e5.chunk.css.map",
+    "906.8054a82b.chunk.js.map": "/webevery_site/static/js/906.8054a82b.chunk.js.map",
     "876.dd08f04d.chunk.css.map": "/webevery_site/static/css/876.dd08f04d.chunk.css.map",
     "876.49db19c6.chunk.js.map": "/webevery_site/static/js/876.49db19c6.chunk.js.map",
     "254.0b884d6c.chunk.css.map": "/webevery_site/static/css/254.0b884d6c.chunk.css.map",
@@ -38,6 +38,6 @@
   },
   "entrypoints": [
     "static/css/main.64a76e17.css",
-    "static/js/main.10e07426.js"
+    "static/js/main.ad4bc77c.js"
   ]
 }
