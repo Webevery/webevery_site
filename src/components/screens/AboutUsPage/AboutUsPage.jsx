@@ -10,12 +10,14 @@ import defaultPhoto from 'images/ourTeam/default.jpeg';
 const AboutUsPage = () => {
   const superDev = ourTeam.map(({ id, photo, name }) => {
     return (
-      <li className={styles.superDev} key={id}>
-        <div className={styles.superDev__imgWrapper}>
-          <img src={photo ? photo : defaultPhoto} alt={name} />
-        </div>
+      <li className={styles.superDev__wrapper} key={id}>
+        <div className={styles.superDev}>
+          <div className={styles.superDev__imgWrapper}>
+            <img src={photo ? photo : defaultPhoto} alt={name} />
+          </div>
 
-        <h3> {name}</h3>
+          <h3> {name}</h3>
+        </div>
         <Link className={styles.superDevClickMeLink} to={`${id}`}>
           Click me
         </Link>
