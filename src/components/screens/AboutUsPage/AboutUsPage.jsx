@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import styles from './AboutUs.module.scss';
 import { ourTeam } from 'data/coworkers.data';
 // import { nanoid } from 'nanoid';
+import { FiArrowRightCircle } from 'react-icons/fi';
 
 import defaultPhoto from 'images/ourTeam/default.jpeg';
 
@@ -19,7 +20,7 @@ const AboutUsPage = () => {
           <h3> {name}</h3>
         </div>
         <Link className={styles.superDevClickMeLink} to={`${id}`}>
-          Click me
+          <FiArrowRightCircle />
         </Link>
       </li>
     );
