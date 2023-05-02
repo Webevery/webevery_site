@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import styles from './AboutUs.module.scss';
-import { coworkers } from 'data/coworkers.data';
+import { coworkers } from 'data';
 // import { nanoid } from 'nanoid';
 import { FiArrowRightCircle } from 'react-icons/fi';
 
