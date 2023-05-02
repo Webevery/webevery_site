@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './DevPage.module.scss';
 
-import { coworkers } from 'data/coworkers.data';
+import { coworkers } from 'data';
 import defaultPhoto from 'images/ourTeam/default.jpeg';
 import { ImQuotesRight } from 'react-icons/im';
 

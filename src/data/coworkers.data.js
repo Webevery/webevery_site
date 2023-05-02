@@ -10,7 +10,7 @@ import maksSheih from '../images/ourTeam/maksSheih.jpeg';
 import vitaliiPavlovskyi from '../images/ourTeam/vitaliiPavlovskyi.jpeg';
 import myroslav from '../images/ourTeam/myroslav.jpeg';
 
-export const ourTeam = [
+export const coworkers = [
   {
     id: '1',
     name: 'Volodymyr Kavun',
