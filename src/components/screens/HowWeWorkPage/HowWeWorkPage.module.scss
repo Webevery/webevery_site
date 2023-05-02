@@ -1,0 +1,49 @@
+.sectionContainer {
+  display: flex;
+}
+
+.firstSection {
+  display: flex;
+}
+
+.main {
+  background-color: #242424;
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  span {
+    color: #fff;
+  }
+}
+
+.listItemText {
+  &::before {
+    content: '';
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    background: linear-gradient(
+      186.95deg,
+      #00b6ff -68.15%,
+      rgba(0, 182, 255, 0) 119.17%
+    );
+    transform: rotate(45deg);
+  }
+}
+
+.listItem1 {
+  //   &::before {
+  //     content: '';
+  //     height: 10px;
+  //     width: 10px;
+  //     display: inline-block;
+  //     background: linear-gradient(
+  //       186.95deg,
+  //       #00b6ff -68.15%,
+  //       rgba(0, 182, 255, 0) 119.17%
+  //     );
+  //     transform: rotate(45deg);
+  //   }
+}
