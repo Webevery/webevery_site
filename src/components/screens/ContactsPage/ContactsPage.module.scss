@@ -1,0 +1,69 @@
+@import "styles/variables";
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+}
+
+
+.coworker {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding: 5px;
+    border: 1px solid #d3cdcd;
+}
+
+
+.coworkerInformation {
+    font-size: 12px;
+}
+
+@media screen and (min-width: $tablet) {
+    .coworkerInformation {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .coworkerInformation {
+        font-size: 20px;
+    }
+}
+
+.coworkerMap {
+    visibility: hidden;
+    margin-left: auto;
+    width: 400px;
+    height: 300px;
+    border: 0;
+}
+
+@media screen and (min-width: $tablet) {
+    .coworkerMap {
+        visibility: visible;
+        width: 600px;
+        height: 450px;
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .coworkerMap {
+        width: 800px;
+        height: 600px;
+    }
+}
+
+
+.buttonOpenOrCloseMap {
+    visibility: hidden;
+}
+
+@media screen and (min-width: $tablet) {
+    .buttonOpenOrCloseMap {
+        visibility: visible;
+        margin-left: 15px;
+        padding: 4px;
+        cursor: pointer;
+    }
+}
