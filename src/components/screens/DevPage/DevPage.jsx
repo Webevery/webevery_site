@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './DevPage.module.scss';
 
-import { ourTeam } from 'data/coworkers.data';
+import { coworkers } from 'data/coworkers.data';
 import defaultPhoto from 'images/ourTeam/default.jpeg';
 import { ImQuotesRight } from 'react-icons/im';
 
@@ -17,7 +17,7 @@ const DevPage = () => {
   });
 
   useEffect(() => {
-    const dev = ourTeam.find(item => item.id === id);
+    const dev = coworkers.find(item => item.id === id);
     localStorage.setItem('dev', JSON.stringify(dev));
     setItem(dev);
   }, [id]);

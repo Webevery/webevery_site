@@ -19,4 +19,9 @@ export const navData = [
     path: '/ourProjects',
     title: 'OurProjects',
   },
+  {
+    id: Math.random(),
+    path: '/howWeWork',
+    title: 'How We Work',
+  },
 ];
