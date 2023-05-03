@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 import styles from './AboutUs.module.scss';
 import { coworkers } from 'data';
-// import { nanoid } from 'nanoid';
 import { FiArrowRightCircle } from 'react-icons/fi';
 
 import defaultPhoto from 'images/ourTeam/default.jpeg';
