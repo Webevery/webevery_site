@@ -35,6 +35,8 @@ const DevPage = () => {
           <ImQuotesRight className={styles.devPage__quoteMark} size={100} />
           <p className={styles.devPage__quote}>{item.quote}</p>
         </div>
+
+        {/* {item.email && item.email} */}
       </div>
       <Link className={styles.devPage__goBackLinc} to="/aboutUs">
         Back to team
