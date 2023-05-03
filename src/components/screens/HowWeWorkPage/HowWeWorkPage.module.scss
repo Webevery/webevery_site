@@ -13,7 +13,8 @@
   h2,
   h3,
   h4,
-  span {
+  span,
+  a {
     color: #fff;
   }
 }
@@ -46,4 +47,37 @@
   //     );
   //     transform: rotate(45deg);
   //   }
+}
+
+.sectionFAQ {
+}
+
+.titleFAQ {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.containerFAQ {
+  display: flex;
+}
+
+.questionsFAQ {
+  padding: 20px 20px;
+  width: 40%;
+}
+
+.answersFAQ {
+  padding: 20px 20px;
+  width: 60%;
+}
+
+.answersFAQ__listItem {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.answersFAQ__listItemTitle {
+  margin-bottom: 10px;
 }
