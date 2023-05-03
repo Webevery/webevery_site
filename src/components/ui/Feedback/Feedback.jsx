@@ -2,14 +2,10 @@ import React from 'react';
 import Button from 'components/share/Button';
 import styles from './Feedback.module.scss';
 
-const handleOpenFeedback = () => {
-  console.log('go to feedback');
-};
-
-const Feedback = () => {
+const Feedback = ({ onToggleModal }) => {
   return (
     <Button
-      onClick={handleOpenFeedback}
+      onClick={onToggleModal}
       className={styles.buttonFeedback}
       type="button"
       title="Feedback"
