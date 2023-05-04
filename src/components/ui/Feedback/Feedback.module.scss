@@ -11,7 +11,6 @@
   color: #ffffff;
   border: 2px solid #ffffff;
   border-radius: 3px;
-  cursor: pointer;
 
   @media (max-width: 1200) {
     left: calc(-40px - (20 - 30) * (100vw - 1200px) / (1200 - 768));
