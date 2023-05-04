@@ -15,7 +15,6 @@
   outline: 2px solid #393939;
   transition-property: outline-offset, outline-color, background-color;
   transition-duration: 0.25s;
-  cursor: pointer;
   &:hover {
     outline-offset: 4px;
     animation: shake 0.25s;
