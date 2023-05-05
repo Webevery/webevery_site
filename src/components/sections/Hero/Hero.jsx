@@ -7,10 +7,13 @@ const Hero = () => {
       <div className={scss.containerHero}>
         <div className={scss.contentHero}>
           <h1 className={scss.textHero}>
-            <span className={scss.titleHero}>Webevery</span> &#8212; Lorem ipsum
+            <span className={scss.titleHero}>Webevery</span> &#8212; Створення
+            та просування сайтів
             <br />
-            dolor sit amet consectetur adipisicing elit. Recusandae beatae
-            exercitationem officia possimus magni id error animi.
+            &#8594; Маркетинг <br />
+            &#8594; Веброзробка <br />
+            &#8594; Реклама в інтернеті <br />
+            &#8594; Розробляємо якісні сайти з індивідуальним дизайном.
           </h1>
         </div>
       </div>
