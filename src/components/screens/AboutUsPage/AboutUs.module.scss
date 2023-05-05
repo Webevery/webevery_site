@@ -77,9 +77,11 @@
   & h3 {
     font-weight: 800;
     font-size: 16px;
-    color: var(--main_bg_color);
+    // color: var(--main_bg_color);
     text-align: center;
     margin: 16px 0px 12px;
+    mix-blend-mode: difference;
+    color: white;
   }
 }
 
@@ -89,7 +91,7 @@
   }
 
   .superDev__imgWrapper {
-    height: 192px;
+    height: 180px;
   }
 }
 

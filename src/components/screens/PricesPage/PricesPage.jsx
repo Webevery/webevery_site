@@ -25,7 +25,7 @@ const PricesPage = () => {
               запитання потенційного замовника товару чи послуги.
             </p>
 
-            <Link className={styles.pricesPage__link} to={'/'}>
+            <Link className={styles.pricesPage__link} to={'/aboutUs'}>
               Learn more
             </Link>
           </div>
