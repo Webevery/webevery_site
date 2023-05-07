@@ -3,17 +3,14 @@
   justify-content: space-between;
   flex-wrap: wrap;
   background-color: #1a1a1a;
-  width: 500px;
+  width: 400px;
   border-radius: 20px;
   position: relative;
-  padding: 32px;
+  padding: 8px 12px;
   overflow: hidden;
+  transition: 500ms;
   @media (min-width: 768px) {
     width: 700px;
-    padding: 0;
-  }
-  @media (max-width: 768px) {
-    padding: 0;
   }
 }
 
@@ -25,6 +22,14 @@
   width: 30px;
   height: 30px;
   z-index: 2;
+  background-color: chocolate;
+}
+
+.closeBtn:hover {
+  cursor: pointer;
+  scale: (1.1);
+  transition: 500ms;
+  background-color: yellowgreen;
 }
 
 form {
@@ -50,4 +55,30 @@ form {
 .active {
   transform: translateX(0);
   transition: transform 2000ms;
+}
+
+.wrapError {
+  position: relative;
+  width: 100%;
+}
+
+.error {
+  position: absolute;
+  bottom: 55px;
+  left: 70px;
+  color: red;
+  font-size: 14px;
+}
+
+.textarea {
+  resize: none;
+  overflow: hidden;
+}
+
+.btnSubmit {
+  width: 100%;
+  height: 30px;
+  background-color: chocolate;
+  border: 1px solid black;
+  border-radius: 5px;
 }
