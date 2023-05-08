@@ -9,11 +9,11 @@ import dmytroColodchenko from '../images/ourTeam/dmytroColodchenko.jpeg';
 import maksSheih from '../images/ourTeam/maksSheih.jpeg';
 import vitaliiPavlovskyi from '../images/ourTeam/vitaliiPavlovskyi.jpeg';
 import myroslav from '../images/ourTeam/myroslav.jpeg';
+import oksanaRomanenko from '../images/ourTeam/oksanaRomanenko.jpg';
 
 export const coworkers = [
   {
     id: '1',
-    // id: nanoid(),
     name: 'Volodymyr Kavun',
     photo: volodymyrKavun,
     quote: 'When you have a dream, you have got to grab it and never let go.',
@@ -155,6 +155,20 @@ export const coworkers = [
     country: 'Ukraine',
     location:
       'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d160968.26871315323!2d34.505079721770954!3d50.921326983997815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4129022dda133f89%3A0x9202dbec4616d4f4!2z0JrQvtCy0L_QsNC60L7QstGB0LrQuNC5INGA0LDQudC-0L0sINCh0YPQvNGLLCDQodGD0LzRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDQuNC90LAsIDQwMDAw!5e0!3m2!1sru!2scz!4v1682869618514!5m2!1sru!2scz',
+    // email: 'gmail.com',
+    // phone: +380001112233,
+  },
+
+  {
+    id: '12',
+    name: 'Oksana Romanenko',
+    photo: oksanaRomanenko,
+    quote:
+      'When a flower doesn’t bloom, you fix the environment in which it grows, not the flower',
+    city: 'Kharkiv',
+    country: 'Ukraine',
+    // location:
+    //   'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d160968.26871315323!2d34.505079721770954!3d50.921326983997815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4129022dda133f89%3A0x9202dbec4616d4f4!2z0JrQvtCy0L_QsNC60L7QstGB0LrQuNC5INGA0LDQudC-0L0sINCh0YPQvNGLLCDQodGD0LzRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDQuNC90LAsIDQwMDAw!5e0!3m2!1sru!2scz!4v1682869618514!5m2!1sru!2scz',
     // email: 'gmail.com',
     // phone: +380001112233,
   },
