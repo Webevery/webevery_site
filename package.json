@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://Webevery.github.io/webevery_site/",
   "dependencies": {
+    "@react-google-maps/api": "^2.18.1",
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
