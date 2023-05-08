@@ -9,8 +9,7 @@ import vitaliiPavlovskyi from '../images/ourTeam/vitaliiPavlovskyi.jpeg';
 import myroslav from '../images/ourTeam/myroslav.jpeg';
 // import volodymurPolztyuk from '../images/ourTeam/volodymurPolztyuk.jpeg';
 // import maksimFromSumy from '../images/ourTeam/maksimFromSumy.jpeg';
-// import oksanaRomanenko from '../images/ourTeam/oksanaRomanenko.jpeg';
-
+import oksanaRomanenko from '../images/ourTeam/oksanaRomanenko.jpg';
 
 
 export const coworkers = [
@@ -198,8 +197,9 @@ export const coworkers = [
   {
     id: '12',
     name: 'Oksana Romanenko',
-    // photo: oksanaRomanenko,
-    quote: '',
+    photo: oksanaRomanenko,
+    quote:
+      'When a flower doesn’t bloom, you fix the environment in which it grows, not the flower',
     humor: '',
     city: 'Gdańsk',
     latitude: 54.372158,

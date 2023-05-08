@@ -11,14 +11,11 @@ import { useState, useEffect } from 'react';
 const DevPage = () => {
   const { id } = useParams();
 
-  const [item, setItem] = useState(() => {
-    const initialValue = JSON.parse(localStorage.getItem('dev'));
-    return initialValue || {};
-  });
+  const [item, setItem] = useState({});
 
   useEffect(() => {
     const dev = coworkers.find(item => item.id === id);
-    localStorage.setItem('dev', JSON.stringify(dev));
+
     setItem(dev);
   }, [id]);
 
