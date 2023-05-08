@@ -49,9 +49,9 @@
 
 .activeNavLinkNav {
   transition-duration: 1000ms;
-  border-bottom: 2px solid var(--main_color);
-  -webkit-text-stroke: 1px var(--main_color);
-  color: var(--main_color);
+  border-bottom: 2px solid var(--main_bg_color);
+  -webkit-text-stroke: 1px var(--main_bg_color);
+  color: var(--main_bg_color);
 }
 
 @media (max-width: 768px) {
@@ -61,7 +61,6 @@
 
   .mobileBtnNav {
     display: block;
-    cursor: pointer;
     z-index: 100;
     border: none;
     background-color: transparent;

@@ -2,10 +2,10 @@ import React from 'react';
 import Button from 'components/share/Button';
 import styles from './Feedback.module.scss';
 
-const Feedback = ({ onToggleModal }) => {
+const Feedback = ({ toggleSidebar }) => {
   return (
     <Button
-      onClick={onToggleModal}
+      onClick={toggleSidebar}
       className={styles.buttonFeedback}
       type="button"
       title="Feedback"

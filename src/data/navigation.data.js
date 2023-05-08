@@ -24,4 +24,9 @@ export const navData = [
     path: '/howWeWork',
     title: 'How We Work',
   },
+  {
+    id: Math.random(),
+    path: '/prices',
+    title: 'Prices',
+  },
 ];

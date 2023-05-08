@@ -1,4 +1,4 @@
-import { nanoid } from 'nanoid';
+// import { nanoid } from 'nanoid';
 
 import volodymyrKavun from '../images/ourTeam/volodymyrKavun.jpeg';
 import maksPeltec from '../images/ourTeam/maksPeltec.png';
@@ -12,8 +12,8 @@ import myroslav from '../images/ourTeam/myroslav.jpeg';
 
 export const coworkers = [
   {
-    // id: '1',
-    id: nanoid(),
+    id: '1',
+    // id: nanoid(),
     name: 'Volodymyr Kavun',
     photo: volodymyrKavun,
     quote: 'When you have a dream, you have got to grab it and never let go.',

@@ -5,6 +5,12 @@
   align-items: center;
   justify-content: center;
   row-gap: 32px;
+  padding: 90px 16px 16px 16px;
+  background-image: url('/images/homeBg.jpg');
+  background-size: 360vw;
+  background-repeat: no-repeat;
+  background-position: 49% 50%;
+  background-attachment: fixed;
 }
 
 .superDevList {
@@ -19,6 +25,7 @@
 .superDev__wrapper {
   position: relative;
   transition-duration: 1s;
+  background-color: rgba(255, 255, 255, 0.3);
 
   & .superDevClickMeLink {
     font-size: 70px;
@@ -63,6 +70,7 @@
     & img {
       position: absolute;
       top: 0px;
+      filter: brightness(1.1);
     }
   }
 
