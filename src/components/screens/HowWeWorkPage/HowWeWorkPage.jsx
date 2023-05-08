@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from './HowWeWorkPage.module.scss';
+import img from './weic2205a.jpg';
+import img1 from './Cosmic_‘Winter’_Wonderland.jpg';
 
 const HowWeWorkPage = () => {
   return (
@@ -17,30 +19,53 @@ const HowWeWorkPage = () => {
           <div className={`${styles.sectionContainer} ${styles.firstSection}`}>
             <ul className={styles.list}>
               <li className={styles.listItem}>
-                <span className={styles.listItemNumber}>01.</span>
-                <h3 className={styles.listItemTitle}>Стадія відкриття</h3>
-                <p className={styles.listItemText}>
-                  Ми розробляємо, підтверджуємо та перевіряємо вимоги, додаючи
-                  додаткові деталі, якщо необхідно. Починаючи новий проект, етап
-                  відкриття — це перше, що ми робимо. Клієнт своїми словами
-                  описує ідею або проблему. Ми не надаємо стандартизований бриф
-                  для заповнення. Для нас ніколи не проблема витратити 30-60
-                  хвилин на те, щоб вислухати клієнта, щоб одразу запропонувати
-                  швидкі поради, варіанти розвитку, рішення чи думки щодо
-                  вдосконалення існуючої ідеї.
-                </p>
+                <div className={styles.container1}>
+                  <img
+                    className={styles.img}
+                    src={img}
+                    alt="cosmic"
+                    width="1000"
+                    height="500"
+                  />
+                </div>
+                <div className={styles.container2}>
+                  <span className={styles.listItemNumber}>01.</span>
+                  <h3 className={styles.listItemTitle}>Стадія відкриття</h3>
+                  <p className={styles.listItemText}>
+                    Ми розробляємо, підтверджуємо та перевіряємо вимоги, додаючи
+                    додаткові деталі, якщо необхідно. Починаючи новий проект,
+                    етап відкриття — це перше, що ми робимо. Клієнт своїми
+                    словами описує ідею або проблему. Ми не надаємо
+                    стандартизований бриф для заповнення. Для нас ніколи не
+                    проблема витратити 30-60 хвилин на те, щоб вислухати
+                    клієнта, щоб одразу запропонувати швидкі поради, варіанти
+                    розвитку, рішення чи думки щодо вдосконалення існуючої ідеї.
+                  </p>
+                </div>
               </li>
               <li className={styles.listItem}>
-                <span className={styles.listItemNumber}>02.</span>
-                <h3 className={styles.listItemTitle}>
-                  Обговорення процесу розробки, технології, термінів і вартості
-                </h3>
-                <p className={styles.listItemText}>
-                  На початковому етапі надаємо приблизний план розробки, терміни
-                  та вартість. У разі складання детального технічного опису на
-                  розробку, відсоток похибки значно знижується, що дозволяє
-                  уникнути можливих непорозумінь у майбутньому.
-                </p>
+                <div className={styles.container1}>
+                  <img
+                    className={styles.img}
+                    src={img1}
+                    alt="cosmic"
+                    width="1000"
+                    height="500"
+                  />
+                </div>
+                <div className={styles.container2}>
+                  <span className={styles.listItemNumber}>02.</span>
+                  <h3 className={styles.listItemTitle}>
+                    Обговорення процесу розробки, технології, термінів і
+                    вартості
+                  </h3>
+                  <p className={styles.listItemText}>
+                    На початковому етапі надаємо приблизний план розробки,
+                    терміни та вартість. У разі складання детального технічного
+                    опису на розробку, відсоток похибки значно знижується, що
+                    дозволяє уникнути можливих непорозумінь у майбутньому.
+                  </p>
+                </div>
               </li>
               <li className={styles.listItem}>
                 <span className={styles.listItemNumber}>03.</span>

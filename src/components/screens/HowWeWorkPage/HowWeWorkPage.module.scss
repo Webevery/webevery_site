@@ -1,13 +1,6 @@
-.sectionContainer {
-  display: flex;
-}
-
-.firstSection {
-  display: flex;
-}
-
 .main {
   background-color: #242424;
+  padding: 20px;
   p,
   h1,
   h2,
@@ -17,6 +10,23 @@
   a {
     color: #fff;
   }
+}
+
+/*  Hero   */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+.sectionContainer {
+  display: flex;
+}
+
+.firstSection {
+  display: flex;
 }
 
 .listItemText {
@@ -33,6 +43,26 @@
     transform: rotate(45deg);
   }
 }
+.listItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // flex-direction: column;
+  padding: 50px;
+  // height: 100%;
+}
+.container1 {
+  height: 100%;
+  width: 50%;
+  margin-right: 20px;
+}
+.container2 {
+  height: 100%;
+  width: 50%;
+}
+
+.img {
+}
 
 .listItem1 {
   //   &::before {
@@ -46,6 +76,7 @@
   //       rgba(0, 182, 255, 0) 119.17%
   //     );
   //     transform: rotate(45deg);
+
   //   }
 }
 
