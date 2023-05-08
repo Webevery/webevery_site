@@ -9,7 +9,7 @@
   background-image: url('/images/homeBg.jpg');
   background-size: 360vw;
   background-repeat: no-repeat;
-  background-position: 49% 50%;
+  background-position: 49% 44%;
   background-attachment: fixed;
 }
 
@@ -77,7 +77,8 @@
   & h3 {
     font-weight: 800;
     font-size: 16px;
-    color: var(--main_bg_color);
+    // color: var(--main_bg_color);
+    color: rgba(255, 255, 255, 0.9);
     text-align: center;
     margin: 16px 0px 12px;
   }
