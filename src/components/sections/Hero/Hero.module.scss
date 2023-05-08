@@ -1,19 +1,5 @@
-.containerHero {
-  width: 100%;
-  margin: 0 auto;
-  padding-right: 15px;
-  padding-left: 15px;
-  // outline: 2px solid red;
-  @media screen and (min-width: 320px) {
-    width: 320px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 1280px;
-  }
-}
+@import 'styles/variables';
+
 .containerHeroBg {
   height: 100vh;
   background-image: url('./earth-1272884_1920.jpg');
@@ -21,26 +7,38 @@
   background-repeat: no-repeat;
   background-position: center;
   padding-bottom: 70px;
+  padding-left: 26px;
+  padding-right: 26px;
   display: flex;
   align-items: flex-end;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     justify-content: center;
   }
-  @media screen and (min-width: 1200px) {
-    padding-left: 90px;
+  @media screen and (min-width: $desktop) {
+    // padding-left: 90px;
   }
 }
+
+.containerHero {
+  width: 100%;
+  @media screen and (min-width: $desktop) {
+    padding-left: 150px;
+    padding-right: 0px;
+  }
+}
+
 .contentHero {
   width: 100%;
   height: 100%;
   text-align: center;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     text-align: center;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     text-align: start;
   }
 }
+
 .textHero {
   font-family: 'Josefin Sans';
   font-weight: 500;
@@ -48,16 +46,17 @@
   line-height: 38px;
   letter-spacing: 0.03em;
   color: var(--light_color);
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     font-size: 28px;
     line-height: 48px;
     letter-spacing: 0.07em;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     max-width: 800px;
     font-size: 32px;
   }
 }
+
 .titleHero {
   text-transform: uppercase;
 }
