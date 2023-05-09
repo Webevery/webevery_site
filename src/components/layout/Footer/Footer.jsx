@@ -2,7 +2,7 @@ import React from 'react';
 import SocialLink from 'components/share/SocialLink';
 import styles from './Footer.module.scss';
 import { useModal } from 'hooks';
-import Sidebar from 'components/share/Sidebar/Sidebar';
+import Form from 'components/share/Form';
 import Modal from 'components/share/Modal/Modal';
 import Button from 'components/share/Button/Button';
 
@@ -24,7 +24,7 @@ const Footer = () => {
         />
         {isModalOpen && (
           <Modal onCloseModal={closeModal} mode="dark">
-            <Sidebar closeBar={closeModal} />
+            <Form closeModal={closeModal} />
           </Modal>
         )}
         <SocialLink
