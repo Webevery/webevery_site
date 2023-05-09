@@ -4,7 +4,7 @@ import Textarea from '../Input';
 import styles from './Form.module.scss';
 import Select from './Select';
 
-function Form({ closeBar, isOpen }) {
+function Form({ closeModal }) {
   const [userName, setUserName] = useState('');
   const [phone, setPhone] = useState('');
   const [mail, setMail] = useState('');
@@ -152,14 +152,11 @@ function Form({ closeBar, isOpen }) {
   };
 
   return (
-    <div className={styles.container}>
-      <button type="button" className={styles.closeBtn} onClick={closeBar}>
+    <div className={styles.formContainer}>
+      <button type="button" className={styles.closeBtn} onClick={closeModal}>
         +
       </button>
-      <form
-        onSubmit={formSubmit}
-        className={isOpen ? styles.form : styles.moveWrap + ' ' + styles.active}
-      >
+      <form onSubmit={formSubmit} className={styles.form}>
         <div className={styles.wrapGroup}>
           <div className={styles.wrapError}>
             {dirtyUserName && errorUserName && (

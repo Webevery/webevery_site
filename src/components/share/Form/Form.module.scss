@@ -1,4 +1,4 @@
-.container {
+.formContainer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -6,11 +6,13 @@
   width: 400px;
   border-radius: 20px;
   position: relative;
-  padding: 8px 12px;
+  padding: 24px;
   overflow: hidden;
   transition: 500ms;
+
   @media (min-width: 768px) {
     width: 700px;
+    padding: 32px;
   }
 }
 
@@ -29,13 +31,11 @@
   cursor: pointer;
   scale: (1.1);
   transition: 500ms;
-  background-color: yellowgreen;
+  background-color: orange;
 }
 
 form {
   width: 100%;
-  transform: translateX(100%);
-  transition: transform 700ms;
 
   @media (min-width: 768px) {
     display: flex;
@@ -52,11 +52,6 @@ form {
   }
 }
 
-.active {
-  transform: translateX(0);
-  transition: transform 2000ms;
-}
-
 .wrapError {
   position: relative;
   width: 100%;
@@ -66,7 +61,7 @@ form {
   position: absolute;
   bottom: 55px;
   left: 70px;
-  color: red;
+  color: #f96c2f;
   font-size: 14px;
 }
 
@@ -81,4 +76,8 @@ form {
   background-color: chocolate;
   border: 1px solid black;
   border-radius: 5px;
+  margin-top: 10px;
+  @media (min-width: 768px) {
+    margin-top: 30px;
+  }
 }
