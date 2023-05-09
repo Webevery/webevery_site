@@ -8,7 +8,7 @@ import maksSheih from '../images/ourTeam/maksSheih.jpeg';
 import vitaliiPavlovskyi from '../images/ourTeam/vitaliiPavlovskyi.jpeg';
 import myroslav from '../images/ourTeam/myroslav.jpeg';
 // import volodymurPolztyuk from '../images/ourTeam/volodymurPolztyuk.jpeg';
-// import maksimFromSumy from '../images/ourTeam/maksimFromSumy.jpeg';
+// import maksymIgnatenko from '../images/ourTeam/maksimFromSumy.jpeg';
 import oksanaRomanenko from '../images/ourTeam/oksanaRomanenko.jpg';
 
 
@@ -51,7 +51,7 @@ export const coworkers = [
     photo: nataliiaBoiko,
     quote:
       'It’s worth remembering that it is often the small steps, not the giant leaps, that bring about the most lasting change.',
-    humor: 'Можна ЦЕ взяти і ПРИШПАНДЬОРИТИ його ТУДИ і БУДЕ воно ДОБРЕ !',
+    humor: 'Можна ЦЮ КНІПКУ взяти і ПРИШПАНДЬОРИТИ його ТУДИ і БУДЕ воно ДОБРЕ !',
     city: 'Ivano-Frankivsk',
     latitude: 48.92312,
     longitude: 24.71248,
@@ -136,8 +136,8 @@ export const coworkers = [
       'You define your own life. Do not let other people write your script.',
     humor: '',
     city: 'Sumy',
-    latitude: 50.948633144744704,
-    longitude: 34.72633517205382,
+    latitude: 50.9077,
+    longitude: 34.7981,
     country: 'Ukraine',
     location:
       'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80519.73266685213!2d34.73181410350488!3d50.900744714502295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41290220fc73a461%3A0xdb74f6366b836c28!2z0KHRg9C80YssINCh0YPQvNGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA0MDAwMA!5e0!3m2!1sru!2sua!4v1682768594773!5m2!1sru!2sua',
@@ -167,7 +167,7 @@ export const coworkers = [
     photo: myroslav,
     quote:
       'You do not always need a plan. Sometimes you just need to breathe, trust, let go and see what happens.',
-    humor: 'ААААААА,я ЗРОЗУМІВ... Теорія - це добре, але треба БІЛЬШЕ ПРАКТИКИ !',
+    humor: 'ААААААА, я ЗРОЗУМІВ... Теорія - це добре, але треба БІЛЬШЕ ПРАКТИКИ !',
     city: 'Landau in der Pfalz',
     latitude: 49.19844,
     longitude: 8.11692,
@@ -180,14 +180,14 @@ export const coworkers = [
 
   {
     id: '11',
-    name: 'Maksim from Sumy',
-    // photo: maksimFromSumy,
+    name: 'Maksym Ignatenko',
+    // photo: maksymIgnatenko,
     quote: 'Wake up determined, go to bed satisfied.',
     humor: '',
-    city: 'Sumy',
-    latitude: 50.875459507067916,
-    longitude: 34.898131961548366,
-    country: 'Ukraine',
+    city: 'Tallinn',
+    latitude: 59.436962,
+    longitude: 24.753574,
+    country: 'Estonia',
     location:
       'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d160968.26871315323!2d34.505079721770954!3d50.921326983997815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4129022dda133f89%3A0x9202dbec4616d4f4!2z0JrQvtCy0L_QsNC60L7QstGB0LrQuNC5INGA0LDQudC-0L0sINCh0YPQvNGLLCDQodGD0LzRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDQuNC90LAsIDQwMDAw!5e0!3m2!1sru!2scz!4v1682869618514!5m2!1sru!2scz',
     email: 'cadillac.maxim@gmail.com',
