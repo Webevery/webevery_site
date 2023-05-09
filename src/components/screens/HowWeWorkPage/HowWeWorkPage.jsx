@@ -1,7 +1,5 @@
 import React from 'react';
 import styles from './HowWeWorkPage.module.scss';
-import img from './weic2205a.jpg';
-import img1 from './Cosmic_‘Winter’_Wonderland.jpg';
 
 const HowWeWorkPage = () => {
   return (
