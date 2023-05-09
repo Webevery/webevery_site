@@ -1,13 +1,13 @@
 import React from 'react';
-import scss from './Hero.module.scss';
+import styles from './Hero.module.scss';
 
 const Hero = () => {
   return (
-    <div className={scss.containerHeroBg}>
-      <div className={scss.containerHero}>
-        <div className={scss.contentHero}>
-          <h1 className={scss.textHero}>
-            <span className={scss.titleHero}>Webevery</span> &#8212; Створення
+    <section className={styles.containerHeroBg}>
+      <div className={styles.containerHero}>
+        <div className={styles.contentHero}>
+          <h1 className={styles.textHero}>
+            <span className={styles.titleHero}>Webevery</span> &#8212; Створення
             та просування сайтів
             <br />
             &#8594; Маркетинг <br />
@@ -17,7 +17,7 @@ const Hero = () => {
           </h1>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
