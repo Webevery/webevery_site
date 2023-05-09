@@ -64,7 +64,10 @@
 
 .img {
 }
-
+.link {
+  display: block;
+  margin: 20px 0;
+}
 .listItem1 {
   //   &::before {
   //     content: '';
@@ -92,6 +95,7 @@
 
 .containerFAQ {
   display: flex;
+  justify-content: center;
 }
 
 .questionsFAQ {
