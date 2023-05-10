@@ -1,16 +1,5 @@
 @import 'styles/variables';
 
-// @media screen and (min-width: $tablet) {
-//   display: flex;
-//   flex-direction: row;
-//   align-items: center;
-//   padding: 40px;
-//   column-gap: 80px;
-// }
-// @media screen and (min-width: $desktop) {
-//   column-gap: 160px;
-// }
-
 .superDev__section {
   min-height: calc(100vh - 56px);
   display: flex;
@@ -20,6 +9,7 @@
   row-gap: 32px;
   padding: 16px;
   background-image: url('/images/homeBg.jpg');
+  background-color: black;
   background-size: 360vw;
   background-repeat: no-repeat;
   background-position: 49% 44%;
