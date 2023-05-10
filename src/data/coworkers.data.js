@@ -10,7 +10,7 @@ import myroslav from '../images/ourTeam/myroslav.jpeg';
 // import volodymurPolztyuk from '../images/ourTeam/volodymurPolztyuk.jpeg';
 // import maksymIgnatenko from '../images/ourTeam/maksimFromSumy.jpeg';
 import oksanaRomanenko from '../images/ourTeam/oksanaRomanenko.jpg';
-
+import ivanGagaus from '../images/ourTeam/ivanGagaus.jpg';
 
 export const coworkers = [
   {
@@ -51,7 +51,8 @@ export const coworkers = [
     photo: nataliiaBoiko,
     quote:
       'It’s worth remembering that it is often the small steps, not the giant leaps, that bring about the most lasting change.',
-    humor: 'Можна ЦЮ КНІПКУ взяти і ПРИШПАНДЬОРИТИ його ТУДИ і БУДЕ воно ДОБРЕ !',
+    humor:
+      'Можна ЦЮ КНІПКУ взяти і ПРИШПАНДЬОРИТИ його ТУДИ і БУДЕ воно ДОБРЕ !',
     city: 'Ivano-Frankivsk',
     latitude: 48.92312,
     longitude: 24.71248,
@@ -167,7 +168,8 @@ export const coworkers = [
     photo: myroslav,
     quote:
       'You do not always need a plan. Sometimes you just need to breathe, trust, let go and see what happens.',
-    humor: 'ААААААА, я ЗРОЗУМІВ... Теорія - це добре, але треба БІЛЬШЕ ПРАКТИКИ !',
+    humor:
+      'ААААААА, я ЗРОЗУМІВ... Теорія - це добре, але треба БІЛЬШЕ ПРАКТИКИ !',
     city: 'Landau in der Pfalz',
     latitude: 49.19844,
     longitude: 8.11692,
@@ -201,13 +203,30 @@ export const coworkers = [
     quote:
       'When a flower doesn’t bloom, you fix the environment in which it grows, not the flower',
     humor: '',
-    city: 'Gdańsk',
-    latitude: 54.372158,
-    longitude: 18.638306,
-    country: 'Poland',
-    location:
-      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d148784.80927347747!2d18.52522345544997!3d54.36117516765685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd731c14d4fa6f%3A0x9bb9fbf163b7be8d!2z0JPQtNCw0L3RjNGB0LosINCf0L7Qu9GM0YjQsA!5e0!3m2!1sru!2sua!4v1683538536867!5m2!1sru!2sua',
+    city: 'Kharkiv',
+    latitude: 0,
+    longitude: 0,
+    country: 'Ukraine',
+    // location:
+    //   'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d148784.80927347747!2d18.52522345544997!3d54.36117516765685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd731c14d4fa6f%3A0x9bb9fbf163b7be8d!2z0JPQtNCw0L3RjNGB0LosINCf0L7Qu9GM0YjQsA!5e0!3m2!1sru!2sua!4v1683538536867!5m2!1sru!2sua',
     email: 'oks.romanenkodesign@gmail.com',
     phone: +380676861493,
-  }
+  },
+
+  {
+    id: '13',
+    name: 'Ivan Gagaus',
+    photo: ivanGagaus,
+    quote:
+      "Every day I get up and look through the Forbes list of the richest people in America. If I'm not there, I go to work.",
+    humor: '',
+    city: 'Odessa',
+    latitude: 0,
+    longitude: 0,
+    country: 'Ukraine',
+    // location:
+    //   'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d148784.80927347747!2d18.52522345544997!3d54.36117516765685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd731c14d4fa6f%3A0x9bb9fbf163b7be8d!2z0JPQtNCw0L3RjNGB0LosINCf0L7Qu9GM0YjQsA!5e0!3m2!1sru!2sua!4v1683538536867!5m2!1sru!2sua',
+    email: '',
+    phone: +3801111111,
+  },
 ];

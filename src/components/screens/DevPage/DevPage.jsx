@@ -21,6 +21,8 @@ const DevPage = () => {
 
   return (
     <section className={styles.devPage}>
+      <h2>Developer page</h2>
+
       <div className={styles.devPage__contentWrapper}>
         <div className={styles.devPage__itemWrapper}>
           <div className={styles.devPage__imgWrapper}>
