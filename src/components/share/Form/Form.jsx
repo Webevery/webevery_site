@@ -30,6 +30,11 @@ function Form({ closeModal }) {
     }
   }, [errorUserName, errorPhone, errorMail, errorComments]);
 
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+    return () => (document.body.style.overflow = 'unset');
+  }, []);
+
   const formSubmit = evt => {
     evt.preventDefault();
     const data = {
