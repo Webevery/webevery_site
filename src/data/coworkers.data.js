@@ -36,8 +36,8 @@ export const coworkers = [
     quote: 'Nothing is impossible. The word itself says "I am possible!"',
     humor: 'МАЮ знову СУМНІВИ. Може ТАК зробити? ЧИ може ОСЬ ТАК зробити ?',
     city: 'Odesa',
-    latitude: 46.48572,
-    longitude: 30.74383,
+    latitude: 46.381806,
+    longitude: 30.71039,
     country: 'Ukraine',
     location:
       'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d175899.1966584225!2d30.546979749753348!3d46.460090158678724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6318a0b864c43%3A0x129f8fe28cf2176c!2z0J7QtNC10YHRgdCwLCDQntC00LXRgdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2NTAwMA!5e0!3m2!1sru!2sua!4v1682766784554!5m2!1sru!2sua',
@@ -203,12 +203,12 @@ export const coworkers = [
     quote:
       'When a flower doesn’t bloom, you fix the environment in which it grows, not the flower',
     humor: '',
-    city: 'Kharkiv',
-    latitude: 0,
-    longitude: 0,
-    country: 'Ukraine',
-    // location:
-    //   'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d148784.80927347747!2d18.52522345544997!3d54.36117516765685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd731c14d4fa6f%3A0x9bb9fbf163b7be8d!2z0JPQtNCw0L3RjNGB0LosINCf0L7Qu9GM0YjQsA!5e0!3m2!1sru!2sua!4v1683538536867!5m2!1sru!2sua',
+    city: 'Gdańsk',
+    latitude: 54.372158,
+    longitude: 18.638306,
+    country: 'Poland',
+    location:
+      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d148784.80927347747!2d18.52522345544997!3d54.36117516765685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd731c14d4fa6f%3A0x9bb9fbf163b7be8d!2z0JPQtNCw0L3RjNGB0LosINCf0L7Qu9GM0YjQsA!5e0!3m2!1sru!2sua!4v1683538536867!5m2!1sru!2sua',
     email: 'oks.romanenkodesign@gmail.com',
     phone: +380676861493,
   },
@@ -220,13 +220,13 @@ export const coworkers = [
     quote:
       "Every day I get up and look through the Forbes list of the richest people in America. If I'm not there, I go to work.",
     humor: '',
-    city: 'Odessa',
-    latitude: 0,
-    longitude: 0,
+    city: 'Odesa',
+    latitude: 46.48572,
+    longitude: 30.74383,
     country: 'Ukraine',
-    // location:
-    //   'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d148784.80927347747!2d18.52522345544997!3d54.36117516765685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd731c14d4fa6f%3A0x9bb9fbf163b7be8d!2z0JPQtNCw0L3RjNGB0LosINCf0L7Qu9GM0YjQsA!5e0!3m2!1sru!2sua!4v1683538536867!5m2!1sru!2sua',
-    email: '',
-    phone: +3801111111,
+    location:
+      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d175899.1966584225!2d30.546979749753348!3d46.460090158678724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6318a0b864c43%3A0x129f8fe28cf2176c!2z0J7QtNC10YHRgdCwLCDQntC00LXRgdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2NTAwMA!5e0!3m2!1sru!2sua!4v1682766784554!5m2!1sru!2sua',
+    // email: '',
+    // phone: +3801111111,
   },
 ];
