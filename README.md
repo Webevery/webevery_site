@@ -169,25 +169,17 @@ GitHub.
         |--index.js  - файл запуску сайту
         |--index.scss   - глобальні стилі (розробники сюди НЕ ЛІЗУТЬ)
 
-
 ## |--language - ????????????????????????????????
 
 ## Правила однотипной стилизации:
-1. Импорт файла стилей в компоненты осуществляется в переменную styles. 
-2. Классы именуются в camelCase + __, например: infoWindow__name.
-3. Медиа запросы прописываем внутри класса, например:
-.coworkerInformation {
-  font-size: 12px;
 
-  @media screen and (min-width: $tablet) {
-    font-size: 16px;
-    }
-    
-  @media screen and (min-width: $desktop) {
-    font-size: 20px;
-    }
-}
-
-
-
-
+1. Импорт файла стилей в компоненты осуществляется в переменную styles.
+2. Классы именуются в camelCase + **, например: infoWindow**name.
+3. Медиа запросы прописываем внутри класса, например: .coworkerInformation {
+   font-size: 12px; @media screen and (min-width: $tablet) { font-size: 16px; }
+   @media screen and (min-width: $desktop) { font-size: 20px; } }
+4. На странице ContactsPage может присутствовать надпись "For development
+   purposes only". Причина: Google Maps JavaScript API warning: NoApiKeys. Для
+   исправления необходимо выполнить следующие действия. Добавить в файл .env
+   переменную REACT_APP_GOOGLE_API_KEY и её значение. В терминале выполнить
+   команду "npm i dotenv". Теперь VSCode имеет доступ к process.env. Бывает, что VSCode пишет что-то про Webpack, полифилы и ошибки. Команда в терминале npm uninstall dotenv решает этот вопрос. При этом, REACT_APP_GOOGLE_API_KEY остается видимым для VSCode. Такое ощущение, что таким образом process.env как-будто "выводится из спячки и становится видимым".
