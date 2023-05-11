@@ -1,16 +1,24 @@
+@import 'styles/variables';
+
 .superDev__section {
-  min-height: 100vh;
+  min-height: calc(100vh - 56px);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   row-gap: 32px;
-  padding: 90px 16px 16px 16px;
+  padding: 16px;
   background-image: url('/images/homeBg.jpg');
+  background-color: black;
   background-size: 360vw;
   background-repeat: no-repeat;
   background-position: 49% 44%;
   background-attachment: fixed;
+
+  & h2 {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 .superDevList {
@@ -52,6 +60,18 @@
       display: block;
       animation: blurLink 1s linear;
     }
+
+    @keyframes blurLink {
+      0% {
+        visibility: hidden;
+        opacity: 0;
+      }
+      100% {
+        visibility: visible;
+        opacity: 1;
+        filter: brightness(1.5);
+      }
+    }
   }
 }
 
@@ -62,10 +82,17 @@
   transition-duration: 1s;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.582);
 
+  @media screen and (min-width: $tablet) {
+    width: 200px;
+  }
+
   &__imgWrapper {
     height: 244px;
     overflow: hidden;
     position: relative;
+    @media screen and (min-width: $tablet) {
+      height: 192px;
+    }
 
     & img {
       position: absolute;
@@ -77,30 +104,8 @@
   & h3 {
     font-weight: 800;
     font-size: 16px;
-    // color: var(--main_bg_color);
     color: rgba(255, 255, 255, 0.9);
     text-align: center;
     margin: 16px 0px 12px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .superDev {
-    width: 200px;
-  }
-
-  .superDev__imgWrapper {
-    height: 192px;
-  }
-}
-
-@keyframes blurLink {
-  0% {
-    visibility: hidden;
-    opacity: 0;
-  }
-  100% {
-    visibility: visible;
-    opacity: 1;
   }
 }

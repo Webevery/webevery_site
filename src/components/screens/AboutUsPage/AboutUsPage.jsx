@@ -27,6 +27,7 @@ const AboutUsPage = () => {
 
   return (
     <section className={styles.superDev__section}>
+      <h2>Our team</h2>
       <ul className={styles.superDevList}>{superDev}</ul>
     </section>
   );

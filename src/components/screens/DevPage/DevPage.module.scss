@@ -1,18 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Secular+One&display=swap');
+@import 'styles/variables';
 
 .devPage {
-  min-height: 100vh;
+  min-height: calc(100vh - 56px);
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   row-gap: 56px;
 
+  & h2 {
+    opacity: 0;
+    visibility: hidden;
+  }
+
   &__contentWrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 64px;
+
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 40px;
+      column-gap: 80px;
+    }
+    @media screen and (min-width: $desktop) {
+      column-gap: 160px;
+    }
   }
 
   &__itemWrapper {
@@ -21,8 +39,15 @@
     align-items: center;
     row-gap: 12px;
 
+    @media screen and (min-width: $tablet) {
+      row-gap: 24px;
+    }
+
     & h3 {
       color: var(--main_bg_color);
+      @media screen and (min-width: $tablet) {
+        font-size: 24px;
+      }
     }
   }
 
@@ -40,6 +65,16 @@
 
     overflow: hidden;
     position: relative;
+
+    @media screen and (min-width: $tablet) {
+      width: 240px;
+      height: 240px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: 320px;
+      height: 320px;
+    }
 
     & img {
       width: 100%;
@@ -67,13 +102,15 @@
     line-height: 1;
     text-align: center;
     color: var(--main_bg_color);
+
+    @media screen and (min-width: $desktop) {
+      font-size: 32px;
+    }
   }
 
   &__goBackLinc {
     font-weight: 700;
     font-size: 12px;
-    // background-color: var(--main_bg_color);
-    // color: white;
     display: block;
     text-align: center;
     margin-bottom: 12px;
@@ -87,48 +124,6 @@
     &:hover {
       transform: scale(1.1);
       filter: brightness(2);
-      // box-shadow: 0px 0px 2px 1px black;
-      // background-color: rgb(65, 74, 82, 0.8);
     }
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .devPage {
-    &__contentWrapper {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      padding: 40px;
-      column-gap: 48px;
-    }
-
-    &__itemWrapper {
-      row-gap: 24px;
-
-      & h3 {
-        font-size: 24px;
-      }
-    }
-
-    &__imgWrapper {
-      width: 240px;
-      height: 240px;
-    }
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .devPage__contentWrapper {
-    column-gap: 60px;
-  }
-
-  .devPage__imgWrapper {
-    width: 320px;
-    height: 320px;
-  }
-
-  .devPage__quote {
-    font-size: 32px;
   }
 }
