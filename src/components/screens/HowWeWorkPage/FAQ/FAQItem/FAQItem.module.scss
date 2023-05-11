@@ -1,0 +1,34 @@
+.FAQanswer {
+  margin-left: -100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 0;
+  overflow: hidden;
+  border: 0;
+  transition: all 200ms ease-out;
+
+  &__visible {
+    margin: 0;
+    margin-bottom: 5px;
+    // transition-duration: 1000ms;
+  }
+}
+
+.FAQQuestionContainer {
+  display: flex;
+  align-items: center;
+}
+
+.FAQIcon {
+  width: 20px;
+  height: 25px;
+  stroke: #c0d7f4;
+
+  margin-left: 5px;
+}
+
+.FAQItem {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}

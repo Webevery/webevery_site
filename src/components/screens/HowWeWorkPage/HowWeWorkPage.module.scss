@@ -1,26 +1,30 @@
-.main {
-  background-color: #242424;
+.HowWeWork {
+  background-color: #131c27;
   padding: 20px;
-  p,
-  h1,
-  h2,
-  h3,
-  h4,
-  span,
-  a {
-    color: #fff;
-  }
+
+  color: #c0d7f4;
+
   padding: 90px 16px 16px 16px;
+
+  &.heroSection {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+  }
 }
 
+.secondTitle {
+  color: #78adf2;
+}
 /*  Hero   */
 
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: center;
-}
+// .hero {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: left;
+//   justify-content: center;
+// }
 
 .sectionContainer {
   display: flex;
