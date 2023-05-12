@@ -13,7 +13,7 @@ const AboutUsPage = () => {
       <li className={styles.superDev__wrapper} key={id}>
         <div className={styles.superDev}>
           <div className={styles.superDev__imgWrapper}>
-            <img src={photo ? photo : defaultPhoto} alt={name} />
+            <img src={photo ? photo : defaultPhoto} alt={name} loading="lazy" />
           </div>
 
           <h3> {name}</h3>

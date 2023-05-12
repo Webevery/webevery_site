@@ -1,6 +1,6 @@
+@import 'styles/variables';
+
 .pricesPage {
-  // background-color: aqua;
-  // background-image: url('./earth-1272884_1920.jpg');
   background-image: url('/images/homeBg.jpg');
   background-color: black;
   background-size: 360vw;
@@ -15,7 +15,7 @@
   display: flex;
   column-gap: 32px;
 
-  & li {
+  & .priceDescription {
     padding: 8%;
     // border-bottom: 1px solid white;
     display: flex;
@@ -24,9 +24,16 @@
 
     flex-direction: column;
     background-color: rgba(255, 255, 255, 0.3);
+    @media screen and (min-width: $tablet) {
+      flex-direction: row;
+      column-gap: 64px;
+    }
 
     &:nth-child(2n) {
       background-color: rgba(0, 0, 0, 0.3);
+      @media screen and (min-width: $tablet) {
+        flex-direction: row-reverse;
+      }
     }
 
     & .textWrapper {
@@ -57,8 +64,8 @@
         }
       }
 
-      &__details {
-        color: red;
+      & .oneDetail {
+        color: rgba(255, 255, 255, 0.6);
       }
     }
 
@@ -69,15 +76,11 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-  .pricesPage {
-    & li {
-      flex-direction: row;
-      column-gap: 64px;
+// .detilesWrapper {
+//   transition-duration: 1s;
+// }
 
-      &:nth-child(2n) {
-        flex-direction: row-reverse;
-      }
-    }
-  }
-}
+// .servicesPrice {
+// }
+// .itemDetails {
+// }
