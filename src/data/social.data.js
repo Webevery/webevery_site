@@ -18,13 +18,13 @@ export const socialLink = [
   {
     id: nanoid(),
     name: scss.telegram,
-    path: '',
+    path: 'https://t.me/Webevery',
     spriteIcon: sprite + '#icon-telegram',
   },
   {
     id: nanoid(),
     name: scss.linkedin,
-    path: '',
+    path: 'https://www.linkedin.com/company/webevery',
     spriteIcon: sprite + '#icon-linkedin',
   },
 ];

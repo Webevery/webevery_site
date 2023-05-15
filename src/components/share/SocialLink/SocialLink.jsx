@@ -1,21 +1,20 @@
-import { socialLink } from 'data';
 import React from 'react';
-import scss from './SocialLink.module.scss';
+import { socialLink } from 'data';
+import SocialLinkItem from './SocialLinkItem';
+import styles from './SocialLink.module.scss';
 
 const SocialLink = ({ customBlockSize, customIconSize, customPosition }) => {
   return (
-    <ul className={`${scss.iconsListSocialLink} ${customPosition}`}>
+    <ul className={`${styles.iconsListSocialLink} ${customPosition}`}>
       {socialLink.map(({ id, name, spriteIcon, path }) => (
-        <li
+        <SocialLinkItem
           key={id}
-          className={`${scss.itemSocialLink} ${name} ${customBlockSize}`}
-        >
-          <a href={path} target="_blank" rel="noopener noreferrer">
-            <svg className={`${scss.iconSocialLink} ${customIconSize}`}>
-              <use href={spriteIcon} />
-            </svg>
-          </a>
-        </li>
+          name={name}
+          path={path}
+          spriteIcon={spriteIcon}
+          customBlockSize={customBlockSize}
+          customIconSize={customIconSize}
+        />
       ))}
     </ul>
   );
