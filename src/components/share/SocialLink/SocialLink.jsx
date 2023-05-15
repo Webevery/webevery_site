@@ -10,7 +10,7 @@ const SocialLink = ({ customBlockSize, customIconSize, customPosition }) => {
           key={id}
           className={`${scss.itemSocialLink} ${name} ${customBlockSize}`}
         >
-          <a href={path}>
+          <a href={path} target="_blank" rel="noopener noreferrer">
             <svg className={`${scss.iconSocialLink} ${customIconSize}`}>
               <use href={spriteIcon} />
             </svg>

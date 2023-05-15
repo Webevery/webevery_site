@@ -6,13 +6,13 @@ export const socialLink = [
   {
     id: nanoid(),
     name: scss.instagram,
-    path: '',
+    path: 'https://www.instagram.com/web.every/',
     spriteIcon: sprite + '#icon-instagram',
   },
   {
     id: nanoid(),
     name: scss.facebook,
-    path: '',
+    path: 'https://www.facebook.com/profile.php?id=100092267193984',
     spriteIcon: sprite + '#icon-facebook',
   },
   {
