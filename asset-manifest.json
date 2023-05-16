@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/webevery_site/static/css/main.f2fe44f0.css",
-    "main.js": "/webevery_site/static/js/main.a1d69524.js",
-    "static/css/38.2fa8aee7.chunk.css": "/webevery_site/static/css/38.2fa8aee7.chunk.css",
-    "static/js/38.77e38a40.chunk.js": "/webevery_site/static/js/38.77e38a40.chunk.js",
+    "main.js": "/webevery_site/static/js/main.5b6e0619.js",
+    "static/css/38.e12e6eef.chunk.css": "/webevery_site/static/css/38.e12e6eef.chunk.css",
+    "static/js/38.f4838a22.chunk.js": "/webevery_site/static/js/38.f4838a22.chunk.js",
     "static/css/207.0fd4ff99.chunk.css": "/webevery_site/static/css/207.0fd4ff99.chunk.css",
     "static/js/207.7ecf8737.chunk.js": "/webevery_site/static/js/207.7ecf8737.chunk.js",
     "static/css/755.3fcf7fb2.chunk.css": "/webevery_site/static/css/755.3fcf7fb2.chunk.css",
@@ -22,6 +22,7 @@
     "static/media/oksanaRomanenko.jpg": "/webevery_site/static/media/oksanaRomanenko.91f021a6bc2d21ba98e2.jpg",
     "static/media/maksPeltec.png": "/webevery_site/static/media/maksPeltec.3aef74b08c83f529acc6.png",
     "static/media/ivikaDuda.jpeg": "/webevery_site/static/media/ivikaDuda.e7cfec6503f3f95a9c98.jpeg",
+    "static/media/background_Hero.jpg": "/webevery_site/static/media/background_Hero.1223d580797d798183df.jpg",
     "static/media/ivanGagaus.jpg": "/webevery_site/static/media/ivanGagaus.9c5a113dd9f2eb4470ba.jpg",
     "static/media/vitaliiPavlovskyi.jpeg": "/webevery_site/static/media/vitaliiPavlovskyi.51ef328f7094cf0bb269.jpeg",
     "static/media/catalogSite.png": "/webevery_site/static/media/catalogSite.7c702ec854b56ccf1dbf.png",
@@ -35,15 +36,14 @@
     "static/media/dmytroColodchenko.jpeg": "/webevery_site/static/media/dmytroColodchenko.d871a231cf87cdac1391.jpeg",
     "static/media/volodymyrKavun.jpeg": "/webevery_site/static/media/volodymyrKavun.b35560283e0ce584e3f5.jpeg",
     "static/media/maksSheih.jpeg": "/webevery_site/static/media/maksSheih.46b4327fa46d23aee5a7.jpeg",
-    "static/media/earth-1272884_1920.jpg": "/webevery_site/static/media/earth-1272884_1920.9e09da4dc4de7b0a613e.jpg",
     "static/media/homeBg.jpg": "/webevery_site/static/media/homeBg.9e09da4dc4de7b0a613e.jpg",
     "static/media/nataliiaBoiko.jpeg": "/webevery_site/static/media/nataliiaBoiko.90624831334955f84d4f.jpeg",
     "static/media/symbol-defs.svg": "/webevery_site/static/media/symbol-defs.34a90d4085f0beb6610097ee086371b3.svg",
     "index.html": "/webevery_site/index.html",
     "main.f2fe44f0.css.map": "/webevery_site/static/css/main.f2fe44f0.css.map",
-    "main.a1d69524.js.map": "/webevery_site/static/js/main.a1d69524.js.map",
-    "38.2fa8aee7.chunk.css.map": "/webevery_site/static/css/38.2fa8aee7.chunk.css.map",
-    "38.77e38a40.chunk.js.map": "/webevery_site/static/js/38.77e38a40.chunk.js.map",
+    "main.5b6e0619.js.map": "/webevery_site/static/js/main.5b6e0619.js.map",
+    "38.e12e6eef.chunk.css.map": "/webevery_site/static/css/38.e12e6eef.chunk.css.map",
+    "38.f4838a22.chunk.js.map": "/webevery_site/static/js/38.f4838a22.chunk.js.map",
     "207.0fd4ff99.chunk.css.map": "/webevery_site/static/css/207.0fd4ff99.chunk.css.map",
     "207.7ecf8737.chunk.js.map": "/webevery_site/static/js/207.7ecf8737.chunk.js.map",
     "755.3fcf7fb2.chunk.css.map": "/webevery_site/static/css/755.3fcf7fb2.chunk.css.map",
@@ -62,6 +62,6 @@
   },
   "entrypoints": [
     "static/css/main.f2fe44f0.css",
-    "static/js/main.a1d69524.js"
+    "static/js/main.5b6e0619.js"
   ]
 }
