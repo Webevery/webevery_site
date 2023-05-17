@@ -13,23 +13,28 @@
   flex-direction: column;
 }
 
-.city{
-    font-weight: 700;
-    color: red;
+.place {
+  font-weight: 700;
+  color: red;
 }
 
-.name{
-    font-weight: 700;
+.name {
+  font-weight: 700;
 }
 
-.phone{
-    font-size: 20px;
-    color:blueviolet;
-    font-weight: 700;
+.profession {
+  font-weight: 700;
+  color: rgb(6 117 150);
 }
 
-.email{
-    font-size: 20px;
-    font-weight: 700;
-    color:#3e7d43;
+.phone {
+  font-size: 20px;
+  color: blueviolet;
+  font-weight: 700;
+}
+
+.email {
+  font-size: 20px;
+  font-weight: 700;
+  color: #3e7d43;
 }

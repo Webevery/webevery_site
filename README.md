@@ -174,7 +174,7 @@ GitHub.
 ## Правила однотипной стилизации:
 
 1. Импорт файла стилей в компоненты осуществляется в переменную styles.
-2. Классы именуются в camelCase + **, например: infoWindow**name.
+2. Классы именуются в camelCase + __, например: infoWindow__name.
 3. Медиа запросы прописываем внутри класса, например: .coworkerInformation {
    font-size: 12px; @media screen and (min-width: $tablet) { font-size: 16px; }
    @media screen and (min-width: $desktop) { font-size: 20px; } }

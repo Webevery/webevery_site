@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Locations } from "components/share/Locations";
-import { coworkers } from "data";
+import { coworkersData } from "data";
 import styles from './ContactsPage.module.scss';
 
 
@@ -12,7 +12,7 @@ const ContactsPage = () => {
     return (
         <div className={styles.wrapper}>
             <Locations
-                arrayData={coworkers}
+                arrayData={coworkersData}
                 infoWindowData={infoWindowData}
                 setInfoWindowData={setInfoWindowData}
             >
@@ -38,7 +38,7 @@ export default ContactsPage;
 // import { InfoWindow } from "@react-google-maps/api";
 // import { Link } from "react-router-dom";
 // import { Locations } from "components/share/Locations";
-// import { coworkers } from "data";
+// import { coworkersData } from "data";
 // import styles from './ContactsPage.module.scss';
 
 
