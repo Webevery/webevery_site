@@ -8,17 +8,22 @@ import maksSheih from '../images/ourTeam/maksSheih.jpeg';
 import vitaliiPavlovskyi from '../images/ourTeam/vitaliiPavlovskyi.jpeg';
 import myroslav from '../images/ourTeam/myroslav.jpeg';
 // import volodymurPolztyuk from '../images/ourTeam/volodymurPolztyuk.jpeg';
-// import maksymIgnatenko from '../images/ourTeam/maksimFromSumy.jpeg';
+// import maksymIgnatenko from '../images/ourTeam/maksymIgnatenko.jpeg';
 import oksanaRomanenko from '../images/ourTeam/oksanaRomanenko.jpg';
 import ivanGagaus from '../images/ourTeam/ivanGagaus.jpg';
+// import denysKudriavets from '../images/ourTeam/denysKudriavets.jpeg';
+// import dmitroKotenev from '../images/ourTeam/dmitroKotenev.jpeg';
 
-export const coworkers = [
+
+
+export const coworkersData = [
   {
     id: '1',
     name: 'Volodymyr Kavun',
     photo: volodymyrKavun,
+    profession: 'Full Stack Developer',
     quote: 'When you have a dream, you have got to grab it and never let go.',
-    humor: 'Я ЛОНГУЮ, що БУДЕ воно ПРАЦЮВАТИ !',
+    humor: 'Там треба трохи ПІДЛАМПІЧИТИ, а там ПІДРЕПЕТІРУВАТЬ і Я ЛОНГУЮ, що БУДЕ воно ПРАЦЮВАТИ !',
     city: 'Ostrava',
     latitude: 49.83465,
     longitude: 18.28204,
@@ -33,6 +38,7 @@ export const coworkers = [
     id: '2',
     name: 'Maksim Peltek',
     photo: maksPeltec,
+    profession: 'Full Stack Developer',
     quote: 'Nothing is impossible. The word itself says "I am possible!"',
     humor: 'МАЮ знову СУМНІВИ. Може ТАК зробити? ЧИ може ОСЬ ТАК зробити ?',
     city: 'Odesa',
@@ -49,10 +55,11 @@ export const coworkers = [
     id: '3',
     name: 'Nataliia Boiko',
     photo: nataliiaBoiko,
+    profession: 'Full Stack Developer',
     quote:
       'It’s worth remembering that it is often the small steps, not the giant leaps, that bring about the most lasting change.',
     humor:
-      'Можна ЦЮ КНІПКУ взяти і ПРИШПАНДЬОРИТИ його ТУДИ і БУДЕ воно ДОБРЕ !',
+      'Можна ЦЮ КНІПКУ взяти і ПРИШПАНДЬОРИТИ цейво ТУДИ і БУДЕ воно ДОБРЕ !',
     city: 'Ivano-Frankivsk',
     latitude: 48.92312,
     longitude: 24.71248,
@@ -67,6 +74,7 @@ export const coworkers = [
     id: '4',
     name: 'Ivika Duda',
     photo: ivikaDuda,
+    profession: 'Full Stack Developer',
     quote: 'The bad news is time flies. The good news is you are the pilot.',
     humor: '',
     city: 'Ujgorod',
@@ -83,6 +91,7 @@ export const coworkers = [
     id: '5',
     name: 'Andrii Tsapkov',
     photo: andriiTsapkov,
+    profession: 'Full Stack Developer',
     quote: 'There is nothing impossible to they who will try.',
     humor: '',
     city: 'Kamianets-Podilskyi',
@@ -99,6 +108,7 @@ export const coworkers = [
     id: '6',
     name: 'Dmytro Kolodchenko',
     photo: dmytroColodchenko,
+    profession: 'Full Stack Developer',
     quote:
       'Keep your face always toward the sunshine, and shadows will fall behind you.',
     humor: '',
@@ -116,6 +126,7 @@ export const coworkers = [
     id: '7',
     name: 'Maks Padalka',
     photo: maksSheih,
+    profession: 'Full Stack Developer',
     quote:
       'Success is not final, failure is not fatal: it is the courage to continue that counts.',
     humor: '',
@@ -133,6 +144,7 @@ export const coworkers = [
     id: '8',
     name: 'Vitalii Pavlovskyi',
     photo: vitaliiPavlovskyi,
+    profession: 'Full Stack Developer',
     quote:
       'You define your own life. Do not let other people write your script.',
     humor: '',
@@ -150,6 +162,7 @@ export const coworkers = [
     id: '9',
     name: 'Volodymur Polztyuk',
     // photo: volodymurPolztyuk,
+    profession: 'Full Stack Developer',
     quote: 'You are never too old to set another goal or to dream a new dream.',
     humor: 'Поки НЕ РОБЕ. Не знаю як, АЛЕ я РОЗБЕРУСЯ !',
     city: 'Lviv',
@@ -166,6 +179,7 @@ export const coworkers = [
     id: '10',
     name: 'Myroslav Kozar',
     photo: myroslav,
+    profession: 'Full Stack Developer',
     quote:
       'You do not always need a plan. Sometimes you just need to breathe, trust, let go and see what happens.',
     humor:
@@ -184,6 +198,7 @@ export const coworkers = [
     id: '11',
     name: 'Maksym Ignatenko',
     // photo: maksymIgnatenko,
+    profession: 'Full Stack Developer',
     quote: 'Wake up determined, go to bed satisfied.',
     humor: '',
     city: 'Tallinn',
@@ -200,6 +215,7 @@ export const coworkers = [
     id: '12',
     name: 'Oksana Romanenko',
     photo: oksanaRomanenko,
+    profession: 'UX/UI Designer',
     quote:
       'When a flower doesn’t bloom, you fix the environment in which it grows, not the flower',
     humor: '',
@@ -217,6 +233,7 @@ export const coworkers = [
     id: '13',
     name: 'Ivan Gagaus',
     photo: ivanGagaus,
+    profession: 'UX/UI Designer',
     quote:
       "Every day I get up and look through the Forbes list of the richest people in America. If I'm not there, I go to work.",
     humor: '',
@@ -228,5 +245,39 @@ export const coworkers = [
       'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d175899.1966584225!2d30.546979749753348!3d46.460090158678724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6318a0b864c43%3A0x129f8fe28cf2176c!2z0J7QtNC10YHRgdCwLCDQntC00LXRgdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2NTAwMA!5e0!3m2!1sru!2sua!4v1682766784554!5m2!1sru!2sua',
     // email: '',
     // phone: +3801111111,
+  },
+
+  {
+    id: '14',
+    name: 'Denys Kudriavets',
+    // photo: denysKudriavets,
+    profession: 'QA Engineer',
+    quote: "",
+    humor: '',
+    city: 'Kharkiv',
+    latitude: 50.001560,
+    longitude: 36.231537,
+    country: 'Ukraine',
+    location:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d164152.8793834677!2d36.121017768660664!3d49.99469535704276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a09f63ab0f8b%3A0x2d4c18681aa4be0a!2z0KXQsNGA0YzQutC-0LIsINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1684262788709!5m2!1sru!2sua",
+    email: 'kudriavetsdenis@gmail.com',
+    phone: +380686345365,
+  },
+
+  {
+    id: '15',
+    name: 'Dmitro Kotenev',
+    // photo: dmitroKotenev,
+    profession: 'UX/UI Designer',
+    quote: "",
+    humor: '',
+    city: 'Kyiv',
+    latitude: 50.450001,
+    longitude: 30.523333,
+    country: 'Ukraine',
+    location:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325516.56927867024!2d30.203053761603808!3d50.402007510515354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1684263057506!5m2!1sru!2sua",
+    email: 'kotenevdima1@gmail.com',
+    phone: +380632468706,
   },
 ];

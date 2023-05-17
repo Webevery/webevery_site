@@ -1,30 +1,61 @@
-import sprite from '../components/share/SocialLink/symbol-defs.svg';
-import scss from '../components/share/SocialLink/SocialLink.module.scss';
-import { nanoid } from 'nanoid';
+// Ivika
+// import sprite from '../components/share/SocialLinksList/symbol-defs.svg';
+// import styles from '../components/share/SocialLinksList/SocialLink.module.scss';
 
-export const socialLink = [
+// export const socialData = [
+//   {
+//     id: 1,
+//     name: styles.instagram,
+//     path: 'https://www.instagram.com/web.every/',
+//     spriteIcon: sprite + '#icon-instagram',
+//   },
+//   {
+//     id: 2,
+//     name: styles.facebook,
+//     path: 'https://www.facebook.com/profile.php?id=100092267193984',
+//     spriteIcon: sprite + '#icon-facebook',
+//   },
+//   {
+//     id: 3,
+//     name: styles.telegram,
+//     path: 'https://t.me/Webevery',
+//     spriteIcon: sprite + '#icon-telegram',
+//   },
+//   {
+//     id: 4,
+//     name: styles.linkedin,
+//     path: 'https://www.linkedin.com/company/webevery',
+//     spriteIcon: sprite + '#icon-linkedin',
+//   },
+// ];
+
+
+
+
+
+
+
+
+// Max
+export const socialData = [
   {
-    id: nanoid(),
-    name: scss.instagram,
+    id: 1,
+    name: "instagram",
     path: 'https://www.instagram.com/web.every/',
-    spriteIcon: sprite + '#icon-instagram',
   },
   {
-    id: nanoid(),
-    name: scss.facebook,
+    id: 2,
+    name: "facebook",
     path: 'https://www.facebook.com/profile.php?id=100092267193984',
-    spriteIcon: sprite + '#icon-facebook',
   },
   {
-    id: nanoid(),
-    name: scss.telegram,
+    id: 3,
+    name: "telegram",
     path: 'https://t.me/Webevery',
-    spriteIcon: sprite + '#icon-telegram',
   },
   {
-    id: nanoid(),
-    name: scss.linkedin,
+    id: 4,
+    name: "linkedin",
     path: 'https://www.linkedin.com/company/webevery',
-    spriteIcon: sprite + '#icon-linkedin',
   },
 ];

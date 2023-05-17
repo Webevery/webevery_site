@@ -1,4 +1,4 @@
 export { navData } from './navigation.data';
-export { socialLink } from './social.data';
-export { coworkers } from './coworkers.data';
-export { prices } from './prices';
+export { socialData } from './social.data';
+export { coworkersData } from './coworkers.data';
+export { pricesData } from './prices.data';

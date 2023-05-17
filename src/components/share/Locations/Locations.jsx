@@ -109,8 +109,9 @@ const Locations = ({ arrayData, infoWindowData, setInfoWindowData }) => {
                                     onCloseClick={() => { setIsOpen(false) }}
                                 >
                                     <div className={styles.infoData}>
-                                        <p className={styles.city}>{infoWindowData.city}</p>
+                                        <p className={styles.place}>{infoWindowData.country}, {infoWindowData.city}</p>
                                         <p className={styles.name}>{infoWindowData.name}</p>
+                                        <p className={styles.profession}>{infoWindowData.profession}</p>
                                         <Link className={styles.phone} to={`tel:${infoWindowData.phone}`}>{infoWindowData.phone}</Link>
                                         <Link className={styles.email} to={`mailto:${infoWindowData.email}`}>{infoWindowData.email}</ Link>
                                     </div>

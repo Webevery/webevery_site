@@ -1,11 +1,11 @@
-import { prices } from 'data/prices';
+import { pricesData } from 'data';
 import styles from './PricesPage.module.scss';
 import { useState } from 'react';
 
 export const GetServices = () => {
   const [isHidden, setIsHidden] = useState(true);
 
-  const ourPrices = prices.map(
+  const ourPrices = pricesData.map(
     ({ id, title, describton, image, price, daysCount, details }) => {
       const itemDetails = details.map(detail => {
         return (

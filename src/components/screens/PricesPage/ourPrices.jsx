@@ -1,7 +1,7 @@
-import { prices } from 'data/prices';
+import { pricesData } from 'data';
 import styles from './PricesPage.module.scss';
 
-export const ourPrices = prices.map(
+export const ourPrices = pricesData.map(
   ({ id, title, describton, image, price, daysCount, details }) => {
     const itemDetails = details.map(detail => {
       return (

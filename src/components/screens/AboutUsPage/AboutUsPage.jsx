@@ -2,13 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import styles from './AboutUs.module.scss';
-import { coworkers } from 'data';
+import { coworkersData } from 'data';
 import { FiArrowRightCircle } from 'react-icons/fi';
 
 import defaultPhoto from 'images/ourTeam/default.jpeg';
 
 const AboutUsPage = () => {
-  const superDev = coworkers.map(({ id, photo, name }) => {
+  const superDev = coworkersData.map(({ id, photo, name }) => {
     return (
       <li className={styles.superDev__wrapper} key={id}>
         <div className={styles.superDev}>
