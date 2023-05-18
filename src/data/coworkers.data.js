@@ -11,10 +11,8 @@ import myroslav from '../images/ourTeam/myroslav.jpeg';
 // import maksymIgnatenko from '../images/ourTeam/maksymIgnatenko.jpeg';
 import oksanaRomanenko from '../images/ourTeam/oksanaRomanenko.jpg';
 import ivanGagaus from '../images/ourTeam/ivanGagaus.jpg';
-// import denysKudriavets from '../images/ourTeam/denysKudriavets.jpeg';
-// import dmitroKotenev from '../images/ourTeam/dmitroKotenev.jpeg';
-
-
+import denysKudriavets from '../images/ourTeam/denysKudriavets.jpg';
+import dmitroKotenev from '../images/ourTeam/dmitroKotenev.jpg';
 
 export const coworkersData = [
   {
@@ -23,7 +21,8 @@ export const coworkersData = [
     photo: volodymyrKavun,
     profession: 'Full Stack Developer',
     quote: 'When you have a dream, you have got to grab it and never let go.',
-    humor: 'Там треба трохи ПІДЛАМПІЧИТИ, а там ПІДРЕПЕТІРУВАТЬ і Я ЛОНГУЮ, що БУДЕ воно ПРАЦЮВАТИ !',
+    humor:
+      'Там треба трохи ПІДЛАМПІЧИТИ, а там ПІДРЕПЕТІРУВАТЬ і Я ЛОНГУЮ, що БУДЕ воно ПРАЦЮВАТИ !',
     city: 'Ostrava',
     latitude: 49.83465,
     longitude: 18.28204,
@@ -250,16 +249,16 @@ export const coworkersData = [
   {
     id: '14',
     name: 'Denys Kudriavets',
-    // photo: denysKudriavets,
+    photo: denysKudriavets,
     profession: 'QA Engineer',
-    quote: "",
+    quote: '',
     humor: '',
     city: 'Kharkiv',
-    latitude: 50.001560,
+    latitude: 50.00156,
     longitude: 36.231537,
     country: 'Ukraine',
     location:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d164152.8793834677!2d36.121017768660664!3d49.99469535704276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a09f63ab0f8b%3A0x2d4c18681aa4be0a!2z0KXQsNGA0YzQutC-0LIsINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1684262788709!5m2!1sru!2sua",
+      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d164152.8793834677!2d36.121017768660664!3d49.99469535704276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a09f63ab0f8b%3A0x2d4c18681aa4be0a!2z0KXQsNGA0YzQutC-0LIsINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1684262788709!5m2!1sru!2sua',
     email: 'kudriavetsdenis@gmail.com',
     phone: +380686345365,
   },
@@ -267,16 +266,16 @@ export const coworkersData = [
   {
     id: '15',
     name: 'Dmitro Kotenev',
-    // photo: dmitroKotenev,
+    photo: dmitroKotenev,
     profession: 'UX/UI Designer',
-    quote: "",
+    quote: '',
     humor: '',
     city: 'Kyiv',
     latitude: 50.450001,
     longitude: 30.523333,
     country: 'Ukraine',
     location:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325516.56927867024!2d30.203053761603808!3d50.402007510515354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1684263057506!5m2!1sru!2sua",
+      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325516.56927867024!2d30.203053761603808!3d50.402007510515354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1684263057506!5m2!1sru!2sua',
     email: 'kotenevdima1@gmail.com',
     phone: +380632468706,
   },
