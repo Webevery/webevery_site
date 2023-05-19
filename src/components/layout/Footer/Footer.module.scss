@@ -1,4 +1,4 @@
-// .wrapperFooter {
+// .wrapper {
 //   text-align: center;
 //   padding: 8px;
 //   width: 100%;
@@ -13,7 +13,7 @@
 //   }
 // }
 
-// .btnFooter {
+// .btn {
 //   text-transform: uppercase;
 //   padding: 10px 20px;
 //   background-color: transparent;
@@ -26,28 +26,21 @@
 //   }
 // }
 
-// .socialFooter {
+// .social {
 //   fill: var(--light_color);
 // }
 
-// .socialCircleFooter {
+// .socialCircle {
 //   outline: 2px solid var(--light_color);
 // }
 
-
-
-
-
-
-
-
-
-
-
-
-
 // Max
-.wrapperFooter {
+footer {
+  position: fixed;
+  bottom: 0px;
+}
+
+.wrapper {
   text-align: center;
   padding: 8px;
   width: 100%;
@@ -63,7 +56,7 @@
   }
 }
 
-.btnFooter {
+.btn {
   text-transform: uppercase;
   padding: 10px 20px;
   background-color: transparent;
