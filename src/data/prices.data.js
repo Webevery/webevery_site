@@ -1,11 +1,10 @@
 import landingSite from 'images/pricesImgs/landingSite.png';
-import visitSite from 'images/pricesImgs/visitSite.png';
+import visitSite from 'images/pricesImgs/visitSite2.png';
 import corporativeSite from 'images/pricesImgs/corporativeSite.png';
 
 import shoppingSite from 'images/pricesImgs/shoppingSite.png';
 import catalogSite from 'images/pricesImgs/catalogSite.png';
 import individualProject from 'images/pricesImgs/individualProject.png';
-
 
 export const pricesData = [
   {
@@ -18,7 +17,7 @@ export const pricesData = [
     daysCount: '7-10 ',
     details: [
       'Заповнення до 5 стор',
-      'Зручна адмінка',
+      // 'Зручна адмінка',
       'Дизайн сайту',
       'Мобільна адаптація',
       'Галерея зображень',
@@ -45,7 +44,7 @@ export const pricesData = [
       'Розробка 6-8 блоків	',
       'Заклики до дії	',
       'Слайдер, банер	',
-      'Зручна адмін-панель	',
+      // 'Зручна адмін-панель	',
       'Таблиця цін, прайс	',
       ' Наповнення контентом	',
       'Замовлення зворотного дзвінка	',
@@ -66,7 +65,7 @@ export const pricesData = [
     daysCount: '30 ',
     details: [
       'Індивідуальний дизайн	',
-      'Зручна адмін-панель	',
+      // 'Зручна адмін-панель	',
       'Мобільна адаптація	',
       'Кросбраузерність	',
       'Слайдер на головній	',
@@ -127,7 +126,7 @@ export const pricesData = [
     price: '800',
     details: [
       'Індивідуальний дизайн	',
-      'Зручна адмін-панель	',
+      // 'Зручна адмін-панель	',
       'Мобільна адаптація	',
       'Кросбраузерність	',
       ' Категорії товарів	',
