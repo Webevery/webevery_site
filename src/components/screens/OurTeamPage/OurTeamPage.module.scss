@@ -2,11 +2,11 @@
 
 .wrapper {
     padding: 90px 16px 16px 16px;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-
     background-color: var(--main_bg_color_our_team);
+}
+
+.coworker {
+    display: flex;
 }
 
 .photo {
@@ -83,4 +83,14 @@
 .map {
     width: 594px;
     height: 336px;
+}
+
+.slider {
+    display: flex;
+}
+
+.sliderPhoto {
+    // width: 94px;
+    // // height: 94px;
+    // border-radius: 50%;
 }

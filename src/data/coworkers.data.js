@@ -14,6 +14,26 @@ import ivanGagaus from '../images/ourTeam/ivanGagaus.jpg';
 import denysKudriavets from '../images/ourTeam/denysKudriavets.jpg';
 import dmitroKotenev from '../images/ourTeam/dmitroKotenev.jpg';
 
+
+import volodymyrKavunSmall from '../images/ourTeam/volodymyrKavunSmall.png';
+import maksPeltekSmall from '../images/ourTeam/maksPeltekSmall.png';
+import nataliiaBoikoSmall from '../images/ourTeam/nataliiaBoikoSmall.png';
+import ivikaDudaSmall from '../images/ourTeam/ivikaDudaSmall.png';
+import andriiTsapkovSmall from '../images/ourTeam/andriiTsapkovSmall.png';
+import dmytroKolodchenkoSmall from '../images/ourTeam/dmytroKolodchenkoSmall.png';
+import maksPadalkaSmall from '../images/ourTeam/maksPadalkaSmall.png';
+import vitaliiPavlovskyiSmall from '../images/ourTeam/vitaliiPavlovskyiSmall.png';
+import myroslavKozarSmall from '../images/ourTeam/myroslavKozarSmall.png';
+// import volodymurPolztyukSmall from '../images/ourTeam/volodymurPolztyukSmall.png';
+// import maksymIgnatenkoSmall from '../images/ourTeam/maksymIgnatenkoSmall.png';
+import oksanaRomanenkoSmall from '../images/ourTeam/oksanaRomanenkoSmall.png';
+import ivanGagausSmall from '../images/ourTeam/ivanGagausSmall.png';
+// import denysKudriavetsSmall from '../images/ourTeam/denysKudriavetsSmall.png';
+// import dmitroKotenevSmall from '../images/ourTeam/dmitroKotenevSmall.png';
+
+
+
+
 // import mapGeneral from '../images/coworkersLocations/mapGeneral.png';
 import mapGdańsk from '../images/coworkersLocations/mapGdańsk.png';
 import mapIvanoFrankivsk from '../images/coworkersLocations/mapIvanoFrankivsk.png';
@@ -38,6 +58,7 @@ export const coworkersData = [
     id: '1',
     name: 'Володимир Кавун',
     photo: volodymyrKavun,
+    photoSmall: volodymyrKavunSmall,
     profession: 'Full Stack Developer',
     quote: 'Коли у Вас є мрія, Ви повинні схопити її і ніколи не відпускати.',
     quoteEn: 'When you have a dream, you have got to grab it and never let go.',
@@ -57,6 +78,7 @@ export const coworkersData = [
     id: '2',
     name: 'Максим Пельтек',
     photo: maksPeltek,
+    photoSmall: maksPeltekSmall,
     profession: 'Full Stack Developer',
     quote: 'Немає нічого неможливого. Саме слово говорить - "Можливо!".',
     quoteEn: 'Nothing is impossible. The word itself says "I am possible!"',
@@ -76,6 +98,7 @@ export const coworkersData = [
     id: '3',
     name: 'Наталія Бойко',
     photo: nataliiaBoiko,
+    photoSmall: nataliiaBoikoSmall,
     profession: 'Full Stack Developer',
     quote: 'Варто пам’ятати, що частіше маленькі кроки, а не гігантські стрибки, призводять до найтриваліших змін.',
     quoteEn: 'It’s worth remembering that it is often the small steps, not the giant leaps, that bring about the most lasting change.',
@@ -95,6 +118,7 @@ export const coworkersData = [
     id: '4',
     name: 'Івіка Дуда',
     photo: ivikaDuda,
+    photoSmall: ivikaDudaSmall,
     profession: 'Full Stack Developer',
     quote: 'Погана новина: час швидко летить. Хороша новина: Ви пілот.',
     quoteEn: 'The bad news is time flies. The good news is you are the pilot.',
@@ -114,6 +138,7 @@ export const coworkersData = [
     id: '5',
     name: 'Андрій Цапков',
     photo: andriiTsapkov,
+    photoSmall: andriiTsapkovSmall,
     profession: 'Full Stack Developer',
     quote: 'Немає нічого неможливого для тих, хто пробує.',
     quoteEn: 'There is nothing impossible to they who will try.',
@@ -133,6 +158,7 @@ export const coworkersData = [
     id: '6',
     name: 'Дмитро Колодченко',
     photo: dmytroKolodchenko,
+    photoSmall: dmytroKolodchenkoSmall,
     profession: 'Full Stack Developer',
     quote: 'Завжди тримайтесь обличчям до сонячного світла, і тіні будуть падати позаду Вас.',
     quoteEn: 'Keep your face always toward the sunshine, and shadows will fall behind you.',
@@ -152,6 +178,7 @@ export const coworkersData = [
     id: '7',
     name: 'Максим Падалка',
     photo: maksPadalka,
+    photoSmall: maksPadalkaSmall,
     profession: 'Full Stack Developer',
     quote: 'Успіх не є остаточним, невдача не є фатальною: важливою є сміливість продовжувати.',
     quoteEn: 'Success is not final, failure is not fatal: it is the courage to continue that counts.',
@@ -171,6 +198,7 @@ export const coworkersData = [
     id: '8',
     name: 'Віталій Павловський',
     photo: vitaliiPavlovskyi,
+    photoSmall: vitaliiPavlovskyiSmall,
     profession: 'Full Stack Developer',
     quote: 'Ви господар свого життя. Не дозволяйте іншим людям писати Ваш сценарій.',
     quoteEn: 'You define your own life. Do not let other people write your script.',
@@ -190,6 +218,7 @@ export const coworkersData = [
     id: '9',
     name: 'Володимир Ползтюк',
     // photo: volodymurPolztyuk,
+    // photoSmall: volodymurPolztyukSmall,
     profession: 'Full Stack Developer',
     quote: 'Ви ніколи не будете занадто старим, щоб поставити іншу мету або мріяти про нову мрію.',
     quoteEn: 'You are never too old to set another goal or to dream a new dream.',
@@ -209,6 +238,7 @@ export const coworkersData = [
     id: '10',
     name: 'Мирослав Козар',
     photo: myroslavKozar,
+    photoSmall: myroslavKozarSmall,
     profession: 'Full Stack Developer',
     quote: 'Не завжди потрібен план. Іноді Вам просто потрібно вдихнути, довіритися, відпустити і подивитися, що станеться.',
     quoteEn: 'You do not always need a plan. Sometimes you just need to breathe, trust, let go and see what happens.',
@@ -228,6 +258,7 @@ export const coworkersData = [
     id: '11',
     name: 'Максим Ігнатенко',
     // photo: maksymIgnatenko,
+    // photoSmall: maksymIgnatenkoSmall,
     profession: 'Full Stack Developer',
     quote: 'Прокидайтесь рішучими, лягайте спати задоволеними.',
     quoteEn: 'Wake up determined, go to bed satisfied.',
@@ -247,6 +278,7 @@ export const coworkersData = [
     id: '12',
     name: 'Оксана Романенко',
     photo: oksanaRomanenko,
+    photoSmall: oksanaRomanenkoSmall,
     profession: 'UX/UI Designer',
     quote: 'Коли квітка не цвіте, Ви виправляєте не квітку, а середовище, в якому вона росте.',
     quoteEn: 'When a flower doesn’t bloom, you fix the environment in which it grows, not the flower',
@@ -266,6 +298,7 @@ export const coworkersData = [
     id: '13',
     name: 'Іван Гагаус',
     photo: ivanGagaus,
+    photoSmall: ivanGagausSmall,
     profession: 'UX/UI Designer',
     quote: 'Кожен день я встаю і переглядаю список Forbes найбагатших людей у світі. Якщо мене там немає, я йду на роботу.',
     quoteEn: "Every day I get up and look through the Forbes list of the richest people in America. If I'm not there, I go to work.",
@@ -285,6 +318,7 @@ export const coworkersData = [
     id: '14',
     name: 'Денис Кудрявець',
     photo: denysKudriavets,
+    // photoSmall: denysKudriavetsSmall,
     profession: 'QA Engineer',
     quote: '',
     quoteEn: '',
@@ -304,6 +338,7 @@ export const coworkersData = [
     id: '15',
     name: 'Дмитро Котеньов',
     photo: dmitroKotenev,
+    // photoSmall: dmitroKotenevSmall,
     profession: 'UX/UI Designer',
     quote: 'Життя - це колекція моментів. Тому збирайте їх, як найкращі фотографії.',
     quoteEn: '',
