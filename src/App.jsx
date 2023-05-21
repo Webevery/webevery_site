@@ -7,6 +7,7 @@ const AboutUs = lazy(() => import('./pages/AboutUs'));
 const DevPage = lazy(() => import('./pages/DevPage'));
 
 const Contacts = lazy(() => import('./pages/Contacts'));
+const OurTeam = lazy(() => import('./pages/OurTeam'));
 const OurProjects = lazy(() => import('./pages/OurProjects'));
 const HowWeWork = lazy(() => import('./pages/HowWeWork'));
 const Prices = lazy(() => import('./pages/Prices'));
@@ -14,6 +15,8 @@ const Prices = lazy(() => import('./pages/Prices'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 
 const App = () => {
+
+
   return (
     <>
       <Routes>
@@ -22,6 +25,7 @@ const App = () => {
           <Route index element={<Home />} />
           <Route path="aboutUs" element={<AboutUs />} />
           <Route path="aboutUs/:id" element={<DevPage />} />
+          <Route path="ourTeam" element={<OurTeam />} />
           <Route path="contacts" element={<Contacts />} />
           <Route path="howWeWork" element={<HowWeWork />} />
           <Route path="ourProjects" element={<OurProjects />} />

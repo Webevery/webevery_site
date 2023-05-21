@@ -1,20 +1,39 @@
-import volodymyrKavun from '../images/ourTeam/volodymyrKavun.jpeg';
+import volodymyrKavun from '../images/ourTeam/volodymyrKavun.png';
 import maksPeltek from '../images/ourTeam/maksPeltek.png';
-import nataliiaBoiko from '../images/ourTeam/nataliiaBoiko.jpeg';
-import ivikaDuda from '../images/ourTeam/ivikaDuda.jpeg';
-import andriiTsapkov from '../images/ourTeam/andriiTsapkov.jpeg';
-import dmytroKolodchenko from '../images/ourTeam/dmytroKolodchenko.jpeg';
-import maksPadalka from '../images/ourTeam/maksPadalka.jpeg';
-import vitaliiPavlovskyi from '../images/ourTeam/vitaliiPavlovskyi.jpeg';
-import myroslavKozar from '../images/ourTeam/myroslavKozar.jpeg';
-// import volodymurPolztyuk from '../images/ourTeam/volodymurPolztyuk.jpeg';
-// import maksymIgnatenko from '../images/ourTeam/maksymIgnatenko.jpeg';
-import oksanaRomanenko from '../images/ourTeam/oksanaRomanenko.jpg';
-import ivanGagaus from '../images/ourTeam/ivanGagaus.jpg';
-import denysKudriavets from '../images/ourTeam/denysKudriavets.jpg';
-import dmitroKotenev from '../images/ourTeam/dmitroKotenev.jpg';
+import nataliiaBoiko from '../images/ourTeam/nataliiaBoiko.png';
+import ivikaDuda from '../images/ourTeam/ivikaDuda.png';
+import andriiTsapkov from '../images/ourTeam/andriiTsapkov.png';
+import dmytroKolodchenko from '../images/ourTeam/dmytroKolodchenko.png';
+import maksPadalka from '../images/ourTeam/maksPadalka.png';
+import vitaliiPavlovskyi from '../images/ourTeam/vitaliiPavlovskyi.png';
+import myroslavKozar from '../images/ourTeam/myroslavKozar.png';
+// import volodymurPolztyuk from '../images/ourTeam/volodymurPolztyuk.png';
+// import maksymIgnatenko from '../images/ourTeam/maksymIgnatenko.png';
+import oksanaRomanenko from '../images/ourTeam/oksanaRomanenko.png';
+import ivanGagaus from '../images/ourTeam/ivanGagaus.png';
+import denysKudriavets from '../images/ourTeam/denysKudriavets.png';
+import dmitroKotenev from '../images/ourTeam/dmitroKotenev.png';
 
-// import mapGeneral from '../images/coworkersLocations/mapGeneral.png';
+
+import volodymyrKavunSmall from '../images/ourTeam/volodymyrKavunSmall.png';
+import maksPeltekSmall from '../images/ourTeam/maksPeltekSmall.png';
+import nataliiaBoikoSmall from '../images/ourTeam/nataliiaBoikoSmall.png';
+import ivikaDudaSmall from '../images/ourTeam/ivikaDudaSmall.png';
+import andriiTsapkovSmall from '../images/ourTeam/andriiTsapkovSmall.png';
+import dmytroKolodchenkoSmall from '../images/ourTeam/dmytroKolodchenkoSmall.png';
+import maksPadalkaSmall from '../images/ourTeam/maksPadalkaSmall.png';
+import vitaliiPavlovskyiSmall from '../images/ourTeam/vitaliiPavlovskyiSmall.png';
+import myroslavKozarSmall from '../images/ourTeam/myroslavKozarSmall.png';
+// import volodymurPolztyukSmall from '../images/ourTeam/volodymurPolztyukSmall.png';
+// import maksymIgnatenkoSmall from '../images/ourTeam/maksymIgnatenkoSmall.png';
+import oksanaRomanenkoSmall from '../images/ourTeam/oksanaRomanenkoSmall.png';
+import ivanGagausSmall from '../images/ourTeam/ivanGagausSmall.png';
+import denysKudriavetsSmall from '../images/ourTeam/denysKudriavetsSmall.png';
+import dmitroKotenevSmall from '../images/ourTeam/dmitroKotenevSmall.png';
+
+
+
+
 import mapGdańsk from '../images/coworkersLocations/mapGdańsk.png';
 import mapIvanoFrankivsk from '../images/coworkersLocations/mapIvanoFrankivsk.png';
 import mapKamianetsPodilskyi from '../images/coworkersLocations/mapKamianetsPodilskyi.png';
@@ -25,7 +44,7 @@ import mapLviv from '../images/coworkersLocations/mapLviv.png';
 import mapOdesa from '../images/coworkersLocations/mapOdesa.png';
 import mapOstrava from '../images/coworkersLocations/mapOstrava.png';
 import mapSumy from '../images/coworkersLocations/mapSumy.png';
-import mapTallinn from '../images/coworkersLocations/mapTallinn.png';
+// import mapTallinn from '../images/coworkersLocations/mapTallinn.png';
 import mapTrenčín from '../images/coworkersLocations/mapTrenčín.png';
 import mapUjgorod from '../images/coworkersLocations/mapUjgorod.png';
 import mapZaporizhzhia from '../images/coworkersLocations/mapZaporizhzhia.png';
@@ -35,9 +54,10 @@ import mapZaporizhzhia from '../images/coworkersLocations/mapZaporizhzhia.png';
 
 export const coworkersData = [
   {
-    id: '1',
+    id: '0',
     name: 'Володимир Кавун',
     photo: volodymyrKavun,
+    photoSmall: volodymyrKavunSmall,
     profession: 'Full Stack Developer',
     quote: 'Коли у Вас є мрія, Ви повинні схопити її і ніколи не відпускати.',
     quoteEn: 'When you have a dream, you have got to grab it and never let go.',
@@ -54,9 +74,10 @@ export const coworkersData = [
   },
 
   {
-    id: '2',
+    id: '1',
     name: 'Максим Пельтек',
     photo: maksPeltek,
+    photoSmall: maksPeltekSmall,
     profession: 'Full Stack Developer',
     quote: 'Немає нічого неможливого. Саме слово говорить - "Можливо!".',
     quoteEn: 'Nothing is impossible. The word itself says "I am possible!"',
@@ -73,9 +94,10 @@ export const coworkersData = [
   },
 
   {
-    id: '3',
+    id: '2',
     name: 'Наталія Бойко',
     photo: nataliiaBoiko,
+    photoSmall: nataliiaBoikoSmall,
     profession: 'Full Stack Developer',
     quote: 'Варто пам’ятати, що частіше маленькі кроки, а не гігантські стрибки, призводять до найтриваліших змін.',
     quoteEn: 'It’s worth remembering that it is often the small steps, not the giant leaps, that bring about the most lasting change.',
@@ -92,9 +114,10 @@ export const coworkersData = [
   },
 
   {
-    id: '4',
+    id: '3',
     name: 'Івіка Дуда',
     photo: ivikaDuda,
+    photoSmall: ivikaDudaSmall,
     profession: 'Full Stack Developer',
     quote: 'Погана новина: час швидко летить. Хороша новина: Ви пілот.',
     quoteEn: 'The bad news is time flies. The good news is you are the pilot.',
@@ -111,9 +134,10 @@ export const coworkersData = [
   },
 
   {
-    id: '5',
+    id: '4',
     name: 'Андрій Цапков',
     photo: andriiTsapkov,
+    photoSmall: andriiTsapkovSmall,
     profession: 'Full Stack Developer',
     quote: 'Немає нічого неможливого для тих, хто пробує.',
     quoteEn: 'There is nothing impossible to they who will try.',
@@ -130,9 +154,10 @@ export const coworkersData = [
   },
 
   {
-    id: '6',
+    id: '5',
     name: 'Дмитро Колодченко',
     photo: dmytroKolodchenko,
+    photoSmall: dmytroKolodchenkoSmall,
     profession: 'Full Stack Developer',
     quote: 'Завжди тримайтесь обличчям до сонячного світла, і тіні будуть падати позаду Вас.',
     quoteEn: 'Keep your face always toward the sunshine, and shadows will fall behind you.',
@@ -149,9 +174,10 @@ export const coworkersData = [
   },
 
   {
-    id: '7',
+    id: '6',
     name: 'Максим Падалка',
     photo: maksPadalka,
+    photoSmall: maksPadalkaSmall,
     profession: 'Full Stack Developer',
     quote: 'Успіх не є остаточним, невдача не є фатальною: важливою є сміливість продовжувати.',
     quoteEn: 'Success is not final, failure is not fatal: it is the courage to continue that counts.',
@@ -168,9 +194,10 @@ export const coworkersData = [
   },
 
   {
-    id: '8',
+    id: '7',
     name: 'Віталій Павловський',
     photo: vitaliiPavlovskyi,
+    photoSmall: vitaliiPavlovskyiSmall,
     profession: 'Full Stack Developer',
     quote: 'Ви господар свого життя. Не дозволяйте іншим людям писати Ваш сценарій.',
     quoteEn: 'You define your own life. Do not let other people write your script.',
@@ -187,9 +214,10 @@ export const coworkersData = [
   },
 
   {
-    id: '9',
+    id: '8',
     name: 'Володимир Ползтюк',
     // photo: volodymurPolztyuk,
+    // photoSmall: volodymurPolztyukSmall,
     profession: 'Full Stack Developer',
     quote: 'Ви ніколи не будете занадто старим, щоб поставити іншу мету або мріяти про нову мрію.',
     quoteEn: 'You are never too old to set another goal or to dream a new dream.',
@@ -206,9 +234,10 @@ export const coworkersData = [
   },
 
   {
-    id: '10',
+    id: '9',
     name: 'Мирослав Козар',
     photo: myroslavKozar,
+    photoSmall: myroslavKozarSmall,
     profession: 'Full Stack Developer',
     quote: 'Не завжди потрібен план. Іноді Вам просто потрібно вдихнути, довіритися, відпустити і подивитися, що станеться.',
     quoteEn: 'You do not always need a plan. Sometimes you just need to breathe, trust, let go and see what happens.',
@@ -225,32 +254,14 @@ export const coworkersData = [
   },
 
   {
-    id: '11',
-    name: 'Максим Ігнатенко',
-    // photo: maksymIgnatenko,
-    profession: 'Full Stack Developer',
-    quote: 'Прокидайтесь рішучими, лягайте спати задоволеними.',
-    quoteEn: 'Wake up determined, go to bed satisfied.',
-    humor: '',
-    city: 'Таллінн',
-    cityEn: 'Tallinn',
-    latitude: 59.436962,
-    longitude: 24.753574,
-    country: 'Естонія',
-    countryEn: 'Estonia',
-    location: mapTallinn,
-    email: 'cadillac.maxim@gmail.com',
-    phone: +380664770959,
-  },
-
-  {
-    id: '12',
+    id: '10',
     name: 'Оксана Романенко',
     photo: oksanaRomanenko,
+    photoSmall: oksanaRomanenkoSmall,
     profession: 'UX/UI Designer',
     quote: 'Коли квітка не цвіте, Ви виправляєте не квітку, а середовище, в якому вона росте.',
     quoteEn: 'When a flower doesn’t bloom, you fix the environment in which it grows, not the flower',
-    humor: '',
+    humor: 'Там де жовтенький. Тільки не той, що жовтенький.',
     city: 'Гданськ',
     cityEn: 'Gdańsk',
     latitude: 54.372158,
@@ -263,9 +274,10 @@ export const coworkersData = [
   },
 
   {
-    id: '13',
+    id: '11',
     name: 'Іван Гагаус',
     photo: ivanGagaus,
+    photoSmall: ivanGagausSmall,
     profession: 'UX/UI Designer',
     quote: 'Кожен день я встаю і переглядаю список Forbes найбагатших людей у світі. Якщо мене там немає, я йду на роботу.',
     quoteEn: "Every day I get up and look through the Forbes list of the richest people in America. If I'm not there, I go to work.",
@@ -282,9 +294,10 @@ export const coworkersData = [
   },
 
   {
-    id: '14',
+    id: '12',
     name: 'Денис Кудрявець',
     photo: denysKudriavets,
+    photoSmall: denysKudriavetsSmall,
     profession: 'QA Engineer',
     quote: '',
     quoteEn: '',
@@ -301,9 +314,10 @@ export const coworkersData = [
   },
 
   {
-    id: '15',
+    id: '13',
     name: 'Дмитро Котеньов',
     photo: dmitroKotenev,
+    photoSmall: dmitroKotenevSmall,
     profession: 'UX/UI Designer',
     quote: 'Життя - це колекція моментів. Тому збирайте їх, як найкращі фотографії.',
     quoteEn: '',
@@ -318,4 +332,23 @@ export const coworkersData = [
     email: 'kotenevdima1@gmail.com',
     phone: +380632468706,
   },
+  // {
+  //   id: '14',
+  //   name: 'Максим Ігнатенко',
+  //   // photo: maksymIgnatenko,
+  //   // photoSmall: maksymIgnatenkoSmall,
+  //   profession: 'Full Stack Developer',
+  //   quote: 'Прокидайтесь рішучими, лягайте спати задоволеними.',
+  //   quoteEn: 'Wake up determined, go to bed satisfied.',
+  //   humor: '',
+  //   city: 'Таллінн',
+  //   cityEn: 'Tallinn',
+  //   latitude: 59.436962,
+  //   longitude: 24.753574,
+  //   country: 'Естонія',
+  //   countryEn: 'Estonia',
+  //   location: mapTallinn,
+  //   email: 'cadillac.maxim@gmail.com',
+  //   phone: +380664770959,
+  // },
 ];
