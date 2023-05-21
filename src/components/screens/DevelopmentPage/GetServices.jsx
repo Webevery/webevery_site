@@ -77,19 +77,3 @@ export const GetServices = () => {
 
   return <>{GetData}</>;
 };
-
-{
-  /* {isHidden ? (
-            <ul className={styles.servicesList}>
-              {details.map(item => {
-                return (
-                  <li className={styles.servicesList__item} key={nanoid()}>
-                    {item}
-                  </li>
-                );
-              })}
-            </ul>
-          ) : (
-            <p className={styles.servicesDescription}>{describton}</p>
-          )} */
-}
