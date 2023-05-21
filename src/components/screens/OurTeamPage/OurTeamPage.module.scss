@@ -1,0 +1,86 @@
+@import 'styles/variables';
+
+.wrapper {
+    padding: 90px 16px 16px 16px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+
+    background-color: var(--main_bg_color_our_team);
+}
+
+.photo {
+    width: 411px;
+    height: 479px;
+}
+
+.name {
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+
+    color: #FAFCE3;
+}
+
+.profession {
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+
+    color: rgba(235, 251, 250, 0.7);
+}
+
+.city {
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+
+    color: rgba(235, 251, 250, 0.7);
+}
+
+.country {
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+
+    color: #D9D9D9;
+}
+
+.quote {
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+
+    color: rgba(235, 251, 250, 0.7);
+}
+
+.humor {
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+
+    color: rgba(235, 251, 250, 0.7);
+}
+
+.map {
+    width: 594px;
+    height: 336px;
+}

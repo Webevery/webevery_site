@@ -1,4 +1,9 @@
 :root {
+  // design by Ivan and Oksana
+  --main_bg_color_our_team: #020B11;
+
+
+  // old variables
   --main_color: #26262ae2;
   --second_color: #434398e2;
   // --main_bg_color: rgb(65, 74, 82);
@@ -13,7 +18,7 @@
 
 $mobile: '320px';
 $tablet: '768px';
-$desktop: '1200px';
+$desktop: '1440px';
 
 // Зразок, як користуватись:
 // @media screen and (min-width: $desktop) {}
