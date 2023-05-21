@@ -3,6 +3,11 @@
 .wrapper {
     padding: 90px 16px 16px 16px;
     background-color: var(--main_bg_color_our_team);
+    width: 100vw;
+    height: 100vh;
+
+    // для видимости alt в img, в фигме этого нет
+    color: #FAFCE3;
 }
 
 .coworker {
@@ -57,7 +62,7 @@
     line-height: 19px;
     letter-spacing: 0.05em;
 
-    color: #D9D9D9;
+    color: rgba(235, 251, 250, 0.7);
 }
 
 .quote {
@@ -90,7 +95,6 @@
 .mapGeneral {
     width: 1010px;
     height: 572px;
-
 }
 
 .slider {
@@ -98,7 +102,6 @@
 }
 
 .sliderPhoto {
-    // width: 94px;
-    // // height: 94px;
-    // border-radius: 50%;
+    cursor: pointer;
+    border-radius: 50%;
 }

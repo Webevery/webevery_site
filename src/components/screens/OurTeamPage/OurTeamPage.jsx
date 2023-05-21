@@ -5,28 +5,23 @@ import mapGeneral from 'images/coworkersLocations/mapGeneral.png'
 
 
 const OurTeamPage = () => {
-    const [coworkerId, setCoworkerId] = useState(0);
+    const [coworkerId, setCoworkerId] = useState(null);
 
 
     return (
-        <section className={styles.wrapper}>Наша Команда
-            {!coworkerId ? < img className={styles.mapGeneral} src={mapGeneral} alt="All coworker's locations" /> : <div>{coworkersData.map(item => {
-                return (
-                    <div className={styles.coworker}>
-                        <img className={styles.photo} src={item.photo} alt={`photo ${item.name}`} />
-                        <div>
-                            <p className={styles.name}>{item.name}</p>
-                            <p className={styles.profession}>{item.profession}</p>
-                            <p className={styles.city}>{item.city},
-                                <span className={styles.country} >{item.country}</span></p>
-                            <p className={styles.quote}>{item.quote}</p>
-                            <p className={styles.humor}>{item.humor}</p>
-                            <img className={styles.map} src={item.location} alt={`location ${item.name}`}></img>
-                        </div>
-                    </div>
-                )
-            })
-            }</div>}
+        <section className={styles.wrapper}>
+            {!coworkerId ? < img className={styles.mapGeneral} src={mapGeneral} alt="All coworker's locations" /> : <div className={styles.coworker}>
+                <img className={styles.photo} src={coworkersData[coworkerId].photo} alt={coworkersData[coworkerId].name} />
+                <div>
+                    <p className={styles.name}>{coworkersData[coworkerId].name}</p>
+                    <p className={styles.profession}>{coworkersData[coworkerId].profession}</p>
+                    <p className={styles.city}>{coworkersData[coworkerId].city},
+                        <span className={styles.country} >{coworkersData[coworkerId].country}</span></p>
+                    <p className={styles.quote}>{coworkersData[coworkerId].quote}</p>
+                    <p className={styles.humor}>{coworkersData[coworkerId].humor}</p>
+                    <img className={styles.map} src={coworkersData[coworkerId].location} alt={`location ${coworkersData[coworkerId].name}`}></img>
+                </div>
+            </div>}
 
             <ul className={styles.slider}>
                 {coworkersData.map(item => {

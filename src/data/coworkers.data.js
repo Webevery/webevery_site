@@ -1,18 +1,18 @@
-import volodymyrKavun from '../images/ourTeam/volodymyrKavun.jpeg';
+import volodymyrKavun from '../images/ourTeam/volodymyrKavun.png';
 import maksPeltek from '../images/ourTeam/maksPeltek.png';
-import nataliiaBoiko from '../images/ourTeam/nataliiaBoiko.jpeg';
-import ivikaDuda from '../images/ourTeam/ivikaDuda.jpeg';
-import andriiTsapkov from '../images/ourTeam/andriiTsapkov.jpeg';
-import dmytroKolodchenko from '../images/ourTeam/dmytroKolodchenko.jpeg';
-import maksPadalka from '../images/ourTeam/maksPadalka.jpeg';
-import vitaliiPavlovskyi from '../images/ourTeam/vitaliiPavlovskyi.jpeg';
-import myroslavKozar from '../images/ourTeam/myroslavKozar.jpeg';
-// import volodymurPolztyuk from '../images/ourTeam/volodymurPolztyuk.jpeg';
-// import maksymIgnatenko from '../images/ourTeam/maksymIgnatenko.jpeg';
-import oksanaRomanenko from '../images/ourTeam/oksanaRomanenko.jpg';
-import ivanGagaus from '../images/ourTeam/ivanGagaus.jpg';
-import denysKudriavets from '../images/ourTeam/denysKudriavets.jpg';
-import dmitroKotenev from '../images/ourTeam/dmitroKotenev.jpg';
+import nataliiaBoiko from '../images/ourTeam/nataliiaBoiko.png';
+import ivikaDuda from '../images/ourTeam/ivikaDuda.png';
+import andriiTsapkov from '../images/ourTeam/andriiTsapkov.png';
+import dmytroKolodchenko from '../images/ourTeam/dmytroKolodchenko.png';
+import maksPadalka from '../images/ourTeam/maksPadalka.png';
+import vitaliiPavlovskyi from '../images/ourTeam/vitaliiPavlovskyi.png';
+import myroslavKozar from '../images/ourTeam/myroslavKozar.png';
+// import volodymurPolztyuk from '../images/ourTeam/volodymurPolztyuk.png';
+// import maksymIgnatenko from '../images/ourTeam/maksymIgnatenko.png';
+import oksanaRomanenko from '../images/ourTeam/oksanaRomanenko.png';
+import ivanGagaus from '../images/ourTeam/ivanGagaus.png';
+import denysKudriavets from '../images/ourTeam/denysKudriavets.png';
+import dmitroKotenev from '../images/ourTeam/dmitroKotenev.png';
 
 
 import volodymyrKavunSmall from '../images/ourTeam/volodymyrKavunSmall.png';
@@ -28,13 +28,12 @@ import myroslavKozarSmall from '../images/ourTeam/myroslavKozarSmall.png';
 // import maksymIgnatenkoSmall from '../images/ourTeam/maksymIgnatenkoSmall.png';
 import oksanaRomanenkoSmall from '../images/ourTeam/oksanaRomanenkoSmall.png';
 import ivanGagausSmall from '../images/ourTeam/ivanGagausSmall.png';
-// import denysKudriavetsSmall from '../images/ourTeam/denysKudriavetsSmall.png';
-// import dmitroKotenevSmall from '../images/ourTeam/dmitroKotenevSmall.png';
+import denysKudriavetsSmall from '../images/ourTeam/denysKudriavetsSmall.png';
+import dmitroKotenevSmall from '../images/ourTeam/dmitroKotenevSmall.png';
 
 
 
 
-// import mapGeneral from '../images/coworkersLocations/mapGeneral.png';
 import mapGdańsk from '../images/coworkersLocations/mapGdańsk.png';
 import mapIvanoFrankivsk from '../images/coworkersLocations/mapIvanoFrankivsk.png';
 import mapKamianetsPodilskyi from '../images/coworkersLocations/mapKamianetsPodilskyi.png';
@@ -45,7 +44,7 @@ import mapLviv from '../images/coworkersLocations/mapLviv.png';
 import mapOdesa from '../images/coworkersLocations/mapOdesa.png';
 import mapOstrava from '../images/coworkersLocations/mapOstrava.png';
 import mapSumy from '../images/coworkersLocations/mapSumy.png';
-import mapTallinn from '../images/coworkersLocations/mapTallinn.png';
+// import mapTallinn from '../images/coworkersLocations/mapTallinn.png';
 import mapTrenčín from '../images/coworkersLocations/mapTrenčín.png';
 import mapUjgorod from '../images/coworkersLocations/mapUjgorod.png';
 import mapZaporizhzhia from '../images/coworkersLocations/mapZaporizhzhia.png';
@@ -55,7 +54,7 @@ import mapZaporizhzhia from '../images/coworkersLocations/mapZaporizhzhia.png';
 
 export const coworkersData = [
   {
-    id: '1',
+    id: '0',
     name: 'Володимир Кавун',
     photo: volodymyrKavun,
     photoSmall: volodymyrKavunSmall,
@@ -75,7 +74,7 @@ export const coworkersData = [
   },
 
   {
-    id: '2',
+    id: '1',
     name: 'Максим Пельтек',
     photo: maksPeltek,
     photoSmall: maksPeltekSmall,
@@ -95,7 +94,7 @@ export const coworkersData = [
   },
 
   {
-    id: '3',
+    id: '2',
     name: 'Наталія Бойко',
     photo: nataliiaBoiko,
     photoSmall: nataliiaBoikoSmall,
@@ -115,7 +114,7 @@ export const coworkersData = [
   },
 
   {
-    id: '4',
+    id: '3',
     name: 'Івіка Дуда',
     photo: ivikaDuda,
     photoSmall: ivikaDudaSmall,
@@ -135,7 +134,7 @@ export const coworkersData = [
   },
 
   {
-    id: '5',
+    id: '4',
     name: 'Андрій Цапков',
     photo: andriiTsapkov,
     photoSmall: andriiTsapkovSmall,
@@ -155,7 +154,7 @@ export const coworkersData = [
   },
 
   {
-    id: '6',
+    id: '5',
     name: 'Дмитро Колодченко',
     photo: dmytroKolodchenko,
     photoSmall: dmytroKolodchenkoSmall,
@@ -175,7 +174,7 @@ export const coworkersData = [
   },
 
   {
-    id: '7',
+    id: '6',
     name: 'Максим Падалка',
     photo: maksPadalka,
     photoSmall: maksPadalkaSmall,
@@ -195,7 +194,7 @@ export const coworkersData = [
   },
 
   {
-    id: '8',
+    id: '7',
     name: 'Віталій Павловський',
     photo: vitaliiPavlovskyi,
     photoSmall: vitaliiPavlovskyiSmall,
@@ -215,7 +214,7 @@ export const coworkersData = [
   },
 
   {
-    id: '9',
+    id: '8',
     name: 'Володимир Ползтюк',
     // photo: volodymurPolztyuk,
     // photoSmall: volodymurPolztyukSmall,
@@ -235,7 +234,7 @@ export const coworkersData = [
   },
 
   {
-    id: '10',
+    id: '9',
     name: 'Мирослав Козар',
     photo: myroslavKozar,
     photoSmall: myroslavKozarSmall,
@@ -255,34 +254,14 @@ export const coworkersData = [
   },
 
   {
-    id: '11',
-    name: 'Максим Ігнатенко',
-    // photo: maksymIgnatenko,
-    // photoSmall: maksymIgnatenkoSmall,
-    profession: 'Full Stack Developer',
-    quote: 'Прокидайтесь рішучими, лягайте спати задоволеними.',
-    quoteEn: 'Wake up determined, go to bed satisfied.',
-    humor: '',
-    city: 'Таллінн',
-    cityEn: 'Tallinn',
-    latitude: 59.436962,
-    longitude: 24.753574,
-    country: 'Естонія',
-    countryEn: 'Estonia',
-    location: mapTallinn,
-    email: 'cadillac.maxim@gmail.com',
-    phone: +380664770959,
-  },
-
-  {
-    id: '12',
+    id: '10',
     name: 'Оксана Романенко',
     photo: oksanaRomanenko,
     photoSmall: oksanaRomanenkoSmall,
     profession: 'UX/UI Designer',
     quote: 'Коли квітка не цвіте, Ви виправляєте не квітку, а середовище, в якому вона росте.',
     quoteEn: 'When a flower doesn’t bloom, you fix the environment in which it grows, not the flower',
-    humor: '',
+    humor: 'Там де жовтенький. Тільки не той, що жовтенький.',
     city: 'Гданськ',
     cityEn: 'Gdańsk',
     latitude: 54.372158,
@@ -295,7 +274,7 @@ export const coworkersData = [
   },
 
   {
-    id: '13',
+    id: '11',
     name: 'Іван Гагаус',
     photo: ivanGagaus,
     photoSmall: ivanGagausSmall,
@@ -315,10 +294,10 @@ export const coworkersData = [
   },
 
   {
-    id: '14',
+    id: '12',
     name: 'Денис Кудрявець',
     photo: denysKudriavets,
-    // photoSmall: denysKudriavetsSmall,
+    photoSmall: denysKudriavetsSmall,
     profession: 'QA Engineer',
     quote: '',
     quoteEn: '',
@@ -335,10 +314,10 @@ export const coworkersData = [
   },
 
   {
-    id: '15',
+    id: '13',
     name: 'Дмитро Котеньов',
     photo: dmitroKotenev,
-    // photoSmall: dmitroKotenevSmall,
+    photoSmall: dmitroKotenevSmall,
     profession: 'UX/UI Designer',
     quote: 'Життя - це колекція моментів. Тому збирайте їх, як найкращі фотографії.',
     quoteEn: '',
@@ -353,4 +332,23 @@ export const coworkersData = [
     email: 'kotenevdima1@gmail.com',
     phone: +380632468706,
   },
+  // {
+  //   id: '14',
+  //   name: 'Максим Ігнатенко',
+  //   // photo: maksymIgnatenko,
+  //   // photoSmall: maksymIgnatenkoSmall,
+  //   profession: 'Full Stack Developer',
+  //   quote: 'Прокидайтесь рішучими, лягайте спати задоволеними.',
+  //   quoteEn: 'Wake up determined, go to bed satisfied.',
+  //   humor: '',
+  //   city: 'Таллінн',
+  //   cityEn: 'Tallinn',
+  //   latitude: 59.436962,
+  //   longitude: 24.753574,
+  //   country: 'Естонія',
+  //   countryEn: 'Estonia',
+  //   location: mapTallinn,
+  //   email: 'cadillac.maxim@gmail.com',
+  //   phone: +380664770959,
+  // },
 ];
