@@ -15,9 +15,6 @@
   column-gap: 64px;
   row-gap: 64px;
 }
-.red {
-  background-color: red;
-}
 
 .servicesWrapper {
   width: 372px;
@@ -50,7 +47,7 @@
       rgba(0, 0, 0, 0.6)
     );
   }
-  @media screen and (min-width: 840px) and (max-width: 1275px) {
+  @media screen and (min-width: 840px) and (max-width: 1280px) {
     &:nth-child(3) {
       height: 772px;
     }
