@@ -14,4 +14,11 @@
   border-radius: 6px;
   cursor: pointer;
   padding: 16px 48px;
+  transition-duration: 1s;
+
+  &:focus,
+  &:hover {
+    background-color: #feebb2;
+    color: #263238;
+  }
 }
