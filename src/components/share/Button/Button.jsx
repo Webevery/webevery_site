@@ -6,7 +6,7 @@ const Button = ({ onClick, title, type, className, id, ariaLabel }) => {
     <button
       onClick={onClick}
       type={type}
-      className={styles.button}
+      className={`${className} ${styles.button} `}
       id={id}
       aria-label={ariaLabel}
     >
