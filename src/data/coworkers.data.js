@@ -1,12 +1,12 @@
 import volodymyrKavun from '../images/ourTeam/volodymyrKavun.jpeg';
-import maksPeltec from '../images/ourTeam/maksPeltec.png';
+import maksPeltek from '../images/ourTeam/maksPeltek.png';
 import nataliiaBoiko from '../images/ourTeam/nataliiaBoiko.jpeg';
 import ivikaDuda from '../images/ourTeam/ivikaDuda.jpeg';
 import andriiTsapkov from '../images/ourTeam/andriiTsapkov.jpeg';
-import dmytroColodchenko from '../images/ourTeam/dmytroColodchenko.jpeg';
-import maksSheih from '../images/ourTeam/maksSheih.jpeg';
+import dmytroKolodchenko from '../images/ourTeam/dmytroKolodchenko.jpeg';
+import maksPadalka from '../images/ourTeam/maksPadalka.jpeg';
 import vitaliiPavlovskyi from '../images/ourTeam/vitaliiPavlovskyi.jpeg';
-import myroslav from '../images/ourTeam/myroslav.jpeg';
+import myroslavKozar from '../images/ourTeam/myroslavKozar.jpeg';
 // import volodymurPolztyuk from '../images/ourTeam/volodymurPolztyuk.jpeg';
 // import maksymIgnatenko from '../images/ourTeam/maksymIgnatenko.jpeg';
 import oksanaRomanenko from '../images/ourTeam/oksanaRomanenko.jpg';
@@ -14,268 +14,307 @@ import ivanGagaus from '../images/ourTeam/ivanGagaus.jpg';
 import denysKudriavets from '../images/ourTeam/denysKudriavets.jpg';
 import dmitroKotenev from '../images/ourTeam/dmitroKotenev.jpg';
 
+// import mapGeneral from '../images/coworkersLocations/mapGeneral.png';
+import mapGdańsk from '../images/coworkersLocations/mapGdańsk.png';
+import mapIvanoFrankivsk from '../images/coworkersLocations/mapIvanoFrankivsk.png';
+import mapKamianetsPodilskyi from '../images/coworkersLocations/mapKamianetsPodilskyi.png';
+import mapKharkiv from '../images/coworkersLocations/mapKharkiv.png';
+import mapKyiv from '../images/coworkersLocations/mapKyiv.png';
+import mapLandauInDerPfalz from '../images/coworkersLocations/mapLandauInDerPfalz.png';
+import mapLviv from '../images/coworkersLocations/mapLviv.png';
+import mapOdesa from '../images/coworkersLocations/mapOdesa.png';
+import mapOstrava from '../images/coworkersLocations/mapOstrava.png';
+import mapSumy from '../images/coworkersLocations/mapSumy.png';
+import mapTallinn from '../images/coworkersLocations/mapTallinn.png';
+import mapTrenčín from '../images/coworkersLocations/mapTrenčín.png';
+import mapUjgorod from '../images/coworkersLocations/mapUjgorod.png';
+import mapZaporizhzhia from '../images/coworkersLocations/mapZaporizhzhia.png';
+
+
+
+
 export const coworkersData = [
   {
     id: '1',
-    name: 'Volodymyr Kavun',
+    name: 'Володимир Кавун',
     photo: volodymyrKavun,
     profession: 'Full Stack Developer',
-    quote: 'When you have a dream, you have got to grab it and never let go.',
-    humor:
-      'Там треба трохи ПІДЛАМПІЧИТИ, а там ПІДРЕПЕТІРУВАТЬ і Я ЛОНГУЮ, що БУДЕ воно ПРАЦЮВАТИ !',
-    city: 'Ostrava',
+    quote: 'Коли у Вас є мрія, Ви повинні схопити її і ніколи не відпускати.',
+    quoteEn: 'When you have a dream, you have got to grab it and never let go.',
+    humor: 'Там треба трохи ПІДЛАМПІЧИТИ, а там ПІДРЕПЕТІРУВАТЬ, і Я ЛОНГУЮ, що БУДЕ воно ПРАЦЮВАТИ!',
+    city: 'Острава',
+    cityEn: 'Ostrava',
     latitude: 49.83465,
     longitude: 18.28204,
-    country: 'Czech Republic',
-    location:
-      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82374.54149282658!2d18.154994603826925!3d49.81982300052432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4711586a3124e79d%3A0x891973fb9f9e9144!2z0J7RgdGC0YDQsNCy0LAsINCn0LXRhdC40Y8!5e0!3m2!1sru!2sua!4v1682790724090!5m2!1sru!2sua',
+    country: 'Чехія',
+    countryEn: 'Czech Republic',
+    location: mapOstrava,
     email: 'volodymirkavun1@gmail.com',
     phone: +380636876176,
   },
 
   {
     id: '2',
-    name: 'Maksim Peltek',
-    photo: maksPeltec,
+    name: 'Максим Пельтек',
+    photo: maksPeltek,
     profession: 'Full Stack Developer',
-    quote: 'Nothing is impossible. The word itself says "I am possible!"',
+    quote: 'Немає нічого неможливого. Саме слово говорить - "Можливо!".',
+    quoteEn: 'Nothing is impossible. The word itself says "I am possible!"',
     humor: 'МАЮ знову СУМНІВИ. Може ТАК зробити? ЧИ може ОСЬ ТАК зробити ?',
-    city: 'Odesa',
+    city: 'Одеса',
+    cityEn: 'Odesa',
     latitude: 46.381806,
     longitude: 30.71039,
-    country: 'Ukraine',
-    location:
-      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d175899.1966584225!2d30.546979749753348!3d46.460090158678724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6318a0b864c43%3A0x129f8fe28cf2176c!2z0J7QtNC10YHRgdCwLCDQntC00LXRgdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2NTAwMA!5e0!3m2!1sru!2sua!4v1682766784554!5m2!1sru!2sua',
+    country: 'Україна',
+    countryEn: 'Ukraine',
+    location: mapOdesa,
     email: 'peltek1985@gmail.com',
     phone: +380683396082,
   },
 
   {
     id: '3',
-    name: 'Nataliia Boiko',
+    name: 'Наталія Бойко',
     photo: nataliiaBoiko,
     profession: 'Full Stack Developer',
-    quote:
-      'It’s worth remembering that it is often the small steps, not the giant leaps, that bring about the most lasting change.',
-    humor:
-      'Можна ЦЮ КНІПКУ взяти і ПРИШПАНДЬОРИТИ цейво ТУДИ і БУДЕ воно ДОБРЕ !',
-    city: 'Ivano-Frankivsk',
+    quote: 'Варто пам’ятати, що частіше маленькі кроки, а не гігантські стрибки, призводять до найтриваліших змін.',
+    quoteEn: 'It’s worth remembering that it is often the small steps, not the giant leaps, that bring about the most lasting change.',
+    humor: 'Можна ЦЮ КНІПКУ взяти і ПРИШПАНДЬОРИТИ ось ТУДИ і БУДЕ воно ДОБРЕ !',
+    city: 'Івано-Франківськ',
+    cityEn: 'Ivano-Frankivsk',
     latitude: 48.92312,
     longitude: 24.71248,
-    country: 'Ukraine',
-    location:
-      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41954.99808582472!2d24.67592964797412!3d48.91182212316815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4730c16c34b0381d%3A0xd6d32394e59e41c2!2z0JjQstCw0L3Qvi3QpNGA0LDQvdC60L7QstGB0LosINCY0LLQsNC90L4t0KTRgNCw0L3QutC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNzYwMDA!5e0!3m2!1sru!2sua!4v1682768256941!5m2!1sru!2sua',
+    country: 'Україна',
+    countryEn: 'Ukraine',
+    location: mapIvanoFrankivsk,
     email: 'natalabojko@gmail.com',
     phone: +380503738465,
   },
 
   {
     id: '4',
-    name: 'Ivika Duda',
+    name: 'Івіка Дуда',
     photo: ivikaDuda,
     profession: 'Full Stack Developer',
-    quote: 'The bad news is time flies. The good news is you are the pilot.',
+    quote: 'Погана новина: час швидко летить. Хороша новина: Ви пілот.',
+    quoteEn: 'The bad news is time flies. The good news is you are the pilot.',
     humor: '',
-    city: 'Ujgorod',
+    city: 'Ужгород',
+    cityEn: 'Ujgorod',
     latitude: 48.6242,
     longitude: 22.2947,
-    country: 'Ukraine',
-    location:
-      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42199.985139482786!2d22.238438244755297!3d48.61943114266072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473919b944b6e3d9%3A0xda6ae0130042a3c!2z0KPQttCz0L7RgNC-0LQsINCX0LDQutCw0YDQv9Cw0YLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjA!5e0!3m2!1sru!2sua!4v1682768108612!5m2!1sru!2sua',
+    country: 'Україна',
+    countryEn: 'Ukraine',
+    location: mapUjgorod,
     email: 'kivikaivika@gmail.com',
     phone: +380955834998,
   },
 
   {
     id: '5',
-    name: 'Andrii Tsapkov',
+    name: 'Андрій Цапков',
     photo: andriiTsapkov,
     profession: 'Full Stack Developer',
-    quote: 'There is nothing impossible to they who will try.',
+    quote: 'Немає нічого неможливого для тих, хто пробує.',
+    quoteEn: 'There is nothing impossible to they who will try.',
     humor: '',
-    city: 'Kamianets-Podilskyi',
+    city: "Кам'янець-Подільський",
+    cityEn: 'Kamianets-Podilskyi',
     latitude: 48.67882,
     longitude: 26.58516,
-    country: 'Ukraine',
-    location:
-      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42139.89106440979!2d26.538805245544694!3d48.69127441422403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4733b873f87ab577%3A0x82ac3b42e4f75137!2z0JrQsNC80LXQvdC10YYt0J_QvtC00L7Qu9GM0YHQutC40LksINCl0LzQtdC70YzQvdC40YbQutCw0Y8g0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1682791080197!5m2!1sru!2sua',
+    country: 'Україна',
+    countryEn: 'Ukraine',
+    location: mapKamianetsPodilskyi,
     email: 'a.tsapkov.dev@gmail.com',
     phone: +380936452142,
   },
 
   {
     id: '6',
-    name: 'Dmytro Kolodchenko',
-    photo: dmytroColodchenko,
+    name: 'Дмитро Колодченко',
+    photo: dmytroKolodchenko,
     profession: 'Full Stack Developer',
-    quote:
-      'Keep your face always toward the sunshine, and shadows will fall behind you.',
+    quote: 'Завжди тримайтесь обличчям до сонячного світла, і тіні будуть падати позаду Вас.',
+    quoteEn: 'Keep your face always toward the sunshine, and shadows will fall behind you.',
     humor: '',
-    city: 'Zaporizhzhia',
+    city: 'Запоріжжя',
+    cityEn: 'Zaporizhzhia',
     latitude: 47.85167,
     longitude: 35.11714,
-    country: 'Ukraine',
-    location:
-      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d171336.6638248874!2d35.01054611757791!3d47.856341458451624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dc673dfa85bb03%3A0x7e675cd9074d3f4a!2z0JfQsNC_0L7RgNC-0LbRjNC1LCDQl9Cw0L_QvtGA0L7QttGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2OTAwMA!5e0!3m2!1sru!2sua!4v1682867027468!5m2!1sru!2sua',
+    country: 'Україна',
+    countryEn: 'Ukraine',
+    location: mapZaporizhzhia,
     email: 'dima.kolod@gmail.com',
     phone: +380953907792,
   },
 
   {
     id: '7',
-    name: 'Maks Padalka',
-    photo: maksSheih,
+    name: 'Максим Падалка',
+    photo: maksPadalka,
     profession: 'Full Stack Developer',
-    quote:
-      'Success is not final, failure is not fatal: it is the courage to continue that counts.',
+    quote: 'Успіх не є остаточним, невдача не є фатальною: важливою є сміливість продовжувати.',
+    quoteEn: 'Success is not final, failure is not fatal: it is the courage to continue that counts.',
     humor: '',
-    city: 'Trenčín',
+    city: 'Тренчин',
+    cityEn: 'Trenčín',
     latitude: 48.89452,
     longitude: 18.04436,
-    country: 'Slovakia',
-    location:
-      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83932.47394351527!2d17.975346602179435!3d48.898437101276876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4714a2221be02575%3A0x400f7d1c696f680!2z0KLRgNC10L3Rh9C40L0sINCh0LvQvtCy0LDQutC40Y8!5e0!3m2!1sru!2sua!4v1682868769698!5m2!1sru!2sua',
+    country: 'Словаччина',
+    countryEn: 'Slovakia',
+    location: mapTrenčín,
     email: 'sheihmaks@gmail.com',
     phone: +380671915300,
   },
 
   {
     id: '8',
-    name: 'Vitalii Pavlovskyi',
+    name: 'Віталій Павловський',
     photo: vitaliiPavlovskyi,
     profession: 'Full Stack Developer',
-    quote:
-      'You define your own life. Do not let other people write your script.',
+    quote: 'Ви господар свого життя. Не дозволяйте іншим людям писати Ваш сценарій.',
+    quoteEn: 'You define your own life. Do not let other people write your script.',
     humor: '',
-    city: 'Sumy',
+    city: 'Суми',
+    cityEn: 'Sumy',
     latitude: 50.9077,
     longitude: 34.7981,
-    country: 'Ukraine',
-    location:
-      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80519.73266685213!2d34.73181410350488!3d50.900744714502295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41290220fc73a461%3A0xdb74f6366b836c28!2z0KHRg9C80YssINCh0YPQvNGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA0MDAwMA!5e0!3m2!1sru!2sua!4v1682768594773!5m2!1sru!2sua',
+    country: 'Україна',
+    countryEn: 'Ukraine',
+    location: mapSumy,
     email: 'sledozar@gmail.com',
     phone: +380664710207,
   },
 
   {
     id: '9',
-    name: 'Volodymur Polztyuk',
+    name: 'Володимир Ползтюк',
     // photo: volodymurPolztyuk,
     profession: 'Full Stack Developer',
-    quote: 'You are never too old to set another goal or to dream a new dream.',
+    quote: 'Ви ніколи не будете занадто старим, щоб поставити іншу мету або мріяти про нову мрію.',
+    quoteEn: 'You are never too old to set another goal or to dream a new dream.',
     humor: 'Поки НЕ РОБЕ. Не знаю як, АЛЕ я РОЗБЕРУСЯ !',
-    city: 'Lviv',
+    city: 'Львів',
+    cityEn: 'Lviv',
     latitude: 49.83826,
     longitude: 24.02324,
-    country: 'Ukraine',
-    location:
-      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82352.49626550832!2d23.929835654416898!3d49.83277057312773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add7c09109a57%3A0x4223c517012378e2!2z0JvRjNCy0L7Qsiwg0JvRjNCy0L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA3OTAwMA!5e0!3m2!1sru!2sua!4v1682791189539!5m2!1sru!2sua',
+    country: 'Україна',
+    countryEn: 'Ukraine',
+    location: mapLviv,
     email: 'wowa.pol@ukr.net',
     // phone: +380000000000,
   },
 
   {
     id: '10',
-    name: 'Myroslav Kozar',
-    photo: myroslav,
+    name: 'Мирослав Козар',
+    photo: myroslavKozar,
     profession: 'Full Stack Developer',
-    quote:
-      'You do not always need a plan. Sometimes you just need to breathe, trust, let go and see what happens.',
-    humor:
-      'ААААААА, я ЗРОЗУМІВ... Теорія - це добре, але треба БІЛЬШЕ ПРАКТИКИ !',
-    city: 'Landau in der Pfalz',
+    quote: 'Не завжди потрібен план. Іноді Вам просто потрібно вдихнути, довіритися, відпустити і подивитися, що станеться.',
+    quoteEn: 'You do not always need a plan. Sometimes you just need to breathe, trust, let go and see what happens.',
+    humor: 'ААААААА, я ЗРОЗУМІВ... Теорія - це добре, але треба БІЛЬШЕ ПРАКТИКИ !',
+    city: 'Ландау-ін-дер-Пфальц',
+    cityEn: 'Landau in der Pfalz',
     latitude: 49.19844,
     longitude: 8.11692,
-    country: 'Germany',
-    location:
-      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83364.6924851024!2d7.940633271483936!3d49.23570893718828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479650f14e424fe1%3A0xe3bcf1d1f7e987e9!2z0JvQsNC90LTQsNGDLCDQk9C10YDQvNCw0L3QuNGP!5e0!3m2!1sru!2sua!4v1682850083485!5m2!1sru!2sua',
+    country: 'Німеччина',
+    countryEn: 'Germany',
+    location: mapLandauInDerPfalz,
     email: 'myrkozar@gmail.com',
     phone: +380500172671,
   },
 
   {
     id: '11',
-    name: 'Maksym Ignatenko',
+    name: 'Максим Ігнатенко',
     // photo: maksymIgnatenko,
     profession: 'Full Stack Developer',
-    quote: 'Wake up determined, go to bed satisfied.',
+    quote: 'Прокидайтесь рішучими, лягайте спати задоволеними.',
+    quoteEn: 'Wake up determined, go to bed satisfied.',
     humor: '',
-    city: 'Tallinn',
+    city: 'Таллінн',
+    cityEn: 'Tallinn',
     latitude: 59.436962,
     longitude: 24.753574,
-    country: 'Estonia',
-    location:
-      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d160968.26871315323!2d34.505079721770954!3d50.921326983997815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4129022dda133f89%3A0x9202dbec4616d4f4!2z0JrQvtCy0L_QsNC60L7QstGB0LrQuNC5INGA0LDQudC-0L0sINCh0YPQvNGLLCDQodGD0LzRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDQuNC90LAsIDQwMDAw!5e0!3m2!1sru!2scz!4v1682869618514!5m2!1sru!2scz',
+    country: 'Естонія',
+    countryEn: 'Estonia',
+    location: mapTallinn,
     email: 'cadillac.maxim@gmail.com',
     phone: +380664770959,
   },
 
   {
     id: '12',
-    name: 'Oksana Romanenko',
+    name: 'Оксана Романенко',
     photo: oksanaRomanenko,
     profession: 'UX/UI Designer',
-    quote:
-      'When a flower doesn’t bloom, you fix the environment in which it grows, not the flower',
+    quote: 'Коли квітка не цвіте, Ви виправляєте не квітку, а середовище, в якому вона росте.',
+    quoteEn: 'When a flower doesn’t bloom, you fix the environment in which it grows, not the flower',
     humor: '',
-    city: 'Gdańsk',
+    city: 'Гданськ',
+    cityEn: 'Gdańsk',
     latitude: 54.372158,
     longitude: 18.638306,
-    country: 'Poland',
-    location:
-      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d148784.80927347747!2d18.52522345544997!3d54.36117516765685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd731c14d4fa6f%3A0x9bb9fbf163b7be8d!2z0JPQtNCw0L3RjNGB0LosINCf0L7Qu9GM0YjQsA!5e0!3m2!1sru!2sua!4v1683538536867!5m2!1sru!2sua',
+    country: 'Польща',
+    countryEn: 'Poland',
+    location: mapGdańsk,
     email: 'oks.romanenkodesign@gmail.com',
     phone: +380676861493,
   },
 
   {
     id: '13',
-    name: 'Ivan Gagaus',
+    name: 'Іван Гагаус',
     photo: ivanGagaus,
     profession: 'UX/UI Designer',
-    quote:
-      "Every day I get up and look through the Forbes list of the richest people in America. If I'm not there, I go to work.",
+    quote: 'Кожен день я встаю і переглядаю список Forbes найбагатших людей у світі. Якщо мене там немає, я йду на роботу.',
+    quoteEn: "Every day I get up and look through the Forbes list of the richest people in America. If I'm not there, I go to work.",
     humor: '',
-    city: 'Odesa',
+    city: 'Одеса',
+    cityEn: 'Odesa',
     latitude: 46.48572,
     longitude: 30.74383,
-    country: 'Ukraine',
-    location:
-      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d175899.1966584225!2d30.546979749753348!3d46.460090158678724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6318a0b864c43%3A0x129f8fe28cf2176c!2z0J7QtNC10YHRgdCwLCDQntC00LXRgdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2NTAwMA!5e0!3m2!1sru!2sua!4v1682766784554!5m2!1sru!2sua',
+    country: 'Україна',
+    countryEn: 'Ukraine',
+    location: mapOdesa,
     // email: '',
     // phone: +3801111111,
   },
 
   {
     id: '14',
-    name: 'Denys Kudriavets',
+    name: 'Денис Кудрявець',
     photo: denysKudriavets,
     profession: 'QA Engineer',
     quote: '',
+    quoteEn: '',
     humor: '',
-    city: 'Kharkiv',
+    city: 'Харків',
+    cityEn: 'Kharkiv',
     latitude: 50.00156,
     longitude: 36.231537,
-    country: 'Ukraine',
-    location:
-      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d164152.8793834677!2d36.121017768660664!3d49.99469535704276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a09f63ab0f8b%3A0x2d4c18681aa4be0a!2z0KXQsNGA0YzQutC-0LIsINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1684262788709!5m2!1sru!2sua',
+    country: 'Україна',
+    countryEn: 'Ukraine',
+    location: mapKharkiv,
     email: 'kudriavetsdenis@gmail.com',
     phone: +380686345365,
   },
 
   {
     id: '15',
-    name: 'Dmitro Kotenev',
+    name: 'Дмитро Котеньов',
     photo: dmitroKotenev,
     profession: 'UX/UI Designer',
-    quote: '',
+    quote: 'Життя - це колекція моментів. Тому збирайте їх, як найкращі фотографії.',
+    quoteEn: '',
     humor: '',
-    city: 'Kyiv',
+    city: 'Київ',
+    cityEn: 'Kyiv',
     latitude: 50.450001,
     longitude: 30.523333,
-    country: 'Ukraine',
-    location:
-      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325516.56927867024!2d30.203053761603808!3d50.402007510515354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1684263057506!5m2!1sru!2sua',
+    country: 'Україна',
+    countryEn: 'Ukraine',
+    location: mapKyiv,
     email: 'kotenevdima1@gmail.com',
     phone: +380632468706,
   },
