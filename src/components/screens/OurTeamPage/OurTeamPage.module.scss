@@ -7,11 +7,13 @@
 
 .coworker {
     display: flex;
+    margin-bottom: 30px;
 }
 
 .photo {
     width: 411px;
     height: 479px;
+    border-radius: 12px;
 }
 
 .name {
@@ -83,6 +85,12 @@
 .map {
     width: 594px;
     height: 336px;
+}
+
+.mapGeneral {
+    width: 1010px;
+    height: 572px;
+
 }
 
 .slider {

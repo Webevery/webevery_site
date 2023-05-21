@@ -1,27 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './OurTeamPage.module.scss';
 import { coworkersData } from 'data/coworkers.data';
+import mapGeneral from 'images/coworkersLocations/mapGeneral.png'
 
 
 const OurTeamPage = () => {
+    const [coworkerId, setCoworkerId] = useState(0);
+
+
     return (
         <section className={styles.wrapper}>Наша Команда
-            {/* <div className={styles.coworker}>
-                <img className={styles.photo} src={coworkersData[0].photo} alt={`photo ${coworkersData[0].name}`}></img>
-                <div>
-                    <p className={styles.name}>{coworkersData[0].name}</p>
-                    <p className={styles.profession}>{coworkersData[0].profession}</p>
-                    <p className={styles.city}>{coworkersData[0].city},
-                        <span className={styles.country} >{coworkersData[0].country}</span></p>
-                    <p className={styles.quote}>{coworkersData[0].quote}</p>
-                    <p className={styles.humor}>{coworkersData[0].humor}</p>
-                    <img className={styles.map} src={coworkersData[0].location} alt={`location ${coworkersData[0].name}`}></img>
-                </div>
-            </div> */}
-            {coworkersData.map(item => {
+            {!coworkerId ? < img className={styles.mapGeneral} src={mapGeneral} alt="All coworker's locations" /> : <div>{coworkersData.map(item => {
                 return (
                     <div className={styles.coworker}>
-                        <img className={styles.photo} src={item.photo} alt={`photo ${item.name}`}></img>
+                        <img className={styles.photo} src={item.photo} alt={`photo ${item.name}`} />
                         <div>
                             <p className={styles.name}>{item.name}</p>
                             <p className={styles.profession}>{item.profession}</p>
@@ -33,11 +25,12 @@ const OurTeamPage = () => {
                         </div>
                     </div>
                 )
-            })}
+            })
+            }</div>}
 
             <ul className={styles.slider}>
                 {coworkersData.map(item => {
-                    return <li key={item.id}>
+                    return <li key={item.id} onClick={() => setCoworkerId(item.id)}>
                         <img className={styles.sliderPhoto} src={item.photoSmall} alt={item.name}>
                         </img>
                     </li>
