@@ -263,7 +263,7 @@ export const coworkersData = [
     profession: 'UX/UI Designer',
     quote: '"Коли квітка не цвіте, Ви виправляєте не квітку, а середовище, в якому вона росте."',
     quoteEn: '"When a flower doesn’t bloom, you fix the environment in which it grows, not the flower."',
-    humor: '"Там де жовтенький. Тільки не той, що жовтенький."',
+    humor: '"Там де ЖОВТЕНЬКИЙ. Тільки НЕ ТОЙ, що ЖОВТЕНЬКИЙ."',
     city: 'Гданськ',
     cityEn: 'Gdańsk',
     latitude: 54.372158,
