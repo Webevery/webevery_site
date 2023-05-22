@@ -1,0 +1,38 @@
+.FAQsection {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+
+  //   max-width: 100vw;
+  margin-top: 48px;
+  align-items: center;
+}
+
+// .FAQContentContainer {
+//   margin-left: 80px;
+//   margin-top: 48px;
+//   justify-content: space-around;
+// }
+
+.FAQtitle {
+  margin-bottom: 16px;
+
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+
+  color: #fafce3;
+}
+
+.FAQlist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 984px;
+  padding-bottom: 72px;
+}

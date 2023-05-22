@@ -1,0 +1,84 @@
+.FAQItem {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  // width: 1200px;
+  display: flex;
+  // justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.23);
+}
+
+.FAQQuestionContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 100%;
+
+  padding-top: 8px;
+  padding-bottom: 22px;
+}
+
+.FAQQuestion {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height */
+
+  letter-spacing: 0.05em;
+
+  color: rgba(235, 251, 250, 0.7);
+
+  margin-right: auto;
+}
+
+.FAQIcon {
+  width: 24px;
+  height: 24px;
+  stroke: #fafce3;
+
+  margin-left: auto;
+  // align-self: flex-end;
+}
+
+.FAQanswer {
+  margin-left: -100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 0;
+  overflow: hidden;
+  border: 0;
+  transition: all 200ms ease-out;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+
+  color: rgba(235, 251, 250, 0.7);
+
+  &__visible {
+    margin: 0;
+    margin-bottom: 5px;
+    // transition-duration: 1000ms;
+
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+
+    color: rgba(235, 251, 250, 0.7);
+  }
+}
