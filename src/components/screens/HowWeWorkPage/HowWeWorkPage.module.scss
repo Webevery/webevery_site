@@ -7,120 +7,18 @@
   padding: 90px 16px 16px 16px;
   // width: 1200px;
   // height: calc(100vh - 55px);
-
-  & .heroSection {
-    // width: 1200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
 }
 
-.secondTitle {
-  color: #78adf2;
-}
-/*  Hero   */
+.HowWeWorkTitle {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
-// .hero {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: left;
-//   justify-content: center;
-// }
-
-.sectionContainer {
-  display: flex;
-}
-
-.firstSection {
-  display: flex;
-}
-
-.listItemText {
-  &::before {
-    content: '';
-    height: 10px;
-    width: 10px;
-    display: inline-block;
-    background: linear-gradient(
-      186.95deg,
-      #00b6ff -68.15%,
-      rgba(0, 182, 255, 0) 119.17%
-    );
-    transform: rotate(45deg);
-  }
-}
-.listItem {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  // flex-direction: column;
-  padding: 50px;
-  // height: 100%;
-}
-.container1 {
-  height: 100%;
-  width: 50%;
-  margin-right: 20px;
-}
-.container2 {
-  height: 100%;
-  width: 50%;
-}
-
-.img {
-}
-.link {
-  display: block;
-  margin: 20px 0;
-}
-.listItem1 {
-  //   &::before {
-  //     content: '';
-  //     height: 10px;
-  //     width: 10px;
-  //     display: inline-block;
-  //     background: linear-gradient(
-  //       186.95deg,
-  //       #00b6ff -68.15%,
-  //       rgba(0, 182, 255, 0) 119.17%
-  //     );
-  //     transform: rotate(45deg);
-
-  //   }
-}
-
-// .sectionFAQ {
-// }
-
-.titleFAQ {
-  display: flex;
-  justify-content: center;
-  padding: 50px 0;
-}
-
-.containerFAQ {
-  display: flex;
-  justify-content: center;
-}
-
-.questionsFAQ {
-  padding: 20px 20px;
-  width: 40%;
-}
-
-.answersFAQ {
-  padding: 20px 20px;
-  width: 60%;
-}
-
-.answersFAQ__listItem {
-  &:not(:last-child) {
-    margin-bottom: 20px;
-  }
-}
-
-.answersFAQ__listItemTitle {
-  margin-bottom: 10px;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
