@@ -4,11 +4,11 @@ export const navData = [
     path: '/',
     title: 'Home',
   },
-  {
-    id: Math.random(),
-    path: '/aboutUs',
-    title: 'AboutUs',
-  },
+  // {
+  //   id: Math.random(),
+  //   path: '/aboutUs',
+  //   title: 'AboutUs',
+  // },
   {
     id: Math.random(),
     path: '/ourTeam',
