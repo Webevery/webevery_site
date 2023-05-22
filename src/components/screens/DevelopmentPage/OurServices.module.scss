@@ -3,7 +3,7 @@
 @import 'styles/variables';
 
 .OurServices {
-  min-height: calc(100% + 56px);
+  min-height: calc(100vh + 56px);
   padding: 100px 16px 116px;
   display: flex;
   align-items: center;
@@ -24,6 +24,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  transition-duration: 1s;
 
   &:nth-child(n + 4) {
     min-height: 772px;
@@ -47,11 +48,16 @@
       rgba(0, 0, 0, 0.6)
     );
   }
-  @media screen and (min-width: 840px) and (max-width: 1280px) {
+  @media screen and (min-width: 840px) and (max-width: 1275px) {
     &:nth-child(3) {
       height: 772px;
     }
   }
+
+  @media screen and (min-width: 1712px) {
+    height: 772px;
+  }
+
   & h2,
   .whatIsItBtn {
     font-family: Jura;
@@ -107,7 +113,7 @@
   font-weight: 700;
   line-height: 19px;
   letter-spacing: 0.05em;
-  text-align: center;
+  text-align: start;
   color: rgba(192, 215, 244, 1);
   margin-right: 16px;
   top: 116px;
