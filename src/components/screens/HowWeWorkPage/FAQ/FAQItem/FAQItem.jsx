@@ -30,16 +30,3 @@ const FAQItem = ({
 };
 
 export default FAQItem;
-
-{
-  /* <div class="accordion">
-  <details>
-    <summary>Title</summary>
-    This is all description
-  </details>
-  <details>
-    <summary>Title 2</summary>
-    This is all description 2
-  </details>
-</div>; */
-}
