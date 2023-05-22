@@ -21,7 +21,7 @@ const FAQItem = ({
   return (
     <li className={styles.FAQItem}>
       <div onClick={onClick} className={styles.FAQQuestionContainer}>
-        <h3>{question}</h3>
+        <h3 className={styles.FAQQuestion}>{question}</h3>
         <Icon className={styles.FAQIcon} />
       </div>
       <p className={isAnswerShown()}>{answer}</p>

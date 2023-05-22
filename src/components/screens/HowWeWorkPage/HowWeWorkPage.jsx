@@ -5,15 +5,15 @@ import FAQ from './FAQ/FAQ';
 const HowWeWorkPage = () => {
   return (
     <div className={styles.HowWeWork}>
-      <section className={styles.heroSection}>
+      {/* <section className={styles.heroSection}>
         <h1>ЯК МИ ПРАЦЮЄМО</h1>
         <h2 className={styles.secondTitle}> ПРОЦЕС РОЗРОБКИ В 6 КРОКІВ</h2>
         <p>
           Ось що означає розробити проєкт разом із нами. Процес динамічний,
           гнучкий та завжди адаптований до ваших потреб.
         </p>
-      </section>
-      <section className={styles.sectionStages}>
+      </section> */}
+      {/* <section className={styles.sectionStages}>
         <div className={`${styles.sectionContainer} ${styles.firstSection}`}>
           <ul className={styles.list}>
             <li className={styles.listItem}>
@@ -109,7 +109,7 @@ const HowWeWorkPage = () => {
             </li>
           </ul>
         </div>
-      </section>
+      </section> */}
 
       <FAQ />
     </div>
@@ -117,8 +117,8 @@ const HowWeWorkPage = () => {
 };
 
 export default HowWeWorkPage;
-{
-  /* <section className={styles.sectionFAQ}>
+
+/* <section className={styles.sectionFAQ}>
         <div className={styles.titleFAQ}>
           <h2>FAQ</h2>
         </div>
@@ -300,4 +300,3 @@ export default HowWeWorkPage;
           </div>
         </div>
       </section> */
-}

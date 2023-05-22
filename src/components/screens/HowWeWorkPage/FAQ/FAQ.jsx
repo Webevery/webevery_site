@@ -11,8 +11,9 @@ const FAQ = () => {
 
   return (
     <section className={styles.FAQsection}>
+      {/* <div className={styles.FAQContentContainer}> */}
       <h3 className={styles.FAQtitle}>FAQ</h3>
-      <ul>
+      <ul className={styles.FAQlist}>
         {data.map(item => (
           <FAQItem
             key={item.id}
@@ -28,6 +29,7 @@ const FAQ = () => {
           />
         ))}
       </ul>
+      {/* </div> */}
     </section>
   );
 };

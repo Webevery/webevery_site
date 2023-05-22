@@ -5,11 +5,14 @@
   color: #c0d7f4;
 
   padding: 90px 16px 16px 16px;
+  // width: 1200px;
+  // height: calc(100vh - 55px);
 
-  &.heroSection {
+  & .heroSection {
+    // width: 1200px;
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: center;
     justify-content: center;
   }
 }
