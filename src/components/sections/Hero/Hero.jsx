@@ -7,14 +7,11 @@ const Hero = () => {
       <div className={styles.containerHero}>
         <div className={styles.contentHero}>
           <h1 className={styles.textHero}>
-            <span className={styles.titleHero}>Webevery</span> &#8212; Створення
-            та просування сайтів
-            <br />
-            &#8594; Маркетинг <br />
-            &#8594; Веброзробка <br />
-            &#8594; Реклама в інтернеті <br />
-            &#8594; Розробляємо якісні сайти з індивідуальним дизайном.
+            Створення веб-сайту з індивідуальним дизайном
           </h1>
+          <button className={styles.btnHero} type="button">
+            Замовити
+          </button>
         </div>
       </div>
     </section>
@@ -22,3 +19,13 @@ const Hero = () => {
 };
 
 export default Hero;
+
+/* <h1 className={styles.textHero}>
+            <span className={styles.titleHero}>Webevery</span> &#8212; Створення
+            та просування сайтів
+            <br />
+            &#8594; Маркетинг <br />
+            &#8594; Веброзробка <br />
+            &#8594; Реклама в інтернеті <br />
+            &#8594; Розробляємо якісні сайти з індивідуальним дизайном.
+          </h1> */

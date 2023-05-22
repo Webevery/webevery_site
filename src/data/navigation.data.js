@@ -11,6 +11,11 @@ export const navData = [
   },
   {
     id: Math.random(),
+    path: '/ourTeam',
+    title: 'OurTeam',
+  },
+  {
+    id: Math.random(),
     path: '/contacts',
     title: 'Contacts',
   },

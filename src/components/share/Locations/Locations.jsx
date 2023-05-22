@@ -31,7 +31,7 @@ const Locations = ({ arrayData, infoWindowData, setInfoWindowData }) => {
     const [mapRef, setMapRef] = useState();
     // isOpen: Manages the state of the InfoWindow component.
     const [isOpen, setIsOpen] = useState(false);
-    // // infoWindowData: Stores the necessary data of a specific marker. Relocate to Contacts
+    // // infoWindowData: Stores the necessary data of a specific marker. Relocate to ContactsPages
     // const [infoWindowData, setInfoWindowData] = useState();
 
 
@@ -51,7 +51,7 @@ const Locations = ({ arrayData, infoWindowData, setInfoWindowData }) => {
     };
 
 
-    // Find values of keys latitude and longitude in object and return them as object.
+    // Custom. Find values of keys latitude and longitude in object and return them as object.
     const findLatLng = (obj) => {
         const latitude = Object.keys(obj).find((item) => item === "latitude");
         const lat = obj[latitude];
@@ -97,7 +97,6 @@ const Locations = ({ arrayData, infoWindowData, setInfoWindowData }) => {
                         return (
                             <MarkerF
                                 key={element.id}
-                                className={styles.marker}
                                 position={coordinates}
                                 // icon={"http://maps.google.com/mapfiles/ms/micons/info.png"}
                                 // icon={"http://maps.google.com/mapfiles/kml/pal4/icon53.png"}
@@ -107,14 +106,14 @@ const Locations = ({ arrayData, infoWindowData, setInfoWindowData }) => {
                             >
 
                                 {isOpen && infoWindowData?.id === element.id && (<InfoWindow
-                                    className={styles.info_window}
                                     onCloseClick={() => { setIsOpen(false) }}
                                 >
                                     <div className={styles.infoData}>
-                                        <p>{infoWindowData.city}</p>
-                                        <p>{infoWindowData.name}</p>
-                                        <Link to={`tel:${infoWindowData.phone}`}>{infoWindowData.phone}</Link>
-                                        <Link to={`mailto:${infoWindowData.email}`}>{infoWindowData.email}</ Link>
+                                        <p className={styles.place}>{infoWindowData.country}, {infoWindowData.city}</p>
+                                        <p className={styles.name}>{infoWindowData.name}</p>
+                                        <p className={styles.profession}>{infoWindowData.profession}</p>
+                                        <Link className={styles.phone} to={`tel:${infoWindowData.phone}`}>{infoWindowData.phone}</Link>
+                                        <Link className={styles.email} to={`mailto:${infoWindowData.email}`}>{infoWindowData.email}</ Link>
                                     </div>
                                 </InfoWindow>)}
 

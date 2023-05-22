@@ -1,6 +1,6 @@
 import React from 'react';
-
 import AboutUsPage from 'components/screens/AboutUsPage';
+
 
 const AboutUs = () => {
   return (
@@ -9,5 +9,6 @@ const AboutUs = () => {
     </>
   );
 };
+
 
 export default AboutUs;

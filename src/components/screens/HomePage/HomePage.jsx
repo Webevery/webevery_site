@@ -20,7 +20,7 @@ const HomePage = () => {
       const timer = setTimeout(() => {
         sessionStorage.setItem('visited', 'true');
         setVisited(false);
-      }, 2000);
+      }, 4000);
       return () => clearTimeout(timer);
     }
   }, [visited]);
