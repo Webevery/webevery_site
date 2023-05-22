@@ -12,11 +12,11 @@ const OurTeamPage = () => {
         <section className={styles.wrapper}>
             {!coworkerId ? < img className={styles.mapGeneral} src={mapGeneral} alt="All coworker's locations" /> : <div className={styles.coworker}>
                 <img className={styles.photo} src={coworkersData[coworkerId].photo} alt={coworkersData[coworkerId].name} />
-                <div>
+                <div className={styles.informationWrapper}>
                     <p className={styles.name}>{coworkersData[coworkerId].name}</p>
                     <p className={styles.profession}>{coworkersData[coworkerId].profession}</p>
                     <p className={styles.city}>{coworkersData[coworkerId].city},
-                        <span className={styles.country} >{coworkersData[coworkerId].country}</span></p>
+                        <span className={styles.country} > {coworkersData[coworkerId].country}</span></p>
                     <p className={styles.quote}>{coworkersData[coworkerId].quote}</p>
                     <p className={styles.humor}>{coworkersData[coworkerId].humor}</p>
                     <img className={styles.map} src={coworkersData[coworkerId].location} alt={`location ${coworkersData[coworkerId].name}`}></img>

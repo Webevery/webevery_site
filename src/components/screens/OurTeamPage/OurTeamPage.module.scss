@@ -1,18 +1,37 @@
 @import 'styles/variables';
 
 .wrapper {
-    padding: 90px 16px 16px 16px;
-    background-color: var(--main_bg_color_our_team);
+    padding-top: 90px;
     width: 100vw;
     height: 100vh;
+    background-color: var(--main_bg_color_our_team);
+    display: flex;
+    flex-direction: column;
 
-    // для видимости alt в img, в фигме этого нет
-    color: #FAFCE3;
+
+    // from children's styles
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+
+    color: var(--main_text_color_our_team);
+}
+
+.mapGeneral {
+    width: 1010px;
+    height: 572px;
+    margin: auto;
+    margin-top: 54px;
+    margin-bottom: 95px;
 }
 
 .coworker {
     display: flex;
-    margin-bottom: 30px;
+    padding-top: 77px;
+    padding-left: 80px;
+    padding-bottom: 62px;
+    padding-right: 80px;
 }
 
 .photo {
@@ -21,84 +40,58 @@
     border-radius: 12px;
 }
 
+.informationWrapper {
+    margin-left: 64px;
+    width: 628px;
+}
+
 .name {
-    font-family: 'Jura';
-    font-style: normal;
-    font-weight: 700;
+    margin-bottom: 10px;
     font-size: 20px;
     line-height: 24px;
-    letter-spacing: 0.05em;
-
-    color: #FAFCE3;
+    color: var(--text_color_name_our_team);
 }
 
 .profession {
-    font-family: 'Jura';
-    font-style: normal;
-    font-weight: 700;
+    margin-bottom: 10px;
     font-size: 16px;
     line-height: 19px;
-    letter-spacing: 0.05em;
-
-    color: rgba(235, 251, 250, 0.7);
 }
 
 .city {
-    font-family: 'Jura';
-    font-style: normal;
-    font-weight: 700;
+    margin-bottom: 44px;
     font-size: 16px;
     line-height: 19px;
-    letter-spacing: 0.05em;
-
-    color: rgba(235, 251, 250, 0.7);
 }
 
 .country {
-    font-family: 'Jura';
-    font-style: normal;
-    font-weight: 700;
     font-size: 16px;
     line-height: 19px;
-    letter-spacing: 0.05em;
-
-    color: rgba(235, 251, 250, 0.7);
 }
 
 .quote {
-    font-family: 'Jura';
-    font-style: normal;
-    font-weight: 700;
+    // width: 600px;
+    margin-bottom: 16px;
     font-size: 16px;
     line-height: 19px;
-    letter-spacing: 0.05em;
-
-    color: rgba(235, 251, 250, 0.7);
 }
 
 .humor {
-    font-family: 'Jura';
-    font-style: normal;
-    font-weight: 700;
+    // width: 600px;
+    margin-bottom: 43px;
     font-size: 16px;
     line-height: 19px;
-    letter-spacing: 0.05em;
-
-    color: rgba(235, 251, 250, 0.7);
 }
 
 .map {
     width: 594px;
     height: 336px;
-}
-
-.mapGeneral {
-    width: 1010px;
-    height: 572px;
+    margin-left: auto;
 }
 
 .slider {
     display: flex;
+    margin-bottom: 85px;
 }
 
 .sliderPhoto {
