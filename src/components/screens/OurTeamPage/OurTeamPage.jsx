@@ -11,7 +11,10 @@ const OurTeamPage = () => {
     return (
         <section className={styles.wrapper}>
             {!coworkerId ? < img className={styles.mapGeneral} src={mapGeneral} alt="All coworker's locations" /> : <div className={styles.coworker}>
-                <img className={styles.photo} src={coworkersData[coworkerId].photo} alt={coworkersData[coworkerId].name} />
+                <div>
+                    <img className={styles.photo} src={coworkersData[coworkerId].photo} alt={coworkersData[coworkerId].name} />
+                <p>{coworkersData[coworkerId].email}</p>
+                </div>
                 <div className={styles.informationWrapper}>
                     <p className={styles.name}>{coworkersData[coworkerId].name}</p>
                     <p className={styles.profession}>{coworkersData[coworkerId].profession}</p>
@@ -25,7 +28,7 @@ const OurTeamPage = () => {
 
             <ul className={styles.slider}>
                 {coworkersData.map(item => {
-                    return <li key={item.id} onClick={() => setCoworkerId(item.id)}>
+                    return <li className={styles.sliderItem} key={item.id} onClick={() => setCoworkerId(item.id)}>
                         <img className={styles.sliderPhoto} src={item.photoSmall} alt={item.name}>
                         </img>
                     </li>

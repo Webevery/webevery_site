@@ -34,10 +34,20 @@
 //   outline: 2px solid var(--light_color);
 // }
 
+
+
+
 // Max
+@import 'styles/variables';
 footer {
-  position: fixed;
-  bottom: 0px;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  padding: 10px;
+  // position: fixed;
+  // bottom: 0px;
+width:100%;
+background-color: var(--main_bg_color_our_team)
 }
 
 .wrapper {
@@ -54,6 +64,10 @@ footer {
     flex-direction: column-reverse;
     gap: 16px;
   }
+}
+
+.copyright{
+  color: var(--main_text_color_our_team);
 }
 
 .btn {

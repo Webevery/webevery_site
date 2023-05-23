@@ -56,7 +56,7 @@ const Footer = () => {
   return (
     <>
       <footer className={styles.wrapperFooter}>
-        <h3>Copyright &copy; 2023 Webevery</h3>
+        <h3 className={styles.copyright}>Copyright &copy; 2023 Webevery</h3>
         <Button
           onClick={toggleModal}
           className={styles.btnFooter}
