@@ -2,8 +2,8 @@
 
 .wrapper {
     padding-top: 90px;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: var(--main_bg_color_our_team);
     display: flex;
     flex-direction: column;
@@ -19,8 +19,9 @@
 }
 
 .mapGeneral {
-    width: 1010px;
-    height: 572px;
+    // width: 1010px;
+    // height: 572px;
+    width: 80%;
     margin: 54px auto 95px;
     // margin-top: 54px;
     // margin-bottom: 95px;
@@ -28,6 +29,7 @@
 
 .coworker {
     display: flex;
+    // flex-direction: column;
     padding: 77px 80px 62px;
 }
 
@@ -35,6 +37,7 @@
     width: 411px;
     height: 479px;
     border-radius: 12px;
+    margin-bottom: 30px;
 }
 
 .informationWrapper {
@@ -89,12 +92,20 @@
 .slider {
     display: flex;
     align-items: center;
+
+
+    // flex-wrap: wrap;
+
     margin-bottom: 85px;
     padding: 20px 9px;
 }
 
+.sliderItem{
+        margin-right: 35px;
+}
+
 .sliderPhoto {
-    margin-right: 35px;
+    width: 94px;
     cursor: pointer;
     border-radius: 50%;
 }
