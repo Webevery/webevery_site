@@ -34,20 +34,23 @@
 //   outline: 2px solid var(--light_color);
 // }
 
-
-
-
 // Max
 @import 'styles/variables';
 footer {
-  display:flex;
-  justify-content:space-around;
-  align-items:center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
   padding: 10px;
   // position: fixed;
   // bottom: 0px;
-width:100%;
-background-color: var(--main_bg_color_our_team)
+  width: 100%;
+  background-color: var(--main_bg_color_our_team);
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 16px;
+  }
 }
 
 .wrapper {
@@ -66,7 +69,7 @@ background-color: var(--main_bg_color_our_team)
   }
 }
 
-.copyright{
+.copyright {
   color: var(--main_text_color_our_team);
 }
 
