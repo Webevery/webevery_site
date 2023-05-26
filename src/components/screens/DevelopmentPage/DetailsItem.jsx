@@ -1,4 +1,4 @@
-import { pricesData } from 'data';
+// import { pricesData } from 'data';
 // import { nanoid } from 'nanoid';
 // import styles from './OurServices.module.scss';
 
