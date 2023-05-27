@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { NavLink } from 'react-router-dom';
+import logo from './Logo_webery_lightyellow.svg';
+import smallLogo from './small_logo_lightyellow.svg';
 
 import { navData } from 'data';
 import styles from './NavBar.module.scss';
@@ -11,13 +13,32 @@ const Navbar = () => {
   return (
     <>
       <header className={styles.headerNav}>
-        <NavLink to={`/`}>
-          <h1 className={styles.titleNav}>Webevery</h1>
+        <NavLink to={`/`} className={styles.navLinkLogo}>
+          {/* <h1 className={styles.titleNav}>Webevery</h1> */}
+          <img
+            src={logo}
+            alt="laptopLogo"
+            width="100%"
+            height="100%"
+            className={styles.laptopLogo}
+          />
+          <img
+            src={smallLogo}
+            alt="mobileLogo"
+            width="100%"
+            height="100%"
+            className={styles.mobileLogo}
+          />
+
+          {/* <img src={smallLogo} alt="Logo" width="100%" height="100%" /> */}
+          {/* <svg width="65px" height="70px">
+            <use href={logo}></use>
+          </svg> */}
         </NavLink>
 
         <ul
           className={
-            nav ? styles.menuNav : styles.menuNav + ' ' + styles.activeNav
+            nav ? styles.menuNav : styles.menuBurger + ' ' + styles.activeBurger
           }
         >
           {navData.map(el => (
@@ -49,6 +70,5 @@ const Navbar = () => {
     </>
   );
 };
-
 
 export default Navbar;

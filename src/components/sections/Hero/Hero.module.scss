@@ -2,12 +2,15 @@
 
 .containerHeroBg {
   width: 100%;
-  height: 768px;
+  // height: 768px;
+  height: calc(100vh - 36px);
   position: relative;
-  background-image: url('./background_Hero.jpg');
+  background-color: #020b11;
+  //замінила фото
+  background-image: url('../../../images/backgroundHero.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,16 +19,19 @@
   &::before {
     content: '';
     width: 100%;
-    height: 217px;
+    height: 28%;
     position: absolute;
     bottom: 0;
-    background: linear-gradient(0deg, #000002 18.89%, rgba(0, 0, 2, 0) 100%);
+    background: linear-gradient(0deg, #020b11 4.89%, rgba(0, 0, 2, 0) 100%);
   }
   @media screen and (min-width: $tablet) {
-    height: 1024px;
     text-align: start;
     align-items: flex-start;
     justify-content: start;
+  }
+  @media screen and (max-width: $desktop) {
+    width: 100%;
+    margin: 0 auto;
   }
 }
 .containerHero {
@@ -33,9 +39,9 @@
     padding-top: 146px;
     padding-left: 96px;
   }
-  @media screen and (min-width: $tablet) {
-    padding-top: 246px;
-    padding-left: 96px;
+  @media screen and (max-width: $desktop) {
+    padding-top: 180px;
+    padding-left: 72px;
   }
 }
 .contentHero {
@@ -45,31 +51,42 @@
 }
 
 .textHero {
-  font-family: 'Jura';
   font-weight: 600;
   font-size: 35px;
   line-height: 41px;
+  // font-size: 24px;
+  // line-height: 28px;
+
   color: #ebfbfa;
   margin-bottom: 56px;
 }
-.btnHero {
-  font-family: 'Jura';
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
 
-  padding: 16px 46px;
-
-  color: #feebb2;
-  background-color: transparent;
-  border: 2px solid #feebb2;
-  border-radius: 6px;
-  cursor: pointer;
+.buttonOrderHero {
+  background-color: var(--main_color_btn);
+  color: #263238;
   &:hover {
-    background-color: #feebb2;
-    color: #263238;
+    background-color: transparent;
+    color: var(--main_color_btn);
   }
 }
+// .btnHero {
+//   font-family: 'Jura';
+//   font-weight: 700;
+//   font-size: 20px;
+//   line-height: 24px;
+
+//   padding: 16px 46px;
+
+//   color: #feebb2;
+//   background-color: transparent;
+//   border: 2px solid #feebb2;
+//   border-radius: 6px;
+//   cursor: pointer;
+//   &:hover {
+//     background-color: #feebb2;
+//     color: #263238;
+//   }
+// }
 
 // .containerHeroBg {
 //   width: 100%;

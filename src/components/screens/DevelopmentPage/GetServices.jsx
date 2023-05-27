@@ -1,7 +1,7 @@
+import styles from './OurServices.module.scss';
+
 import { pricesData } from 'data';
 import Button from '../../share/Button/Button';
-
-import styles from './OurServices.module.scss';
 import { nanoid } from 'nanoid';
 import { useState } from 'react';
 
@@ -9,7 +9,7 @@ export const GetServices = () => {
   const [isClicked, setIsClicked] = useState(null);
 
   const GetData = pricesData.map(
-    ({ id, details, title, daysCount, price, describton }, i) => {
+    ({ id, details, title, daysCount, price, description }, i) => {
       const handleClick = i => {
         if (isClicked === i) {
           return setIsClicked(null);
@@ -28,7 +28,8 @@ export const GetServices = () => {
           >
             {isClicked === i ? 'Зрозуміло!' : 'Що це..?'}
           </button>
-          <div>
+
+          <div className={styles.allDescrWrapper}>
             <ul
               className={
                 isClicked === i
@@ -55,7 +56,7 @@ export const GetServices = () => {
                   : styles.servicesDescriptionHidden
               }
             >
-              {describton}
+              {description}
             </p>
           </div>
 
@@ -77,5 +78,3 @@ export const GetServices = () => {
 
   return <>{GetData}</>;
 };
-
-//qwe
