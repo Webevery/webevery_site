@@ -1,14 +1,14 @@
 .headerNav {
   position: fixed;
   top: 0;
-  height: 80px;
+  height: 48px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
   backdrop-filter: blur(16px);
   z-index: 100;
-  background: transparent;
+  background: var(--main_bg_color_our_team);
   border-bottom: 1px solid var(--light_color);
 }
 
@@ -29,8 +29,8 @@
 // }
 
 .navLinkLogo {
-  width: 200px;
-  height: 60px;
+  // width: 200px;
+  // height: 60px;
   transition-duration: 500ms;
   &:hover {
     scale: 1.1;
@@ -39,10 +39,14 @@
 
 .laptopLogo {
   display: block;
+  width:109px;
+  height:29px;
 }
 
 .mobileLogo {
   display: none;
+  width:100%;
+  height:100%;
 }
 
 .menuNav {
@@ -67,9 +71,12 @@
 
 .navLinkNav {
   font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
+  // font-weight: 600;
+  // font-size: 16px;
+  // line-height: 19px;
+  font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
 
   color: var(--light_color);
   // -webkit-text-stroke: 1px var(--main_color);
@@ -84,10 +91,10 @@
   border-bottom: 1px solid var(--light_color);
   // -webkit-text-stroke: 1px var(--main_bg_color);
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  color: var(--light_color);
+  color: var(--main_color_btn);
 
   // color: var(--light_color);
 }
@@ -115,7 +122,7 @@
     z-index: 100;
     border: none;
     background-color: transparent;
-    color: var(--main_color);
+    color: var(--main_bg_color_our_team);
   }
 
   .boxNav {
