@@ -18,15 +18,11 @@ const Navbar = () => {
           <img
             src={logo}
             alt="laptopLogo"
-            width="100%"
-            height="100%"
             className={styles.laptopLogo}
           />
           <img
             src={smallLogo}
             alt="mobileLogo"
-            width="100%"
-            height="100%"
             className={styles.mobileLogo}
           />
 
