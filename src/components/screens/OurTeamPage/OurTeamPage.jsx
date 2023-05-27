@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import styles from './OurTeamPage.module.scss';
 import { coworkersData } from 'data/coworkers.data';
-import mapGeneral from 'images/coworkersLocations/mapGeneral.png'
+import mapGeneral from 'images/coworkersLocations/mapGeneral.png';
+// import { SimpleCarousel } from 'components/share/SimpleCarousel';
 
 
 const OurTeamPage = () => {
@@ -25,6 +26,8 @@ const OurTeamPage = () => {
                     <img className={styles.map} src={coworkersData[coworkerId].location} alt={`location ${coworkersData[coworkerId].name}`}></img>
                 </div>
             </div>}
+
+            {/* <SimpleCarousel/> */}
 
             <ul className={styles.slider}>
                 {coworkersData.map(item => {
