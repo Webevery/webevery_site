@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Button from 'components/share/Button';
-import { useModal } from '../../../hooks';
 import Modal from 'components/share/Modal';
 import Form from 'components/share/Form';
 import styles from './Hero.module.scss';
 
 const Hero = () => {
-  const { isModalOpen, closeModal, toggleModal } = useModal();
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const closeModal = () => {
+    setModalOpen(!isModalOpen);
+  };
 
   return (
     <section className={styles.containerHeroBg}>
@@ -19,15 +22,15 @@ const Hero = () => {
             Замовити
           </button> */}
           <Button
-            onClick={toggleModal}
+            onClick={closeModal}
             className={styles.buttonOrderHero}
             type="button"
             title="Замовити"
             ariaLabel={'Order'}
           />
           {isModalOpen && (
-            <Modal onCloseModal={closeModal} mode="dark">
-              <Form closeModal={closeModal} />
+            <Modal onClose={closeModal} isModalOpen={isModalOpen}>
+              <Form isOpen={isModalOpen} closeModal={closeModal} />
             </Modal>
           )}
         </div>

@@ -7,11 +7,54 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.15);
-  overflow-y: scroll;
-  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 101;
+
+  animation: hideModal 0.7s forwards;
 }
 
-.dark {
-  background-color: rgba(0, 0, 0, 0.7);
+.modalContent {
+  animation: hideModal 0.7s forwards;
 }
+
+.activeContent {
+  animation: showModalContent 0.7s forwards;
+}
+
+@keyframes showModalContent {
+  from {
+    opacity: 0;
+    transform: translateX(100vw);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.active {
+  animation: showModal 0.5s forwards;
+}
+
+@keyframes showModal {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+// @keyframes hideModal {
+//   from {
+//     opacity: 1;
+//     transform: scale(1);
+//   }
+
+//   to {
+//     opacity: 0;
+//     transform: scale(0.7);
+//   }
+// }
