@@ -1,59 +1,38 @@
-import { createPortal } from 'react-dom';
-import { useEffect } from 'react';
-import css from './Modal.module.scss';
-const rootModal = document.getElementById('modal');
+import React, { useEffect } from 'react';
+import Portal from './Portal';
+import Backdrop from './Backdrop';
+import styles from './Modal.module.scss';
 
-function Modal(props) {
+function Modal({ isModalOpen, onClose, children }) {
   useEffect(() => {
-    const keydownHandler = e => {
+    const onKeydown = e => {
       if (e.code !== 'Escape') return;
-      props.onCloseModal();
+      onClose();
     };
 
-    window.addEventListener('keydown', keydownHandler);
-    return () => window.removeEventListener('keydown', keydownHandler);
-  }, [props]);
+    window.addEventListener('keydown', onKeydown);
+    return () => window.removeEventListener('keydown', onKeydown);
+  }, [onClose]);
 
-  function backdropClickHandler(e) {
+  function onBackdropClick(e) {
     if (e.currentTarget === e.target) {
-      props.onCloseModal();
+      onClose();
     }
   }
-
-  const backdropMode = props.mode === 'dark' ? 'dark' : '';
-
-  return createPortal(
-    <div
-      className={`${css.backdrop} ${css[backdropMode]}`}
-      onClick={backdropClickHandler}
-    >
-      {props.children}
-    </div>,
-    rootModal
+  return (
+    <Portal>
+      <Backdrop isModalOpen={isModalOpen} onClose={onBackdropClick}>
+        <div
+          className={
+            isModalOpen
+              ? styles.modalContent + ' ' + styles.activeContent
+              : styles.modalContent
+          }
+        >
+          {children}
+        </div>
+      </Backdrop>
+    </Portal>
   );
 }
-
 export default Modal;
-
-// Example! How to use Modal
-
-// import { useModal } from 'hooks';
-// import Modal from 'components/share/Modal';
-
-// function Home() {
-//   const { isModalOpen, closeModal, toggleModal } = useModal();
-
-//   return (
-//     <div>
-//       {isModalOpen && (
-//         <Modal onCloseModal={closeModal} mode="dark">
-//           <div>Content Modal</div>
-//         </Modal>
-//       )}
-//       Home
-//       <button type="button" onClick={toggleModal} style={{ width: 40, height: 40, backgroundColor: 'green' }}></button>
-//     </div>
-//   );
-// }
-
-// export default Home;
