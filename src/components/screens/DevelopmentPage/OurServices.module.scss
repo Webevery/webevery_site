@@ -1,19 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;700;900&display=swap');
-
 @import 'styles/variables';
 
 .OurServices {
-  min-height: calc(100vh + 56px);
-  padding: 100px 16px 116px;
+  padding: 112px 16px 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: #020b11;
-
-  column-gap: 64px;
-  row-gap: 64px;
+  background-color: var(--main_bg_color_our_team);
+  gap: 64px;
 }
 
 .servicesWrapper {
