@@ -1,23 +1,25 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Input from '../Input';
-import Textarea from '../Input';
+import Textarea from '../Input/Textarea';
+import OurContacts from './OurContacts';
 import styles from './Form.module.scss';
-import Select from './Select';
+import sprite from '../../../images/symbol-defs.svg';
 
-function Form({ closeModal }) {
+function Form({ isOpen, closeModal }) {
   const [userName, setUserName] = useState('');
   const [phone, setPhone] = useState('');
   const [mail, setMail] = useState('');
   const [comments, setComments] = useState('');
-  const [selectValue, setSelectValue] = useState('');
 
   const [dirtyUserName, setDirtyUserName] = useState(false);
   const [dirtyPhone, setDirtyPhone] = useState(false);
   const [dirtyMail, setDirtyMail] = useState(false);
 
-  const [errorUserName, setErrorUserName] = useState('Enter name, please');
-  const [errorPhone, setErrorPhone] = useState('Phone can"t be empty');
-  const [errorMail, setErrorMail] = useState('Email can"t be empty');
+  const [errorUserName, setErrorUserName] = useState(
+    'Це поле не може бути пустим'
+  );
+  const [errorPhone, setErrorPhone] = useState('Це поле не може бути пустим');
+  const [errorMail, setErrorMail] = useState('Це поле не може бути пустим');
   const [errorComments, setErrorComments] = useState('');
 
   const [validForm, setvalidForm] = useState(false);
@@ -30,11 +32,6 @@ function Form({ closeModal }) {
     }
   }, [errorUserName, errorPhone, errorMail, errorComments]);
 
-  useEffect(() => {
-    document.body.style.overflow = 'hidden';
-    return () => (document.body.style.overflow = 'unset');
-  }, []);
-
   const formSubmit = evt => {
     evt.preventDefault();
     const data = {
@@ -42,15 +39,11 @@ function Form({ closeModal }) {
       phone,
       mail,
       comments,
-      type: selectValue,
     };
     console.log('data:', data);
 
     reset();
-  };
-
-  const getSelectValue = evt => {
-    setSelectValue(evt.target.value);
+    closeModal();
   };
 
   const reset = () => {
@@ -65,17 +58,16 @@ function Form({ closeModal }) {
     setErrorPhone('Phone can"t be empty');
     setErrorMail('Email can"t be empty');
     setErrorComments('');
-    setSelectValue('');
   };
 
   const validateName = value => {
     if (value.length < 2) {
-      setErrorUserName('Name must be longer');
+      setErrorUserName('Ім’я має бути довшим');
       if (value.length === 0) {
-        setErrorUserName('Enter name, please');
+        setErrorUserName('Це поле не може бути пустим');
       }
     } else if (value.length > 20) {
-      setErrorUserName('Name must be shorter');
+      setErrorUserName('Ім’я має бути коротшим');
     } else {
       setErrorUserName('');
     }
@@ -83,7 +75,7 @@ function Form({ closeModal }) {
 
   const validateComments = value => {
     if (value.length > 300) {
-      setErrorComments('Comments must be shorter');
+      setErrorComments('Коментар має бути коротшим');
     } else {
       setErrorComments('');
     }
@@ -93,17 +85,19 @@ function Form({ closeModal }) {
     let re = /\S+@\S+\.\S+/;
 
     if (!re.test(email)) {
-      setErrorMail('Incorrect email');
+      setErrorMail('Не коректний email');
     } else {
       setErrorMail('');
     }
   }
 
   function validatePhone(phone) {
-    let re = /^(\()?\d{3}(\))?(-|\s)?\d{3}(-|\s)\d{4}$/;
+    // let re = /^(\()?\d{3}(\))?(-|\s)?\d{3}(-|\s)\d{4}$/;
+    let re = /^\+?([0-9]{2})\)?(([0-9]{3}))?[-. ]?([0-9]{3})?([0-9]{4})$/;
 
     if (!re.test(phone)) {
-      setErrorPhone('Correct format: (123) 456-7890');
+      // setErrorPhone('Correct format: (123) 456-7890');
+      setErrorPhone('Correct format: +XXXXXXXXXXXX');
     } else {
       setErrorPhone('');
     }
@@ -157,11 +151,16 @@ function Form({ closeModal }) {
   };
 
   return (
-    <div className={styles.formContainer}>
+    <div className={styles.container}>
       <button type="button" className={styles.closeBtn} onClick={closeModal}>
-        +
+        <svg className={styles.iconClose}>
+          <use href={sprite + '#icon-close'} />
+        </svg>
       </button>
-      <form onSubmit={formSubmit} className={styles.form}>
+      <form
+        onSubmit={formSubmit}
+        className={isOpen ? styles.form : styles.moveWrap + ' ' + styles.active}
+      >
         <div className={styles.wrapGroup}>
           <div className={styles.wrapError}>
             {dirtyUserName && errorUserName && (
@@ -172,7 +171,7 @@ function Form({ closeModal }) {
               id="nameId"
               name="name"
               value={userName}
-              label="Name"
+              label="Ім’я, Прізвище"
               placeholder=" "
               onChange={handleChange}
               onBlur={handleBlur}
@@ -187,7 +186,7 @@ function Form({ closeModal }) {
               id="phoneId"
               name="phone"
               value={phone}
-              label="Phone"
+              label="+380123456789"
               placeholder=" "
               onChange={handleChange}
               onBlur={handleBlur}
@@ -203,15 +202,13 @@ function Form({ closeModal }) {
               id="emailId"
               name="mail"
               value={mail}
-              label="Email"
+              label="google@gmail.com"
               placeholder=" "
               onChange={handleChange}
               onBlur={handleBlur}
             />
           </div>
         </div>
-
-        <Select value={selectValue} getValue={getSelectValue} />
 
         <div className={styles.wrapError}>
           {errorComments && <div className={styles.error}>{errorComments}</div>}
@@ -221,17 +218,26 @@ function Form({ closeModal }) {
             id="commentsId"
             name="comments"
             value={comments}
-            label="Comments"
+            label="Опишіть Вашу Ідею"
             placeholder=" "
             onChange={handleChange}
             onBlur={handleBlur}
           />
         </div>
-        <button className={styles.btnSubmit} disabled={!validForm}>
-          {' '}
-          Send message
-        </button>
+        <div>
+          <button
+            className={
+              validForm
+                ? styles.btnSubmit + ' ' + styles.btnActiv
+                : styles.btnSubmit
+            }
+            disabled={!validForm}
+          >
+            Відправити
+          </button>
+        </div>
       </form>
+      <OurContacts />
     </div>
   );
 }

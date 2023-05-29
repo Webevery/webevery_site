@@ -10,8 +10,10 @@ const Select = ({ value, getValue }) => {
         </option>
         <option value="visit">Сайт візитка</option>
         <option value="landind">Landing Page</option>
-        <option value="business">Сайт для бізнесу</option>
+        <option value="landind">Корпоративний сайт</option>
+        <option value="landind">Інтернет магазин сайт</option>
         <option value="catalog">Сайт каталог</option>
+        <option value="catalog">Індивідуальний проект</option>
       </select>
     </div>
   );

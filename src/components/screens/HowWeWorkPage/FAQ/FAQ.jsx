@@ -5,9 +5,6 @@ import styles from './FAQ.module.scss';
 
 const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(1);
-  const [ariaExpanded, setAriaExpanded] = useState(false);
-
-  const toggleAriaExpanded = () => setAriaExpanded(!ariaExpanded);
 
   return (
     <section className={styles.FAQsection}>
@@ -21,10 +18,8 @@ const FAQ = () => {
             question={item.question}
             answer={item.answer}
             activeIndex={activeIndex}
-            ariaExpanded={ariaExpanded}
             onClick={() => {
               setActiveIndex(item.id);
-              toggleAriaExpanded();
             }}
           />
         ))}
