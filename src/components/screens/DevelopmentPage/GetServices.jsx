@@ -1,10 +1,9 @@
-import styles from './OurServices.module.scss';
-
 import { pricesData } from 'data';
-import Button from '../../share/Button/Button';
+import Button from 'components/share/Button';
 import { nanoid } from 'nanoid';
 import { useState } from 'react';
 import { DetailsItem } from './DetailsItem';
+import styles from './OurServices.module.scss';
 
 export const GetServices = ({ onClick }) => {
   const [isClicked, setIsClicked] = useState(null);
@@ -66,9 +65,11 @@ export const GetServices = ({ onClick }) => {
               <p>Ціна від {price} $</p>
             </div>
             <Button
+              type="button"
               title="Замовити"
               className={styles.mainBtn}
               onClick={onClick}
+              ariaLabel={'Order'}
             />
           </div>
         </section>

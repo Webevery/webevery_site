@@ -3,9 +3,9 @@
   --main_bg_color_our_team: #020b11;
   --main_text_color_our_team: rgba(235, 251, 250, 0.7);
   --text_color_name_our_team: rgba(250, 252, 227, 1); // = #FAFCE3
-  
+
   // header links
-  --light_color: #ebfbfa; 
+  --light_color: #ebfbfa;
 
   --main_color_btn: #feebb2;
 
@@ -13,21 +13,33 @@
   --telegram_color: #229ed9;
   --linkedin_color: #0e76a8;
 
-
-
   // old variables
-    // --main_color: #26262ae2;
-    // --second_color: #434398e2;
-    // --main_bg_color: rgb(65, 74, 82);
-    // --main_bg_color: #303846;
-    // --main_bg_color: #393939; // black theme
-    // --light_color: #f1efee;
-    // --light_color: #fffcf6;
+  // --main_color: #26262ae2;
+  // --second_color: #434398e2;
+  // --main_bg_color: rgb(65, 74, 82);
+  // --main_bg_color: #303846;
+  // --main_bg_color: #393939; // black theme
+  // --light_color: #f1efee;
+  // --light_color: #fffcf6;
 }
 
 $mobile: '320px';
 $tablet: '768px';
 $desktop: '1366px';
+
+$min_mobile: '320px';
+$max_mobile: '767px';
+$min_tablet: '768px';
+$max_tablet: '1023px';
+$min_desktop: '1024px';
+$max_desktop: '1366px';
+
+// $min_mobile: '(max-width: 320px)';
+// $max_mobile: '(max-width: 767px)';
+// $min_tablet: '(min-width: 768px)';
+// $max_tablet: '(min-width: 1023px)';
+// $min_desktop: '(min-width: 1024px)';
+// $max_desktop: '(min-width: 1366px)';
 
 // Зразок, як користуватись:
 // @media screen and (min-width: $desktop) {}
