@@ -41,15 +41,10 @@
 // Max
 import React from 'react';
 import styles from './Footer.module.scss';
-// import { useModal } from 'hooks';
-// import Form from 'components/share/Form';
-// import Modal from 'components/share/Modal/Modal';
-// import Button from 'components/share/Button/Button';
 import SocialLinksList from 'components/share/SocialLinksList';
+import sprite from '../../../images/symbol-defs.svg';
 
 const Footer = () => {
-  // const { isModalOpen, closeModal, toggleModal } = useModal();
-
   return (
     <>
       <footer className={styles.wrapperFooter}>
@@ -60,18 +55,19 @@ const Footer = () => {
           customBlockSize={styles.linkSize}
           customIconSize={styles.iconSize}
         />
-        {/* <Button
-          onClick={toggleModal}
-          className={styles.btnFooter}
-          type="button"
-          title="Feedback"
-          ariaLabel={'FeedbackFooter'}
-        /> */}
-        {/* {isModalOpen && (
-          <Modal onCloseModal={closeModal} mode="dark">
-            <Form closeModal={closeModal} />
-          </Modal>
-        )} */}
+        <div className={styles.mailBlock}>
+          <a
+            className={styles.mailLink}
+            href="*"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg className={styles.mailIcon}>
+              <use href={sprite + `#envelope`} />
+            </svg>
+          </a>
+          <p className={styles.mailText}>webforevery@gmail.com</p>
+        </div>
       </footer>
     </>
   );

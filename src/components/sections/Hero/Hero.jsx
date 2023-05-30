@@ -3,6 +3,7 @@ import Button from 'components/share/Button';
 import Modal from 'components/share/Modal';
 import Form from 'components/share/Form';
 import styles from './Hero.module.scss';
+import sprite from '../../../images/symbol-defs.svg';
 
 const Hero = () => {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -18,9 +19,9 @@ const Hero = () => {
           <h1 className={styles.textHero}>
             Створення веб-сайту з індивідуальним дизайном
           </h1>
-          {/* <button className={styles.btnHero} type="button">
-            Замовити
-          </button> */}
+          <svg className={styles.logoHero}>
+            <use href={sprite + '#icon-logo_mini_tablet'} />
+          </svg>
           <Button
             onClick={closeModal}
             className={styles.buttonOrderHero}
