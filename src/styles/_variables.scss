@@ -27,5 +27,19 @@ $mobile: '320px';
 $tablet: '768px';
 $desktop: '1366px';
 
+$min_mobile: '320px';
+$max_mobile: '767px';
+$min_tablet: '768px';
+$max_tablet: '1023px';
+$min_desktop: '1024px';
+$max_desktop: '1366px';
+
+// $min_mobile: '(max-width: 320px)';
+// $max_mobile: '(max-width: 767px)';
+// $min_tablet: '(min-width: 768px)';
+// $max_tablet: '(min-width: 1023px)';
+// $min_desktop: '(min-width: 1024px)';
+// $max_desktop: '(min-width: 1366px)';
+
 // Зразок, як користуватись:
 // @media screen and (min-width: $desktop) {}

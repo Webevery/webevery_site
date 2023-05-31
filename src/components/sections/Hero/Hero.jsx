@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Button from 'components/share/Button';
-import { useModal } from '../../../hooks';
 import Modal from 'components/share/Modal';
 import Form from 'components/share/Form';
 import styles from './Hero.module.scss';
+import sprite from '../../../images/symbol-defs.svg';
 
 const Hero = () => {
-  const { isModalOpen, closeModal, toggleModal } = useModal();
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const closeModal = () => {
+    setModalOpen(!isModalOpen);
+  };
 
   return (
     <section className={styles.containerHeroBg}>
@@ -15,19 +19,19 @@ const Hero = () => {
           <h1 className={styles.textHero}>
             Створення веб-сайту з індивідуальним дизайном
           </h1>
-          {/* <button className={styles.btnHero} type="button">
-            Замовити
-          </button> */}
+          <svg className={styles.logoHero}>
+            <use href={sprite + '#icon-logo_mini_tablet'} />
+          </svg>
           <Button
-            onClick={toggleModal}
+            onClick={closeModal}
             className={styles.buttonOrderHero}
             type="button"
             title="Замовити"
             ariaLabel={'Order'}
           />
           {isModalOpen && (
-            <Modal onCloseModal={closeModal} mode="dark">
-              <Form closeModal={closeModal} />
+            <Modal onClose={closeModal} isModalOpen={isModalOpen}>
+              <Form isOpen={isModalOpen} closeModal={closeModal} />
             </Modal>
           )}
         </div>
