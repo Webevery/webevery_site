@@ -1,9 +1,11 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import Input from '../Input';
 import Textarea from '../Input/Textarea';
 import OurContacts from './OurContacts';
+import ButtonClose from './ButtonClose';
+import ButtomSubmit from './ButtomSubmit';
 import styles from './Form.module.scss';
-import sprite from '../../../images/symbol-defs.svg';
 
 function Form({ isOpen, closeModal }) {
   const [userName, setUserName] = useState('');
@@ -24,6 +26,8 @@ function Form({ isOpen, closeModal }) {
 
   const [validForm, setvalidForm] = useState(false);
 
+  const formRef = useRef();
+
   useEffect(() => {
     if (errorUserName || errorPhone || errorMail || errorComments) {
       setvalidForm(false);
@@ -34,6 +38,22 @@ function Form({ isOpen, closeModal }) {
 
   const formSubmit = evt => {
     evt.preventDefault();
+    emailjs
+      .sendForm(
+        'service_ev052ym',
+        'template_8yoqdiq',
+        formRef.current,
+        'zclTBta73h84T_Mq5'
+      )
+      .then(
+        result => {
+          console.log(result.text);
+        },
+        error => {
+          console.log(error.text);
+        }
+      );
+
     const data = {
       userName,
       phone,
@@ -54,9 +74,9 @@ function Form({ isOpen, closeModal }) {
     setDirtyUserName(false);
     setDirtyMail(false);
     setDirtyPhone(false);
-    setErrorUserName('Enter name, please');
-    setErrorPhone('Phone can"t be empty');
-    setErrorMail('Email can"t be empty');
+    setErrorUserName('Це поле не може бути пустим');
+    setErrorPhone('Це поле не може бути пустим');
+    setErrorMail('Це поле не може бути пустим');
     setErrorComments('');
   };
 
@@ -152,12 +172,9 @@ function Form({ isOpen, closeModal }) {
 
   return (
     <div className={styles.container}>
-      <button type="button" className={styles.closeBtn} onClick={closeModal}>
-        <svg className={styles.iconClose}>
-          <use href={sprite + '#icon-close'} />
-        </svg>
-      </button>
+      <ButtonClose closeModal={closeModal} />
       <form
+        ref={formRef}
         onSubmit={formSubmit}
         className={isOpen ? styles.form : styles.moveWrap + ' ' + styles.active}
       >
@@ -224,18 +241,7 @@ function Form({ isOpen, closeModal }) {
             onBlur={handleBlur}
           />
         </div>
-        <div>
-          <button
-            className={
-              validForm
-                ? styles.btnSubmit + ' ' + styles.btnActiv
-                : styles.btnSubmit
-            }
-            disabled={!validForm}
-          >
-            Відправити
-          </button>
-        </div>
+        <ButtomSubmit validForm={validForm} />
       </form>
       <OurContacts />
     </div>
