@@ -2,11 +2,13 @@
 
 .HowWeWork {
   background-color: var(--main_bg_color_our_team);
-  padding: 20px;
+  // padding: 20px;
 
   color: var(--text_color_name_our_team);
 
   padding: 64px 16px 16px 16px;
+  max-width: 984px;
+  margin: 0 auto;
   // width: 1200px;
   // height: calc(100vh - 55px);
 }
