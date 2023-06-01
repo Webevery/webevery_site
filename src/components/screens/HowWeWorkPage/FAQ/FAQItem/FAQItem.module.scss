@@ -4,7 +4,7 @@
   &:not(:last-child) {
     margin-bottom: 32px;
   }
-  // width: 1200px;
+
   display: flex;
   // justify-content: flex-start;
   align-items: flex-start;
@@ -37,7 +37,7 @@
 
   margin-right: auto;
 
-  width: 875px;
+  width: 100%;
   flex-wrap: wrap;
 
   // @media (min-width: $tablet) and (max-width: $desktop) {
