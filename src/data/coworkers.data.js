@@ -36,7 +36,7 @@ import dmitroKotenevSmall from '../images/ourTeam/dmitroKotenevSmall.png';
 
 
 
-import mapGdańsk from '../images/coworkersLocations/mapGdańsk.png';
+import mapGdansk from '../images/coworkersLocations/mapGdansk.png';
 import mapIvanoFrankivsk from '../images/coworkersLocations/mapIvanoFrankivsk.png';
 import mapKamianetsPodilskyi from '../images/coworkersLocations/mapKamianetsPodilskyi.png';
 import mapKharkiv from '../images/coworkersLocations/mapKharkiv.png';
@@ -47,7 +47,7 @@ import mapOdesa from '../images/coworkersLocations/mapOdesa.png';
 import mapOstrava from '../images/coworkersLocations/mapOstrava.png';
 import mapSumy from '../images/coworkersLocations/mapSumy.png';
 // import mapTallinn from '../images/coworkersLocations/mapTallinn.png';
-import mapTrenčín from '../images/coworkersLocations/mapTrenčín.png';
+import mapTrenchin from '../images/coworkersLocations/mapTrenchin.png';
 import mapUjgorod from '../images/coworkersLocations/mapUjgorod.png';
 import mapZaporizhzhia from '../images/coworkersLocations/mapZaporizhzhia.png';
 
@@ -185,12 +185,12 @@ export const coworkersData = [
     quoteEn: '"Success is not final, failure is not fatal: it is the courage to continue that counts."',
     humor: '"Багато заробляю, але мало отримую."',
     city: 'Тренчин',
-    cityEn: 'Trenčín',
+    cityEn: 'Trenchin',
     latitude: 48.89452,
     longitude: 18.04436,
     country: 'Словаччина',
     countryEn: 'Slovakia',
-    location: mapTrenčín,
+    location: mapTrenchin,
     email: 'sheihmaks@gmail.com',
     phone: +380671915300,
   },
@@ -265,12 +265,12 @@ export const coworkersData = [
     quoteEn: '"When a flower doesn’t bloom, you fix the environment in which it grows, not the flower."',
     humor: '"Там де ЖОВТЕНЬКИЙ. Тільки НЕ ТОЙ, що ЖОВТЕНЬКИЙ."',
     city: 'Гданськ',
-    cityEn: 'Gdańsk',
+    cityEn: 'Gdansk',
     latitude: 54.372158,
     longitude: 18.638306,
     country: 'Польща',
     countryEn: 'Poland',
-    location: mapGdańsk,
+    location: mapGdansk,
     email: 'oks.romanenkodesign@gmail.com',
     phone: +380676861493,
   },
