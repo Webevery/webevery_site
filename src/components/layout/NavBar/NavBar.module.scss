@@ -39,14 +39,14 @@
 
 .laptopLogo {
   display: block;
-  width:109px;
-  height:29px;
+  width: 109px;
+  height: 29px;
 }
 
 .mobileLogo {
   display: none;
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
 }
 
 .menuNav {
@@ -75,8 +75,8 @@
   // font-size: 16px;
   // line-height: 19px;
   font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
+  font-size: 20px;
+  line-height: 24px;
 
   color: var(--light_color);
   // -webkit-text-stroke: 1px var(--main_color);
@@ -99,7 +99,7 @@
   // color: var(--light_color);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .navLinkLogo {
     width: 56px;
     height: 40px;

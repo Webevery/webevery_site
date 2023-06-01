@@ -1,34 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;700;900&display=swap');
-
 @import 'styles/variables';
 
 .OurServices {
-  min-height: calc(100vh + 56px);
-  padding: 100px 16px 116px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 130px 16px 88px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: #020b11;
-
-  column-gap: 64px;
-  row-gap: 64px;
+  background-color: var(--main_bg_color_our_team);
+  gap: 106px;
+  transition-duration: 1s;
+  @media screen and (max-width: $tablet) {
+    gap: 64px;
+  }
+  @media screen and (min-width: $tablet) {
+    gap: 32px;
+  }
+  @media screen and (min-width: 850px) {
+    gap: 106px;
+  }
+  @media screen and (min-width: 1100px) and (max-width: 1230px) {
+    gap: 32px;
+  }
 }
 
 .servicesWrapper {
-  width: 372px;
-  height: 684px;
+  width: 292px;
+  height: 518px;
   border: 1px solid rgba(254, 235, 178, 1);
-  padding: 32px 16px;
+  padding: 20px 16px;
   text-align: center;
   position: relative;
   overflow: hidden;
-  transition-duration: 1s;
-
-  &:nth-child(n + 4) {
-    min-height: 772px;
-  }
+  // transition-duration: 1s;
 
   &:nth-child(3n + 1) {
     background-image: linear-gradient(
@@ -48,35 +55,26 @@
       rgba(0, 0, 0, 0.6)
     );
   }
-  @media screen and (min-width: 840px) and (max-width: 1275px) {
-    &:nth-child(3) {
-      height: 772px;
-    }
-  }
 
-  @media screen and (min-width: 1712px) {
-    height: 772px;
+  & h2,
+  & .whatIsItBtn {
+    font-weight: 700;
+    line-height: 1.18;
+    text-align: center;
+    color: var(--text_color_name_our_team);
   }
 
   & h2 {
-    font-family: Jura;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 0.05em;
-    text-align: center;
-    color: #fafce3;
-    margin-bottom: 12px;
+    font-size: 16px;
+    margin-bottom: 4px;
     transition-duration: 1s;
   }
 
   & .whatIsItBtn {
-    font-size: 16px;
-    line-height: 24px;
-    color: #fafce3;
+    font-size: 14px;
     border: none;
     background: none;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     text-decoration-line: underline;
     text-underline-offset: 3px;
     animation: pulse 5s infinite;
@@ -98,7 +96,7 @@
   50% {
     transform: scale(1.1);
     filter: brightness(1.5);
-    text-shadow: 0px 0px 1px white;
+    // text-shadow: 0px 0px 1px white;
   }
 
   100% {
@@ -116,83 +114,77 @@
   list-style: disc;
   margin-left: 32px;
   transition-duration: 1s;
-  @media screen and (max-width: 375px) {
-    margin-left: 16px;
-  }
+  width: 44%;
 
   &__item {
-    font-family: Jura;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 700;
-    line-height: 19px;
-    letter-spacing: 0.05em;
+    line-height: 1.15;
+    letter-spacing: 5%;
     text-align: left;
+
     color: rgba(192, 215, 244, 1);
-    width: 268px;
-    @media screen and (max-width: 375px) {
-      max-width: 240px;
-    }
   }
 }
 .servicesListHidden {
   transform: translateX(-110%);
   transition-duration: 1s;
+  width: 44%;
+}
+
+.servicesDescription,
+.servicesDescriptionHidden {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 5%;
+  text-align: start;
+  width: 44%;
+  transition-duration: 1s;
+  color: rgba(192, 215, 244, 1);
 }
 
 .servicesDescription {
-  font-family: Jura;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 19px;
-  letter-spacing: 0.05em;
-  text-align: start;
-  color: rgba(192, 215, 244, 1);
-  width: 260px;
   transform: translateX(-90%);
-  transition-duration: 1s;
 }
 
 .servicesDescriptionHidden {
-  font-family: Jura;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 19px;
-  letter-spacing: 0.05em;
-  text-align: start;
   transform: translateX(28%);
-  transition-duration: 1s;
-  text-align: start;
-  color: rgba(192, 215, 244, 1);
-  width: 260px;
 }
 
 .btnWrapper {
   width: calc(100% - 32px);
   position: absolute;
-  bottom: 32px;
+  bottom: 20px;
+
+  & .mainBtn {
+    font-size: 16px;
+    padding: 12px 38px;
+  }
 }
 
 .priceWrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
+
+  & p {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: 0.05em;
+    text-align: center;
+
+    color: var(--main_color_btn);
+  }
 }
 
-.priceWrapper p,
-.mainBtn {
-  font-family: Jura;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0em;
-  text-align: center;
-  color: #feebb2;
-}
+// .priceWrapper p {
+//   font-size: 13px;
+//   font-weight: 700;
+//   line-height: 1.15;
+//   letter-spacing: 0.05em;
+//   text-align: center;
 
-.mainBtn {
-  background-color: transparent;
-  border: 2px solid #feebb2;
-  border-radius: 6px;
-  cursor: pointer;
-  padding: 16px 48px;
-}
+//   color: var(--main_color_btn);
+// }

@@ -1,3 +1,5 @@
+@import 'styles/_variables.scss';
+
 .FAQItem {
   &:not(:last-child) {
     margin-bottom: 32px;
@@ -13,17 +15,18 @@
 
 .FAQQuestionContainer {
   display: flex;
-  align-items: center;
+  // align-items: center;
   justify-content: space-between;
   cursor: pointer;
   width: 100%;
 
   padding-top: 8px;
+  padding-left: 8px;
   padding-bottom: 22px;
 }
 
 .FAQQuestion {
-  font-family: 'Jura';
+  font-family: 'Jura', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -32,15 +35,28 @@
 
   letter-spacing: 0.05em;
 
-  color: rgba(235, 251, 250, 0.7);
-
   margin-right: auto;
+
+  width: 875px;
+  flex-wrap: wrap;
+
+  // @media (min-width: $tablet) and (max-width: $desktop) {
+  //   width: 700px;
+  // }
+
+  // @media (min-width: 480px) and (max-width: 767px) {
+  //   width: 420px;
+  // }
+
+  // @media (min-width: $mobile) and (max-width: 767px) {
+  //   max-width: 420px;
+  // }
 }
 
 .FAQIcon {
   width: 24px;
   height: 24px;
-  stroke: #fafce3;
+  stroke: var(--text_color_name_our_team);
 
   margin-left: auto;
   // align-self: flex-end;
@@ -58,27 +74,47 @@
   display: flex;
   flex-wrap: wrap;
 
-  font-family: 'Jura';
+  font-family: 'Jura', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.05em;
 
-  color: rgba(235, 251, 250, 0.7);
+  color: var(--main_text_color_our_team);
 
   &__visible {
     margin: 0;
     margin-bottom: 5px;
-    // transition-duration: 1000ms;
+    margin-left: 8px;
+    transition-duration: 500ms;
 
-    font-family: 'Jura';
+    font-family: 'Jura', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.05em;
 
-    color: rgba(235, 251, 250, 0.7);
+    color: var(--main_text_color_our_team);
   }
+
+  // @media (min-width: $tablet) and (max-width: $desktop) {
+  //   width: 700px;
+  // }
+
+  // @media (min-width: 480px) and (max-width: 767px) {
+  //   width: 420px;
+  // }
+
+  //   @media (min-width: $mobile) and (max-width: 767px) {
+  //     max-width: 420px;
+  //   }
+  // }
+}
+
+.FAQLink {
+  color: var(--text_color_name_our_team);
+  cursor: pointer;
+  border-bottom: 1px solid var(--text_color_name_our_team);
 }

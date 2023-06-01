@@ -1,10 +1,14 @@
+@import 'styles/_variables.scss';
+
 .HowWeWork {
-  background-color: #131c27;
-  padding: 20px;
+  background-color: var(--main_bg_color_our_team);
+  // padding: 20px;
 
-  color: #c0d7f4;
+  color: var(--text_color_name_our_team);
 
-  padding: 90px 16px 16px 16px;
+  padding: 64px 16px 16px 16px;
+  max-width: 984px;
+  margin: 0 auto;
   // width: 1200px;
   // height: calc(100vh - 55px);
 }

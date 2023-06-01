@@ -1,11 +1,11 @@
-import styles from './OurServices.module.scss';
-
 import { pricesData } from 'data';
-import Button from '../../share/Button/Button';
+import Button from 'components/share/Button';
 import { nanoid } from 'nanoid';
 import { useState } from 'react';
+import { DetailsItem } from './DetailsItem';
+import styles from './OurServices.module.scss';
 
-export const GetServices = () => {
+export const GetServices = ({ onClick }) => {
   const [isClicked, setIsClicked] = useState(null);
 
   const GetData = pricesData.map(
@@ -39,12 +39,11 @@ export const GetServices = () => {
             >
               {details.map(item => {
                 return (
-                  <li
-                    className={`${styles.servicesList__item} `}
+                  <DetailsItem
                     key={nanoid()}
-                  >
-                    {item}
-                  </li>
+                    className={`${styles.servicesList__item} `}
+                    item={item}
+                  />
                 );
               })}
             </ul>
@@ -66,9 +65,11 @@ export const GetServices = () => {
               <p>Ціна від {price} $</p>
             </div>
             <Button
+              type="button"
               title="Замовити"
               className={styles.mainBtn}
-              onClick={handleClick}
+              onClick={onClick}
+              ariaLabel={'Order'}
             />
           </div>
         </section>
