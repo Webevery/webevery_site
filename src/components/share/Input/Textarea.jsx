@@ -13,7 +13,7 @@ const Textarea = ({
   onBlur,
 }) => {
   return (
-    <div className={styles.inputWrapper}>
+    <div className={styles.inputWrapper + ' ' + styles.textareaWrapper}>
       <textarea
         className={`${styles.input} ${customStyle}`}
         type={type}

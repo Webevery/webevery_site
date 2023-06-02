@@ -86,7 +86,7 @@ function Form({ isOpen, closeModal }) {
       if (value.length === 0) {
         setErrorUserName('Це поле не може бути пустим');
       }
-    } else if (value.length > 20) {
+    } else if (value.length > 30) {
       setErrorUserName('Ім’я має бути коротшим');
     } else {
       setErrorUserName('');
@@ -126,23 +126,29 @@ function Form({ isOpen, closeModal }) {
   const handleChange = evt => {
     const { name, value } = evt.target;
     // console.log('evt.target.name:', evt.target.name);
+    // console.log('evt.target.value.length:', evt.target.value.length);
     switch (name) {
       case 'name':
+        if (evt.target.value.length > 30) return;
         validateName(value);
         setUserName(value);
+
         break;
 
       case 'comments':
+        if (evt.target.value.length > 301) return;
         validateComments(value);
         setComments(value);
         break;
 
       case 'phone':
+        if (evt.target.value.length > 13) return;
         validatePhone(value);
         setPhone(value);
         break;
 
       case 'mail':
+        if (evt.target.value.length > 40) return;
         validateEmail(value);
         setMail(value);
         break;
@@ -228,7 +234,12 @@ function Form({ isOpen, closeModal }) {
         </div>
 
         <div className={styles.wrapError}>
-          {errorComments && <div className={styles.error}>{errorComments}</div>}
+          {errorComments && (
+            <div className={styles.error + ' ' + styles.errorField}>
+              {errorComments}
+            </div>
+          )}
+
           <Textarea
             customStyle={styles.textarea}
             type="text"
