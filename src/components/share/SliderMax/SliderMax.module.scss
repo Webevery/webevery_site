@@ -1,0 +1,91 @@
+@import 'styles/variables';
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    // gap: 24px;
+    // height: 516px;
+    // // overflow: hidden;
+    // padding-bottom: 40px;
+
+    // @media screen and (max-width: 768px) {
+    //     gap: 40px;
+    //     padding-bottom: 0px;
+    // }
+}
+
+.photosWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    height: -webkit-fill-available;
+}
+
+.photoSmall {
+    width: 47px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.25s;
+}
+.photoSmall:not(:last-child){
+    margin-right: 35px;
+}
+
+.activePhotoSmall {
+width: 67px;
+    // animation: slider 1000ms alternate ease-out;
+
+    // @media screen and (min-width: 769px) {
+    //     height: 400px;
+    // }
+}
+
+@keyframes slider {
+    0% {
+        opacity: 0;
+        // transform: translateX(100%);
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.containerDots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.activeDot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #c0d7f4;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(192, 215, 244, 0.5);
+    margin: 0 3px;
+    cursor: pointer;
+
+    transition-duration: 500ms;
+
+    &:hover {
+        width: 14px;
+        height: 14px;
+    }
+}

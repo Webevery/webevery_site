@@ -81,14 +81,16 @@ import styles from './OurTeamPage.module.scss';
 // import 'slick-carousel/slick/slick-theme.css';
 // import { SimpleCarousel } from 'components/share/SimpleCarousel';
 // import AsNavFor from 'components/share/SimpleCarousel/SimpleCarousel';
-import { Andrikanich } from 'components/share/SimpleCarousel';
+// import { Andrikanich } from 'components/share/SimpleCarousel';
+import SliderMax from 'components/share/SliderMax';
 
 const OurTeamPage = () => {
   return (
     <section className={styles.wrapper}>
       {/* <SimpleCarousel/> */}
       {/* <AsNavFor /> */}
-      <Andrikanich />
+      {/* <Andrikanich /> */}
+      <SliderMax></SliderMax>
     </section>
   );
 };
