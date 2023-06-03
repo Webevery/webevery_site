@@ -1,9 +1,11 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import Input from '../Input';
 import Textarea from '../Input/Textarea';
 import OurContacts from './OurContacts';
+import ButtonClose from './ButtonClose';
+import ButtomSubmit from './ButtomSubmit';
 import styles from './Form.module.scss';
-import sprite from '../../../images/symbol-defs.svg';
 
 function Form({ isOpen, closeModal }) {
   const [userName, setUserName] = useState('');
@@ -24,6 +26,8 @@ function Form({ isOpen, closeModal }) {
 
   const [validForm, setvalidForm] = useState(false);
 
+  const formRef = useRef();
+
   useEffect(() => {
     if (errorUserName || errorPhone || errorMail || errorComments) {
       setvalidForm(false);
@@ -34,6 +38,22 @@ function Form({ isOpen, closeModal }) {
 
   const formSubmit = evt => {
     evt.preventDefault();
+    emailjs
+      .sendForm(
+        'service_ev052ym',
+        'template_8yoqdiq',
+        formRef.current,
+        'zclTBta73h84T_Mq5'
+      )
+      .then(
+        result => {
+          console.log(result.text);
+        },
+        error => {
+          console.log(error.text);
+        }
+      );
+
     const data = {
       userName,
       phone,
@@ -54,9 +74,9 @@ function Form({ isOpen, closeModal }) {
     setDirtyUserName(false);
     setDirtyMail(false);
     setDirtyPhone(false);
-    setErrorUserName('Enter name, please');
-    setErrorPhone('Phone can"t be empty');
-    setErrorMail('Email can"t be empty');
+    setErrorUserName('Це поле не може бути пустим');
+    setErrorPhone('Це поле не може бути пустим');
+    setErrorMail('Це поле не може бути пустим');
     setErrorComments('');
   };
 
@@ -66,7 +86,7 @@ function Form({ isOpen, closeModal }) {
       if (value.length === 0) {
         setErrorUserName('Це поле не може бути пустим');
       }
-    } else if (value.length > 20) {
+    } else if (value.length > 30) {
       setErrorUserName('Ім’я має бути коротшим');
     } else {
       setErrorUserName('');
@@ -106,23 +126,29 @@ function Form({ isOpen, closeModal }) {
   const handleChange = evt => {
     const { name, value } = evt.target;
     // console.log('evt.target.name:', evt.target.name);
+    // console.log('evt.target.value.length:', evt.target.value.length);
     switch (name) {
       case 'name':
+        if (evt.target.value.length > 30) return;
         validateName(value);
         setUserName(value);
+
         break;
 
       case 'comments':
+        if (evt.target.value.length > 301) return;
         validateComments(value);
         setComments(value);
         break;
 
       case 'phone':
+        if (evt.target.value.length > 13) return;
         validatePhone(value);
         setPhone(value);
         break;
 
       case 'mail':
+        if (evt.target.value.length > 40) return;
         validateEmail(value);
         setMail(value);
         break;
@@ -152,12 +178,9 @@ function Form({ isOpen, closeModal }) {
 
   return (
     <div className={styles.container}>
-      <button type="button" className={styles.closeBtn} onClick={closeModal}>
-        <svg className={styles.iconClose}>
-          <use href={sprite + '#icon-close'} />
-        </svg>
-      </button>
+      <ButtonClose closeModal={closeModal} />
       <form
+        ref={formRef}
         onSubmit={formSubmit}
         className={isOpen ? styles.form : styles.moveWrap + ' ' + styles.active}
       >
@@ -211,7 +234,12 @@ function Form({ isOpen, closeModal }) {
         </div>
 
         <div className={styles.wrapError}>
-          {errorComments && <div className={styles.error}>{errorComments}</div>}
+          {errorComments && (
+            <div className={styles.error + ' ' + styles.errorField}>
+              {errorComments}
+            </div>
+          )}
+
           <Textarea
             customStyle={styles.textarea}
             type="text"
@@ -224,18 +252,7 @@ function Form({ isOpen, closeModal }) {
             onBlur={handleBlur}
           />
         </div>
-        <div>
-          <button
-            className={
-              validForm
-                ? styles.btnSubmit + ' ' + styles.btnActiv
-                : styles.btnSubmit
-            }
-            disabled={!validForm}
-          >
-            Відправити
-          </button>
-        </div>
+        <ButtomSubmit validForm={validForm} />
       </form>
       <OurContacts />
     </div>

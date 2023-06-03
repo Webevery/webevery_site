@@ -3,18 +3,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  align-content: center;
+  align-content: space-around;
   flex-wrap: wrap;
   background-color: #ebfbfa;
   width: 588px;
-  height: 490px;
+  height: 534px;
   border-radius: 6px;
   padding: 12px;
-  overflow: hidden;
-  z-index: 2;
-  // @media (min-width: 768px) {
-  //     width: 700px;
-  // }
 }
 
 .closeBtn {
@@ -47,21 +42,10 @@ form {
   padding: 16px;
 
   transition: transform 700ms;
-
-  // @media (min-width: 768px) {
-  //     display: flex;
-  //     flex-direction: column;
-  //     align-items: center;
-  // }
 }
 
 .wrapGroup {
   width: 100%;
-  // @media (min-width: 768px) {
-  //     display: grid;
-  //     grid-template-columns: auto auto auto;
-  //     column-gap: 100px;
-  // }
 }
 
 .active {
@@ -76,12 +60,17 @@ form {
 
 .error {
   position: absolute;
-  bottom: 62px;
+  bottom: 72px;
   left: 125px;
   color: red;
   background-color: #ebfbfa;
   font-size: 14px;
   padding: 0 5px 0 5px;
+}
+
+.errorField {
+  bottom: 120px;
+  left: 125px;
 }
 
 .textarea {
@@ -124,11 +113,13 @@ form {
   margin: 0 auto 10px;
   height: 2px;
   background: #020b11;
+  margin-top: 20px;
 }
 
 .contactsList {
   display: flex;
   justify-content: space-between;
+  margin-top: 10px;
 }
 
 .contactsItem {

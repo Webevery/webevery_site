@@ -11,6 +11,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  & .contactsForm {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid rgba(98, 98, 98, 1);
+
+    & button {
+      background-color: red;
+    }
+    & hr {
+      display: none;
+    }
+    @media screen and (min-width: $tablet) {
+      display: none;
+    }
+  }
 }
 
 .contactsWrapper {

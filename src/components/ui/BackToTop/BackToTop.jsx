@@ -1,6 +1,7 @@
 import Button from 'components/share/Button/Button';
 import React from 'react';
 import styles from './BackToTop.module.scss';
+import { ReactComponent as Icon } from '../../../images/V.svg';
 
 window.onscroll = function () {
   scrollFunction();
@@ -8,8 +9,11 @@ window.onscroll = function () {
 
 function scrollFunction() {
   let backToTop = document.getElementById('backToTop');
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    backToTop.style.display = 'block';
+  if (
+    document.body.scrollTop > 100 ||
+    document.documentElement.scrollTop > 100
+  ) {
+    backToTop.style.display = 'flex';
   } else {
     backToTop.style.display = 'none';
   }
@@ -23,7 +27,7 @@ function topFunction() {
 const BackToTop = () => {
   return (
     <Button
-      title="Go to top"
+      title={<Icon className={styles.backToTopIcon} />}
       id="backToTop"
       type="button"
       onClick={topFunction}
