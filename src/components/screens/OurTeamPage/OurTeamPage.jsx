@@ -77,6 +77,8 @@
 
 import React from 'react';
 import styles from './OurTeamPage.module.scss';
+// import 'slick-carousel/slick/slick.css';
+// import 'slick-carousel/slick/slick-theme.css';
 // import { SimpleCarousel } from 'components/share/SimpleCarousel';
 // import AsNavFor from 'components/share/SimpleCarousel/SimpleCarousel';
 import { Andrikanich } from 'components/share/SimpleCarousel';

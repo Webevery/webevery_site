@@ -140,8 +140,8 @@
   width: 100%;
   height: 100%;
   background-color: var(--main_bg_color_our_team);
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
 
   // from children's styles
   font-style: normal;
@@ -160,105 +160,105 @@
   margin: 0 auto 48px;
 }
 
-.coworker {
-  display: flex;
-  // flex-direction: column;
-  padding: 64px auto 32px;
-  margin-bottom: 53px;
-}
+// .coworker {
+//   display: flex;
+//   // flex-direction: column;
+//   padding: 64px auto 32px;
+//   margin-bottom: 53px;
+// }
 
-.photo {
-  // margin-left: 160px;
+// .photo {
+//   // margin-left: 160px;
 
-  //макет вернуть если
-  // width: 326px;
-  // height: 381px;
-  // мои пропорциине подойдут
-  width: 346px;
-  height: 405px;
+//   //макет вернуть если
+//   // width: 326px;
+//   // height: 381px;
+//   // мои пропорциине подойдут
+//   width: 346px;
+//   height: 405px;
 
-  border-radius: 10px;
-}
+//   border-radius: 10px;
+// }
 
-.informationWrapper {
-  margin-left: 90px;
-  width: 610px;
-}
+// .informationWrapper {
+//   margin-left: 90px;
+//   width: 610px;
+// }
 
-.name {
-  margin-bottom: 24px;
-  font-size: 20px;
-  line-height: 24px;
-  color: var(--text_color_name_our_team);
-}
+// .name {
+//   margin-bottom: 24px;
+//   font-size: 20px;
+//   line-height: 24px;
+//   color: var(--text_color_name_our_team);
+// }
 
-.profession {
-  margin-bottom: 24px;
-  font-size: 14px;
-  line-height: 17px;
-}
-
-// .city {
+// .profession {
 //   margin-bottom: 24px;
 //   font-size: 14px;
 //   line-height: 17px;
 // }
 
-.city {
-  // margin-bottom: 16px;
-  font-size: 14px;
-  line-height: 17px;
-}
+// // .city {
+// //   margin-bottom: 24px;
+// //   font-size: 14px;
+// //   line-height: 17px;
+// // }
 
-.country {
-  font-size: 14px;
-  line-height: 17px;
-}
+// .city {
+//   // margin-bottom: 16px;
+//   font-size: 14px;
+//   line-height: 17px;
+// }
 
-.quote {
-  // width: 600px;
-  margin-bottom: 24px;
-  font-size: 14px;
-  line-height: 17px;
-}
+// .country {
+//   font-size: 14px;
+//   line-height: 17px;
+// }
 
-.humor {
-  // width: 600px;
-  margin-bottom: 22px;
-  font-size: 14px;
-  line-height: 17px;
-}
+// .quote {
+//   // width: 600px;
+//   margin-bottom: 24px;
+//   font-size: 14px;
+//   line-height: 17px;
+// }
 
-.map {
-    //макет вернуть если
-  // width: 297px;
-  // height: 168px;
-  // мои пропорции не подойдут
-  width: 339px;
-  height: 192px;
+// .humor {
+//   // width: 600px;
+//   margin-bottom: 22px;
+//   font-size: 14px;
+//   line-height: 17px;
+// }
 
-  margin: 0 auto;
-}
+// .map {
+//     //макет вернуть если
+//   // width: 297px;
+//   // height: 168px;
+//   // мои пропорции не подойдут
+//   width: 339px;
+//   height: 192px;
 
-.slider {
-  margin: 0 auto;
-  height: 122px; // когда добавяться точки под фото - заменить на 67px
-  // height:67px;
-  display: flex;
-  align-items: center;
+//   margin: 0 auto;
+// }
 
-  // flex-wrap: wrap;
+// .slider {
+//   margin: 0 auto;
+//   height: 122px; // когда добавяться точки под фото - заменить на 67px
+//   // height:67px;
+//   display: flex;
+//   align-items: center;
 
-  // margin-bottom: 85px;
-  // padding: 20px 9px;
-}
+//   // flex-wrap: wrap;
 
-.sliderItem {
-  margin-right: 35px;
-}
+//   // margin-bottom: 85px;
+//   // padding: 20px 9px;
+// }
 
-.sliderPhoto {
-  width: 47px;
-  cursor: pointer;
-  border-radius: 50%;
-}
+// .sliderItem {
+//   margin-right: 35px;
+// }
+
+// .sliderPhoto {
+//   width: 47px;
+//   cursor: pointer;
+//   border-radius: 50%;
+// }
