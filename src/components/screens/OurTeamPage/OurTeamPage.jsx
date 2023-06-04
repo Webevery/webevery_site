@@ -75,22 +75,35 @@
 
 // short video
 
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './OurTeamPage.module.scss';
-// import 'slick-carousel/slick/slick.css';
-// import 'slick-carousel/slick/slick-theme.css';
-// import { SimpleCarousel } from 'components/share/SimpleCarousel';
-// import AsNavFor from 'components/share/SimpleCarousel/SimpleCarousel';
-// import { Andrikanich } from 'components/share/SimpleCarousel';
-import SliderMax from 'components/share/SliderMax';
+import mapGeneral from 'images/coworkersLocations/mapGeneral.png';
+import { coworkersData } from 'data';
+import { SliderNav, SliderInformation } from 'components/share/SliderMax';
 
 const OurTeamPage = () => {
+  const [currentIndex, setCurrentIndex] = useState(null);
+
   return (
     <section className={styles.wrapper}>
-      {/* <SimpleCarousel/> */}
-      {/* <AsNavFor /> */}
-      {/* <Andrikanich /> */}
-      <SliderMax></SliderMax>
+      {currentIndex === null ? (
+        <img
+          className={styles.mapGeneral}
+          src={mapGeneral}
+          alt="All coworker's locations"
+        />
+      ) : (
+        <SliderInformation
+          array={coworkersData}
+          currentIndex={currentIndex}
+          setCurrentIndex={setCurrentIndex}
+        />
+      )}
+      <SliderNav
+        array={coworkersData}
+        currentIndex={currentIndex}
+        setCurrentIndex={setCurrentIndex}
+      />
     </section>
   );
 };

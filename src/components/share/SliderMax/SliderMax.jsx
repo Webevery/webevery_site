@@ -2,25 +2,23 @@ import React, { useState } from 'react';
 import styles from './SliderMax.module.scss';
 
 import BtnSliderMax from './BtnSliderMax';
-import { coworkersData } from 'data';
+// import { coworkersData } from 'data';
 
-const SliderMax = () => {
-  const [slideIndex, setSlideIndex] = useState(1);
+export const SliderInformation = ({ array, currentIndex, setCurrentIndex }) => {
+  // const [currentIndex, setCurrentIndex] = useState(null);
   const [touchPosition, setTouchPosition] = useState(null);
 
-  const nextSlide = () => {
-    if (slideIndex !== coworkersData.length) {
-      setSlideIndex(slideIndex + 1);
-    } else setSlideIndex(1);
-  };
-
   const prevSlide = () => {
-    if (slideIndex !== 1) {
-      setSlideIndex(slideIndex - 1);
-    } else setSlideIndex(coworkersData.length);
+    if (currentIndex !== null && currentIndex !== 0) {
+      setCurrentIndex(currentIndex - 1);
+    } else setCurrentIndex(array.length - 1);
   };
 
-  const moveDots = index => setSlideIndex(index);
+  const nextSlide = () => {
+    if (currentIndex !== null && currentIndex !== array.length - 1) {
+      setCurrentIndex(currentIndex + 1);
+    } else setCurrentIndex(0);
+  };
 
   // ! Logic handleTouch
 
@@ -39,11 +37,102 @@ const SliderMax = () => {
     const currentTouch = e.touches[0].clientX;
     const diff = touchDown - currentTouch;
 
-    if (diff > coworkersData.length - 1) {
+    if (diff > 5) {
       nextSlide();
     }
 
-    if (diff < (coworkersData.length - 1) * -1) {
+    if (diff < 5) {
+      prevSlide();
+    }
+
+    setTouchPosition(null);
+  };
+
+  return (
+    <>
+      <div
+        className={styles.wrapper}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+      >
+        <div>
+          {array.map((item, index) => {
+            return (
+              <div
+                className={
+                  currentIndex === index ? styles.coworker : styles.hidden
+                }
+              >
+                <img
+                  className={styles.photo}
+                  src={item.photo}
+                  alt={item.name}
+                />
+                <div className={styles.informationWrapper}>
+                  <p className={styles.name}>{item.name}</p>
+                  <p className={styles.profession}>{item.profession}</p>
+
+                  <p className={styles.quote}>{item.quote}</p>
+                  <p className={styles.humor}>{item.humor}</p>
+                  <p className={styles.city}>
+                    {item.city},
+                    <span className={styles.country}> {item.country}</span>
+                  </p>
+                  <img
+                    className={styles.map}
+                    src={item.location}
+                    alt={`location ${item.name}`}
+                  ></img>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </>
+  );
+};
+
+export const SliderNav = ({ array, currentIndex, setCurrentIndex }) => {
+  // const [currentIndex, setCurrentIndex] = useState(null);
+  const [touchPosition, setTouchPosition] = useState(null);
+
+  const prevSlide = () => {
+    if (currentIndex !== null && currentIndex !== 0) {
+      setCurrentIndex(currentIndex - 1);
+    } else setCurrentIndex(array.length - 1);
+  };
+
+  const nextSlide = () => {
+    if (currentIndex !== null && currentIndex !== array.length - 1) {
+      setCurrentIndex(currentIndex + 1);
+    } else setCurrentIndex(0);
+  };
+
+  const goToSlide = index => setCurrentIndex(index);
+
+  // ! Logic handleTouch
+
+  const handleTouchStart = e => {
+    const touchDown = e.touches[0].clientX;
+    setTouchPosition(touchDown);
+  };
+
+  const handleTouchMove = e => {
+    const touchDown = touchPosition;
+
+    if (touchDown === null) {
+      return;
+    }
+
+    const currentTouch = e.touches[0].clientX;
+    const diff = touchDown - currentTouch;
+
+    if (diff > 5) {
+      nextSlide();
+    }
+
+    if (diff < 5) {
       prevSlide();
     }
 
@@ -59,33 +148,30 @@ const SliderMax = () => {
       >
         <BtnSliderMax moveSlide={prevSlide} direction={'prev'} />
         <div className={styles.photosWrapper}>
-          {coworkersData.map((item, index) => {
+          {array.map((item, index) => {
             return (
               <img
                 key={item.id}
                 className={
-                  slideIndex === index + 1
+                  currentIndex === index
                     ? styles.activePhotoSmall
                     : styles.photoSmall
                 }
                 src={item.photoSmall}
                 alt={item.name}
-                //   className={styles.mockupImg}
-                onClick={() => moveDots(index + 1)}
+                onClick={() => goToSlide(index)}
               />
             );
           })}
         </div>
         <BtnSliderMax moveSlide={nextSlide} direction={'next'} />
 
-        <div className={styles.containerDots}>
-          {coworkersData.map((_, index) => (
+        <div className={styles.dotsWrapper}>
+          {array.map((_, index) => (
             <div
               key={index}
-              className={
-                slideIndex === index + 1 ? styles.activeDot : styles.dot
-              }
-              onClick={() => moveDots(index + 1)}
+              className={currentIndex === index ? styles.activeDot : styles.dot}
+              onClick={() => goToSlide(index)}
             ></div>
           ))}
         </div>
@@ -93,5 +179,3 @@ const SliderMax = () => {
     </>
   );
 };
-
-export default SliderMax;
