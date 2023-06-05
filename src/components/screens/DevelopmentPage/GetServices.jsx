@@ -1,15 +1,17 @@
 import { pricesData } from 'data';
 import { ServicesItem } from './ServicesItem';
-import { useState, useEffect } from 'react';
+// import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 export const GetServices = ({ onClick }) => {
-  const [activeId, setActiveId] = useState(() => {
-    return JSON.parse(localStorage.getItem('activeId')) || 0;
-  });
+  const [activeId, setActiveId] = useState(0);
+  // const [activeId, setActiveId] = useState(() => {
+  //   return JSON.parse(localStorage.getItem('activeId')) || 0;
+  // });
 
-  useEffect(() => {
-    localStorage.setItem('activeId', JSON.stringify(activeId));
-  }, [activeId]);
+  // useEffect(() => {
+  // localStorage.setItem('activeId', JSON.stringify(activeId));
+  // }, [activeId]);
 
   return pricesData.map(
     ({ id, details, title, daysCount, price, description }) => {

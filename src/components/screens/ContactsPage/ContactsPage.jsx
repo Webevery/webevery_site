@@ -23,7 +23,6 @@ const ContactsPage = () => {
           onClick={closeModal}
         />
         <Form className={styles.contactsForm} />
-        {/* <Form /> */}
       </div>
       {isModalOpen && (
         <Modal onClose={closeModal} isModalOpen={isModalOpen}>

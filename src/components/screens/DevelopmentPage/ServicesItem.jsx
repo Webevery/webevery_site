@@ -15,20 +15,14 @@ export const ServicesItem = ({
   activeId,
   setActiveId,
 }) => {
-  // const [isClicked, setIsClicked] = useState(false);
-  const [isClicked, setIsClicked] = useState(() => {
-    return JSON.parse(localStorage.getItem('isClicked')) || false;
-  });
+  const [isClicked, setIsClicked] = useState(false);
 
   const isShown = () => (id === activeId ? setIsClicked(!isClicked) : null);
 
   useEffect(() => {
-    localStorage.setItem('isClicked', JSON.stringify(isClicked));
     isShown();
     // eslint-disable-next-line
   }, [activeId]);
-
-  // const ariaExpanded = id === activeId ? false : true;
 
   return (
     <section className={styles.servicesWrapper} key={id}>
