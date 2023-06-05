@@ -4,7 +4,6 @@ import styles from './ContactsPage.module.scss';
 import sprite from 'images/contactsImgs/symbol-defs.svg';
 
 export const GetItem = () => {
-  console.log(sprite + '#icon-tel');
   return (
     <ul className={styles.contactsList}>
       {contactsData.map(({ id, country, tel, location }) => {

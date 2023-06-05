@@ -7,7 +7,7 @@ import ButtonClose from './ButtonClose';
 import ButtomSubmit from './ButtomSubmit';
 import styles from './Form.module.scss';
 
-function Form({ isOpen, closeModal }) {
+function Form({ isOpen, closeModal, className }) {
   const [userName, setUserName] = useState('');
   const [phone, setPhone] = useState('');
   const [mail, setMail] = useState('');
@@ -177,8 +177,8 @@ function Form({ isOpen, closeModal }) {
   };
 
   return (
-    <div className={styles.container}>
-      <ButtonClose closeModal={closeModal} />
+    <div className={`${styles.container} ${className}`}>
+      <ButtonClose closeModal={closeModal} className={className} />
       <form
         ref={formRef}
         onSubmit={formSubmit}
@@ -195,7 +195,7 @@ function Form({ isOpen, closeModal }) {
               name="name"
               value={userName}
               label="Ім’я, Прізвище"
-              placeholder=" "
+              placeholder=""
               onChange={handleChange}
               onBlur={handleBlur}
             />

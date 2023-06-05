@@ -6,7 +6,7 @@ const Input = ({
   name,
   id,
   label,
-  customStyle,
+  className,
   placeholder,
   value,
   onChange,
@@ -15,7 +15,7 @@ const Input = ({
   return (
     <div className={scss.inputWrapper}>
       <input
-        className={`${scss.input} ${customStyle}`}
+        className={`${scss.input} ${className}`}
         type={type}
         id={id}
         name={name}
