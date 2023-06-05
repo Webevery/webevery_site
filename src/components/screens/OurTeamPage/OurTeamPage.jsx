@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from './OurTeamPage.module.scss';
 import sprite from 'images/sprite.svg';
 import { coworkersData } from 'data';
-import { SliderNav, SliderInformation } from 'components/share/SliderMax';
+import { SliderNav, SliderInfo } from 'components/share/SliderMax';
 
 const OurTeamPage = () => {
   const [currentIndex, setCurrentIndex] = useState(null);
@@ -31,7 +31,7 @@ const OurTeamPage = () => {
           </ul>
         </>
       ) : (
-        <SliderInformation
+        <SliderInfo
           array={coworkersData}
           currentIndex={currentIndex}
           setCurrentIndex={setCurrentIndex}

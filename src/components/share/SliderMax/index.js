@@ -1,2 +1,2 @@
 export { SliderNav } from './SliderMax';
-export { SliderInformation } from './SliderMax';
+export { SliderInfo } from './SliderMax';

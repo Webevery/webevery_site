@@ -1,31 +1,35 @@
-@import 'styles/variables.scss';
+@import 'styles/variables';
 
 .wrapper {
   margin-top: 48px;
-  padding: 52px 160px;
+  padding: 52px 0px 32px;
   width: 100%;
   height: 100%;
   background-color: var(--main_bg_color_our_team);
-  // display: flex;
-  // flex-direction: column;
-
-  // from children's styles
+  text-align: center;
+  position:relative;
   font-style: normal;
   font-weight: 700;
   letter-spacing: 0.05em;
-
   color: var(--main_text_color_our_team);
 }
 
 .mapGeneral {
   width: 729px;
-  height: 410px;
-  // width: 80%;
-  // margin: 54px auto 95px;
-  // margin-top: 54px;
+  height: 413px;
   margin: 0 auto 48px;
 }
 
-.countriesWrapper{}
+.countriesWrapper{
+  position:absolute;
+  top: 13%;
+  right: 23%;    
+  text-align:left;
+  font-size: 12px;
+  line-height: 14px;
 
-.countryOnGeneralMap{}
+}
+
+.countryOnGeneralMap:not(:last-child){
+  margin-bottom: 9px;
+}
