@@ -1,10 +1,9 @@
 import { contactsData } from 'data';
 import styles from './ContactsPage.module.scss';
 
-import sprite from 'images/contactsImgs/symbol-defs.svg';
+import sprite from 'images/symbol-defs.svg';
 
 export const GetItem = () => {
-  console.log(sprite + '#icon-tel');
   return (
     <ul className={styles.contactsList}>
       {contactsData.map(({ id, country, tel, location }) => {
@@ -14,14 +13,14 @@ export const GetItem = () => {
 
             <a href={'tel:' + tel}>
               <svg>
-                <use href={sprite + '#icon-tel'} />
+                <use href={sprite + '#icon-contactsTel'} />
               </svg>
               <p> {tel}</p>
             </a>
 
             <p>
               <svg>
-                <use href={sprite + '#icon-location'} />
+                <use href={sprite + '#icon-contactsLocation'} />
               </svg>
               {location}
             </p>
