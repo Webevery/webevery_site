@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import styles from './SliderMax.module.scss';
-
 import BtnSliderMax from './BtnSliderMax';
-// import { coworkersData } from 'data';
+import sprite from 'images/sprite.svg';
 
 export const SliderInformation = ({ array, currentIndex, setCurrentIndex }) => {
   // const [currentIndex, setCurrentIndex] = useState(null);
@@ -59,6 +58,7 @@ export const SliderInformation = ({ array, currentIndex, setCurrentIndex }) => {
           {array.map((item, index) => {
             return (
               <div
+                key={item.id}
                 className={
                   currentIndex === index ? styles.coworker : styles.hidden
                 }
@@ -78,11 +78,9 @@ export const SliderInformation = ({ array, currentIndex, setCurrentIndex }) => {
                     {item.city},
                     <span className={styles.country}> {item.country}</span>
                   </p>
-                  <img
-                    className={styles.map}
-                    src={item.location}
-                    alt={`location ${item.name}`}
-                  ></img>
+                  <svg className={styles.map}>
+                    <use href={`${sprite}#icon-map${item.location}`} />
+                  </svg>
                 </div>
               </div>
             );

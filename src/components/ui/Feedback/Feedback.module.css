@@ -1,0 +1,27 @@
+.buttonFeedback {
+  position: fixed;
+  text-transform: uppercase;
+  transform: rotate(-90deg) translate(0);
+  opacity: 1;
+  top: auto;
+  bottom: 135px;
+  padding: 10px 20px;
+  mix-blend-mode: difference;
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 3px;
+}
+@media (max-width: 1200) {
+  .buttonFeedback {
+    left: calc(-40px - -10 * (100vw - 1200px) / 432);
+    height: auto;
+    font-size: 12px;
+    line-height: 25px;
+  }
+}
+@media (max-width: 1800) {
+  .buttonFeedback {
+    left: calc(-55px + -20 * (100vw - 1800px) / 600);
+  }
+}/*# sourceMappingURL=Feedback.module.css.map */

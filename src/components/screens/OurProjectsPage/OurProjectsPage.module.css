@@ -1,0 +1,23 @@
+.wrapperProjects {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: calc(100vh - 36px);
+  padding: 68px 16px 58px 16px;
+  width: 100%;
+}
+
+.cardProjects {
+  background-color: hsla(65, 81%, 94%, 0.1);
+  border: 1px solid #fafce3;
+  border-radius: 6px;
+  max-width: 942px;
+  height: 580px;
+  padding: 30px 46px 27px 98px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .cardProjects {
+    padding: 0;
+  }
+}/*# sourceMappingURL=OurProjectsPage.module.css.map */

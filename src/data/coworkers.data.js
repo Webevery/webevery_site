@@ -34,26 +34,6 @@ import denysKudriavetsSmall from '../images/ourTeam/denysKudriavetsSmall.png';
 import dmitroKotenevSmall from '../images/ourTeam/dmitroKotenevSmall.png';
 
 
-
-
-import mapGdansk from '../images/coworkersLocations/mapGdansk.png';
-import mapIvanoFrankivsk from '../images/coworkersLocations/mapIvanoFrankivsk.png';
-import mapKamianetsPodilskyi from '../images/coworkersLocations/mapKamianetsPodilskyi.png';
-import mapKharkiv from '../images/coworkersLocations/mapKharkiv.png';
-import mapKyiv from '../images/coworkersLocations/mapKyiv.png';
-import mapLandauInDerPfalz from '../images/coworkersLocations/mapLandauInDerPfalz.png';
-import mapLviv from '../images/coworkersLocations/mapLviv.png';
-import mapOdesa from '../images/coworkersLocations/mapOdesa.png';
-import mapOstrava from '../images/coworkersLocations/mapOstrava.png';
-import mapSumy from '../images/coworkersLocations/mapSumy.png';
-// import mapTallinn from '../images/coworkersLocations/mapTallinn.png';
-import mapTrenchin from '../images/coworkersLocations/mapTrenchin.png';
-import mapUjgorod from '../images/coworkersLocations/mapUjgorod.png';
-import mapZaporizhzhia from '../images/coworkersLocations/mapZaporizhzhia.png';
-
-
-
-
 export const coworkersData = [
   {
     id: '0',
@@ -70,7 +50,7 @@ export const coworkersData = [
     longitude: 18.28204,
     country: 'Чехія',
     countryEn: 'Czech Republic',
-    location: mapOstrava,
+    location: 'Ostrava',
     email: 'volodymirkavun1@gmail.com',
     phone: +380636876176,
   },
@@ -90,7 +70,7 @@ export const coworkersData = [
     longitude: 30.71039,
     country: 'Україна',
     countryEn: 'Ukraine',
-    location: mapOdesa,
+    location: 'Odesa',
     email: 'peltek1985@gmail.com',
     phone: +380683396082,
   },
@@ -110,7 +90,7 @@ export const coworkersData = [
     longitude: 24.71248,
     country: 'Україна',
     countryEn: 'Ukraine',
-    location: mapIvanoFrankivsk,
+    location: 'Ivano-Frankivsk',
     email: 'natalabojko@gmail.com',
     phone: +380503738465,
   },
@@ -130,7 +110,7 @@ export const coworkersData = [
     longitude: 22.2947,
     country: 'Україна',
     countryEn: 'Ukraine',
-    location: mapUjgorod,
+    location: 'Ujgorod',
     email: 'kivikaivika@gmail.com',
     phone: +380955834998,
   },
@@ -150,7 +130,7 @@ export const coworkersData = [
     longitude: 26.58516,
     country: 'Україна',
     countryEn: 'Ukraine',
-    location: mapKamianetsPodilskyi,
+    location: 'Kamianets-Podilskyi',
     email: 'a.tsapkov.dev@gmail.com',
     phone: +380936452142,
   },
@@ -170,7 +150,7 @@ export const coworkersData = [
     longitude: 35.11714,
     country: 'Україна',
     countryEn: 'Ukraine',
-    location: mapZaporizhzhia,
+    location: 'Zaporizhzhia',
     email: 'dima.kolod@gmail.com',
     phone: +380953907792,
   },
@@ -190,7 +170,7 @@ export const coworkersData = [
     longitude: 18.04436,
     country: 'Словаччина',
     countryEn: 'Slovakia',
-    location: mapTrenchin,
+    location: 'Trenchin',
     email: 'sheihmaks@gmail.com',
     phone: +380671915300,
   },
@@ -210,7 +190,7 @@ export const coworkersData = [
     longitude: 34.7981,
     country: 'Україна',
     countryEn: 'Ukraine',
-    location: mapSumy,
+    location: 'Sumy',
     email: 'sledozar@gmail.com',
     phone: +380664710207,
   },
@@ -230,7 +210,7 @@ export const coworkersData = [
     longitude: 24.02324,
     country: 'Україна',
     countryEn: 'Ukraine',
-    location: mapLviv,
+    location: 'Lviv',
     email: 'wowa.pol@ukr.net',
     // phone: +380000000000,
   },
@@ -245,12 +225,12 @@ export const coworkersData = [
     quoteEn: '"',
     humor: '"ААААААА, я ЗРОЗУМІВ..."',
     city: 'Ландау-ін-дер-Пфальц',
-    cityEn: 'Landau in der Pfalz',
+    cityEn: 'Landau-in-der-Pfalz',
     latitude: 49.19844,
     longitude: 8.11692,
     country: 'Німеччина',
     countryEn: 'Germany',
-    location: mapLandauInDerPfalz,
+    location: 'Landau-in-der-Pfalz',
     email: 'myrkozar@gmail.com',
     phone: +380500172671,
   },
@@ -270,7 +250,7 @@ export const coworkersData = [
     longitude: 18.638306,
     country: 'Польща',
     countryEn: 'Poland',
-    location: mapGdansk,
+    location: 'Gdansk',
     email: 'oks.romanenkodesign@gmail.com',
     phone: +380676861493,
   },
@@ -290,7 +270,7 @@ export const coworkersData = [
     longitude: 30.74383,
     country: 'Україна',
     countryEn: 'Ukraine',
-    location: mapOdesa,
+    location: 'Odesa',
     // email: '',
     // phone: +3801111111,
   },
@@ -310,7 +290,7 @@ export const coworkersData = [
     longitude: 36.231537,
     country: 'Україна',
     countryEn: 'Ukraine',
-    location: mapKharkiv,
+    location: 'Kharkiv',
     email: 'kudriavetsdenis@gmail.com',
     phone: +380686345365,
   },
@@ -330,7 +310,7 @@ export const coworkersData = [
     longitude: 30.523333,
     country: 'Україна',
     countryEn: 'Ukraine',
-    location: mapKyiv,
+    location: 'Kyiv',
     email: 'kotenevdima1@gmail.com',
     phone: +380632468706,
   },
@@ -349,7 +329,7 @@ export const coworkersData = [
   //   longitude: 24.753574,
   //   country: 'Естонія',
   //   countryEn: 'Estonia',
-  //   location: mapTallinn,
+  //   location: 'Tallinn',
   //   email: 'cadillac.maxim@gmail.com',
   //   phone: +380664770959,
   // },

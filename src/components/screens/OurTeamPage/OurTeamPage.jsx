@@ -77,7 +77,7 @@
 
 import React, { useState } from 'react';
 import styles from './OurTeamPage.module.scss';
-import mapGeneral from 'images/coworkersLocations/mapGeneral.png';
+import sprite from 'images/sprite.svg';
 import { coworkersData } from 'data';
 import { SliderNav, SliderInformation } from 'components/share/SliderMax';
 
@@ -87,11 +87,9 @@ const OurTeamPage = () => {
   return (
     <section className={styles.wrapper}>
       {currentIndex === null ? (
-        <img
-          className={styles.mapGeneral}
-          src={mapGeneral}
-          alt="All coworker's locations"
-        />
+        <svg className={styles.mapGeneral}>
+          <use href={sprite + '#icon-mapGeneralWithoutCountries'} />
+        </svg>
       ) : (
         <SliderInformation
           array={coworkersData}

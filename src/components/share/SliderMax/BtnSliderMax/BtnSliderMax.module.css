@@ -1,0 +1,49 @@
+.btnSlidePrev {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  z-index: 1;
+  border: none;
+  background-color: transparent;
+  animation: arrowLeft 1000ms infinite ease-out;
+  max-width: 42px;
+  height: 12px;
+  cursor: pointer;
+}
+
+@keyframes arrowLeft {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.btnSlideNext {
+  position: absolute;
+  top: 20%;
+  transform: translate(0, -50%);
+  right: 0;
+  z-index: 1;
+  border: none;
+  background-color: transparent;
+  animation: arrowRight 1000ms infinite ease-out;
+  max-width: 42px;
+  height: 12px;
+  cursor: pointer;
+}
+
+@keyframes arrowRight {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}/*# sourceMappingURL=BtnSliderMax.module.css.map */

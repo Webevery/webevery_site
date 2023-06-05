@@ -1,0 +1,60 @@
+.listWrapper {
+  display: flex;
+}
+
+.itemSocialLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: auto;
+  border-radius: 50px;
+  outline: 2px solid var(--light_color);
+  transition-property: outline-offset, outline-color, background-color;
+  transition-duration: 0.25s;
+}
+.itemSocialLink:hover {
+  cursor: pointer;
+  outline-offset: 4px;
+  animation: shake 0.25s;
+}
+
+@keyframes shake {
+  10% {
+    transform: rotate(15deg);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+  30% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-15deg);
+  }
+}
+.iconSocialLink {
+  display: block;
+  fill: var(--light_color);
+}
+
+.instagram:hover {
+  outline: 2px solid #dc2743;
+  background-color: #f09433;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f09433", endColorstr="#bc1888", GradientType=1);
+}
+
+.facebook:hover {
+  background-color: var(--facebook_color);
+  outline: 2px solid var(--facebook_color);
+}
+
+.telegram:hover {
+  background-color: var(--telegram_color);
+  outline: 2px solid var(--telegram_color);
+}
+
+.linkedin:hover {
+  background-color: var(--linkedin_color);
+  outline: 2px solid var(--linkedin_color);
+}/*# sourceMappingURL=SocialLink.module.css.map */
