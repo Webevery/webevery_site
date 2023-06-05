@@ -1,5 +1,5 @@
 import styles from './Form.module.scss';
-import sprite from '../../../images/symbol-defs.svg';
+import sprite from 'images/sprite.svg';
 
 const ButtonClose = ({ closeModal, className }) => {
   return (
