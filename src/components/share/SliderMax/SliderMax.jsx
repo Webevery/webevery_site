@@ -50,7 +50,7 @@ export const SliderInformation = ({ array, currentIndex, setCurrentIndex }) => {
   return (
     <>
       <div
-        className={styles.wrapper}
+        className={styles.sliderInformationWrapper}
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
       >
@@ -140,7 +140,7 @@ export const SliderNav = ({ array, currentIndex, setCurrentIndex }) => {
   return (
     <>
       <div
-        className={styles.wrapper}
+        className={styles.sliderNavWrapper}
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
       >

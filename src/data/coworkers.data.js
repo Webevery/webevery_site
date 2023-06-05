@@ -35,8 +35,28 @@ import dmitroKotenevSmall from '../images/ourTeam/dmitroKotenevSmall.png';
 
 
 export const coworkersData = [
-  {
+    {
     id: '0',
+    name: 'Наталія Бойко',
+    photo: nataliiaBoiko,
+    photoSmall: nataliiaBoikoSmall,
+    profession: 'Full Stack Developer',
+    quote: '"Варто пам’ятати, що частіше маленькі кроки, а не гігантські стрибки, призводять до найтриваліших змін."',
+    quoteEn: '"It’s worth remembering that it is often the small steps, not the giant leaps, that bring about the most lasting change."',
+    humor: '"Можна ЦЮ КНІПКУ взяти і ПРИШПАНДЬОРИТИ ось ТУДИ і БУДЕ воно ДОБРЕ !"',
+    city: 'Івано-Франківськ',
+    cityEn: 'Ivano-Frankivsk',
+    latitude: 48.92312,
+    longitude: 24.71248,
+    country: 'Україна',
+    countryEn: 'Ukraine',
+    location: 'Ivano-Frankivsk',
+    email: 'natalabojko@gmail.com',
+    phone: +380503738465,
+  },
+
+  {
+    id: '1',
     name: 'Володимир Кавун',
     photo: volodymyrKavun,
     photoSmall: volodymyrKavunSmall,
@@ -56,7 +76,7 @@ export const coworkersData = [
   },
 
   {
-    id: '1',
+    id: '2',
     name: 'Максим Пельтек',
     photo: maksPeltek,
     photoSmall: maksPeltekSmall,
@@ -73,26 +93,6 @@ export const coworkersData = [
     location: 'Odesa',
     email: 'peltek1985@gmail.com',
     phone: +380683396082,
-  },
-
-  {
-    id: '2',
-    name: 'Наталія Бойко',
-    photo: nataliiaBoiko,
-    photoSmall: nataliiaBoikoSmall,
-    profession: 'Full Stack Developer',
-    quote: '"Варто пам’ятати, що частіше маленькі кроки, а не гігантські стрибки, призводять до найтриваліших змін."',
-    quoteEn: '"It’s worth remembering that it is often the small steps, not the giant leaps, that bring about the most lasting change."',
-    humor: '"Можна ЦЮ КНІПКУ взяти і ПРИШПАНДЬОРИТИ ось ТУДИ і БУДЕ воно ДОБРЕ !"',
-    city: 'Івано-Франківськ',
-    cityEn: 'Ivano-Frankivsk',
-    latitude: 48.92312,
-    longitude: 24.71248,
-    country: 'Україна',
-    countryEn: 'Ukraine',
-    location: 'Ivano-Frankivsk',
-    email: 'natalabojko@gmail.com',
-    phone: +380503738465,
   },
 
   {

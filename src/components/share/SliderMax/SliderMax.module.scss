@@ -1,6 +1,8 @@
 @import 'styles/_variables';
 
 /*SliderInformation styles*/
+.sliderInformationWrapper{}
+
 .coworker {
   display: flex;
   // flex-direction: column;
@@ -11,6 +13,7 @@
 .hidden{
     display: none;
 }
+
 .photo {
   // margin-left: 160px;
 
@@ -42,6 +45,20 @@
   line-height: 17px;
 }
 
+.quote {
+  // width: 600px;
+  margin-bottom: 24px;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.humor {
+  // width: 600px;
+  margin-bottom: 22px;
+  font-size: 14px;
+  line-height: 17px;
+}
+
 // .city {
 //   margin-bottom: 24px;
 //   font-size: 14px;
@@ -55,20 +72,6 @@
 }
 
 .country {
-  font-size: 14px;
-  line-height: 17px;
-}
-
-.quote {
-  // width: 600px;
-  margin-bottom: 24px;
-  font-size: 14px;
-  line-height: 17px;
-}
-
-.humor {
-  // width: 600px;
-  margin-bottom: 22px;
   font-size: 14px;
   line-height: 17px;
 }
@@ -87,7 +90,7 @@
 
 
 /*SliderNav styles*/
-.wrapper {
+.sliderNavWrapper {
     padding: 0 60px;
     display: flex;
     align-items: center;
@@ -159,6 +162,21 @@
     height:34px;
 }
 
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--slider_dot_color);
+  cursor: pointer;
+
+  transition-duration: 500ms;
+
+  &:hover {
+    width: 14px;
+    height: 14px;
+  }
+}
+
 .activeDot {
     width: 14px;
     height: 14px;
@@ -167,17 +185,3 @@
     cursor: pointer;
 }
 
-.dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: var(--slider_dot_color);
-    cursor: pointer;
-
-    transition-duration: 500ms;
-
-    &:hover {
-        width: 14px;
-        height: 14px;
-    }
-}
