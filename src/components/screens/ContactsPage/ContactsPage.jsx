@@ -6,8 +6,6 @@ import React, { useState } from 'react';
 import Modal from 'components/share/Modal';
 import Form from 'components/share/Form';
 
-console.dir(Form);
-
 const ContactsPage = () => {
   const [isModalOpen, setModalOpen] = useState(false);
 
