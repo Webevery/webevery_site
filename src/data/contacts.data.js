@@ -24,13 +24,13 @@ export const contactsData = [
     id: '4',
     country: 'Словаччина',
     tel: '+421950441081',
-    location: 'Trenčín',
+    location: 'Trenchin',
   },
 
   {
     id: '5',
     country: 'Польща',
     tel: '+48780598656',
-    location: 'Gdańsk',
+    location: 'Gdansk',
   },
 ];

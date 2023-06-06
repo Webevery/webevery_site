@@ -1,7 +1,7 @@
 import { contactsData } from 'data';
 import styles from './ContactsPage.module.scss';
 
-import sprite from 'images/symbol-defs.svg';
+import sprite from 'images/sprite.svg';
 
 export const GetItem = () => {
   return (

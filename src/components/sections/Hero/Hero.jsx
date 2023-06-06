@@ -3,7 +3,7 @@ import Button from 'components/share/Button';
 import Modal from 'components/share/Modal';
 import Form from 'components/share/Form';
 import styles from './Hero.module.scss';
-import sprite from '../../../images/symbol-defs.svg';
+import sprite from 'images/sprite.svg';
 
 const Hero = () => {
   const [isModalOpen, setModalOpen] = useState(false);

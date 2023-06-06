@@ -1,6 +1,6 @@
 import React from 'react';
 import sprite from 'images/sprite.svg';
-import styles from './BtnSlider.module.scss';
+import styles from './BtnSliderMax.module.scss';
 
 const BtnSlider = ({ moveSlide, direction }) => {
   return (
