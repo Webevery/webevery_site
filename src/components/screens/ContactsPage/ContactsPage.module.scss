@@ -15,11 +15,11 @@
   & .contactsForm {
     width: 100%;
     padding: 32px;
-    // max-width: 276px;
     background-color: transparent;
     border: 1px solid #626262;
 
-    & button {
+    & button,
+    & hr {
       display: none;
     }
 
@@ -31,9 +31,9 @@
       color: var(--main_color_btn);
     }
 
-    & input:focus + label {
+    & input:focus + label,
+    & textarea:focus + label {
       background-color: transparent;
-      // padding: 5px;
     }
 
     label {
@@ -43,6 +43,10 @@
       transform: translateY(-2em);
       transform-origin: 0 0;
       transition: all 0.3s;
+
+      &:focus {
+        transform: translateY(-3.5em) scale(0.8);
+      }
     }
 
     & form button {
@@ -60,12 +64,13 @@
       & svg {
         display: none;
       }
+
+      & form ul {
+        display: none;
+      }
     }
 
-    & hr {
-      display: none;
-    }
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $min_tablet) {
       display: none;
     }
   }
@@ -78,7 +83,7 @@
   align-items: center;
   row-gap: 40px;
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $min_tablet) {
     padding: 32px 24px 40px;
     background-color: rgba(250, 252, 227, 0.1);
     border: 1px solid var(--text_color_name_our_team);
@@ -102,7 +107,7 @@
       background-color: transparent;
       color: var(--main_color_btn);
     }
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $min_tablet) {
       display: block;
     }
   }
@@ -113,7 +118,6 @@
   flex-direction: column;
   row-gap: 40px;
   width: 100%;
-  // margin-bottom: 40px;
 
   & li {
     border-bottom: 1px solid var(--text_color_name_our_team);
@@ -121,9 +125,8 @@
     flex-direction: column;
     row-gap: 16px;
     padding-bottom: 16px;
-    // width: 100%;
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $min_tablet) {
       flex-direction: row;
       justify-content: space-between;
       padding-left: 4%;
@@ -164,12 +167,11 @@
   justify-content: center;
   align-items: center;
   color: rgb(192, 215, 244);
-  // text-align: center;
   width: 100%;
 
   & svg {
     width: 24px;
-    height: 24px;
+    height: 16px;
     margin-right: 24px;
   }
 }
