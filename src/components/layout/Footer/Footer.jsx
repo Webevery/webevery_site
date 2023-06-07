@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './Footer.module.scss';
 import SocialLinksList from 'components/share/SocialLinksList';
 import sprite from 'images/sprite.svg';
+import styles from './Footer.module.scss';
 
 const Footer = () => {
   return (
