@@ -2,16 +2,20 @@
 
 .container {
   width: 100%;
-  padding: 32px;
+  padding: 48px 4px 32px 4px;
   background-color: var(--main_bg_color_our_team);
   position: relative;
   border: 1px solid #626262;
+  @media screen and (min-width: 440px) {
+    padding: 48px 16px 32px 16px;
+  }
   @media screen and (min-width: $min_tablet) {
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: space-around;
     flex-wrap: wrap;
+    padding: 32px;
     background-color: #ebfbfa;
     width: 588px;
     height: 534px;
@@ -24,6 +28,7 @@
   position: absolute;
   right: 15px;
   top: 15px;
+  background-color: transparent;
   @media screen and (min-width: $min_tablet) {
     padding: 0;
     display: flex;
