@@ -1,3 +1,4 @@
+@import 'styles/variables';
 .listWrapper {
   display: flex;
   // column-gap: 15px;
@@ -11,10 +12,12 @@
   // width: 30px;
   // height: 30px;
   border-radius: 50px;
-  outline: 2px solid var(--light_color);
+  outline: 1px solid var(--light_color);
   transition-property: outline-offset, outline-color, background-color;
   transition-duration: 0.25s;
-
+  @media screen and (min-width: $min_tablet) {
+    outline: 2px solid var(--light_color);
+  }
   &:hover {
     cursor: pointer;
     outline-offset: 4px;
@@ -48,7 +51,7 @@
 }
 
 .instagram:hover {
-  outline: 2px solid #dc2743;
+  outline: 1px solid #dc2743;
   background-color: #f09433;
   background: -moz-linear-gradient(
     45deg,
@@ -75,19 +78,34 @@
     #bc1888 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+  @media screen and (min-width: $min_tablet) {
+    outline: 2px solid #dc2743;
+  }
 }
 
 .facebook:hover {
   background-color: var(--facebook_color);
-  outline: 2px solid var(--facebook_color);
+  outline: 1px solid var(--facebook_color);
+
+  @media screen and (min-width: $min_tablet) {
+    outline: 2px solid var(--facebook_color);
+  }
 }
 
 .telegram:hover {
   background-color: var(--telegram_color);
-  outline: 2px solid var(--telegram_color);
+  outline: 1px solid var(--telegram_color);
+
+  @media screen and (min-width: $min_tablet) {
+    outline: 2px solid var(--telegram_color);
+  }
 }
 
 .linkedin:hover {
   background-color: var(--linkedin_color);
-  outline: 2px solid var(--linkedin_color);
+  outline: 1px solid var(--linkedin_color);
+
+  @media screen and (min-width: $min_tablet) {
+    outline: 2px solid var(--linkedin_color);
+  }
 }
