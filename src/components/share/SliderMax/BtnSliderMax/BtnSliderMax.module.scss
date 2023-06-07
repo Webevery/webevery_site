@@ -16,16 +16,8 @@
   }
 
   @media screen and (min-width: $min_desktop_large) {
-    // position: absolute;
-    // top: 20%;
-    // left: 4%;
-    // z-index: 1;
-    // border: none;
-    // background-color: transparent;
-    // animation: arrowLeft 1000ms infinite ease-out;
-    // width: 42px;
-    // height: 12px;
-    // cursor: pointer;
+    top: 20%;
+    left: 4%;
   }
 }
 
@@ -60,17 +52,9 @@
   }
 
   @media screen and (min-width: $min_desktop_large) {
-    // position: absolute;
-    // top: 20%;
+    top: 20%;
     // transform: translate(0, -50%);
-    // right: 4%;
-    // z-index: 1;
-    // border: none;
-    // background-color: transparent;
-    // animation: arrowRight 1000ms infinite ease-out;
-    // max-width: 42px;
-    // height: 12px;
-    // cursor: pointer;
+    right: 4%;
   }
 }
 
