@@ -13,10 +13,8 @@
   align-items: center;
 
   & .contactsForm {
-    // width: 100%;
     padding: 36px;
-    // background-color: transparent;
-    // border: 1px solid #626262;
+
     display: flex;
     justify-content: center;
 
@@ -44,57 +42,6 @@
         font-weight: 900;
       }
     }
-
-    // & input,
-    // & textarea {
-    //   background-color: transparent;
-    //   border-bottom: 1px solid #626262;
-    //   border-radius: 0px;
-    //   color: var(--main_color_btn);
-    // }
-
-    // & input:focus + label,
-    // & textarea:focus + label {
-    //   background-color: transparent;
-    // }
-
-    // label {
-    //   color: #626262;
-    //   padding-left: 0px;
-    //   display: block;
-    //   transform: translateY(-2em);
-    //   transform-origin: 0 0;
-    //   transition: all 0.3s;
-
-    //   &:focus {
-    //     transform: translateY(-3.5em) scale(0.8);
-    //   }
-    // }
-
-    // & form button {
-    //   display: block;
-    //   background-color: var(--main_color_btn);
-    //   color: #263238;
-    //   padding: 8px 16px;
-    //   width: fit-content;
-    //   &:hover,
-    //   &:focus {
-    //     background-color: var(--main_color_btn);
-    //     color: #263238;
-    //   }
-
-    //   & svg {
-    //     display: none;
-    //   }
-
-    //   & form ul {
-    //     display: none;
-    //   }
-    // }
-
-    // @media screen and (min-width: $min_tablet) {
-    //   display: none;
-    // }
   }
 }
 
