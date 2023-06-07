@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import Button from 'components/share/Button';
 import Modal from 'components/share/Modal';
 import Form from 'components/share/Form';
-import styles from './Hero.module.scss';
 import sprite from 'images/sprite.svg';
+import styles from './Hero.module.scss';
 
 const Hero = () => {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -41,13 +41,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-/* <h1 className={styles.textHero}>
-            <span className={styles.titleHero}>Webevery</span> &#8212; Створення
-            та просування сайтів
-            <br />
-            &#8594; Маркетинг <br />
-            &#8594; Веброзробка <br />
-            &#8594; Реклама в інтернеті <br />
-            &#8594; Розробляємо якісні сайти з індивідуальним дизайном.
-          </h1> */

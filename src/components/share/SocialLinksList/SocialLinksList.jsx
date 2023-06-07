@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from './SocialLink.module.scss';
 import { socialData } from 'data';
 import SocialLinkItem from './SocialLinkItem';
 import sprite from 'images/sprite.svg';
+import styles from './SocialLink.module.scss';
 
 const SocialLinksList = ({
   customBlockSize,
