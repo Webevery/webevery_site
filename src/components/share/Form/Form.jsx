@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { toast } from 'react-toastify';
 import Input from '../Input';
 import Textarea from '../Input/Textarea';
 import OurContacts from './OurContacts';
@@ -17,11 +18,9 @@ function Form({ isOpen, closeModal, className }) {
   const [dirtyPhone, setDirtyPhone] = useState(false);
   const [dirtyMail, setDirtyMail] = useState(false);
 
-  const [errorUserName, setErrorUserName] = useState(
-    'Це поле не може бути пустим'
-  );
-  const [errorPhone, setErrorPhone] = useState('Це поле не може бути пустим');
-  const [errorMail, setErrorMail] = useState('Це поле не може бути пустим');
+  const [errorUserName, setErrorUserName] = useState('Заповніть це поле');
+  const [errorPhone, setErrorPhone] = useState('Заповніть це поле');
+  const [errorMail, setErrorMail] = useState('Заповніть це поле');
   const [errorComments, setErrorComments] = useState('');
 
   const [validForm, setvalidForm] = useState(false);
@@ -54,15 +53,8 @@ function Form({ isOpen, closeModal, className }) {
         }
       );
 
-    const data = {
-      userName,
-      phone,
-      mail,
-      comments,
-    };
-    console.log('data:', data);
-
     reset();
+    toast.success('Повідомлення надіслано!');
     closeModal();
   };
 
@@ -74,9 +66,9 @@ function Form({ isOpen, closeModal, className }) {
     setDirtyUserName(false);
     setDirtyMail(false);
     setDirtyPhone(false);
-    setErrorUserName('Це поле не може бути пустим');
-    setErrorPhone('Це поле не може бути пустим');
-    setErrorMail('Це поле не може бути пустим');
+    setErrorUserName('Заповніть це поле');
+    setErrorPhone('Заповніть це поле');
+    setErrorMail('Заповніть це поле');
     setErrorComments('');
   };
 
@@ -84,7 +76,7 @@ function Form({ isOpen, closeModal, className }) {
     if (value.length < 2) {
       setErrorUserName('Ім’я має бути довшим');
       if (value.length === 0) {
-        setErrorUserName('Це поле не може бути пустим');
+        setErrorUserName('Заповніть це поле');
       }
     } else if (value.length > 30) {
       setErrorUserName('Ім’я має бути коротшим');
@@ -112,12 +104,10 @@ function Form({ isOpen, closeModal, className }) {
   }
 
   function validatePhone(phone) {
-    // let re = /^(\()?\d{3}(\))?(-|\s)?\d{3}(-|\s)\d{4}$/;
     let re = /^\+?([0-9]{2})\)?(([0-9]{3}))?[-. ]?([0-9]{3})?([0-9]{4})$/;
 
     if (!re.test(phone)) {
-      // setErrorPhone('Correct format: (123) 456-7890');
-      setErrorPhone('Correct format: +XXXXXXXXXXXX');
+      setErrorPhone('Правильний формат: +XXXXXXXXXXXX');
     } else {
       setErrorPhone('');
     }
@@ -125,8 +115,7 @@ function Form({ isOpen, closeModal, className }) {
 
   const handleChange = evt => {
     const { name, value } = evt.target;
-    // console.log('evt.target.name:', evt.target.name);
-    // console.log('evt.target.value.length:', evt.target.value.length);
+
     switch (name) {
       case 'name':
         if (evt.target.value.length > 30) return;
@@ -159,7 +148,6 @@ function Form({ isOpen, closeModal, className }) {
   };
 
   const handleBlur = evt => {
-    // console.log('evt.target.name:', evt.target.name);
     switch (evt.target.name) {
       case 'name':
         setDirtyUserName(true);
@@ -195,7 +183,7 @@ function Form({ isOpen, closeModal, className }) {
               name="name"
               value={userName}
               label="Ім’я, Прізвище"
-              placeholder=""
+              placeholder=" "
               onChange={handleChange}
               onBlur={handleBlur}
             />
