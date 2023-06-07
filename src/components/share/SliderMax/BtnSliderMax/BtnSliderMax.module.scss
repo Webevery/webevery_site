@@ -1,20 +1,32 @@
+@import 'styles/variables';
+
 .btnSlidePrev {
   position: absolute;
-  top: 20%;
-  // transform: translate(0, -50%);
-  left: 4%;
+  top: 13%;
+  left: -23%;
   z-index: 1;
   border: none;
   background-color: transparent;
   animation: arrowLeft 1000ms infinite ease-out;
-  max-width: 42px;
+  width: 42px;
   height: 12px;
   cursor: pointer;
 
-  // @media screen and (max-width: 768px) {
-  //   max-width: 48px;
-  //   height: 48px;
-  // }
+  @media screen and (min-width: $min_tablet) {
+  }
+
+  @media screen and (min-width: $min_desktop_large) {
+    // position: absolute;
+    // top: 20%;
+    // left: 4%;
+    // z-index: 1;
+    // border: none;
+    // background-color: transparent;
+    // animation: arrowLeft 1000ms infinite ease-out;
+    // width: 42px;
+    // height: 12px;
+    // cursor: pointer;
+  }
 }
 
 @keyframes arrowLeft {
@@ -33,21 +45,33 @@
 
 .btnSlideNext {
   position: absolute;
-  top: 20%;
-  transform: translate(0, -50%);
-  right: 4%;
+  top: 13%;
+  // transform: translate(0, -50%);
+  right: -23%;
   z-index: 1;
   border: none;
   background-color: transparent;
   animation: arrowRight 1000ms infinite ease-out;
-  max-width: 42px;
+  width: 42px;
   height: 12px;
   cursor: pointer;
 
-  // @media screen and (max-width: 768px) {
-  //   max-width: 48px;
-  //   height: 48px;
-  // }
+  @media screen and (min-width: $min_tablet) {
+  }
+
+  @media screen and (min-width: $min_desktop_large) {
+    // position: absolute;
+    // top: 20%;
+    // transform: translate(0, -50%);
+    // right: 4%;
+    // z-index: 1;
+    // border: none;
+    // background-color: transparent;
+    // animation: arrowRight 1000ms infinite ease-out;
+    // max-width: 42px;
+    // height: 12px;
+    // cursor: pointer;
+  }
 }
 
 @keyframes arrowRight {

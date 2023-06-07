@@ -2,34 +2,89 @@
 
 .wrapper {
   margin-top: 48px;
-  padding: 52px 0px 32px;
-  width: 100%;
-  height: 100%;
-  background-color: var(--main_bg_color_our_team);
-  text-align: center;
-  position:relative;
-  font-style: normal;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  color: var(--main_text_color_our_team);
+  padding: 36px 1px 11px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  // background-color: var(--main_bg_color_our_team);
+  // font-style: normal;
+  // font-weight: 500;
+  // font-size: 8px;
+  // line-height: 9px;
+  // color: var(--light_color);
+  @media screen and (min-width: $min_tablet) {
+  }
+
+  @media screen and (min-width: $min_desktop_large) {
+    // margin-top: 48px;
+    // padding: 52px 0px 32px;
+    // width: 100%;
+    // height: 100%;
+    // background-color: var(--main_bg_color_our_team);
+    // text-align: center;
+    // position: relative;
+    // font-style: normal;
+    // font-weight: 700;
+    // letter-spacing: 0.05em;
+    // color: var(--main_text_color_our_team);
+  }
 }
 
 .mapGeneral {
-  width: 729px;
-  height: 413px;
-  margin: 0 auto 48px;
+  width: 100%;
+  // width: 358px;
+  height: 203px;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: $min_tablet) {
+  }
+
+  @media screen and (min-width: $min_desktop_large) {
+    // width: 729px;
+    // height: 413px;
+    // margin: 0 auto 48px;
+  }
 }
 
-.countriesWrapper{
-  position:absolute;
-  top: 13%;
-  right: 23%;    
-  text-align:left;
-  font-size: 12px;
-  line-height: 14px;
+.countriesWrapper {
+  width: 358px;
+  // width: 100%;
+  height: 27px;
+  margin: 0 auto 97px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 
+  @media screen and (min-width: $min_tablet) {
+  }
+
+  @media screen and (min-width: $min_desktop_large) {
+    // position: absolute;
+    // top: 13%;
+    // right: 23%;
+    // text-align: left;
+    // font-size: 12px;
+    // line-height: 14px;
+  }
+}
+.countryOnGeneralMap {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 9px;
+  letter-spacing: -0.137812px;
+  color: var(--light_color);
 }
 
-.countryOnGeneralMap:not(:last-child){
-  margin-bottom: 9px;
+.countryOnGeneralMap:not(:last-child) {
+  // margin-bottom: 9px;
+
+  @media screen and (min-width: $min_tablet) {
+  }
+
+  @media screen and (min-width: $min_desktop_large) {
+    // margin-bottom: 9px;
+  }
 }
