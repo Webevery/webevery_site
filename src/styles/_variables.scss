@@ -26,16 +26,17 @@
   // --light_color: #fffcf6;
 }
 
-$mobile: '320px';
+$mobile: '360px';
 $tablet: '768px';
 $desktop: '1366px';
 
-$min_mobile: '320px';
+$min_mobile: '360px';
 $max_mobile: '767px';
 $min_tablet: '768px';
 $max_tablet: '1023px';
 $min_desktop: '1024px';
-$max_desktop: '1366px';
+$max_desktop: '1365px';
+$min_desktop_large: '1366px';
 
 // $min_mobile: '(max-width: 320px)';
 // $max_mobile: '(max-width: 767px)';

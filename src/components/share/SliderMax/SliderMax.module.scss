@@ -1,149 +1,334 @@
 @import 'styles/_variables';
 
 /*SliderInfo styles*/
-.sliderInfoWrapper{
-  margin-bottom: 40px;
-  padding: 10px 160px;
+.sliderInfoWrapper {
+  margin-bottom: 24px;
+
+  @media screen and (min-width: $min_tablet) {
+  }
+
+  @media screen and (min-width: $min_desktop_large) {
+    margin-bottom: 40px;
+    padding: 10px 160px;
+  }
 }
 
 .coworker {
   display: flex;
-  padding: 64px auto 32px;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 59px;
+
+  @media screen and (min-width: $min_tablet) {
+  }
+
+  @media screen and (min-width: $min_desktop_large) {
+    padding: 64px auto 32px;
+  }
 }
 
-.hidden{
-    display: none;
+.hidden {
+  display: none;
 }
 
 .photo {
-  width: 346px;
-  height: 404px;
+  width: 146px;
+  height: 171px;
   border-radius: 10px;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: $min_tablet) {
+  }
+
+  @media screen and (min-width: $min_desktop_large) {
+    width: 346px;
+    height: 404px;
+  }
 }
 
 .informationWrapper {
-  margin-left: 90px;
-  width: 610px;
-  text-align: left;
+  text-align: center;
+  @media screen and (min-width: $min_tablet) {
+  }
+
+  @media screen and (min-width: $min_desktop_large) {
+    margin-left: 90px;
+    width: 610px;
+    text-align: left;
+  }
 }
 
 .name {
-  margin-bottom: 24px;
-  font-size: 20px;
-  line-height: 24px;
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
   color: var(--text_color_name_our_team);
+  margin-bottom: 8px;
+  text-align: center;
+
+  @media screen and (min-width: $min_tablet) {
+  }
+
+  @media screen and (min-width: $min_desktop_large) {
+    margin-bottom: 24px;
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .profession {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--main_text_color_our_team);
   margin-bottom: 24px;
-  font-size: 14px;
-  line-height: 17px;
+
+  @media screen and (min-width: $min_tablet) {
+  }
+
+  @media screen and (min-width: $min_desktop_large) {
+    font-size: 14px;
+    line-height: 17px;
+  }
 }
 
 .quote {
-  margin-bottom: 24px;
-  font-size: 14px;
-  line-height: 17px;
+  width: 240px;
+  margin-bottom: 8px;
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  color: var(--main_text_color_our_team);
+
+  @media screen and (min-width: $min_tablet) {
+  }
+
+  @media screen and (min-width: $min_desktop_large) {
+    margin-bottom: 24px;
+    font-size: 14px;
+    line-height: 17px;
+  }
 }
 
 .humor {
-  margin-bottom: 22px;
-  font-size: 14px;
-  line-height: 17px;
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  margin-bottom: 24px;
+  color: var(--main_text_color_our_team);
+
+  @media screen and (min-width: $min_tablet) {
+  }
+
+  @media screen and (min-width: $min_desktop_large) {
+    margin-bottom: 22px; // ??????
+    font-size: 14px;
+    line-height: 17px;
+  }
 }
 
 .city {
-  font-size: 14px;
-  line-height: 17px;
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin-bottom: 24px;
+  color: var(--main_text_color_our_team);
+
+  @media screen and (min-width: $min_tablet) {
+  }
+
+  @media screen and (min-width: $min_desktop_large) {
+    font-size: 14px;
+    line-height: 17px;
+  }
 }
 
 .country {
-  font-size: 14px;
-  line-height: 17px;
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--main_text_color_our_team);
+
+  @media screen and (min-width: $min_tablet) {
+  }
+
+  @media screen and (min-width: $min_desktop_large) {
+    font-size: 14px;
+    line-height: 17px;
+  }
 }
 
 .map {
-  height: 192px;
-  margin: 0 auto;
+  width: 232px;
+  height: 131px;
+
+  @media screen and (min-width: $min_tablet) {
+  }
+
+  @media screen and (min-width: $min_desktop_large) {
+    height: 192px;
+    margin: 0 auto;
+  }
 }
-
-
 
 /*SliderNav styles*/
 .sliderNavWrapper {
+  position: relative;
+
+  @media screen and (min-width: $min_tablet) {
+  }
+
+  @media screen and (min-width: $min_desktop_large) {
     padding: 0 60px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     position: relative;
+  }
 }
 
-.photosWrapper{
-    margin-bottom:32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap:32px;
+.photosWrapper {
+  width: 220px;
+  height: 57px;
+  margin: 0 auto 97px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  overflow: hidden;
+
+  @media screen and (min-width: $min_tablet) {
+  }
+
+  @media screen and (min-width: $min_desktop_large) {
+    margin-bottom: 32px;
+    gap: 32px;
     width: 100%;
-    height:67px;
+    height: 67px;
     overflow: hidden;
+  }
 }
 
 .photoSmall {
+  width: 37px;
+  cursor: pointer;
+  border-radius: 50%;
+  opacity: 0.6;
+  transition: transform 0.25s;
+
+  @media screen and (min-width: $min_tablet) {
+  }
+
+  @media screen and (min-width: $min_desktop_large) {
     width: 48px;
-    cursor: pointer;
-    border-radius: 50%;
-    opacity:0.6;
-    transition: transform 0.25s;
+  }
 }
 
 .activePhotoSmall {
+  width: 57px;
+  text-align: center;
+  animation: opacity 300ms alternate ease-in-out;
+
+  @media screen and (min-width: $min_tablet) {
+  }
+
+  @media screen and (min-width: $min_desktop_large) {
     width: 67px;
-    animation: opacity 300ms alternate ease-in-out;
+  }
 }
 
 @keyframes opacity {
-    0% {
-        opacity: 0.6;
-    }
+  0% {
+    opacity: 0.6;
+  }
 
-    50% {
-        opacity: 0.8;
-    }
+  50% {
+    opacity: 0.8;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 .dotsWrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  @media screen and (min-width: $min_tablet) {
+  }
+
+  @media screen and (min-width: $min_desktop_large) {
     gap: 10px;
-    width:500px;
-    height:34px;
+    width: 500px;
+    height: 34px;
+  }
 }
 
 .dot {
-  width: 10px;
-  height: 10px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
   background-color: var(--slider_dot_color);
   cursor: pointer;
-  transition-duration: 500ms;
+  // transition-duration: 500ms;
 
   &:hover {
-    width: 14px;
-    height: 14px;
+    width: 8px;
+    height: 8px;
+  }
+
+  @media screen and (min-width: $min_tablet) {
+  }
+
+  @media screen and (min-width: $min_desktop_large) {
+    width: 10px;
+    height: 10px;
+
+    &:hover {
+      width: 14px;
+      height: 14px;
+    }
   }
 }
 
 .activeDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--active_slider_dot_color);
+  cursor: pointer;
+
+  @media screen and (min-width: $min_tablet) {
+  }
+
+  @media screen and (min-width: $min_desktop_large) {
     width: 14px;
     height: 14px;
-    border-radius: 50%;
-    background-color: var(--active_slider_dot_color);
-    cursor: pointer;
+  }
 }
