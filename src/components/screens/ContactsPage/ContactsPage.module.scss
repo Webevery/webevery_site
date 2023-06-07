@@ -40,6 +40,12 @@
         color: #263238;
         font-size: 12px;
         font-weight: 900;
+        &:hover,
+        &:focus {
+          border: 1px solid var(--main_color_btn);
+          background-color: transparent;
+          color: var(--main_color_btn);
+        }
       }
     }
   }
