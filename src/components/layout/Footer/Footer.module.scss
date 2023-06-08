@@ -1,14 +1,18 @@
 @import 'styles/variables';
 
 footer {
-  position: relative;
+  // position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 36px;
-  background-color: var(--main_bg_color_our_team);
+  background-color: transparent;
   @media screen and (min-width: $min_tablet) {
+    background-color: var(--main_bg_color_our_team);
+  }
+
+  @media screen and (min-width: $min_desktop) {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -19,7 +23,7 @@ footer {
 
 .copyright {
   display: none;
-  @media screen and (min-width: $min_tablet) {
+  @media screen and (min-width: $min_desktop) {
     display: block;
     font-weight: 400;
     font-size: 16px;
@@ -29,11 +33,12 @@ footer {
 .linkPosition {
   column-gap: 16px;
   margin-right: 16px;
-  @media screen and (min-width: $min_tablet) {
+
+  @media screen and (min-width: $min_desktop) {
     position: fixed;
     right: 30px;
     top: 300px;
-    // bottom: 70px;
+    margin-right: 0px;
     flex-direction: column;
     row-gap: 15px;
   }
@@ -42,6 +47,10 @@ footer {
   width: 16px;
   height: 16px;
   @media screen and (min-width: $min_tablet) {
+    width: 20px;
+    height: 20px;
+  }
+  @media screen and (min-width: $min_desktop) {
     width: 25px;
     height: 25px;
   }
@@ -50,6 +59,10 @@ footer {
   width: 8px;
   height: 8px;
   @media screen and (min-width: $min_tablet) {
+    width: 12px;
+    height: 12px;
+  }
+  @media screen and (min-width: $min_desktop) {
     width: 15px;
     height: 15px;
   }
@@ -57,7 +70,8 @@ footer {
 .mailBlock {
   display: flex;
   align-items: center;
-  @media screen and (min-width: $min_tablet) {
+
+  @media screen and (min-width: $min_desktop) {
     display: none;
   }
 }
@@ -69,11 +83,15 @@ footer {
   width: 16px;
   height: 16px;
   border-radius: 50px;
-  outline: 2px solid var(--light_color);
+  outline: 1px solid var(--light_color);
   transition-property: outline-offset, outline-color, background-color;
   transition-duration: 0.25s;
   margin-right: 8px;
-
+  @media screen and (min-width: $min_tablet) {
+    width: 20px;
+    height: 20px;
+    outline: 2px solid var(--light_color);
+  }
   &:hover {
     cursor: pointer;
     outline-offset: 4px;
@@ -83,10 +101,11 @@ footer {
       #e83448 -8.32%,
       #c3356e 85.14%
     );
-    outline: 2px solid #e83448;
-    // background: linear-gradient(45deg, #8e36e0 0%, #164b92 100%);
+    outline: 1px solid #e83448;
 
-    // outline: 2px solid #8e36e0;
+    @media screen and (min-width: $min_tablet) {
+      outline: 2px solid #e83448;
+    }
   }
 }
 @keyframes shake {
@@ -111,10 +130,20 @@ footer {
   width: 13px;
   height: 13px;
   stroke: var(--light_color);
+  @media screen and (min-width: $min_tablet) {
+    width: 15px;
+    height: 15px;
+  }
 }
 .mailText {
   font-weight: 700;
   font-size: 10px;
   line-height: 12px;
   color: var(--main_text_color_our_team);
+  @media screen and (min-width: $min_tablet) {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--main_text_color_our_team);
+  }
 }

@@ -11,6 +11,44 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  & .contactsForm {
+    padding: 36px;
+
+    display: flex;
+    justify-content: center;
+
+    @media screen and (min-width: $min_tablet) {
+      display: none;
+    }
+
+    & button,
+    & hr {
+      display: none;
+    }
+
+    & form {
+      width: 100%;
+      padding: 0px;
+
+      & button {
+        display: block;
+        width: fit-content;
+        height: fit-content;
+        padding: 8px 16px;
+        background-color: var(--main_color_btn);
+        color: #263238;
+        font-size: 12px;
+        font-weight: 900;
+        &:hover,
+        &:focus {
+          border: 1px solid var(--main_color_btn);
+          background-color: transparent;
+          color: var(--main_color_btn);
+        }
+      }
+    }
+  }
 }
 
 .contactsWrapper {
@@ -20,7 +58,7 @@
   align-items: center;
   row-gap: 40px;
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $min_tablet) {
     padding: 32px 24px 40px;
     background-color: rgba(250, 252, 227, 0.1);
     border: 1px solid var(--text_color_name_our_team);
@@ -44,7 +82,7 @@
       background-color: transparent;
       color: var(--main_color_btn);
     }
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $min_tablet) {
       display: block;
     }
   }
@@ -55,7 +93,6 @@
   flex-direction: column;
   row-gap: 40px;
   width: 100%;
-  // margin-bottom: 40px;
 
   & li {
     border-bottom: 1px solid var(--text_color_name_our_team);
@@ -63,9 +100,8 @@
     flex-direction: column;
     row-gap: 16px;
     padding-bottom: 16px;
-    // width: 100%;
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $min_tablet) {
       flex-direction: row;
       justify-content: space-between;
       padding-left: 4%;
@@ -106,12 +142,11 @@
   justify-content: center;
   align-items: center;
   color: rgb(192, 215, 244);
-  // text-align: center;
   width: 100%;
 
   & svg {
     width: 24px;
-    height: 24px;
+    height: 16px;
     margin-right: 24px;
   }
 }

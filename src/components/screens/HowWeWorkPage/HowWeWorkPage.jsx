@@ -5,11 +5,11 @@ import BackToTop from '../../ui/BackToTop';
 
 const HowWeWorkPage = () => {
   return (
-    <div className={styles.HowWeWork}>
-      <h1 className={styles.HowWeWorkTitle}>How we work</h1>
+    <>
+      <h2 className={styles.HowWeWorkTitle}>How we work</h2>
       <FAQ />
       <BackToTop />
-    </div>
+    </>
   );
 };
 

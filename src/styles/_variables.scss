@@ -9,6 +9,9 @@
 
   --main_color_btn: #feebb2;
 
+  --slider_dot_color: rgba(192, 215, 244, 0.5);
+  --active_slider_dot_color: #c0d7f4;
+
   --facebook_color: #4267b2;
   --telegram_color: #229ed9;
   --linkedin_color: #0e76a8;
@@ -23,16 +26,17 @@
   // --light_color: #fffcf6;
 }
 
-$mobile: '320px';
+$mobile: '360px';
 $tablet: '768px';
 $desktop: '1366px';
 
-$min_mobile: '320px';
+$min_mobile: '360px';
 $max_mobile: '767px';
 $min_tablet: '768px';
 $max_tablet: '1023px';
 $min_desktop: '1024px';
-$max_desktop: '1366px';
+$max_desktop: '1365px';
+$min_desktop_large: '1366px';
 
 // $min_mobile: '(max-width: 320px)';
 // $max_mobile: '(max-width: 767px)';

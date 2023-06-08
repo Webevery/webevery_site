@@ -18,12 +18,16 @@
     height: 8%;
     position: absolute;
     bottom: 0;
-    background: linear-gradient(0deg, #020b11 4.89%, rgba(0, 0, 2, 0) 100%);
+    background: linear-gradient(0deg, #020b11 2.89%, rgba(0, 0, 2, 0) 100%);
+  }
+  @media screen and (max-height: 620px) {
+    height: calc(100vh + 290px);
   }
   @media screen and (min-width: $min_tablet) {
     text-align: start;
     align-items: flex-start;
     justify-content: start;
+    height: calc(100vh - 36px);
     &::before {
       height: 28%;
     }
@@ -37,15 +41,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  height: 100%;
+  padding-top: 144px;
   @media screen and (min-width: $min_tablet) {
     padding-top: 195px;
     padding-left: 80px;
   }
 }
 .contentHero {
-  max-width: 340px;
-  padding: 0px 20px 0px 20px;
+  max-width: 360px;
+  padding: 0px 16px 0px 16px;
   @media screen and (min-width: $min_tablet) {
     max-width: 458px;
   }
@@ -56,11 +61,8 @@
   font-size: 24px;
   line-height: 28px;
   color: var(--light_color);
-
-  margin-bottom: 38px;
+  margin-bottom: 70px;
   @media screen and (min-width: $min_tablet) {
-    // font-size: 35px;
-    // line-height: 41px;
     font-size: 24px;
     line-height: 28px;
     margin-bottom: 56px;
@@ -89,7 +91,7 @@
 }
 .logoHero {
   width: 156px;
-  margin-bottom: 30px;
+  margin-bottom: 88px;
   @media screen and (min-width: $min_tablet) {
     display: none;
   }

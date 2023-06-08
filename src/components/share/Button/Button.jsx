@@ -1,7 +1,15 @@
 import React from 'react';
 import styles from './Button.module.scss';
 
-const Button = ({ onClick, title, type, className, id, ariaLabel }) => {
+const Button = ({
+  onClick,
+  title,
+  type,
+  className,
+  id,
+  ariaLabel,
+  disabled,
+}) => {
   return (
     <button
       onClick={onClick}
@@ -9,6 +17,7 @@ const Button = ({ onClick, title, type, className, id, ariaLabel }) => {
       className={`${className} ${styles.button} `}
       id={id}
       aria-label={ariaLabel}
+      disabled={disabled}
     >
       {title}
     </button>

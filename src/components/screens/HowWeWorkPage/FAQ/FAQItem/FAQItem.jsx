@@ -6,7 +6,6 @@ import styles from './FAQItem.module.scss';
 const FAQItem = ({
   question,
   answer,
-  onClick,
   activeIndex,
   setActiveIndex,
   id,
@@ -27,7 +26,7 @@ const FAQItem = ({
     ? `${styles.FAQanswer__visible}`
     : `${styles.FAQanswer}`;
 
-  const ariaExpanded = id === activeIndex ? true : false;
+  const ariaExpanded = isClicked ? true : false;
 
   return (
     <li className={styles.FAQItem}>

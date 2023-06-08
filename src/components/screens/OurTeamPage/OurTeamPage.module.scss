@@ -2,129 +2,86 @@
 
 .wrapper {
   margin-top: 48px;
-  padding: 52px 160px;
-  width: 100%;
-  height: 100%;
-  background-color: var(--main_bg_color_our_team);
+  padding: 36px 1px 11px;
+  width: 100vw;
   display: flex;
+  align-items: center;
   flex-direction: column;
+  // background-color: var(--main_bg_color_our_team);
+  // font-style: normal;
+  // font-weight: 500;
+  // font-size: 8px;
+  // line-height: 9px;
+  // color: var(--light_color);
+  @media screen and (min-width: $min_tablet) {
+  }
 
-  // from children's styles
-  font-style: normal;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-
-  color: var(--main_text_color_our_team);
+  @media screen and (min-width: $min_desktop_large) {
+    padding: 52px 0px 32px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main_bg_color_our_team);
+    text-align: center;
+    position: relative;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: var(--main_text_color_our_team);
+  }
 }
 
 .mapGeneral {
-  width: 729px;
-  height: 410px;
-  // width: 80%;
-  // margin: 54px auto 95px;
-  // margin-top: 54px;
-  margin: 0 auto 48px;
-}
-
-.coworker {
-  display: flex;
-  // flex-direction: column;
-  padding: 64px auto 32px;
-  margin-bottom: 53px;
-}
-
-.photo {
-  // margin-left: 160px;
-
-  //макет вернуть если
-  // width: 326px;
-  // height: 381px;
-  // мои пропорциине подойдут
-  width: 346px;
-  height: 405px;
-
-  border-radius: 10px;
-}
-
-.informationWrapper {
-  margin-left: 90px;
-  width: 610px;
-}
-
-.name {
+  width: 100%;
+  // width: 358px;
+  height: 203px;
   margin-bottom: 24px;
-  font-size: 20px;
-  line-height: 24px;
-  color: var(--text_color_name_our_team);
+
+  @media screen and (min-width: $min_tablet) {
+  }
+
+  @media screen and (min-width: $min_desktop_large) {
+    width: 729px;
+    height: 413px;
+    margin: 0 auto 48px;
+  }
 }
 
-.profession {
-  margin-bottom: 24px;
-  font-size: 14px;
-  line-height: 17px;
-}
-
-// .city {
-//   margin-bottom: 24px;
-//   font-size: 14px;
-//   line-height: 17px;
-// }
-
-.city {
-  // margin-bottom: 16px;
-  font-size: 14px;
-  line-height: 17px;
-}
-
-.country {
-  font-size: 14px;
-  line-height: 17px;
-}
-
-.quote {
-  // width: 600px;
-  margin-bottom: 24px;
-  font-size: 14px;
-  line-height: 17px;
-}
-
-.humor {
-  // width: 600px;
-  margin-bottom: 22px;
-  font-size: 14px;
-  line-height: 17px;
-}
-
-.map {
-    //макет вернуть если
-  // width: 297px;
-  // height: 168px;
-  // мои пропорции не подойдут
-  width: 339px;
-  height: 192px;
-
-  margin: 0 auto;
-}
-
-.slider {
-  margin: 0 auto;
-  height: 122px; // когда добавяться точки под фото - заменить на 67px
-  // height:67px;
+.countriesWrapper {
+  width: 358px;
+  // width: 100%;
+  height: 27px;
+  margin: 0 auto 97px;
   display: flex;
   align-items: center;
+  justify-content: space-around;
 
-  // flex-wrap: wrap;
+  @media screen and (min-width: $min_tablet) {
+  }
 
-  // margin-bottom: 85px;
-  // padding: 20px 9px;
+  @media screen and (min-width: $min_desktop_large) {
+    position: absolute;
+    top: 13%;
+    right: 23%;
+    text-align: left;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+.countryOnGeneralMap {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 9px;
+  letter-spacing: -0.137812px;
+  color: var(--light_color);
 }
 
-.sliderItem {
-  margin-right: 35px;
-}
+.countryOnGeneralMap:not(:last-child) {
+  @media screen and (min-width: $min_tablet) {
+  }
 
-.sliderPhoto {
-  width: 47px;
-  cursor: pointer;
-  border-radius: 50%;
+  @media screen and (min-width: $min_desktop_large) {
+    margin-bottom: 9px;
+  }
 }

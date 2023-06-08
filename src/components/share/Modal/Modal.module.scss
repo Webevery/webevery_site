@@ -1,24 +1,30 @@
+@import 'styles/variables';
+
 .backdrop {
   position: fixed;
   top: 0rem;
   left: 0rem;
-  width: 105vw;
+  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, 0.55);
   z-index: 101;
 
-  animation: hideModal 0.7s forwards;
+  animation: hideModal 1.7s forwards;
+
+  @media screen and (min-width: $tablet) {
+    background-color: rgba(0, 0, 0, 0.85);
+  }
 }
 
 .modalContent {
-  animation: hideModal 0.7s forwards;
+  animation: hideModal 1.7s forwards;
 }
 
 .activeContent {
-  animation: showModalContent 0.7s forwards;
+  animation: showModalContent 1s forwards;
 }
 
 @keyframes showModalContent {
@@ -34,7 +40,7 @@
 }
 
 .active {
-  animation: showModal 0.5s forwards;
+  animation: showModal 0.7s forwards;
 }
 
 @keyframes showModal {

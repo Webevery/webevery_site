@@ -1,35 +1,57 @@
+@import 'styles/variables';
+
 label {
-  color: #020b11;
-  padding-left: 16px;
+  color: #626262;
+  padding-left: 0px;
+  display: block;
+  transform: translateY(-2em);
+  transform-origin: 0 0;
+  transition: all 0.3s;
+  @media screen and (min-width: $min_tablet) {
+    color: #020b11;
+    padding-left: 16px;
+  }
 }
 
 .input {
-  display: flex;
-  align-items: center;
-  font-family: 'Jura';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: -0.24px;
-
-  color: rgba(2, 11, 17, 0.7);
-  background-color: #ebfbfa;
   width: 100%;
-  height: 42px;
-  border: 0.5px solid rgba(2, 11, 17, 0.7);
-  border-radius: 6px;
-  padding-left: 10px;
-  outline: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #626262;
+  border-radius: 0px;
+  color: var(--main_color_btn);
+
+  @media screen and (min-width: $min_tablet) {
+    display: flex;
+    align-items: center;
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.24px;
+
+    color: rgba(2, 11, 17, 0.7);
+    background-color: #ebfbfa;
+    width: 100%;
+    height: 42px;
+    border: 0.5px solid rgba(2, 11, 17, 0.7);
+    border-radius: 6px;
+    padding-left: 10px;
+    outline: none;
+  }
 }
 
 .input:focus {
-  border: 1px solid #020b11;
+  border-bottom: 1px solid #94a44a;
 }
 
 .input:focus + label {
-  background-color: #ebfbfa;
   padding: 5px;
+  background-color: var(--main_bg_color_our_team);
+  @media screen and (min-width: $min_tablet) {
+    background-color: #ebfbfa;
+  }
 }
 
 .inputWrapper {
@@ -37,8 +59,12 @@ label {
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
-  // margin-top: 16px;
+  height: 72px;
   transition: all 0.3s;
+}
+
+.textareaWrapper {
+  height: 120px;
 }
 
 .inputWrapper label {
@@ -63,5 +89,5 @@ label {
 
 .input:focus + .labelTextarea,
 .input:not(:placeholder-shown) + .labelTextarea {
-  transform: translateY(-6em) scale(0.8);
+  transform: translateY(-6.5em) scale(0.8);
 }

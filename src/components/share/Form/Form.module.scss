@@ -1,33 +1,45 @@
+@import 'styles/variables';
+
 .container {
+  width: 100%;
+  padding: 48px 4px 32px 4px;
+  background-color: var(--main_bg_color_our_team);
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  flex-wrap: wrap;
-  background-color: #ebfbfa;
-  width: 588px;
-  height: 490px;
-  border-radius: 6px;
-  padding: 12px;
-  overflow: hidden;
-  z-index: 2;
-  // @media (min-width: 768px) {
-  //     width: 700px;
-  // }
+  border: 1px solid #626262;
+  @media screen and (min-width: 440px) {
+    padding: 48px 16px 32px 16px;
+  }
+  @media screen and (min-width: $min_tablet) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    padding: 32px;
+    background-color: #ebfbfa;
+    width: 588px;
+    height: 534px;
+    border-radius: 6px;
+    padding: 12px;
+  }
 }
 
 .closeBtn {
-  padding: 0;
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  right: 35px;
-  top: 35px;
-  background-color: white;
-  z-index: 2;
+  right: 15px;
+  top: 15px;
+  background-color: transparent;
+  @media screen and (min-width: $min_tablet) {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    right: 35px;
+    top: 35px;
+    background-color: white;
+    z-index: 2;
+  }
 }
 
 .iconClose {
@@ -39,29 +51,24 @@
 }
 
 form {
-  width: 408px;
-  height: 354px;
+  width: 308px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 16px;
+  margin-top: 20px;
 
   transition: transform 700ms;
-
-  // @media (min-width: 768px) {
-  //     display: flex;
-  //     flex-direction: column;
-  //     align-items: center;
-  // }
+  @media screen and (min-width: $min_tablet) {
+    width: 408px;
+    height: 354px;
+    margin-top: 0;
+  }
 }
 
 .wrapGroup {
   width: 100%;
-  // @media (min-width: 768px) {
-  //     display: grid;
-  //     grid-template-columns: auto auto auto;
-  //     column-gap: 100px;
-  // }
 }
 
 .active {
@@ -76,12 +83,20 @@ form {
 
 .error {
   position: absolute;
-  bottom: 62px;
-  left: 125px;
+  bottom: 72px;
+  left: 145px;
   color: red;
-  background-color: #ebfbfa;
+  background-color: var(--main_bg_color_our_team);
   font-size: 14px;
   padding: 0 5px 0 5px;
+  @media screen and (min-width: $min_tablet) {
+    background-color: #ebfbfa;
+  }
+}
+
+.errorField {
+  bottom: 120px;
+  left: 125px;
 }
 
 .textarea {
@@ -116,19 +131,23 @@ form {
   justify-content: center;
   width: 85%;
   height: 44px;
-  // border: 1px solid red;
 }
 
-.contactsWrap hr {
-  width: 77%;
-  margin: 0 auto 10px;
-  height: 2px;
-  background: #020b11;
+.contactsWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 85%;
+  height: 44px;
+  @media screen and (max-width: $min_tablet) {
+    display: none;
+  }
 }
 
 .contactsList {
   display: flex;
   justify-content: space-between;
+  margin-top: 10px;
 }
 
 .contactsItem {

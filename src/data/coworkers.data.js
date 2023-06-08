@@ -34,69 +34,9 @@ import denysKudriavetsSmall from '../images/ourTeam/denysKudriavetsSmall.png';
 import dmitroKotenevSmall from '../images/ourTeam/dmitroKotenevSmall.png';
 
 
-
-
-import mapGdańsk from '../images/coworkersLocations/mapGdańsk.png';
-import mapIvanoFrankivsk from '../images/coworkersLocations/mapIvanoFrankivsk.png';
-import mapKamianetsPodilskyi from '../images/coworkersLocations/mapKamianetsPodilskyi.png';
-import mapKharkiv from '../images/coworkersLocations/mapKharkiv.png';
-import mapKyiv from '../images/coworkersLocations/mapKyiv.png';
-import mapLandauInDerPfalz from '../images/coworkersLocations/mapLandauInDerPfalz.png';
-import mapLviv from '../images/coworkersLocations/mapLviv.png';
-import mapOdesa from '../images/coworkersLocations/mapOdesa.png';
-import mapOstrava from '../images/coworkersLocations/mapOstrava.png';
-import mapSumy from '../images/coworkersLocations/mapSumy.png';
-// import mapTallinn from '../images/coworkersLocations/mapTallinn.png';
-import mapTrenčín from '../images/coworkersLocations/mapTrenčín.png';
-import mapUjgorod from '../images/coworkersLocations/mapUjgorod.png';
-import mapZaporizhzhia from '../images/coworkersLocations/mapZaporizhzhia.png';
-
-
-
-
 export const coworkersData = [
-  {
+    {
     id: '0',
-    name: 'Володимир Кавун',
-    photo: volodymyrKavun,
-    photoSmall: volodymyrKavunSmall,
-    profession: 'Full Stack Developer',
-    quote: '"Коли у Вас є мрія, Ви повинні схопити її та ніколи не відпускати, і кожного дня робити все можливе для її здійснення."',
-    // quoteEn: '"When you have a dream, you have got to grab it and never let go."',
-    humor: '"Я ЛОНГУЮ, що треба ще трохи ПІДЛАМПІЧИТИ i ПІДРЕПЕТІРУВАТЬ."',
-    city: 'Острава',
-    cityEn: 'Ostrava',
-    latitude: 49.83465,
-    longitude: 18.28204,
-    country: 'Чехія',
-    countryEn: 'Czech Republic',
-    location: mapOstrava,
-    email: 'volodymirkavun1@gmail.com',
-    phone: +380636876176,
-  },
-
-  {
-    id: '1',
-    name: 'Максим Пельтек',
-    photo: maksPeltek,
-    photoSmall: maksPeltekSmall,
-    profession: 'Full Stack Developer',
-    quote: '"Не порівнюйте себе ні з ким. Тримайте голову високо і пам’ятайте: Ви не кращі, не гірші, Ви - це Ви, і ніхто не може цього заперечити."',
-    // quoteEn: '"Nothing is impossible. The word itself says "I am possible!"."',
-    humor: '"МАЮ знову СУМНІВИ. Може ТАК зробити? ЧИ може ОСЬ ТАК зробити ?"',
-    city: 'Одеса',
-    cityEn: 'Odesa',
-    latitude: 46.381806,
-    longitude: 30.71039,
-    country: 'Україна',
-    countryEn: 'Ukraine',
-    location: mapOdesa,
-    email: 'peltek1985@gmail.com',
-    phone: +380683396082,
-  },
-
-  {
-    id: '2',
     name: 'Наталія Бойко',
     photo: nataliiaBoiko,
     photoSmall: nataliiaBoikoSmall,
@@ -110,9 +50,49 @@ export const coworkersData = [
     longitude: 24.71248,
     country: 'Україна',
     countryEn: 'Ukraine',
-    location: mapIvanoFrankivsk,
+    location: 'Ivano-Frankivsk',
     email: 'natalabojko@gmail.com',
     phone: +380503738465,
+  },
+
+  {
+    id: '1',
+    name: 'Володимир Кавун',
+    photo: volodymyrKavun,
+    photoSmall: volodymyrKavunSmall,
+    profession: 'Full Stack Developer',
+    quote: '"Коли у Вас є мрія, Ви повинні схопити її та ніколи не відпускати, і кожного дня робити все можливе для її здійснення."',
+    // quoteEn: '"When you have a dream, you have got to grab it and never let go."',
+    humor: '"Я ЛОНГУЮ, що треба ще трохи ПІДЛАМПІЧИТИ i ПІДРЕПЕТІРУВАТЬ."',
+    city: 'Острава',
+    cityEn: 'Ostrava',
+    latitude: 49.83465,
+    longitude: 18.28204,
+    country: 'Чехія',
+    countryEn: 'Czech Republic',
+    location: 'Ostrava',
+    email: 'volodymirkavun1@gmail.com',
+    phone: +380636876176,
+  },
+
+  {
+    id: '2',
+    name: 'Максим Пельтек',
+    photo: maksPeltek,
+    photoSmall: maksPeltekSmall,
+    profession: 'Full Stack Developer',
+    quote: '"Не порівнюйте себе ні з ким. Тримайте голову високо і пам’ятайте: Ви не кращі, не гірші, Ви - це Ви, і ніхто не може цього заперечити."',
+    // quoteEn: '"Nothing is impossible. The word itself says "I am possible!"."',
+    humor: '"МАЮ знову СУМНІВИ. Може ТАК зробити? ЧИ може ОСЬ ТАК зробити ?"',
+    city: 'Одеса',
+    cityEn: 'Odesa',
+    latitude: 46.381806,
+    longitude: 30.71039,
+    country: 'Україна',
+    countryEn: 'Ukraine',
+    location: 'Odesa',
+    email: 'peltek1985@gmail.com',
+    phone: +380683396082,
   },
 
   {
@@ -130,7 +110,7 @@ export const coworkersData = [
     longitude: 22.2947,
     country: 'Україна',
     countryEn: 'Ukraine',
-    location: mapUjgorod,
+    location: 'Ujgorod',
     email: 'kivikaivika@gmail.com',
     phone: +380955834998,
   },
@@ -150,7 +130,7 @@ export const coworkersData = [
     longitude: 26.58516,
     country: 'Україна',
     countryEn: 'Ukraine',
-    location: mapKamianetsPodilskyi,
+    location: 'Kamianets-Podilskyi',
     email: 'a.tsapkov.dev@gmail.com',
     phone: +380936452142,
   },
@@ -170,7 +150,7 @@ export const coworkersData = [
     longitude: 35.11714,
     country: 'Україна',
     countryEn: 'Ukraine',
-    location: mapZaporizhzhia,
+    location: 'Zaporizhzhia',
     email: 'dima.kolod@gmail.com',
     phone: +380953907792,
   },
@@ -185,12 +165,12 @@ export const coworkersData = [
     quoteEn: '"Success is not final, failure is not fatal: it is the courage to continue that counts."',
     humor: '"Багато заробляю, але мало отримую."',
     city: 'Тренчин',
-    cityEn: 'Trenčín',
+    cityEn: 'Trenchin',
     latitude: 48.89452,
     longitude: 18.04436,
     country: 'Словаччина',
     countryEn: 'Slovakia',
-    location: mapTrenčín,
+    location: 'Trenchin',
     email: 'sheihmaks@gmail.com',
     phone: +380671915300,
   },
@@ -210,7 +190,7 @@ export const coworkersData = [
     longitude: 34.7981,
     country: 'Україна',
     countryEn: 'Ukraine',
-    location: mapSumy,
+    location: 'Sumy',
     email: 'sledozar@gmail.com',
     phone: +380664710207,
   },
@@ -230,7 +210,7 @@ export const coworkersData = [
     longitude: 24.02324,
     country: 'Україна',
     countryEn: 'Ukraine',
-    location: mapLviv,
+    location: 'Lviv',
     email: 'wowa.pol@ukr.net',
     // phone: +380000000000,
   },
@@ -245,12 +225,12 @@ export const coworkersData = [
     quoteEn: '"',
     humor: '"ААААААА, я ЗРОЗУМІВ..."',
     city: 'Ландау-ін-дер-Пфальц',
-    cityEn: 'Landau in der Pfalz',
+    cityEn: 'Landau-in-der-Pfalz',
     latitude: 49.19844,
     longitude: 8.11692,
     country: 'Німеччина',
     countryEn: 'Germany',
-    location: mapLandauInDerPfalz,
+    location: 'Landau-in-der-Pfalz',
     email: 'myrkozar@gmail.com',
     phone: +380500172671,
   },
@@ -265,12 +245,12 @@ export const coworkersData = [
     quoteEn: '"When a flower doesn’t bloom, you fix the environment in which it grows, not the flower."',
     humor: '"Там де ЖОВТЕНЬКИЙ. Тільки НЕ ТОЙ, що ЖОВТЕНЬКИЙ."',
     city: 'Гданськ',
-    cityEn: 'Gdańsk',
+    cityEn: 'Gdansk',
     latitude: 54.372158,
     longitude: 18.638306,
     country: 'Польща',
     countryEn: 'Poland',
-    location: mapGdańsk,
+    location: 'Gdansk',
     email: 'oks.romanenkodesign@gmail.com',
     phone: +380676861493,
   },
@@ -290,7 +270,7 @@ export const coworkersData = [
     longitude: 30.74383,
     country: 'Україна',
     countryEn: 'Ukraine',
-    location: mapOdesa,
+    location: 'Odesa',
     // email: '',
     // phone: +3801111111,
   },
@@ -310,7 +290,7 @@ export const coworkersData = [
     longitude: 36.231537,
     country: 'Україна',
     countryEn: 'Ukraine',
-    location: mapKharkiv,
+    location: 'Kharkiv',
     email: 'kudriavetsdenis@gmail.com',
     phone: +380686345365,
   },
@@ -330,7 +310,7 @@ export const coworkersData = [
     longitude: 30.523333,
     country: 'Україна',
     countryEn: 'Ukraine',
-    location: mapKyiv,
+    location: 'Kyiv',
     email: 'kotenevdima1@gmail.com',
     phone: +380632468706,
   },
@@ -349,7 +329,7 @@ export const coworkersData = [
   //   longitude: 24.753574,
   //   country: 'Естонія',
   //   countryEn: 'Estonia',
-  //   location: mapTallinn,
+  //   location: 'Tallinn',
   //   email: 'cadillac.maxim@gmail.com',
   //   phone: +380664770959,
   // },
