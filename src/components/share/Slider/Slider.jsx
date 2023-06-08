@@ -1,13 +1,22 @@
 import React, { useState } from 'react';
 
 import BtnSlider from './BtnSlider';
-import Button from 'components/share/Button';
+// import Button from 'components/share/Button';
+// import Modal from 'components/share/Modal';
+// import Form from 'components/share/Form';
+// import SliderDetails from './SliderDetails';
 
 import styles from './Slider.module.scss';
 
 const Slider = ({ array }) => {
   const [slideIndex, setSlideIndex] = useState(1);
   const [touchPosition, setTouchPosition] = useState(null);
+  // const [isModalOpen, setModalOpen] = useState(false);
+  // const [activeId, setActiveId] = useState(0);
+
+  // const closeModal = () => {
+  //   setModalOpen(!isModalOpen);
+  // };
 
   const nextSlide = () => {
     if (slideIndex !== array.length) {
@@ -79,8 +88,45 @@ const Slider = ({ array }) => {
                   alt={item.name}
                   className={styles.mockupImg}
                 />
-                <h1 className={styles.siteNameProject}>{item.name}</h1>
+
+                {/* <h1 className={styles.siteNameProject}>{item.name}</h1> */}
+                <a
+                  href={item.path}
+                  title={item.name}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.siteNameProject}
+                >
+                  {item.name}
+                </a>
                 <p className={styles.descriptionProject}>{item.text}</p>
+
+                {/* <SliderDetails
+                  item={item}
+                  index={index}
+                  slideIndex={slideIndex}
+                  styles={styles}
+                  isModalOpen={isModalOpen}
+                  closeModal={closeModal}
+                  activeId={activeId}
+                  setActiveId={setActiveId}
+                /> */}
+
+                {/* {isModalOpen && (
+                  <Modal onClose={closeModal} isModalOpen={isModalOpen}>
+                    <div key={item.id} className={styles.wrapperForModalText}>
+                      <p
+                        className={
+                          slideIndex === index + 1
+                            ? styles.modalDetailsHidden
+                            : styles.modalDetailText
+                        }
+                      >
+                        {item.detailedText}
+                      </p>
+                    </div>
+                  </Modal>
+                )} */}
               </div>
             );
           })}
@@ -88,7 +134,11 @@ const Slider = ({ array }) => {
           <BtnSlider moveSlide={nextSlide} direction={'next'} />
         </div>
 
-        <Button title="Детальніше" className={styles.btnReadMore} />
+        {/* <Button
+          title="Детальніше"
+          className={styles.btnReadMore}
+          onClick={closeModal}
+        /> */}
 
         <div className={styles.containerDots}>
           {array.map((_, index) => (
@@ -107,3 +157,26 @@ const Slider = ({ array }) => {
 };
 
 export default Slider;
+
+// {
+//   isModalOpen && (
+//     <Modal onClose={closeModal} isModalOpen={isModalOpen}>
+//       {/* <Form isOpen={isModalOpen} closeModal={closeModal} /> */}
+//       {/* <div className={styles.wrapperForModalText}> */}
+//       {array.map(el => (
+//         <p
+//           key={el.id}
+//           className={
+//             slideIndex === index + 1
+//               ? styles.modalDetailText
+//               : styles.modalDetailsHidden
+//           }
+//         >
+//           {el.detailedText}
+//         </p>
+//       ))}
+
+//       {/* </div> */}
+//     </Modal>
+//   );
+// }
