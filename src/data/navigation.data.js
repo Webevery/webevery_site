@@ -2,7 +2,17 @@ export const navData = [
   {
     id: Math.random(),
     path: '/',
-    title: 'Home',
+    title: 'Головна',
+  },
+  {
+    id: Math.random(),
+    path: '/prices',
+    title: 'Послуги',
+  },
+  {
+    id: Math.random(),
+    path: '/ourProjects',
+    title: 'Роботи',
   },
   // {
   //   id: Math.random(),
@@ -14,16 +24,7 @@ export const navData = [
     path: '/ourTeam',
     title: 'Команда',
   },
-   {
-    id: Math.random(),
-    path: '/ourProjects',
-    title: 'Роботи',
-  },
-  {
-    id: Math.random(),
-    path: '/prices',
-    title: 'Послуги',
-  },
+
   {
     id: Math.random(),
     path: '/contacts',
