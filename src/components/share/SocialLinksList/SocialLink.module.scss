@@ -12,6 +12,8 @@
   // width: 30px;
   // height: 30px;
   border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
   outline: 1px solid var(--light_color);
   transition-property: outline-offset, outline-color, background-color;
   transition-duration: 0.25s;
@@ -83,29 +85,38 @@
   }
 }
 
-.facebook:hover {
-  background-color: var(--facebook_color);
-  outline: 1px solid var(--facebook_color);
+.facebook {
+  &:hover,
+  &:focus {
+    background-color: var(--facebook_color);
+    outline: 1px solid var(--facebook_color);
 
-  @media screen and (min-width: $min_tablet) {
-    outline: 2px solid var(--facebook_color);
+    @media screen and (min-width: $min_tablet) {
+      outline: 2px solid var(--facebook_color);
+    }
   }
 }
 
-.telegram:hover {
-  background-color: var(--telegram_color);
-  outline: 1px solid var(--telegram_color);
+.telegram {
+  &:hover,
+  &:focus {
+    background-color: var(--telegram_color);
+    outline: 1px solid var(--telegram_color);
 
-  @media screen and (min-width: $min_tablet) {
-    outline: 2px solid var(--telegram_color);
+    @media screen and (min-width: $min_tablet) {
+      outline: 2px solid var(--telegram_color);
+    }
   }
 }
 
-.linkedin:hover {
-  background-color: var(--linkedin_color);
-  outline: 1px solid var(--linkedin_color);
+.linkedin {
+  &:hover,
+  &:focus {
+    background-color: var(--linkedin_color);
+    outline: 1px solid var(--linkedin_color);
 
-  @media screen and (min-width: $min_tablet) {
-    outline: 2px solid var(--linkedin_color);
+    @media screen and (min-width: $min_tablet) {
+      outline: 2px solid var(--linkedin_color);
+    }
   }
 }
