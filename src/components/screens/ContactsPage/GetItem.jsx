@@ -9,7 +9,7 @@ export const GetItem = () => {
       {contactsData.map(({ id, country, tel, location }) => {
         return (
           <li key={id}>
-            <h4>{country}</h4>
+            <h2>{country}</h2>
 
             <a href={'tel:' + tel}>
               <svg>
