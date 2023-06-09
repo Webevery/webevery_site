@@ -10,7 +10,7 @@ const SocialLinksList = ({
   customPosition,
 }) => (
   <ul className={`${styles.listWrapper} ${customPosition}`}>
-    {socialData.map(({ id, name, path }) => {
+    {socialData.map(({ id, name, path, arialabel }) => {
       const spriteIcon = `${sprite}#icon-${name}`;
 
       return (
@@ -18,6 +18,7 @@ const SocialLinksList = ({
           key={id}
           name={name}
           path={path}
+          arialabel={arialabel}
           spriteIcon={spriteIcon}
           customBlockSize={customBlockSize}
           customIconSize={customIconSize}
