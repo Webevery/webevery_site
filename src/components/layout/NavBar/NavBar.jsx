@@ -14,22 +14,8 @@ const Navbar = () => {
     <>
       <header className={styles.headerNav}>
         <NavLink to={`/`} className={styles.navLinkLogo}>
-          {/* <h1 className={styles.titleNav}>Webevery</h1> */}
-          <img
-            src={logo}
-            alt="laptopLogo"
-            className={styles.laptopLogo}
-          />
-          <img
-            src={smallLogo}
-            alt="mobileLogo"
-            className={styles.mobileLogo}
-          />
-
-          {/* <img src={smallLogo} alt="Logo" width="100%" height="100%" /> */}
-          {/* <svg width="65px" height="70px">
-            <use href={logo}></use>
-          </svg> */}
+          <img src={logo} alt="laptopLogo" className={styles.laptopLogo} />
+          <img src={smallLogo} alt="mobileLogo" className={styles.mobileLogo} />
         </NavLink>
 
         <ul
