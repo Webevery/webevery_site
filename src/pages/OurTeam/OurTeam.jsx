@@ -14,9 +14,9 @@ const OurTeam = () => {
         />
         <link rel="canonical" href="ourTeam" />
       </Helmet>
+      <h1 className="seoTitle">Наша команда розробників веб-сайтів</h1>
       <OurTeamPage />
     </>
-    // <OurTeamPage />
   );
 };
 

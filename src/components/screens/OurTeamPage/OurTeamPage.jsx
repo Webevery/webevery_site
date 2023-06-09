@@ -4,8 +4,6 @@ import sprite from 'images/sprite.svg';
 import { coworkersData } from 'data';
 import { SliderNav, SliderInfo } from 'components/share/SliderMax';
 
-import { Helmet } from 'react-helmet-async';
-
 const OurTeamPage = () => {
   const [currentIndex, setCurrentIndex] = useState(null);
 
@@ -19,15 +17,6 @@ const OurTeamPage = () => {
 
   return (
     <section className={styles.wrapper}>
-      <Helmet>
-        <title>Наша команда розробників веб-сайтів!</title>
-        <meta
-          name="description"
-          content="Розробка сайтів з індивідуальним дизайном. Сайт-візитка, інтернет-магазин, лендінг, корпоративний сайт."
-        />
-        <link rel="canonical" href="ourTeam" />
-      </Helmet>
-      <h1>Наша команда розробників веб-сайтів</h1>
       {currentIndex === null ? (
         <>
           <svg className={styles.mapGeneral}>
