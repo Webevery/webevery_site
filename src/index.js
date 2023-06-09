@@ -6,7 +6,9 @@ import 'react-toastify/dist/ReactToastify.css';
 import './styles/_variables.scss';
 import './index.scss';
 
-// import "slick-carousel/slick/slick.css"; 
+import { HelmetProvider } from 'react-helmet-async';
+
+// import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
 // import './index.scss';
 import App from './App';
@@ -15,7 +17,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter basename="/webevery_site">
       <ToastContainer theme="colored" autoClose={3000} />
-      <App />
+      <HelmetProvider>
+        <App />
+      </HelmetProvider>
     </BrowserRouter>
   </React.StrictMode>
 );
