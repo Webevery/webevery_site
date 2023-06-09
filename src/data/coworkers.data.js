@@ -1,49 +1,78 @@
-import defaultCoworker from '../images/ourTeam/defaultCoworker.png';
-import volodymyrKavun from '../images/ourTeam/volodymyrKavun.png';
-import maksPeltek from '../images/ourTeam/maksPeltek.png';
-import nataliiaBoiko from '../images/ourTeam/nataliiaBoiko.png';
-import ivikaDuda from '../images/ourTeam/ivikaDuda.png';
-import andriiTsapkov from '../images/ourTeam/andriiTsapkov.png';
-import dmytroKolodchenko from '../images/ourTeam/dmytroKolodchenko.png';
-import maksPadalka from '../images/ourTeam/maksPadalka.png';
-import vitaliiPavlovskyi from '../images/ourTeam/vitaliiPavlovskyi.png';
-import myroslavKozar from '../images/ourTeam/myroslavKozar.png';
+// import defaultCoworker from '../images/ourTeam/defaultCoworker.png';
+import defaultCoworker from '../images/ourTeamCompressed/defaultCoworker.webp';
+// import volodymyrKavun from '../images/ourTeam/volodymyrKavun.png';
+import volodymyrKavun from '../images/ourTeamCompressed/volodymyrKavun.webp';
+// import maksPeltek from '../images/ourTeam/maksPeltek.png';
+import maksPeltek from '../images/ourTeamCompressed/maksPeltek.webp';
+// import nataliiaBoiko from '../images/ourTeam/nataliiaBoiko.png';
+import nataliiaBoiko from '../images/ourTeamCompressed/nataliiaBoiko.webp';
+// import ivikaDuda from '../images/ourTeam/ivikaDuda.png';
+import ivikaDuda from '../images/ourTeamCompressed/ivikaDuda.webp';
+// import andriiTsapkov from '../images/ourTeam/andriiTsapkov.png';
+import andriiTsapkov from '../images/ourTeamCompressed/andriiTsapkov.webp';
+// import dmytroKolodchenko from '../images/ourTeam/dmytroKolodchenko.png';
+import dmytroKolodchenko from '../images/ourTeamCompressed/dmytroKolodchenko.webp';
+// import maksPadalka from '../images/ourTeam/maksPadalka.png';
+import maksPadalka from '../images/ourTeamCompressed/maksPadalka.webp';
+// import vitaliiPavlovskyi from '../images/ourTeam/vitaliiPavlovskyi.png';
+import vitaliiPavlovskyi from '../images/ourTeamCompressed/vitaliiPavlovskyi.webp';
+// import myroslavKozar from '../images/ourTeam/myroslavKozar.png';
+import myroslavKozar from '../images/ourTeamCompressed/myroslavKozar.webp';
 // import volodymurPolztyuk from '../images/ourTeam/volodymurPolztyuk.png';
 // import maksymIgnatenko from '../images/ourTeam/maksymIgnatenko.png';
-import oksanaRomanenko from '../images/ourTeam/oksanaRomanenko.png';
-import ivanGagaus from '../images/ourTeam/ivanGagaus.png';
-import denysKudriavets from '../images/ourTeam/denysKudriavets.png';
-import dmitroKotenev from '../images/ourTeam/dmitroKotenev.png';
+// import oksanaRomanenko from '../images/ourTeam/oksanaRomanenko.png';
+import oksanaRomanenko from '../images/ourTeamCompressed/oksanaRomanenko.webp';
+// import ivanGagaus from '../images/ourTeam/ivanGagaus.png';
+import ivanGagaus from '../images/ourTeamCompressed/ivanGagaus.webp';
+// import denysKudriavets from '../images/ourTeam/denysKudriavets.png';
+import denysKudriavets from '../images/ourTeamCompressed/denysKudriavets.webp';
+// import dmitroKotenev from '../images/ourTeam/dmitroKotenev.png';
+import dmitroKotenev from '../images/ourTeamCompressed/dmitroKotenev.webp';
 
-
-import defaultCoworkerSmall from '../images/ourTeam/defaultCoworkerSmall.png';
-import volodymyrKavunSmall from '../images/ourTeam/volodymyrKavunSmall.png';
-import maksPeltekSmall from '../images/ourTeam/maksPeltekSmall.png';
-import nataliiaBoikoSmall from '../images/ourTeam/nataliiaBoikoSmall.png';
-import ivikaDudaSmall from '../images/ourTeam/ivikaDudaSmall.png';
-import andriiTsapkovSmall from '../images/ourTeam/andriiTsapkovSmall.png';
-import dmytroKolodchenkoSmall from '../images/ourTeam/dmytroKolodchenkoSmall.png';
-import maksPadalkaSmall from '../images/ourTeam/maksPadalkaSmall.png';
-import vitaliiPavlovskyiSmall from '../images/ourTeam/vitaliiPavlovskyiSmall.png';
-import myroslavKozarSmall from '../images/ourTeam/myroslavKozarSmall.png';
+// import defaultCoworkerSmall from '../images/ourTeam/defaultCoworkerSmall.png';
+import defaultCoworkerSmall from '../images/ourTeamCompressed/defaultCoworkerSmall.webp';
+// import volodymyrKavunSmall from '../images/ourTeam/volodymyrKavunSmall.png';
+import volodymyrKavunSmall from '../images/ourTeamCompressed/volodymyrKavunSmall.webp';
+// import maksPeltekSmall from '../images/ourTeam/maksPeltekSmall.png';
+import maksPeltekSmall from '../images/ourTeamCompressed/maksPeltekSmall.webp';
+// import nataliiaBoikoSmall from '../images/ourTeam/nataliiaBoikoSmall.png';
+import nataliiaBoikoSmall from '../images/ourTeamCompressed/nataliiaBoikoSmall.webp';
+// import ivikaDudaSmall from '../images/ourTeam/ivikaDudaSmall.png';
+import ivikaDudaSmall from '../images/ourTeamCompressed/ivikaDudaSmall.webp';
+// import andriiTsapkovSmall from '../images/ourTeam/andriiTsapkovSmall.png';
+import andriiTsapkovSmall from '../images/ourTeamCompressed/andriiTsapkovSmall.webp';
+// import dmytroKolodchenkoSmall from '../images/ourTeam/dmytroKolodchenkoSmall.png';
+import dmytroKolodchenkoSmall from '../images/ourTeamCompressed/dmytroKolodchenkoSmall.webp';
+// import maksPadalkaSmall from '../images/ourTeam/maksPadalkaSmall.png';
+import maksPadalkaSmall from '../images/ourTeamCompressed/maksPadalkaSmall.webp';
+// import vitaliiPavlovskyiSmall from '../images/ourTeam/vitaliiPavlovskyiSmall.png';
+import vitaliiPavlovskyiSmall from '../images/ourTeamCompressed/vitaliiPavlovskyiSmall.webp';
+// import myroslavKozarSmall from '../images/ourTeam/myroslavKozarSmall.png';
+import myroslavKozarSmall from '../images/ourTeamCompressed/myroslavKozarSmall.webp';
 // import volodymurPolztyukSmall from '../images/ourTeam/volodymurPolztyukSmall.png';
 // import maksymIgnatenkoSmall from '../images/ourTeam/maksymIgnatenkoSmall.png';
-import oksanaRomanenkoSmall from '../images/ourTeam/oksanaRomanenkoSmall.png';
-import ivanGagausSmall from '../images/ourTeam/ivanGagausSmall.png';
-import denysKudriavetsSmall from '../images/ourTeam/denysKudriavetsSmall.png';
-import dmitroKotenevSmall from '../images/ourTeam/dmitroKotenevSmall.png';
-
+// import oksanaRomanenkoSmall from '../images/ourTeam/oksanaRomanenkoSmall.png';
+import oksanaRomanenkoSmall from '../images/ourTeamCompressed/oksanaRomanenkoSmall.webp';
+// import ivanGagausSmall from '../images/ourTeam/ivanGagausSmall.png';
+import ivanGagausSmall from '../images/ourTeamCompressed/ivanGagausSmall.webp';
+// import denysKudriavetsSmall from '../images/ourTeam/denysKudriavetsSmall.png';
+import denysKudriavetsSmall from '../images/ourTeamCompressed/denysKudriavetsSmall.webp';
+// import dmitroKotenevSmall from '../images/ourTeam/dmitroKotenevSmall.png';
+import dmitroKotenevSmall from '../images/ourTeamCompressed/dmitroKotenevSmall.webp';
 
 export const coworkersData = [
-    {
+  {
     id: '0',
     name: 'Наталія Бойко',
     photo: nataliiaBoiko,
     photoSmall: nataliiaBoikoSmall,
     profession: 'Full Stack Developer',
-    quote: '"Варто пам’ятати, що частіше маленькі кроки, а не гігантські стрибки, призводять до найтриваліших змін."',
-    quoteEn: '"It’s worth remembering that it is often the small steps, not the giant leaps, that bring about the most lasting change."',
-    humor: '"Можна ЦЮ КНІПКУ взяти і ПРИШПАНДЬОРИТИ ось ТУДИ і БУДЕ воно ДОБРЕ !"',
+    quote:
+      '"Варто пам’ятати, що частіше маленькі кроки, а не гігантські стрибки, призводять до найтриваліших змін."',
+    quoteEn:
+      '"It’s worth remembering that it is often the small steps, not the giant leaps, that bring about the most lasting change."',
+    humor:
+      '"Можна ЦЮ КНІПКУ взяти і ПРИШПАНДЬОРИТИ ось ТУДИ і БУДЕ воно ДОБРЕ !"',
     city: 'Івано-Франківськ',
     cityEn: 'Ivano-Frankivsk',
     latitude: 48.92312,
@@ -61,7 +90,8 @@ export const coworkersData = [
     photo: volodymyrKavun,
     photoSmall: volodymyrKavunSmall,
     profession: 'Full Stack Developer',
-    quote: '"Коли у Вас є мрія, Ви повинні схопити її та ніколи не відпускати, і кожного дня робити все можливе для її здійснення."',
+    quote:
+      '"Коли у Вас є мрія, Ви повинні схопити її та ніколи не відпускати, і кожного дня робити все можливе для її здійснення."',
     // quoteEn: '"When you have a dream, you have got to grab it and never let go."',
     humor: '"Я ЛОНГУЮ, що треба ще трохи ПІДЛАМПІЧИТИ i ПІДРЕПЕТІРУВАТЬ."',
     city: 'Острава',
@@ -81,7 +111,8 @@ export const coworkersData = [
     photo: maksPeltek,
     photoSmall: maksPeltekSmall,
     profession: 'Full Stack Developer',
-    quote: '"Не порівнюйте себе ні з ким. Тримайте голову високо і пам’ятайте: Ви не кращі, не гірші, Ви - це Ви, і ніхто не може цього заперечити."',
+    quote:
+      '"Не порівнюйте себе ні з ким. Тримайте голову високо і пам’ятайте: Ви не кращі, не гірші, Ви - це Ви, і ніхто не може цього заперечити."',
     // quoteEn: '"Nothing is impossible. The word itself says "I am possible!"."',
     humor: '"МАЮ знову СУМНІВИ. Може ТАК зробити? ЧИ може ОСЬ ТАК зробити ?"',
     city: 'Одеса',
@@ -101,7 +132,8 @@ export const coworkersData = [
     photo: ivikaDuda,
     photoSmall: ivikaDudaSmall,
     profession: 'Full Stack Developer',
-    quote: '"Погана новина: час швидко летить. Хороша новина: Ви пілот, і все залежить тільки від Вас."',
+    quote:
+      '"Погана новина: час швидко летить. Хороша новина: Ви пілот, і все залежить тільки від Вас."',
     // quoteEn: '"The bad news is time flies. The good news is you are the pilot."',
     humor: '"Чим далі, тим гірше. То вже час змінювати напрям."',
     city: 'Ужгород',
@@ -121,7 +153,8 @@ export const coworkersData = [
     photo: andriiTsapkov,
     photoSmall: andriiTsapkovSmall,
     profession: 'Full Stack Developer',
-    quote: '"В житті існує багато речей, на які розумна людина не хотіла б звертати уваги."',
+    quote:
+      '"В житті існує багато речей, на які розумна людина не хотіла б звертати уваги."',
     // quoteEn: '"There is nothing impossible to they who will try."',
     humor: '"Заради грошей люди готові піти на все — навіть на роботу."',
     city: "Кам'янець-Подільський",
@@ -141,8 +174,10 @@ export const coworkersData = [
     photo: dmytroKolodchenko,
     photoSmall: dmytroKolodchenkoSmall,
     profession: 'Full Stack Developer',
-    quote: '"Завжди тримайтесь обличчям до сонячного світла, і тіні будуть падати позаду Вас."',
-    quoteEn: '"Keep your face always toward the sunshine, and shadows will fall behind you."',
+    quote:
+      '"Завжди тримайтесь обличчям до сонячного світла, і тіні будуть падати позаду Вас."',
+    quoteEn:
+      '"Keep your face always toward the sunshine, and shadows will fall behind you."',
     humor: '"Мозком наділений кожен, але не всі розібралися з інструкцією."',
     city: 'Запоріжжя',
     cityEn: 'Zaporizhzhia',
@@ -161,8 +196,10 @@ export const coworkersData = [
     photo: maksPadalka,
     photoSmall: maksPadalkaSmall,
     profession: 'Full Stack Developer',
-    quote: '"Успіх не є остаточним, невдача не є фатальною: важливою є сміливість продовжувати."',
-    quoteEn: '"Success is not final, failure is not fatal: it is the courage to continue that counts."',
+    quote:
+      '"Успіх не є остаточним, невдача не є фатальною: важливою є сміливість продовжувати."',
+    quoteEn:
+      '"Success is not final, failure is not fatal: it is the courage to continue that counts."',
     humor: '"Багато заробляю, але мало отримую."',
     city: 'Тренчин',
     cityEn: 'Trenchin',
@@ -181,8 +218,10 @@ export const coworkersData = [
     photo: vitaliiPavlovskyi,
     photoSmall: vitaliiPavlovskyiSmall,
     profession: 'Full Stack Developer',
-    quote: '"Ви господар свого життя. Не дозволяйте іншим людям писати Ваш сценарій."',
-    quoteEn: '"You define your own life. Do not let other people write your script."',
+    quote:
+      '"Ви господар свого життя. Не дозволяйте іншим людям писати Ваш сценарій."',
+    quoteEn:
+      '"You define your own life. Do not let other people write your script."',
     humor: '"Хороших людей багато, корисних мало."',
     city: 'Суми',
     cityEn: 'Sumy',
@@ -201,8 +240,10 @@ export const coworkersData = [
     photo: defaultCoworker,
     photoSmall: defaultCoworkerSmall,
     profession: 'Full Stack Developer',
-    quote: '"Ви ніколи не будете занадто старим, щоб поставити іншу мету або мріяти про нову мрію."',
-    quoteEn: '"You are never too old to set another goal or to dream a new dream."',
+    quote:
+      '"Ви ніколи не будете занадто старим, щоб поставити іншу мету або мріяти про нову мрію."',
+    quoteEn:
+      '"You are never too old to set another goal or to dream a new dream."',
     humor: '"Поки НЕ РОБЕ. Не знаю як, АЛЕ я РОЗБЕРУСЯ !"',
     city: 'Львів',
     cityEn: 'Lviv',
@@ -221,7 +262,8 @@ export const coworkersData = [
     photo: myroslavKozar,
     photoSmall: myroslavKozarSmall,
     profession: 'Full Stack Developer',
-    quote: '"Теорія під час навчання - це дуже добре, але повинно бути вісімдесят відсотків практики."',
+    quote:
+      '"Теорія під час навчання - це дуже добре, але повинно бути вісімдесят відсотків практики."',
     quoteEn: '"',
     humor: '"ААААААА, я ЗРОЗУМІВ..."',
     city: 'Ландау-ін-дер-Пфальц',
@@ -241,8 +283,10 @@ export const coworkersData = [
     photo: oksanaRomanenko,
     photoSmall: oksanaRomanenkoSmall,
     profession: 'UX/UI Designer',
-    quote: '"Коли квітка не цвіте, Ви виправляєте не квітку, а середовище, в якому вона росте."',
-    quoteEn: '"When a flower doesn’t bloom, you fix the environment in which it grows, not the flower."',
+    quote:
+      '"Коли квітка не цвіте, Ви виправляєте не квітку, а середовище, в якому вона росте."',
+    quoteEn:
+      '"When a flower doesn’t bloom, you fix the environment in which it grows, not the flower."',
     humor: '"Там де ЖОВТЕНЬКИЙ. Тільки НЕ ТОЙ, що ЖОВТЕНЬКИЙ."',
     city: 'Гданськ',
     cityEn: 'Gdansk',
@@ -261,9 +305,12 @@ export const coworkersData = [
     photo: ivanGagaus,
     photoSmall: ivanGagausSmall,
     profession: 'UX/UI Designer',
-    quote: '"Кожен день я встаю і переглядаю список Forbes найбагатших людей у світі. Якщо мене там немає, я йду на роботу."',
-    quoteEn: '"Every day I get up and look through the Forbes list of the richest people in America. If I am not there, I go to work."',
-    humor: '"Кількість розуму на планеті – величина постійна. А населення зростає."',
+    quote:
+      '"Кожен день я встаю і переглядаю список Forbes найбагатших людей у світі. Якщо мене там немає, я йду на роботу."',
+    quoteEn:
+      '"Every day I get up and look through the Forbes list of the richest people in America. If I am not there, I go to work."',
+    humor:
+      '"Кількість розуму на планеті – величина постійна. А населення зростає."',
     city: 'Одеса',
     cityEn: 'Odesa',
     latitude: 46.48572,
@@ -281,9 +328,12 @@ export const coworkersData = [
     photo: denysKudriavets,
     photoSmall: denysKudriavetsSmall,
     profession: 'QA Engineer',
-    quote: '"Не завжди потрібен план. Іноді Вам просто потрібно вдихнути, довіритися, відпустити і подивитися, що станеться."',
-    quoteEn: '"You do not always need a plan. Sometimes you just need to breathe, trust, let go and see what happens."',
-    humor: '"Продаю нервову систему, в чудовому стані, заводиться з півоберта."',
+    quote:
+      '"Не завжди потрібен план. Іноді Вам просто потрібно вдихнути, довіритися, відпустити і подивитися, що станеться."',
+    quoteEn:
+      '"You do not always need a plan. Sometimes you just need to breathe, trust, let go and see what happens."',
+    humor:
+      '"Продаю нервову систему, в чудовому стані, заводиться з півоберта."',
     city: 'Харків',
     cityEn: 'Kharkiv',
     latitude: 50.00156,
@@ -301,7 +351,8 @@ export const coworkersData = [
     photo: dmitroKotenev,
     photoSmall: dmitroKotenevSmall,
     profession: 'UX/UI Designer',
-    quote: '"Людське життя - це колекція різноманітних моментів. Тому збирайте їх, як найкращі фотографії."',
+    quote:
+      '"Людське життя - це колекція різноманітних моментів. Тому збирайте їх, як найкращі фотографії."',
     quoteEn: '""',
     humor: '"Йди проти вітру. І нехай тобі плюють у спину."',
     city: 'Київ',
