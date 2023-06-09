@@ -1,3 +1,5 @@
+@import 'styles/_variables.scss';
+
 .containerSlider {
   display: flex;
   align-items: center;
@@ -5,7 +7,7 @@
   flex-direction: column;
   gap: 40px;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: $min_desktop) {
     gap: 24px;
     height: 516px;
   }
@@ -27,7 +29,7 @@
   max-width: 100%;
   margin: 0 auto;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: $min_desktop) {
     height: 288px;
   }
 }
@@ -38,12 +40,12 @@
   height: 264px;
   width: 288px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $min_tablet) {
     height: 368px;
     width: 100%;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: $min_desktop) {
     height: 400px;
   }
 }
@@ -68,14 +70,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  // text-align: center;
   letter-spacing: 0.05em;
-
-  color: #fafce3;
-
+  color: var(--main_color_btn);
   margin-bottom: 18px;
-  // border-bottom: 1px solid #c0d7f4;
-  // width: min-content;
   transition-duration: 500ms;
 
   &:hover {
@@ -92,15 +89,14 @@
   align-items: center;
   text-align: center;
   letter-spacing: 0.05em;
+  color: var(--main_text_color_projects);
 
-  color: #c0d7f4;
-
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: $min_desktop) {
     font-size: 12px;
     line-height: 12px;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: $min_desktop) {
     width: 724px;
     height: 72px;
   }
@@ -120,7 +116,7 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #c0d7f4;
+  background-color: var(--main_text_color_projects);
   margin: 0 3px;
   cursor: pointer;
 }
@@ -129,48 +125,13 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: rgba(192, 215, 244, 0.5);
+  background: var(--slider_dot_color);
   margin: 0 3px;
   cursor: pointer;
-
   transition-duration: 500ms;
 
   &:hover {
     width: 14px;
     height: 14px;
   }
-}
-
-.wrapperForModalText {
-  max-width: 942px;
-  margin: 0 auto;
-  padding: 0;
-
-  @media screen and (min-width: 768px) {
-    // padding: 30px 46px 27px 98px;
-    width: 640px;
-    height: 246px;
-    background-color: hsla(65, 81%, 94%, 0.1);
-    border: 1px solid #fafce3;
-    border-radius: 6px;
-  }
-}
-
-.modalDetailText {
-  font-weight: 700;
-  font-size: calc(8px + 8 * (100vw / 1280));
-  line-height: 19px;
-  // display: flex;
-  // align-items: center;
-  text-align: center;
-  letter-spacing: 0.05em;
-
-  color: #c0d7f4;
-
-  width: 90%;
-  height: 246px;
-}
-
-.modalDetailsHidden {
-  display: none;
 }
