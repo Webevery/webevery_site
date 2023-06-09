@@ -6,8 +6,6 @@ import React, { useState } from 'react';
 import Modal from 'components/share/Modal';
 import Form from 'components/share/Form';
 
-import { Helmet } from 'react-helmet-async';
-
 const ContactsPage = () => {
   const [isModalOpen, setModalOpen] = useState(false);
 
@@ -16,15 +14,6 @@ const ContactsPage = () => {
   };
   return (
     <section className={styles.contactsSection}>
-      <Helmet>
-        <title>Розробка сайтів. Наші контакти</title>
-        <meta
-          name="description"
-          content="Контакти наших розробників веб-сайтів в Україні та інших країнах Європи."
-        />
-        <link rel="canonical" href="contacts" />
-      </Helmet>
-      <h1>Розробка сайтів. Наші контакти</h1>
       <div className={styles.contactsWrapper}>
         <GetItem />
         <ContactsEmail />
