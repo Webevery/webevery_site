@@ -53,3 +53,24 @@ button {
   text-align: center;
   top: 0px;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(
+    transparent,
+    var(--light_color),
+    var(--main_bg_color_our_team)
+  );
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    to bottom,
+    var(--main_bg_color_our_team),
+    var(--slider_dot_color)
+  );
+  border-radius: 8px;
+}
