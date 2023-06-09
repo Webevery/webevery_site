@@ -13,6 +13,12 @@
   // font-size: 8px;
   // line-height: 9px;
   // color: var(--light_color);
+  & h1 {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+  }
+
   @media screen and (min-width: $min_tablet) {
   }
 

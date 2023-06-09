@@ -35,28 +35,31 @@
 .servicesWrapper {
   width: 292px;
   height: 518px;
-  border: 1px solid rgba(254, 235, 178, 1);
+  border: 1px solid var(--main_color_btn);
+  border-radius: 6px;
   padding: 20px 16px;
   text-align: center;
   position: relative;
   overflow: hidden;
 
-  &:nth-child(3n + 1) {
-    background-image: linear-gradient(
-      rgba(0, 0, 0, 0.6),
-      rgba(254, 235, 178, 0.2)
-    );
-  }
   &:nth-child(3n + 2) {
     background-image: linear-gradient(
-      rgba(254, 235, 178, 0.2),
-      rgba(254, 235, 178, 0.2)
+      rgba(250, 252, 227, 0),
+      rgba(250, 252, 227, 0.2)
     );
   }
+
   &:nth-child(3n + 3) {
     background-image: linear-gradient(
-      rgba(254, 235, 178, 0.2),
-      rgba(0, 0, 0, 0.6)
+      rgba(250, 252, 227, 0.1),
+      rgba(250, 252, 227, 0.1)
+    );
+  }
+
+  &:nth-child(3n + 1) {
+    background-image: linear-gradient(
+      rgba(250, 252, 227, 0.2),
+      rgba(250, 252, 227, 0)
     );
   }
 
@@ -162,7 +165,13 @@
 
   & .mainBtn {
     font-size: 16px;
-    padding: 12px 38px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 160px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 

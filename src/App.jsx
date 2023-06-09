@@ -15,8 +15,6 @@ const Prices = lazy(() => import('./pages/Prices'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 
 const App = () => {
-
-
   return (
     <>
       <Routes>
