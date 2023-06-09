@@ -14,8 +14,28 @@ const Navbar = () => {
     <>
       <header className={styles.headerNav}>
         <NavLink to={`/`} className={styles.navLinkLogo}>
-          <img src={logo} alt="laptopLogo" className={styles.laptopLogo} />
-          <img src={smallLogo} alt="mobileLogo" className={styles.mobileLogo} />
+          {/* <h1 className={styles.titleNav}>Webevery</h1> */}
+          <img
+            src={logo}
+            alt="laptopLogo"
+            className={styles.laptopLogo}
+            width="109"
+            height="29"
+            title="logo"
+          />
+          <img
+            src={smallLogo}
+            alt="mobileLogo"
+            className={styles.mobileLogo}
+            width="56"
+            height="40"
+            title="logo"
+          />
+
+          {/* <img src={smallLogo} alt="Logo" width="100%" height="100%" /> */}
+          {/* <svg width="65px" height="70px">
+            <use href={logo}></use>
+          </svg> */}
         </NavLink>
 
         <ul

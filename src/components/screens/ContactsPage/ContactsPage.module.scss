@@ -105,14 +105,14 @@
       flex-direction: row;
       justify-content: space-between;
       padding-left: 4%;
-      & h4,
+      & h2,
       & a,
       & p {
         width: 32%;
       }
     }
 
-    & h4 {
+    & h2 {
       font-size: 24px;
       font-weight: 500;
       line-height: 1.17;

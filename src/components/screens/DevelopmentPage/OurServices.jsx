@@ -12,7 +12,6 @@ const OurServices = () => {
   const closeModal = () => {
     setModalOpen(!isModalOpen);
   };
-
   return (
     <article className={styles.OurServices}>
       <GetServices onClick={closeModal} />
