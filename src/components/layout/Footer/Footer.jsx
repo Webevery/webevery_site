@@ -20,6 +20,7 @@ const Footer = () => {
             href="*"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Mail"
           >
             <svg className={styles.mailIcon}>
               <use href={sprite + `#envelope`} />
