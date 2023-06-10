@@ -37,21 +37,21 @@
   position: relative;
   overflow: hidden;
 
-  &:nth-child(3n + 2) {
+  &:nth-child(3n + 1) {
     background-image: linear-gradient(
       rgba(250, 252, 227, 0),
       rgba(250, 252, 227, 0.2)
     );
   }
 
-  &:nth-child(3n + 3) {
+  &:nth-child(3n + 2) {
     background-image: linear-gradient(
       rgba(250, 252, 227, 0.1),
       rgba(250, 252, 227, 0.1)
     );
   }
 
-  &:nth-child(3n + 1) {
+  &:nth-child(3n + 3) {
     background-image: linear-gradient(
       rgba(250, 252, 227, 0.2),
       rgba(250, 252, 227, 0)
