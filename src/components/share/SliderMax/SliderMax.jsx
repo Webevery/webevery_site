@@ -61,7 +61,14 @@ export const SliderInfo = ({ array, currentIndex, setCurrentIndex }) => {
                 currentIndex === index ? styles.coworker : styles.hidden
               }
             >
-              <img className={styles.photo} src={item.photo} alt={item.name} />
+              <img
+                className={styles.photo}
+                src={item.photo}
+                alt={item.name}
+                width={146}
+                height={171}
+              />
+
               <div className={styles.informationWrapper}>
                 <p className={styles.name}>{item.name}</p>
                 <p className={styles.profession}>{item.profession}</p>
@@ -151,6 +158,8 @@ export const SliderNav = ({ array, currentIndex, setCurrentIndex }) => {
                 src={item.photoSmall}
                 alt={item.name}
                 onClick={() => goToSlide(index)}
+                width={37}
+                height={37}
               />
             );
           })}

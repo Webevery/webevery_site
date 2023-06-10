@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <>
       <footer className={styles.wrapperFooter}>
-        <h3 className={styles.copyright}>Copyright &copy; 2023 Webevery</h3>
+        <p className={styles.copyright}>Copyright &copy; 2023 Webevery</p>
 
         <SocialLinksList
           customPosition={styles.linkPosition}
@@ -20,6 +20,7 @@ const Footer = () => {
             href="*"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Mail"
           >
             <svg className={styles.mailIcon}>
               <use href={sprite + `#envelope`} />
