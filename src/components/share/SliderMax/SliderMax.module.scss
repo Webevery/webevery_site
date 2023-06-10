@@ -100,7 +100,7 @@
 }
 
 .quote {
-  width: 240px;
+  // width: 240px;
   margin-bottom: 8px;
   font-family: 'Jura';
   font-style: normal;
@@ -212,7 +212,7 @@
 .photosWrapper {
   width: 220px;
   height: 57px;
-  margin: 0 auto 97px;
+  margin: 0 auto 24px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -236,7 +236,13 @@
   cursor: pointer;
   border-radius: 50%;
   opacity: 0.6;
-  transition: transform 0.25s;
+  // transition: transform 0.25s;
+
+  // transition-property: all;
+  // transition-duration: 1s;
+  // transition-timing-function: ease-in-out;
+  // transition-delay: 0.5s;
+  transition: all 1s ease-in-out 0.5s;
 
   @media screen and (min-width: $min_tablet) {
   }
@@ -246,16 +252,22 @@
   }
 }
 
+.photoSmall:hover {
+  transform: scale(1.3);
+  // animation: opacity 300ms alternate ease-in-out;
+}
+
 .activePhotoSmall {
-  width: 57px;
-  text-align: center;
-  animation: opacity 300ms alternate ease-in-out;
+  // width: 57px;
+  // text-align: center;
+  transform: scale(1.4);
+  animation: opacity 300ms normal ease-in-out;
 
   @media screen and (min-width: $min_tablet) {
   }
 
   @media screen and (min-width: $min_desktop_large) {
-    width: 67px;
+    // width: 67px;
   }
 }
 
