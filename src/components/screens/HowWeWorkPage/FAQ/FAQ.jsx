@@ -8,6 +8,15 @@ const FAQ = () => {
 
   return (
     <section className={styles.FAQsection}>
+      {data.map(item => {
+        return (
+          <details key={Math.random()}>
+            <summary>{item.question}</summary>
+            <div>{item.answer}</div>
+          </details>
+        );
+      })}
+
       <h3 className={styles.FAQtitle}>FAQ</h3>
       <ul className={styles.FAQlist}>
         {data.map(item => {

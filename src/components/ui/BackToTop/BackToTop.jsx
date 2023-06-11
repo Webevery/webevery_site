@@ -13,7 +13,7 @@ function scrollFunction() {
     document.body.scrollTop > 100 ||
     document.documentElement.scrollTop > 100
   ) {
-    backToTop.style.display = 'flex';
+    backToTop.style.display = 'block';
   } else {
     backToTop.style.display = 'none';
   }
