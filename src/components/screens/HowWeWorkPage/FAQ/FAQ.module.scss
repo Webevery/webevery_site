@@ -59,3 +59,18 @@
   //   display: block;
   // }
 }
+
+details summary ~ div {
+  overflow: hidden;
+}
+details[open] summary ~ div {
+  animation: sweep 2s ease-in-out;
+}
+@keyframes sweep {
+  0% {
+    max-height: 0;
+  }
+  100% {
+    max-height: 2000px;
+  }
+}
