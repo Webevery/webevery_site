@@ -78,6 +78,7 @@ const Slider = ({ array }) => {
                   className={styles.mockupImg}
                   width="672"
                   height="288"
+                  loading="lazy"
                 />
 
                 <a
