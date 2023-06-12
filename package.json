@@ -2,7 +2,6 @@
   "name": "webevery_site",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Webevery.github.io/webevery_site/",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@react-google-maps/api": "^2.18.1",

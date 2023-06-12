@@ -6,22 +6,24 @@
   }
 
   display: flex;
-  // justify-content: flex-start;
+
   align-items: flex-start;
   flex-direction: column;
 
   border-top: 1px solid rgba(255, 255, 255, 0.23);
+
+  padding: 8px 10px;
 }
 
 .FAQQuestionContainer {
   display: flex;
-  // align-items: center;
+
   justify-content: space-between;
   cursor: pointer;
   width: 100%;
 
-  padding-top: 8px;
-  padding-left: 8px;
+  overflow: hidden;
+
   padding-bottom: 22px;
 }
 
@@ -31,7 +33,6 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  /* identical to box height */
 
   letter-spacing: 0.05em;
 
@@ -39,18 +40,6 @@
 
   width: 100%;
   flex-wrap: wrap;
-
-  // @media (min-width: $tablet) and (max-width: $desktop) {
-  //   width: 700px;
-  // }
-
-  // @media (min-width: 480px) and (max-width: 767px) {
-  //   width: 420px;
-  // }
-
-  // @media (min-width: $mobile) and (max-width: 767px) {
-  //   max-width: 420px;
-  // }
 }
 
 .FAQIcon {
@@ -59,17 +48,14 @@
   stroke: var(--text_color_name_our_team);
 
   margin-left: auto;
-  // align-self: flex-end;
 }
 
 .FAQanswer {
-  margin-left: -100%;
+  margin-left: 8px;
   margin-top: 0;
   margin-bottom: 0;
-  height: 0;
-  overflow: hidden;
-  border: 0;
-  transition: all 200ms ease-out;
+
+  animation: sweep 1s ease-in-out;
 
   display: flex;
   flex-wrap: wrap;
@@ -82,12 +68,22 @@
   letter-spacing: 0.05em;
 
   color: var(--main_text_color_our_team);
+  transform: translateY(calc(-1.7em));
+
+  transition-duration: 1s;
+
+  height: 0;
+  overflow: hidden;
+  border: 0;
 
   &__visible {
+    top: 0;
     margin: 0;
     margin-bottom: 5px;
     margin-left: 8px;
-    transition-duration: 500ms;
+    transition-duration: 1s;
+
+    animation: sweep 1s ease-in-out;
 
     font-family: 'Jura', sans-serif;
     font-style: normal;
@@ -99,18 +95,16 @@
     color: var(--main_text_color_our_team);
   }
 
-  // @media (min-width: $tablet) and (max-width: $desktop) {
-  //   width: 700px;
-  // }
-
-  // @media (min-width: 480px) and (max-width: 767px) {
-  //   width: 420px;
-  // }
-
-  //   @media (min-width: $mobile) and (max-width: 767px) {
-  //     max-width: 420px;
-  //   }
-  // }
+  @keyframes sweep {
+    0% {
+      max-height: 0;
+      opacity: 0;
+    }
+    100% {
+      max-height: 2000px;
+      opacity: 1;
+    }
+  }
 }
 
 .FAQLink {

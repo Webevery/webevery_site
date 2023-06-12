@@ -9,11 +9,12 @@ window.onscroll = function () {
 
 function scrollFunction() {
   let backToTop = document.getElementById('backToTop');
+  if (!backToTop) return;
   if (
-    document.body.scrollTop > 100 ||
-    document.documentElement.scrollTop > 100
+    document.body.scrollTop >= 100 ||
+    document.documentElement.scrollTop >= 100
   ) {
-    backToTop.style.display = 'flex';
+    backToTop.style.display = 'block';
   } else {
     backToTop.style.display = 'none';
   }

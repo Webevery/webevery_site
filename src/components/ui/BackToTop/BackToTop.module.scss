@@ -8,7 +8,6 @@
   z-index: 99; /* Make sure it does not overlap */
   outline: none; /* Remove outline */
 
-  // cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
   border-radius: 50%; /* Rounded corners */
   font-size: 18px; /* Increase font size */
@@ -16,12 +15,10 @@
   height: 60px;
 
   background-color: var(--main_bg_color_our_team);
-  border: 4px solid var(--main_color_btn);
-
-  align-items: center;
+  border: 3px solid var(--main_color_btn);
 
   &:hover,
-  :focus {
+  &:focus {
     transform: scale(1.2);
     background-color: var(--main_bg_color_our_team);
     color: var(--main_color_btn);
