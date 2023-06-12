@@ -15,7 +15,7 @@ import App from './App';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename="/webevery_site">
+    <BrowserRouter>
       <ToastContainer theme="colored" autoClose={3000} />
       <HelmetProvider>
         <App />
