@@ -167,6 +167,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    background-color: var(--main_color_btn);
+    color: #263238;
+
+    & :focus,
+    &:hover {
+      background-color: transparent;
+      color: var(--main_color_btn);
+    }
   }
 }
 
