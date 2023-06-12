@@ -37,11 +37,7 @@ const FAQItem = ({
         <div
           onClick={() => {
             // eslint-disable-next-line
-            return (
-              setActiveIndex(id),
-              isAnswerShown(),
-              console.log(divRef.current.id)
-            );
+            return setActiveIndex(id), isAnswerShown();
           }}
           aria-expanded={ariaExpanded}
           aria-controls={id}
