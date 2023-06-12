@@ -8,7 +8,6 @@
   z-index: 99; /* Make sure it does not overlap */
   outline: none; /* Remove outline */
 
-  // cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
   border-radius: 50%; /* Rounded corners */
   font-size: 18px; /* Increase font size */
@@ -17,9 +16,6 @@
 
   background-color: var(--main_bg_color_our_team);
   border: 3px solid var(--main_color_btn);
-
-  // align-items: center;
-  // justify-content: center;
 
   &:hover,
   &:focus {
@@ -36,11 +32,6 @@
 
   stroke: var(--main_color_btn);
   transform: rotate(180deg);
-
-  // position: absolute;
-  // top: 0;
-  // left: 0;
-  // transform: translate(50%, 50%), rotate(180deg);
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
