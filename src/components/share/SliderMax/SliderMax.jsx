@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import styles from './SliderMax.module.scss';
 import BtnSliderMax from './BtnSliderMax';
 import sprite from 'images/sprite.svg';
@@ -67,6 +67,7 @@ export const SliderInfo = ({ array, currentIndex, setCurrentIndex }) => {
                 alt={item.name}
                 width={146}
                 height={171}
+                loading="lazy"
               />
 
               <div className={styles.informationWrapper}>
@@ -94,17 +95,31 @@ export const SliderInfo = ({ array, currentIndex, setCurrentIndex }) => {
 export const SliderNav = ({ array, currentIndex, setCurrentIndex }) => {
   // const [currentIndex, setCurrentIndex] = useState(null);
   const [touchPosition, setTouchPosition] = useState(null);
+  const listRef = useRef(null);
+
+  function scrollToIndex(index) {
+    const list = listRef.current;
+    console.log('list', list);
+    const currentImg = list.querySelectorAll('li > img')[index];
+    currentImg.scrollIntoView({
+      behavior: 'smooth',
+      block: 'nearest',
+      inline: 'center',
+    });
+  }
 
   const prevSlide = () => {
     if (currentIndex !== null && currentIndex !== 0) {
       setCurrentIndex(currentIndex - 1);
     } else setCurrentIndex(array.length - 1);
+    scrollToIndex(currentIndex);
   };
 
   const nextSlide = () => {
     if (currentIndex !== null && currentIndex !== array.length - 1) {
       setCurrentIndex(currentIndex + 1);
     } else setCurrentIndex(0);
+    scrollToIndex(currentIndex);
   };
 
   const goToSlide = index => setCurrentIndex(index);
@@ -145,25 +160,31 @@ export const SliderNav = ({ array, currentIndex, setCurrentIndex }) => {
         onTouchMove={handleTouchMove}
       >
         <BtnSliderMax moveSlide={prevSlide} direction={'prev'} />
-        <div className={styles.photosWrapper}>
+        <ul className={styles.photosWrapper} ref={listRef}>
           {array.map((item, index) => {
             return (
-              <img
+              <li
                 key={item.id}
-                className={
-                  currentIndex === index
-                    ? styles.activePhotoSmall
-                    : styles.photoSmall
-                }
-                src={item.photoSmall}
-                alt={item.name}
-                onClick={() => goToSlide(index)}
-                width={37}
-                height={37}
-              />
+                className={styles.onePhotoWrapper}
+                // onClick={() => scrollToIndex(index)}
+              >
+                <img
+                  className={
+                    currentIndex === index
+                      ? styles.activePhotoSmall
+                      : styles.photoSmall
+                  }
+                  src={item.photoSmall}
+                  alt={item.name}
+                  onClick={() => goToSlide(index)}
+                  width={37}
+                  height={37}
+                  loading="lazy"
+                />
+              </li>
             );
           })}
-        </div>
+        </ul>
         <BtnSliderMax moveSlide={nextSlide} direction={'next'} />
 
         <div className={styles.dotsWrapper}>
@@ -171,7 +192,10 @@ export const SliderNav = ({ array, currentIndex, setCurrentIndex }) => {
             <div
               key={index}
               className={currentIndex === index ? styles.activeDot : styles.dot}
-              onClick={() => goToSlide(index)}
+              onClick={() => {
+                goToSlide(index);
+                scrollToIndex(currentIndex);
+              }}
             ></div>
           ))}
         </div>

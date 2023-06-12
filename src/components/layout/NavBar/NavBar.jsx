@@ -22,6 +22,7 @@ const Navbar = () => {
             width="109"
             height="29"
             title="logo"
+            loading="lazy"
           />
           <img
             src={smallLogo}
@@ -30,9 +31,10 @@ const Navbar = () => {
             width="56"
             height="40"
             title="logo"
+            loading="lazy"
           />
 
-          {/* <img src={smallLogo} alt="Logo" width="100%" height="100%" /> */}
+          {/* <img src={smallLogo} alt="Logo" width="100%" height="100%" loading="lazy"/> */}
           {/* <svg width="65px" height="70px">
             <use href={logo}></use>
           </svg> */}

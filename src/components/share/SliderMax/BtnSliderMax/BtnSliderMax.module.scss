@@ -12,13 +12,13 @@
   height: 12px;
   cursor: pointer;
 
-  @media screen and (min-width: $min_tablet) {
-  }
+  // @media screen and (min-width: $min_tablet) {
+  // }
 
-  @media screen and (min-width: $min_desktop_large) {
-    top: 20%;
-    left: 4%;
-  }
+  // @media screen and (min-width: $min_desktop_large) {
+  //   top: 20%;
+  //   left: 4%;
+  // }
 }
 
 @keyframes arrowLeft {
@@ -38,7 +38,6 @@
 .btnSlideNext {
   position: absolute;
   top: 20%;
-  // transform: translate(0, -50%);
   right: -23%;
   z-index: 1;
   border: none;
@@ -48,14 +47,13 @@
   height: 12px;
   cursor: pointer;
 
-  @media screen and (min-width: $min_tablet) {
-  }
+  // @media screen and (min-width: $min_tablet) {
+  // }
 
-  @media screen and (min-width: $min_desktop_large) {
-    top: 20%;
-    // transform: translate(0, -50%);
-    right: 4%;
-  }
+  // @media screen and (min-width: $min_desktop_large) {
+  //   top: 20%;
+  //   right: 4%;
+  // }
 }
 
 @keyframes arrowRight {

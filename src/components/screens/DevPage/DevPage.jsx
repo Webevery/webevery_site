@@ -27,7 +27,7 @@
 //       <div className={styles.devPage__contentWrapper}>
 //         <div className={styles.devPage__itemWrapper}>
 //           <div className={styles.devPage__imgWrapper}>
-//             <img src={item.photo ? item.photo : defaultPhoto} alt={item.name} />
+//             <img src={item.photo ? item.photo : defaultPhoto} alt={item.name} loading="lazy"/>
 //           </div>
 //           <h3>{item.name}</h3>
 //         </div>
@@ -46,10 +46,6 @@
 // };
 
 // export default DevPage;
-
-
-
-
 
 import React from 'react';
 import styles from './DevPage.module.scss';
@@ -80,7 +76,11 @@ const DevPage = () => {
       <div className={styles.devPage__contentWrapper}>
         <div className={styles.devPage__itemWrapper}>
           <div className={styles.devPage__imgWrapper}>
-            <img src={item.photo ? item.photo : defaultPhoto} alt={item.name} />
+            <img
+              src={item.photo ? item.photo : defaultPhoto}
+              alt={item.name}
+              loading="lazy"
+            />
           </div>
           <h3>{item.name}</h3>
         </div>
@@ -91,8 +91,6 @@ const DevPage = () => {
           <SlEmotsmile className={styles.devPage__humorMark} size={100} />
           <p className={styles.devPage__humor}>{item.humor}</p>
         </div>
-
-
       </div>
       <Link className={styles.devPage__goBackLinc} to="/aboutUs">
         Back to team
