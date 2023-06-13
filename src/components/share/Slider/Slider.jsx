@@ -76,8 +76,8 @@ const Slider = ({ array }) => {
                   src={item.image}
                   alt={item.name}
                   className={styles.mockupImg}
-                  width="672"
-                  height="288"
+                  width="100%"
+                  height="100%"
                   loading="lazy"
                 />
 
