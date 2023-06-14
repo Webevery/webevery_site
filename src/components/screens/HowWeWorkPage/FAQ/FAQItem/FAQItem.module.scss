@@ -48,6 +48,15 @@
   stroke: var(--text_color_name_our_team);
 
   margin-left: auto;
+
+  transform: rotate(0);
+
+  &__rotate {
+    width: 24px;
+    height: 24px;
+    stroke: var(--text_color_name_our_team);
+    transform: rotate(180deg);
+  }
 }
 
 .FAQanswer {

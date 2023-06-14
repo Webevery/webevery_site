@@ -29,6 +29,10 @@ const FAQItem = ({
     ? `${styles.FAQanswer__visible}`
     : `${styles.FAQanswer}`;
 
+  const iconStyles = isClicked
+    ? `${styles.FAQIcon__rotate}`
+    : `${styles.FAQIcon}`;
+
   const ariaExpanded = isClicked ? true : false;
 
   return (
@@ -46,7 +50,7 @@ const FAQItem = ({
           ref={divRef}
         >
           <p className={styles.FAQQuestion}>{question}</p>
-          <Icon className={styles.FAQIcon} />
+          <Icon className={iconStyles} />
         </div>
         <p id={id} className={answerStyles}>
           {answer}
