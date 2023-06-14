@@ -15,7 +15,7 @@ export const projectsData = [
   {
     id: '2',
     image: icecreamMockup,
-    path: 'https://webevery.github.io/webevery_site/',
+    path: 'https://webevery.github.io/icecream/',
     name: 'www.Icecream.com',
     text: 'Даний сайт для фірми з виробництва морозива є потужним інструментом для залучення клієнтів та задоволення їх потреб. Він надає відвідувачам цінну інформацію про методику приготування морозива, дозволяючи їм краще зрозуміти та оцінити унікальність та якість продукту.',
     detailedText:
