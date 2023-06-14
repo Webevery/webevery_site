@@ -25,9 +25,9 @@ const FAQItem = ({
     // eslint-disable-next-line
   }, [activeIndex]);
 
-  const answerStyles = isClicked
-    ? `${styles.FAQanswer__visible}`
-    : `${styles.FAQanswer}`;
+  const answerStyles = isClicked ? styles.FAQanswer__visible : styles.FAQanswer;
+
+  const iconStyles = isClicked ? styles.FAQIcon__rotate : styles.FAQIcon;
 
   const ariaExpanded = isClicked ? true : false;
 
@@ -46,8 +46,9 @@ const FAQItem = ({
           ref={divRef}
         >
           <p className={styles.FAQQuestion}>{question}</p>
-          <Icon className={styles.FAQIcon} />
+          <Icon className={iconStyles} />
         </div>
+
         <p id={id} className={answerStyles}>
           {answer}
           {href && (
