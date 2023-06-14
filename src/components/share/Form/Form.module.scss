@@ -81,6 +81,13 @@ form {
   width: 100%;
 }
 
+.inputError {
+  border-color: red;
+  @media screen and (min-width: $min_tablet) {
+    color: rgba(2, 11, 17, 0.7);
+  }
+}
+
 .error {
   position: absolute;
   bottom: 72px;
@@ -112,7 +119,7 @@ form {
   font-size: 16px;
   line-height: 19px;
   background-color: #ebfbfa;
-  color: lightgray;
+  color: rgba(2, 11, 17, 0.7);
   width: 112px;
   height: 40px;
 
@@ -154,7 +161,7 @@ form {
   display: flex;
   align-items: center;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 11px;
   line-height: 14px;
 }
 
