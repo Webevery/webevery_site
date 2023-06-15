@@ -92,7 +92,7 @@ footer {
   @media screen and (min-width: $min_tablet) {
     width: 20px;
     height: 20px;
-    outline: 2px solid var(--light_color);
+    // outline: 2px solid var(--light_color);
   }
   &:hover,
   &:focus {
@@ -107,7 +107,7 @@ footer {
     outline: 1px solid #e83448;
 
     @media screen and (min-width: $min_tablet) {
-      outline: 2px solid #e83448;
+      // outline: 2px solid #e83448;
     }
   }
 }

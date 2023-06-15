@@ -191,7 +191,11 @@ export const SliderNav = ({ array, currentIndex, setCurrentIndex }) => {
           {array.map((_, index) => (
             <div
               key={index}
-              className={currentIndex === index ? styles.activeDot : styles.dot}
+              className={
+                currentIndex !== index
+                  ? styles.dot
+                  : `${styles.dot} ${styles.activeDot}`
+              }
               onClick={() => {
                 goToSlide(index);
                 scrollToIndex(currentIndex);

@@ -18,7 +18,7 @@
   transition-property: outline-offset, outline-color, background-color;
   transition-duration: 0.25s;
   @media screen and (min-width: $min_tablet) {
-    outline: 2px solid var(--light_color);
+    // outline: 2px solid var(--light_color);
   }
   &:hover {
     cursor: pointer;
@@ -81,7 +81,7 @@
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
   @media screen and (min-width: $min_tablet) {
-    outline: 2px solid #dc2743;
+    // outline: 2px solid #dc2743;
   }
 }
 
@@ -92,7 +92,7 @@
     outline: 1px solid var(--facebook_color);
 
     @media screen and (min-width: $min_tablet) {
-      outline: 2px solid var(--facebook_color);
+      // outline: 2px solid var(--facebook_color);
     }
   }
 }
@@ -104,7 +104,7 @@
     outline: 1px solid var(--telegram_color);
 
     @media screen and (min-width: $min_tablet) {
-      outline: 2px solid var(--telegram_color);
+      // outline: 2px solid var(--telegram_color);
     }
   }
 }
@@ -116,7 +116,7 @@
     outline: 1px solid var(--linkedin_color);
 
     @media screen and (min-width: $min_tablet) {
-      outline: 2px solid var(--linkedin_color);
+      // outline: 2px solid var(--linkedin_color);
     }
   }
 }

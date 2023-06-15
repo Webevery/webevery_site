@@ -196,6 +196,7 @@
 /*SliderNav styles*/
 .sliderNavWrapper {
   position: relative;
+  height: auto;
 
   // @media screen and (min-width: $min_tablet) {
   // }
@@ -256,7 +257,7 @@
   // transition-duration: 1s;
   // transition-timing-function: ease-in-out;
   // transition-delay: 0.5s;
-  transition: all 1s ease-in-out 0.5s;
+  transition: all 0.5s ease-in-out 0.5s;
 
   // @media screen and (min-width: $min_tablet) {
   // }
@@ -273,7 +274,7 @@
 .activePhotoSmall {
   transform: scale(1.4);
   opacity: 1;
-  transition: all 1s ease-in-out 0.5s;
+  transition: all 0.5s ease-in-out 0.5s;
 
   // @media screen and (min-width: $min_tablet) {
   // }
@@ -301,8 +302,7 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 8px;
+  justify-content: space-around;
 
   // @media screen and (min-width: $min_tablet) {
   // }
@@ -320,11 +320,12 @@
   border-radius: 50%;
   background-color: var(--slider_dot_color);
   cursor: pointer;
-  // transition-duration: 500ms;
+  transition-duration: 0.5s;
 
   &:hover {
-    width: 8px;
-    height: 8px;
+    // min-width: 8px;
+    // min-height: 8px;
+    transform: scale(1.6);
   }
 
   // @media screen and (min-width: $min_tablet) {
@@ -342,11 +343,13 @@
 }
 
 .activeDot {
-  width: 8px;
-  height: 8px;
+  // width: 8px;
+  // height: 8px;
   border-radius: 50%;
   background-color: var(--active_slider_dot_color);
   cursor: pointer;
+  transform: scale(1.6);
+  transition-duration: 0.5s;
 
   // @media screen and (min-width: $min_tablet) {
   // }
