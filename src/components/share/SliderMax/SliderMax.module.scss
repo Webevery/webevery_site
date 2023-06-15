@@ -193,6 +193,173 @@
   // }
 }
 
+// /*SliderNav styles*/
+// .sliderNavWrapper {
+//   position: relative;
+//   height: auto;
+
+//   // @media screen and (min-width: $min_tablet) {
+//   // }
+
+//   // @media screen and (min-width: $min_desktop_large) {
+//   //   padding: 0 60px;
+//   //   display: flex;
+//   //   align-items: center;
+//   //   justify-content: center;
+//   //   flex-direction: column;
+//   //   position: relative;
+//   // }
+// }
+
+// .photosWrapper {
+//   width: 220px;
+//   height: 57px;
+//   margin: 0 auto 24px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   flex-wrap: wrap;
+//   overflow: hidden;
+
+//   // @media screen and (min-width: $min_tablet) {
+//   // }
+
+//   // @media screen and (min-width: $min_desktop_large) {
+//   //   margin-bottom: 32px;
+//   //   width: 100%;
+//   //   height: 67px;
+//   // }
+// }
+
+// .onePhotoWrapper {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 57px;
+//   height: 57px;
+
+//   // @media screen and (min-width: $min_tablet) {
+//   // }
+
+//   // @media screen and (min-width: $min_desktop_large) {
+//   //   width: 67px;
+//   // }
+// }
+
+// .photoSmall {
+//   width: 37px;
+//   cursor: pointer;
+//   border-radius: 50%;
+//   opacity: 0.6;
+//   // transition: transform 0.25s;
+
+//   // transition-property: all;
+//   // transition-duration: 1s;
+//   // transition-timing-function: ease-in-out;
+//   // transition-delay: 0.5s;
+//   transition: all 0.5s ease-in-out 0.5s;
+
+//   // @media screen and (min-width: $min_tablet) {
+//   // }
+
+//   // @media screen and (min-width: $min_desktop_large) {
+//   //   // width: 48px;
+//   // }
+// }
+
+// .photoSmall:hover {
+//   transform: scale(1.4);
+// }
+
+// .activePhotoSmall {
+//   transform: scale(1.4);
+//   opacity: 1;
+//   transition: all 0.5s ease-in-out 0.5s;
+
+//   // @media screen and (min-width: $min_tablet) {
+//   // }
+
+//   // @media screen and (min-width: $min_desktop_large) {
+//   //   // width: 67px;
+//   // }
+// }
+
+// @keyframes opacity {
+//   0% {
+//     opacity: 0.6;
+//   }
+
+//   50% {
+//     opacity: 0.8;
+//   }
+
+//   100% {
+//     opacity: 1;
+//   }
+// }
+
+// .dotsWrapper {
+//   margin: 0 auto;
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-around;
+
+//   // @media screen and (min-width: $min_tablet) {
+//   // }
+
+//   // @media screen and (min-width: $min_desktop_large) {
+//   //   gap: 10px;
+//   //   width: 500px;
+//   //   height: 34px;
+//   // }
+// }
+
+// .dot {
+//   width: 5px;
+//   height: 5px;
+//   border-radius: 50%;
+//   background-color: var(--slider_dot_color);
+//   cursor: pointer;
+//   transition-duration: 0.5s;
+
+//   &:hover {
+//     // min-width: 8px;
+//     // min-height: 8px;
+//     transform: scale(1.6);
+//   }
+
+//   // @media screen and (min-width: $min_tablet) {
+//   // }
+
+//   // @media screen and (min-width: $min_desktop_large) {
+//   //   width: 10px;
+//   //   height: 10px;
+
+//   //   &:hover {
+//   //     width: 14px;
+//   //     height: 14px;
+//   //   }
+//   // }
+// }
+
+// .activeDot {
+//   // width: 8px;
+//   // height: 8px;
+//   border-radius: 50%;
+//   background-color: var(--active_slider_dot_color);
+//   cursor: pointer;
+//   transform: scale(1.6);
+//   transition-duration: 0.5s;
+
+//   // @media screen and (min-width: $min_tablet) {
+//   // }
+
+//   // @media screen and (min-width: $min_desktop_large) {
+//   //   width: 14px;
+//   //   height: 14px;
+//   // }
+// }
+
 /*SliderNav styles*/
 .sliderNavWrapper {
   position: relative;
@@ -217,8 +384,8 @@
   margin: 0 auto 24px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
   overflow: hidden;
 
   // @media screen and (min-width: $min_tablet) {
@@ -231,20 +398,20 @@
   // }
 }
 
-.onePhotoWrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 57px;
-  height: 57px;
+// .onePhotoWrapper {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 57px;
+//   height: 57px;
 
-  // @media screen and (min-width: $min_tablet) {
-  // }
+//   // @media screen and (min-width: $min_tablet) {
+//   // }
 
-  // @media screen and (min-width: $min_desktop_large) {
-  //   width: 67px;
-  // }
-}
+//   // @media screen and (min-width: $min_desktop_large) {
+//   //   width: 67px;
+//   // }
+// }
 
 .photoSmall {
   width: 37px;
