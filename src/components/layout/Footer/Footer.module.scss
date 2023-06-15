@@ -92,7 +92,6 @@ footer {
   @media screen and (min-width: $min_tablet) {
     width: 20px;
     height: 20px;
-    // outline: 2px solid var(--light_color);
   }
   &:hover,
   &:focus {
@@ -105,10 +104,6 @@ footer {
       #c3356e 85.14%
     );
     outline: 1px solid #e83448;
-
-    @media screen and (min-width: $min_tablet) {
-      // outline: 2px solid #e83448;
-    }
   }
 }
 @keyframes shake {
@@ -130,11 +125,11 @@ footer {
 }
 .mailIcon {
   display: block;
-  width: 13px;
+  width: 12px;
   height: 13px;
   stroke: var(--light_color);
   @media screen and (min-width: $min_tablet) {
-    width: 15px;
+    width: 14px;
     height: 15px;
   }
 }

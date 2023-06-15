@@ -1,4 +1,4 @@
-import Button from 'components/share/Button/Button';
+// import Button from 'components/share/Button/Button';
 import React from 'react';
 import styles from './BackToTop.module.scss';
 import { ReactComponent as Icon } from '../../../images/V.svg';
@@ -27,14 +27,17 @@ function topFunction() {
 
 const BackToTop = () => {
   return (
-    <Button
-      title={<Icon className={styles.backToTopIcon} />}
-      id="backToTop"
-      type="button"
-      onClick={topFunction}
-      className={styles.backToTop}
-      ariaLabel="backToTop"
-    />
+    <>
+      <button
+        id="backToTop"
+        type="button"
+        onClick={topFunction}
+        className={styles.backToTop}
+        aria-label="backToTop"
+      >
+        <Icon className={styles.backToTopIcon} />
+      </button>
+    </>
   );
 };
 

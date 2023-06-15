@@ -11,13 +11,13 @@ const OurContacts = () => {
           <svg className={styles.iconItem}>
             <use href={sprite + '#icon-telephone'} />
           </svg>
-          +12 345 678 90 00
+          +380 50 373 8465
         </li>
         <li className={styles.contactsItem}>
           <svg className={styles.iconItem}>
             <use href={sprite + '#envelope'} />
           </svg>
-          google@gmail.com
+          inbox.webevery@gmail.com
         </li>
       </ul>
     </div>

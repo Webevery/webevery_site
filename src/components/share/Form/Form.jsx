@@ -104,10 +104,11 @@ function Form({ isOpen, closeModal, className }) {
   }
 
   function validatePhone(phone) {
-    let re = /^\+?([0-9]{2})\)?(([0-9]{3}))?[-. ]?([0-9]{3})?([0-9]{4})$/;
+    // let re = /^\+([0-9]{2})\)?(([0-9]{3}))?[-. ]?([0-9]{3})?([0-9]{4})$/;
+    let re = /^\+\d{12}$/;
 
     if (!re.test(phone)) {
-      setErrorPhone('Правильний формат: +XXXXXXXXXXXX');
+      setErrorPhone('Не вірний формат');
     } else {
       setErrorPhone('');
     }
@@ -182,6 +183,9 @@ function Form({ isOpen, closeModal, className }) {
               id="nameId"
               name="name"
               value={userName}
+              className={
+                errorUserName && dirtyUserName ? styles.inputError : ' '
+              }
               label="Ім’я, Прізвище"
               placeholder=" "
               onChange={handleChange}
@@ -197,6 +201,7 @@ function Form({ isOpen, closeModal, className }) {
               id="phoneId"
               name="phone"
               value={phone}
+              className={errorPhone && dirtyPhone ? styles.inputError : ' '}
               label="+380123456789"
               placeholder=" "
               onChange={handleChange}
@@ -213,6 +218,7 @@ function Form({ isOpen, closeModal, className }) {
               id="emailId"
               name="mail"
               value={mail}
+              className={errorMail && dirtyMail ? styles.inputError : ' '}
               label="google@gmail.com"
               placeholder=" "
               onChange={handleChange}
@@ -229,7 +235,11 @@ function Form({ isOpen, closeModal, className }) {
           )}
 
           <Textarea
-            customStyle={styles.textarea}
+            customStyle={
+              errorComments
+                ? styles.textarea + ' ' + styles.inputError
+                : styles.textarea
+            }
             type="text"
             id="commentsId"
             name="comments"
