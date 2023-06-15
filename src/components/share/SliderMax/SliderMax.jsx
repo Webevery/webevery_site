@@ -92,6 +92,122 @@ export const SliderInfo = ({ array, currentIndex, setCurrentIndex }) => {
   );
 };
 
+// export const SliderNav = ({ array, currentIndex, setCurrentIndex }) => {
+//   // const [currentIndex, setCurrentIndex] = useState(null);
+//   const [touchPosition, setTouchPosition] = useState(null);
+//   const listRef = useRef(null);
+
+//   function scrollToIndex(index) {
+//     const list = listRef.current;
+//     console.log('list', list);
+//     const currentImg = list.querySelectorAll('li > img')[index];
+//     currentImg.scrollIntoView({
+//       behavior: 'smooth',
+//       block: 'nearest',
+//       inline: 'center',
+//     });
+//   }
+
+//   const prevSlide = () => {
+//     if (currentIndex !== null && currentIndex !== 0) {
+//       setCurrentIndex(currentIndex - 1);
+//     } else setCurrentIndex(array.length - 1);
+//     scrollToIndex(currentIndex);
+//   };
+
+//   const nextSlide = () => {
+//     if (currentIndex !== null && currentIndex !== array.length - 1) {
+//       setCurrentIndex(currentIndex + 1);
+//     } else setCurrentIndex(0);
+//     scrollToIndex(currentIndex);
+//   };
+
+//   const goToSlide = index => setCurrentIndex(index);
+
+//   // ! Logic handleTouch
+
+//   const handleTouchStart = e => {
+//     const touchDown = e.touches[0].clientX;
+//     setTouchPosition(touchDown);
+//   };
+
+//   const handleTouchMove = e => {
+//     const touchDown = touchPosition;
+
+//     if (touchDown === null) {
+//       return;
+//     }
+
+//     const currentTouch = e.touches[0].clientX;
+//     const diff = touchDown - currentTouch;
+
+//     if (diff > 5) {
+//       nextSlide();
+//     }
+
+//     if (diff < 5) {
+//       prevSlide();
+//     }
+
+//     setTouchPosition(null);
+//   };
+
+//   return (
+//     <>
+//       <div
+//         className={styles.sliderNavWrapper}
+//         onTouchStart={handleTouchStart}
+//         onTouchMove={handleTouchMove}
+//       >
+//         <BtnSliderMax moveSlide={prevSlide} direction={'prev'} />
+//         <ul className={styles.photosWrapper} ref={listRef}>
+//           {array.map((item, index) => {
+//             return (
+//               <li
+//                 key={item.id}
+//                 className={styles.onePhotoWrapper}
+//                 // onClick={() => scrollToIndex(index)}
+//               >
+//                 <img
+//                   className={
+//                     currentIndex === index
+//                       ? styles.activePhotoSmall
+//                       : styles.photoSmall
+//                   }
+//                   src={item.photoSmall}
+//                   alt={item.name}
+//                   onClick={() => goToSlide(index)}
+//                   width={37}
+//                   height={37}
+//                   loading="lazy"
+//                 />
+//               </li>
+//             );
+//           })}
+//         </ul>
+//         <BtnSliderMax moveSlide={nextSlide} direction={'next'} />
+
+//         <div className={styles.dotsWrapper}>
+//           {array.map((_, index) => (
+//             <div
+//               key={index}
+//               className={
+//                 currentIndex !== index
+//                   ? styles.dot
+//                   : `${styles.dot} ${styles.activeDot}`
+//               }
+//               onClick={() => {
+//                 goToSlide(index);
+//                 scrollToIndex(currentIndex);
+//               }}
+//             ></div>
+//           ))}
+//         </div>
+//       </div>
+//     </>
+//   );
+// };
+
 export const SliderNav = ({ array, currentIndex, setCurrentIndex }) => {
   // const [currentIndex, setCurrentIndex] = useState(null);
   const [touchPosition, setTouchPosition] = useState(null);
@@ -100,7 +216,7 @@ export const SliderNav = ({ array, currentIndex, setCurrentIndex }) => {
   function scrollToIndex(index) {
     const list = listRef.current;
     console.log('list', list);
-    const currentImg = list.querySelectorAll('li > img')[index];
+    const currentImg = list.querySelectorAll('img')[index];
     currentImg.scrollIntoView({
       behavior: 'smooth',
       block: 'nearest',
@@ -160,38 +276,43 @@ export const SliderNav = ({ array, currentIndex, setCurrentIndex }) => {
         onTouchMove={handleTouchMove}
       >
         <BtnSliderMax moveSlide={prevSlide} direction={'prev'} />
-        <ul className={styles.photosWrapper} ref={listRef}>
+        <div className={styles.photosWrapper} ref={listRef}>
           {array.map((item, index) => {
             return (
-              <li
+              // <li
+              //   key={item.id}
+              //   className={styles.onePhotoWrapper}
+              //   // onClick={() => scrollToIndex(index)}
+              // >
+              <img
                 key={item.id}
-                className={styles.onePhotoWrapper}
-                // onClick={() => scrollToIndex(index)}
-              >
-                <img
-                  className={
-                    currentIndex === index
-                      ? styles.activePhotoSmall
-                      : styles.photoSmall
-                  }
-                  src={item.photoSmall}
-                  alt={item.name}
-                  onClick={() => goToSlide(index)}
-                  width={37}
-                  height={37}
-                  loading="lazy"
-                />
-              </li>
+                className={
+                  currentIndex === index
+                    ? styles.activePhotoSmall
+                    : styles.photoSmall
+                }
+                src={item.photoSmall}
+                alt={item.name}
+                onClick={() => goToSlide(index)}
+                width={37}
+                height={37}
+                loading="lazy"
+              />
+              // {/* </li> */}
             );
           })}
-        </ul>
+        </div>
         <BtnSliderMax moveSlide={nextSlide} direction={'next'} />
 
         <div className={styles.dotsWrapper}>
           {array.map((_, index) => (
             <div
               key={index}
-              className={currentIndex === index ? styles.activeDot : styles.dot}
+              className={
+                currentIndex !== index
+                  ? styles.dot
+                  : `${styles.dot} ${styles.activeDot}`
+              }
               onClick={() => {
                 goToSlide(index);
                 scrollToIndex(currentIndex);

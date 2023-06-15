@@ -26,7 +26,7 @@ const Footer = () => {
               <use href={sprite + `#envelope`} />
             </svg>
           </a>
-          <p className={styles.mailText}>webforevery@gmail.com</p>
+          <p className={styles.mailText}>inbox.webevery@gmail.com</p>
         </div>
       </footer>
     </>
