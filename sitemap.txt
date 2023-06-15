@@ -1,8 +1,9 @@
-https://webevery.github.io/webevery_site/
-https://webevery.github.io/webevery_site/ourTeam
-https://webevery.github.io/webevery_site/contacts
-https://webevery.github.io/webevery_site/howWeWork
-https://webevery.github.io/webevery_site/ourProjects
-https://webevery.github.io/webevery_site/prices
+
+https://webevery.dev/
+https://webevery.dev/prices
+https://webevery.dev/ourProjects
+https://webevery.dev/ourTeam
+https://webevery.dev/contacts
+https://webevery.dev/howWeWork
 
 
