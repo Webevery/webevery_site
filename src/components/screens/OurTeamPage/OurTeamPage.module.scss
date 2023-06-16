@@ -72,7 +72,7 @@
 }
 
 .countryOnGeneralMap {
-  font-family: 'Jura';
+  // font-family: 'Jura', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 8px;
@@ -81,11 +81,11 @@
   color: var(--light_color);
 }
 
-.countryOnGeneralMap:not(:last-child) {
-  // @media screen and (min-width: $min_tablet) {
-  // }
+// .countryOnGeneralMap:not(:last-child) {
+// @media screen and (min-width: $min_tablet) {
+// }
 
-  // @media screen and (min-width: $min_desktop_large) {
-  //   margin-bottom: 9px;
-  // }
-}
+// @media screen and (min-width: $min_desktop_large) {
+//   margin-bottom: 9px;
+// }
+// }
