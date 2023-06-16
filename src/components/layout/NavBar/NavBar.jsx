@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { NavLink } from 'react-router-dom';
 import logo from './Logo_webery_lightyellow.svg';
 import smallLogo from './small_logo_lightyellow.svg';
+import sprite from 'images/sprite.svg';
 
 import { navData } from 'data';
 import styles from './NavBar.module.scss';
@@ -14,7 +14,6 @@ const Navbar = () => {
     <>
       <header className={styles.headerNav}>
         <NavLink to={`/`} className={styles.navLinkLogo}>
-          {/* <h1 className={styles.titleNav}>Webevery</h1> */}
           <img
             src={logo}
             alt="laptopLogo"
@@ -33,11 +32,6 @@ const Navbar = () => {
             title="logo"
             loading="lazy"
           />
-
-          {/* <img src={smallLogo} alt="Logo" width="100%" height="100%" loading="lazy"/> */}
-          {/* <svg width="65px" height="70px">
-            <use href={logo}></use>
-          </svg> */}
         </NavLink>
 
         <ul
@@ -65,9 +59,13 @@ const Navbar = () => {
           aria-label="BurgerMenu"
         >
           {nav ? (
-            <AiOutlineMenu size={48} className={styles.btnOpenNav} />
+            <svg width="100%" height="100%" fill="#fafce3">
+              <use href={sprite + '#icon-burger-menu'} />
+            </svg>
           ) : (
-            <AiOutlineClose size={48} className={styles.btnCloseNav} />
+            <svg width="100%" height="100%">
+              <use href={sprite + '#icon-close'} />
+            </svg>
           )}
         </button>
       </header>
