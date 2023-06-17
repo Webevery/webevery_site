@@ -1,5 +1,5 @@
 import OurServices from '../../components/screens/DevelopmentPage';
-import BackToTop from '../../components/ui/BackToTop';
+// import BackToTop from '../../components/ui/BackToTop';
 import { Helmet } from 'react-helmet-async';
 
 const Prices = () => {
@@ -15,7 +15,7 @@ const Prices = () => {
       </Helmet>
       <h1 className="seoTitle">Розробка сайтів з індивідуальним дизайном </h1>
       <OurServices />
-      <BackToTop />
+      {/* <BackToTop /> */}
     </>
   );
 };
