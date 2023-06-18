@@ -1,8 +1,8 @@
-import OurServices from '../../components/screens/DevelopmentPage';
-import BackToTop from '../../components/ui/BackToTop';
+import OurServices from '../../components/screens/ServicesPage';
+// import BackToTop from '../../components/ui/BackToTop';
 import { Helmet } from 'react-helmet-async';
 
-const Prices = () => {
+const Services = () => {
   return (
     <>
       <Helmet>
@@ -15,8 +15,8 @@ const Prices = () => {
       </Helmet>
       <h1 className="seoTitle">Розробка сайтів з індивідуальним дизайном </h1>
       <OurServices />
-      <BackToTop />
+      {/* <BackToTop /> */}
     </>
   );
 };
-export default Prices;
+export default Services;
