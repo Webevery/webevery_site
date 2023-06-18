@@ -11,7 +11,7 @@ const Services = () => {
           name="description"
           content="Розробка сайтів з індивідуальним дизайном. Сайт-візитка, інтернет-магазин, лендінг, корпоративний сайт. "
         />
-        <link rel="canonical" href="prices" />
+        <link rel="canonical" href="services" />
       </Helmet>
       <h1 className="seoTitle">Розробка сайтів з індивідуальним дизайном </h1>
       <OurServices />
