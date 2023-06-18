@@ -3,24 +3,30 @@
 .headerNav {
   position: fixed;
   top: 0;
-  height: 48px;
+  height: 68px;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   backdrop-filter: blur(16px);
   z-index: 100;
-  padding-top: 8px;
+  padding-top: 24px;
 
   @media (max-width: $max_tablet) {
     justify-content: space-between;
     padding-left: 16px;
     padding-right: 16px;
   }
+
+  @media (min-width: $min_desktop) {
+    padding-left: 96px;
+    padding-right: 30px;
+  }
 }
 
 .navLinkLogo {
   transition-duration: 500ms;
+
   &:hover {
     scale: 1.1;
   }
@@ -33,8 +39,8 @@
 
 .laptopLogo {
   display: block;
-  width: 109px;
-  height: 29px;
+  width: 145px;
+  height: 39px;
 
   @media (max-width: $max_tablet) {
     display: none;
@@ -54,7 +60,7 @@
 .menuNav {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
 
   @media (max-width: $max_tablet) {
     display: flex;
@@ -113,10 +119,15 @@
 .navLinkNav {
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 24px;
 
   color: var(--light_color);
+
+  @media (min-width: $min_desktop_large) {
+    font-size: 20px;
+  }
+
   &:hover {
     border-bottom: 1px solid var(--light_color);
   }
@@ -131,9 +142,13 @@
   border-bottom: 1px solid var(--light_color);
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 24px;
   color: var(--main_color_btn);
+
+  @media (min-width: $min_desktop_large) {
+    font-size: 20px;
+  }
 }
 
 .activeBurger {
