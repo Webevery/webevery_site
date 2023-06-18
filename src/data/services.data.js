@@ -5,7 +5,7 @@ import shoppingSite from 'images/pricesImgs/shoppingSite.png';
 import catalogSite from 'images/pricesImgs/catalogSite.png';
 import individualProject from 'images/pricesImgs/individualProject.png';
 
-export const pricesData = [
+export const servicesData = [
   {
     id: 1,
     title: 'Сайт-візитка',
