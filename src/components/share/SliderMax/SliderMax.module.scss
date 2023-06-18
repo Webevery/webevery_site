@@ -389,17 +389,21 @@
   gap: 20px;
   overflow: hidden;
 
-  //
   // border: 1px solid red;
 
   @media screen and (min-width: $min_tablet) {
     width: 400px;
   }
 
-  @media screen and (min-width: $min_desktop_large) {
-    margin-bottom: 32px;
-    height: 70px;
+  @media screen and (min-width: $min_desktop) {
+    width: 515px;
   }
+
+  // @media screen and (min-width: $min_desktop_large) {
+  //   // margin-bottom: 32px;
+  //   height: 80px;
+  //   width: 800px;
+  // }
 }
 
 // .onePhotoWrapper {
@@ -431,9 +435,9 @@
   // @media screen and (min-width: $min_tablet) {
   // }
 
-  @media screen and (min-width: $min_desktop_large) {
-    width: 48px;
-  }
+  // @media screen and (min-width: $min_desktop_large) {
+  //   width: 48px;
+  // }
 }
 
 .photoSmall:hover {
