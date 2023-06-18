@@ -19,9 +19,11 @@ const OurTeamPage = () => {
     <section className={styles.wrapper}>
       {currentIndex === null ? (
         <>
-          <svg className={styles.mapGeneral}>
-            <use href={sprite + '#icon-mapGeneralWithoutCountries'} />
-          </svg>
+          <div className={styles.mapGeneralWrapper}>
+            <svg width="728px" height="412px" className={styles.mapGeneral}>
+              <use href={sprite + '#icon-mapGeneralWithoutCountries'} />
+            </svg>
+          </div>
           <ul className={styles.countriesWrapper}>
             {uniqCountries.map((item, index) => (
               <li className={styles.countryOnGeneralMap} key={index}>
