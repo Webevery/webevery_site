@@ -11,8 +11,8 @@ function scrollFunction() {
   let backToTop = document.getElementById('backToTop');
   if (!backToTop) return;
   if (
-    document.body.scrollTop >= 100 ||
-    document.documentElement.scrollTop >= 100
+    document.body.scrollTop >= 200 ||
+    document.documentElement.scrollTop >= 200
   ) {
     // backToTop.style.display = 'block';
     backToTop.className = styles.backToTop__visible;
