@@ -59,12 +59,12 @@ const Navbar = () => {
           aria-label="BurgerMenu"
         >
           {nav ? (
-            <svg width="100%" height="100%" fill="#fafce3">
+            <svg width="100%" height="100%">
               <use href={sprite + '#icon-burger-menu'} />
             </svg>
           ) : (
             <svg width="100%" height="100%">
-              <use href={sprite + '#icon-close'} />
+              <use href={sprite + '#icon-close-white'} />
             </svg>
           )}
         </button>

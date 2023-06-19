@@ -8,6 +8,16 @@
 <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M4 24h24"></path>
 </symbol>
 
+<symbol id="icon-close-white" viewBox="0 0 32 32">
+<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M8 24.971l16.971-16.971"></path>
+<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M24.971 24.971l-16.971-16.971"></path>
+</symbol>
+
+<symbol id="icon-close-dark" viewBox="0 0 32 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M8 24.971l16.971-16.971"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M24.971 24.971l-16.971-16.971"></path>
+</symbol>
+
 
 <symbol id="icon-contactsLocation" viewBox="0 0 32 32">
 <path fill="none" stroke="#fafce3" style="stroke: var(--color1, #fafce3)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.3333" d="M28 13.333c0 9.333-12 17.333-12 17.333s-12-8-12-17.333c0-3.183 1.264-6.235 3.515-8.485s5.303-3.515 8.485-3.515c3.183 0 6.235 1.264 8.485 3.515s3.515 5.303 3.515 8.485z"></path>
@@ -50,10 +60,6 @@
 <path fill="none" stroke="#020b11" style="stroke: var(--color2, #020b11)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.1429" d="M14.011 6.229c1.797 0.048 3.503 0.799 4.751 2.092s1.939 3.025 1.923 4.822"></path>
 <path fill="none" stroke="#020b11" style="stroke: var(--color2, #020b11)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.1429" d="M14.161 2.857c0 0 9.28 0.080 9.84 10.217"></path>
 <path fill="none" stroke="#020b11" style="stroke: var(--color2, #020b11)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.1429" d="M12.891 9.348c1.229 0.030 2.397 0.541 3.252 1.424s1.329 2.066 1.32 3.296"></path>
-</symbol>
-
-<symbol id="icon-close" viewBox="0 0 32 32">
-<path fill="#fafce3" stroke="#020B11" style="stroke: var(--color2, #020B11)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.2" d="M11.2 11.2l9.6 9.6M20.8 11.2l-9.6 9.6M4.8 1.6h22.4c1.767 0 3.2 1.433 3.2 3.2v22.4c0 1.767-1.433 3.2-3.2 3.2h-22.4c-1.767 0-3.2-1.433-3.2-3.2v-22.4c0-1.767 1.433-3.2 3.2-3.2z"></path>
 </symbol>
 
 <symbol id="icon-telegram" viewBox="0 0 32 32">
