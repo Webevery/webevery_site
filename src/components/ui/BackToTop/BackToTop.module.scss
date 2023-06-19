@@ -42,7 +42,6 @@
 
 .backToTop,
 .backToTop__visible {
-  display: block;
   position: fixed;
   right: 30px;
   z-index: 99;
@@ -69,12 +68,10 @@
   }
 }
 .backToTop__visible {
-  // opacity: 1;
   bottom: 40px;
 }
 
 .backToTop {
-  // opacity: 0;
   bottom: -72px;
 }
 

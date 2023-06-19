@@ -15,10 +15,10 @@ function scrollFunction() {
     document.documentElement.scrollTop >= 100
   ) {
     // backToTop.style.display = 'block';
-    backToTop.className = `${styles.backToTop__visible}`;
+    backToTop.className = styles.backToTop__visible;
   } else {
     // backToTop.style.display = 'none';
-    backToTop.className = `${styles.backToTop}`;
+    backToTop.className = styles.backToTop;
   }
 }
 
@@ -35,7 +35,7 @@ const BackToTop = () => {
         type="button"
         onClick={topFunction}
         // className={styles.backToTop}
-        className={scrollFunction()}
+        className={`${styles.backToTop} ${scrollFunction()}`}
         aria-label="backToTop"
       >
         <Icon className={styles.backToTopIcon} />
