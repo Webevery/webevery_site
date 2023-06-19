@@ -1,21 +1,64 @@
 @import 'styles/_variables.scss';
 
-.backToTop {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 40px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  outline: none; /* Remove outline */
+// .backToTop {
+//   display: none; /* Hidden by default */
+//   position: fixed; /* Fixed/sticky position */
+//   // bottom: 40px; /* Place the button at the bottom of the page */
+//   right: 30px; /* Place the button 30px from the right */
+//   z-index: 99; /* Make sure it does not overlap */
+//   outline: none; /* Remove outline */
 
-  padding: 15px; /* Some padding */
-  border-radius: 50%; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+//   padding: 15px; /* Some padding */
+//   border-radius: 50%; /* Rounded corners */
+//   font-size: 18px; /* Increase font size */
+//   width: 60px;
+//   height: 60px;
+
+//   background-color: var(--main_bg_color_our_team);
+//   border: 3px solid var(--main_color_btn);
+
+//   &:hover,
+//   &:focus {
+//     transform: scale(1.2);
+//     background-color: var(--main_bg_color_our_team);
+//     color: var(--main_color_btn);
+//   }
+// }
+
+// .backToTopIcon {
+//   width: 24px;
+//   height: 24px;
+//   fill: inherit;
+
+//   stroke: var(--main_color_btn);
+//   transform: rotate(180deg);
+// }
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.backToTop,
+.backToTop__visible {
+  position: fixed;
+  right: 30px;
+  z-index: 99;
+  outline: none;
+  justify-content: center;
+  align-items: center;
+
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 18px;
   width: 60px;
   height: 60px;
 
   background-color: var(--main_bg_color_our_team);
   border: 3px solid var(--main_color_btn);
+
+  transition-duration: 1s;
 
   &:hover,
   &:focus {
@@ -23,6 +66,13 @@
     background-color: var(--main_bg_color_our_team);
     color: var(--main_color_btn);
   }
+}
+.backToTop__visible {
+  bottom: 40px;
+}
+
+.backToTop {
+  bottom: -72px;
 }
 
 .backToTopIcon {
@@ -32,10 +82,4 @@
 
   stroke: var(--main_color_btn);
   transform: rotate(180deg);
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  html {
-    scroll-behavior: smooth;
-  }
 }

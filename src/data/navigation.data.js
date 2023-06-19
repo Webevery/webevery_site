@@ -6,7 +6,7 @@ export const navData = [
   },
   {
     id: Math.random(),
-    path: '/prices',
+    path: '/services',
     title: 'Послуги',
   },
   {

@@ -33,11 +33,19 @@
   // }
 }
 
-.mapGeneral {
-  width: 100%;
-  // width: 358px;
-  height: 203px;
+.mapGeneralWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1366px;
   margin-bottom: 24px;
+}
+
+.mapGeneral {
+  width: 90%;
+  // width: 358px;
+  // height: 203px;
+
 
   // @media screen and (min-width: $min_tablet) {
   // }

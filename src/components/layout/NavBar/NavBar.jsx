@@ -18,8 +18,8 @@ const Navbar = () => {
             src={logo}
             alt="laptopLogo"
             className={styles.laptopLogo}
-            width="109"
-            height="29"
+            width="145"
+            height="39"
             title="logo"
             loading="lazy"
           />

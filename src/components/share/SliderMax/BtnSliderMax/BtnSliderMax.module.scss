@@ -3,7 +3,7 @@
 .btnSlidePrev {
   position: absolute;
   top: 20%;
-  left: -23%;
+  left: -28%;
   z-index: 1;
   border: none;
   background-color: transparent;
@@ -12,8 +12,9 @@
   height: 12px;
   cursor: pointer;
 
-  // @media screen and (min-width: $min_tablet) {
-  // }
+  @media screen and (min-width: $min_tablet) {
+    left: -13%;
+  }
 
   // @media screen and (min-width: $min_desktop_large) {
   //   top: 20%;
@@ -38,7 +39,7 @@
 .btnSlideNext {
   position: absolute;
   top: 20%;
-  right: -23%;
+  right: -28%;
   z-index: 1;
   border: none;
   background-color: transparent;
@@ -47,8 +48,9 @@
   height: 12px;
   cursor: pointer;
 
-  // @media screen and (min-width: $min_tablet) {
-  // }
+  @media screen and (min-width: $min_tablet) {
+    right: -13%;
+  }
 
   // @media screen and (min-width: $min_desktop_large) {
   //   top: 20%;
@@ -60,6 +62,7 @@
   0% {
     transform: translateX(0);
   }
+
   50% {
     transform: translateX(-10px);
   }

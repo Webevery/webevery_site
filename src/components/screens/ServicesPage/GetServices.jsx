@@ -1,11 +1,11 @@
-import { pricesData } from 'data';
+import { servicesData } from 'data';
 import { ServicesItem } from './ServicesItem';
 import { useState } from 'react';
 
 export const GetServices = ({ onClick }) => {
   const [activeId, setActiveId] = useState(0);
 
-  return pricesData.map(
+  return servicesData.map(
     ({ id, details, title, daysCount, price, description }) => {
       return (
         <ServicesItem
