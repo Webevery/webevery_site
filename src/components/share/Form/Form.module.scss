@@ -5,6 +5,7 @@
   padding: 48px 4px 32px 4px;
   background-color: var(--main_bg_color_our_team);
   position: relative;
+  border-radius: 6px;
   border: 1px solid #626262;
   @media screen and (min-width: 440px) {
     padding: 48px 16px 32px 16px;
@@ -16,10 +17,9 @@
     align-content: space-around;
     flex-wrap: wrap;
     padding: 32px;
-    background-color: #ebfbfa;
+    background-color: var(--light_color);
     width: 588px;
     height: 534px;
-    border-radius: 6px;
     padding: 12px;
   }
 }
@@ -29,15 +29,15 @@
   right: 15px;
   top: 15px;
   background-color: transparent;
+  border: none;
   @media screen and (min-width: $min_tablet) {
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     border: none;
-    right: 35px;
-    top: 35px;
-    background-color: white;
+    right: 25px;
+    top: 25px;
     z-index: 2;
   }
 }
@@ -48,6 +48,15 @@
   align-items: center;
   width: 20px;
   height: 20px;
+  transition: all 300ms;
+  fill: #fff;
+  @media screen and (min-width: $min_tablet) {
+    fill: #000;
+  }
+}
+
+.iconClose:hover {
+  scale: 1.1;
 }
 
 form {
@@ -114,7 +123,6 @@ form {
 }
 
 .btnSubmit {
-  // font-family: 'Jura', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
@@ -130,6 +138,11 @@ form {
 .btnActiv {
   background-color: #fafce3;
   color: #020b11;
+  transition: all 300ms;
+}
+
+.btnActiv:hover {
+  scale: 1.05;
 }
 
 .contactsWrap {
