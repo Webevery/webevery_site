@@ -80,10 +80,6 @@ label {
   transform: translateY(-5em);
 }
 
-// .inputWrapper:focus-within {
-//     transform: scale(1.01, 1.01);
-// }
-
 .input:focus + label,
 .input:not(:placeholder-shown) + label {
   transform: translateY(-3.5em) scale(0.8);
@@ -92,4 +88,7 @@ label {
 .input:focus + .labelTextarea,
 .input:not(:placeholder-shown) + .labelTextarea {
   transform: translateY(-6.5em) scale(0.8);
+  @media screen and (min-width: $min_tablet) {
+    transform: translateY(-6.2em) scale(0.8);
+  }
 }

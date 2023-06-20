@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import { toast } from 'react-toastify';
+import { Store } from 'react-notifications-component';
 import Input from '../Input';
 import Textarea from '../Input/Textarea';
 import OurContacts from './OurContacts';
@@ -54,8 +54,20 @@ function Form({ isOpen, closeModal, className }) {
       );
 
     reset();
-    toast.success('Повідомлення надіслано!');
     closeModal();
+    Store.addNotification({
+      title: 'Чудово!',
+      message: 'Повідомлення надіслано!',
+      type: 'success',
+      insert: 'top',
+      container: 'top-right',
+      animationIn: ['animate__animated', 'animate__fadeIn'],
+      animationOut: ['animate__animated', 'animate__fadeOut'],
+      dismiss: {
+        duration: 3000,
+        onScreen: true,
+      },
+    });
   };
 
   const reset = () => {
@@ -104,7 +116,6 @@ function Form({ isOpen, closeModal, className }) {
   }
 
   function validatePhone(phone) {
-    // let re = /^\+([0-9]{2})\)?(([0-9]{3}))?[-. ]?([0-9]{3})?([0-9]{4})$/;
     let re = /^\+\d{12}$/;
 
     if (!re.test(phone)) {

@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ReactNotifications } from 'react-notifications-component';
+import 'react-notifications-component/dist/theme.css';
 import './styles/_variables.scss';
 import './index.scss';
 
@@ -16,7 +16,7 @@ import App from './App';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
-      <ToastContainer theme="colored" autoClose={3000} />
+      <ReactNotifications />
       <HelmetProvider>
         <App />
       </HelmetProvider>

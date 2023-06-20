@@ -9,7 +9,7 @@ const ButtonClose = ({ closeModal, className }) => {
       onClick={closeModal}
     >
       <svg className={styles.iconClose}>
-        <use href={sprite + '#icon-close'} />
+        <use href={sprite + '#close'} />
       </svg>
     </button>
   );
