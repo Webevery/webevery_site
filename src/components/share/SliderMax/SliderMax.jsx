@@ -61,28 +61,45 @@ export const SliderInfo = ({ array, currentIndex, setCurrentIndex }) => {
                 currentIndex === index ? styles.coworker : styles.hidden
               }
             >
-              <img
-                className={styles.photo}
-                src={item.photo}
-                alt={item.name}
-                width={146}
-                height={171}
-                loading="lazy"
-              />
+              <div className={styles.photoWrapper}>
+                <img
+                  className={styles.photo}
+                  src={item.photo}
+                  alt={item.name}
+                  width={146}
+                  height={171}
+                  loading="lazy"
+                />
+              </div>
 
               <div className={styles.informationWrapper}>
                 <p className={styles.name}>{item.name}</p>
                 <p className={styles.profession}>{item.profession}</p>
 
-                <p className={styles.quote}>{item.quote}</p>
-                <p className={styles.humor}>{item.humor}</p>
+                <p className={styles.quote}>
+                  <svg width="20px" height="16px" >
+                    <use href={`${sprite}#icon-quotation-marks`} />
+                  </svg>
+                  {item.quote}
+                </p>
+                <p className={styles.humor}>
+                  <svg width="20px" height="20px" >
+                    <use href={`${sprite}#icon-smile-light`} />
+                  </svg>
+                  {item.humor}
+                  <svg width="20px" height="20px" >
+                    <use href={`${sprite}#icon-smile-hard`} />
+                  </svg>
+                </p>
                 <p className={styles.city}>
                   {item.city},
                   <span className={styles.country}> {item.country}</span>
                 </p>
-                <svg className={styles.map}>
-                  <use href={`${sprite}#icon-map${item.location}`} />
-                </svg>
+                <div className={styles.mapWrapper}>
+                  <svg width="696px" height="393px" className={styles.map}>
+                    <use href={`${sprite}#icon-map${item.location}`} />
+                  </svg>
+                </div>
               </div>
             </div>
           );
@@ -215,7 +232,6 @@ export const SliderNav = ({ array, currentIndex, setCurrentIndex }) => {
 
   function scrollToIndex(index) {
     const list = listRef.current;
-    console.log('list', list);
     const currentImg = list.querySelectorAll('img')[index];
     currentImg.scrollIntoView({
       behavior: 'smooth',
@@ -275,7 +291,8 @@ export const SliderNav = ({ array, currentIndex, setCurrentIndex }) => {
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
       >
-        <BtnSliderMax moveSlide={prevSlide} direction={'prev'} />
+        {currentIndex !== 0 ? <BtnSliderMax moveSlide={prevSlide} direction={'prev'} /> : null}
+
         <div className={styles.photosWrapper} ref={listRef}>
           {array.map((item, index) => {
             return (
@@ -302,7 +319,8 @@ export const SliderNav = ({ array, currentIndex, setCurrentIndex }) => {
             );
           })}
         </div>
-        <BtnSliderMax moveSlide={nextSlide} direction={'next'} />
+        {currentIndex !== array.length - 1 ?
+          <BtnSliderMax moveSlide={nextSlide} direction={'next'} /> : null}
 
         <div className={styles.dotsWrapper}>
           {array.map((_, index) => (
