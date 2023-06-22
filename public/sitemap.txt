@@ -5,5 +5,6 @@ https://webevery.dev/ourProjects
 https://webevery.dev/ourTeam
 https://webevery.dev/contacts
 https://webevery.dev/howWeWork
+https://webevery.dev/*
 
 
