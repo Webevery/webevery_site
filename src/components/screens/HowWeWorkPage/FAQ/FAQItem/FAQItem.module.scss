@@ -28,10 +28,9 @@
 }
 
 .FAQQuestion {
-  // font-family: 'Jura', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
 
   letter-spacing: 0.05em;
@@ -40,6 +39,9 @@
 
   width: 100%;
   flex-wrap: wrap;
+  @media screen and (min-width: $min_tablet) {
+    font-size: 20px;
+  }
 }
 
 .FAQIcon {
@@ -69,10 +71,9 @@
   display: flex;
   flex-wrap: wrap;
 
-  // font-family: 'Jura', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 19px;
   letter-spacing: 0.05em;
 
@@ -87,7 +88,9 @@
   height: 0;
   overflow: hidden;
   border: 0;
-
+  @media screen and (min-width: $min_tablet) {
+    font-size: 16px;
+  }
   &__visible {
     // top: 0;
     margin: 0;
@@ -104,14 +107,16 @@
 
     animation: sweep 1s ease-in-out;
 
-    // font-family: 'Jura', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 13px;
     line-height: 19px;
     letter-spacing: 0.05em;
 
     color: var(--main_text_color_our_team);
+    @media screen and (min-width: $min_tablet) {
+      font-size: 16px;
+    }
   }
 
   @keyframes sweep {
