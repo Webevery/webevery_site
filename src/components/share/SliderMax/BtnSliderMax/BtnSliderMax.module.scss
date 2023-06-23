@@ -16,10 +16,9 @@
     left: -13%;
   }
 
-  // @media screen and (min-width: $min_desktop_large) {
-  //   top: 20%;
-  //   left: 4%;
-  // }
+  @media screen and (min-width: $min_desktop_large) {
+    left: -7%;
+  }
 }
 
 @keyframes arrowLeft {
@@ -52,10 +51,9 @@
     right: -13%;
   }
 
-  // @media screen and (min-width: $min_desktop_large) {
-  //   top: 20%;
-  //   right: 4%;
-  // }
+  @media screen and (min-width: $min_desktop_large) {
+    right: -7%;
+  }
 }
 
 @keyframes arrowRight {

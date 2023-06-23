@@ -19,18 +19,23 @@
   // @media screen and (min-width: $min_tablet) {
   // }
 
-  // @media screen and (min-width: $min_desktop_large) {
-  //   padding: 52px 0px 32px;
-  //   width: 100%;
-  //   height: 100%;
-  //   background-color: var(--main_bg_color_our_team);
-  //   text-align: center;
-  //   position: relative;
-  //   font-style: normal;
-  //   font-weight: 700;
-  //   letter-spacing: 0.05em;
-  //   color: var(--main_text_color_our_team);
-  // }
+  @media screen and (min-width: $min_desktop_large) {
+    padding: 62px 0px 32px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main_bg_color_our_team);
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: var(--main_text_color_our_team);
+  }
+}
+
+.mapAndCountriesWrapper {
+  @media screen and (min-width: $min_desktop_large) {
+    position: relative;
+  }
 }
 
 .mapGeneralWrapper {
@@ -44,9 +49,6 @@
 .mapGeneral {
   width: 90%;
   height: 100%;
-  // width: 358px;
-  // height: 203px;
-
 
   // @media screen and (min-width: $min_tablet) {
   // }
@@ -59,25 +61,27 @@
 }
 
 .countriesWrapper {
-  width: 358px;
-  // width: 100%;
-  height: 27px;
-  margin: 0 auto 97px;
+  width: 80%;
+  margin-bottom: 97px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 
-  // @media screen and (min-width: $min_tablet) {
-  // }
+  @media screen and (min-width: $min_tablet) {
+    width: 60%;
+  }
 
-  // @media screen and (min-width: $min_desktop_large) {
-  //   position: absolute;
-  //   top: 13%;
-  //   right: 23%;
-  //   text-align: left;
-  //   font-size: 12px;
-  //   line-height: 14px;
-  // }
+  @media screen and (min-width: $min_desktop_large) {
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+    top: 34%;
+    right: 25%;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 0px;
+  }
 }
 
 .countryOnGeneralMap {
@@ -94,11 +98,8 @@
   }
 }
 
-// .countryOnGeneralMap:not(:last-child) {
-// @media screen and (min-width: $min_tablet) {
-// }
-
-// @media screen and (min-width: $min_desktop_large) {
-//   margin-bottom: 9px;
-// }
-// }
+.countryOnGeneralMap:not(:last-child) {
+  @media screen and (min-width: $min_desktop_large) {
+    margin-bottom: 9px;
+  }
+}

@@ -77,19 +77,19 @@ export const SliderInfo = ({ array, currentIndex, setCurrentIndex }) => {
                 <p className={styles.profession}>{item.profession}</p>
 
                 <p className={styles.quote}>
-                  <svg width="20px" height="16px" >
+                  <svg className={styles.quoteIcon} >
                     <use href={`${sprite}#icon-quotation-marks`} />
                   </svg>
                   {item.quote}
                 </p>
                 <p className={styles.humor}>
-                  <svg width="20px" height="20px" >
+                  <svg className={styles.humorIcon} width="20px" height="20px" >
                     <use href={`${sprite}#icon-smile-light`} />
                   </svg>
                   {item.humor}
-                  <svg width="20px" height="20px" >
+                  {/* <svg width="20px" height="20px" >
                     <use href={`${sprite}#icon-smile-hard`} />
-                  </svg>
+                  </svg> */}
                 </p>
                 <p className={styles.city}>
                   {item.city},
