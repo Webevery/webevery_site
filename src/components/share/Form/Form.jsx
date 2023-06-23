@@ -35,6 +35,15 @@ function Form({ isOpen, closeModal, className }) {
     }
   }, [errorUserName, errorPhone, errorMail, errorComments]);
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isOpen]);
+
   const formSubmit = evt => {
     evt.preventDefault();
     emailjs
