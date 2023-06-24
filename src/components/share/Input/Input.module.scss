@@ -1,13 +1,15 @@
 @import 'styles/variables';
 
 label {
-  color: #626262;
+  color: var(--main_color_btn);
   padding-left: 0px;
   display: block;
   transform: translateY(-2em);
   transform-origin: 0 0;
   transition: all 0.3s;
+  letter-spacing: 0.03em;
   @media screen and (min-width: $min_tablet) {
+    letter-spacing: 0.01em;
     color: #020b11;
     padding-left: 16px;
   }
@@ -19,12 +21,12 @@ label {
   border: none;
   border-bottom: 1px solid #626262;
   border-radius: 0px;
+  padding-bottom: 5px;
   color: var(--main_color_btn);
 
   @media screen and (min-width: $min_tablet) {
     display: flex;
     align-items: center;
-    // font-family: 'Jura', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -38,21 +40,24 @@ label {
     border: 0.5px solid rgba(2, 11, 17, 0.7);
     border-radius: 6px;
     padding-left: 10px;
+    padding-bottom: 0;
     outline: none;
   }
 }
 
 .input:focus {
   @media screen and (max-width: $min_tablet) {
-    border-bottom: 1px solid #94a44a;
+    border-bottom: 1px solid #bdba22;
   }
 }
 
 .input:focus + label {
   padding: 5px;
+  color: lightgrey;
   background-color: var(--main_bg_color_our_team);
   @media screen and (min-width: $min_tablet) {
     background-color: var(--light_color);
+    color: #020b11;
   }
 }
 
@@ -82,7 +87,11 @@ label {
 
 .input:focus + label,
 .input:not(:placeholder-shown) + label {
+  color: lightgrey;
   transform: translateY(-3.5em) scale(0.8);
+  @media screen and (min-width: $min_tablet) {
+    color: #020b11;
+  }
 }
 
 .input:focus + .labelTextarea,

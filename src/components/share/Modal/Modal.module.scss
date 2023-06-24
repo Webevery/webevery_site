@@ -14,7 +14,8 @@
   background-color: rgba(0, 0, 0, 0.55);
   z-index: 101;
 
-  animation: hideModal 1.7s forwards;
+  transition: all 1s;
+  animation: hideModal 1s forwards;
 
   @media screen and (min-width: $tablet) {
     background-color: rgba(0, 0, 0, 0.85);
@@ -26,7 +27,8 @@
 }
 
 .modalContent {
-  animation: hideModal 1.7s forwards;
+  transition: all 1s;
+  animation: hideModalContent 1s forwards;
 }
 
 .activeContent {
@@ -45,6 +47,18 @@
   }
 }
 
+@keyframes hideModalContent {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateX(100vw);
+  }
+}
+
 .active {
   animation: showModal 0.7s forwards;
 }
@@ -59,14 +73,14 @@
   }
 }
 
-// @keyframes hideModal {
-//   from {
-//     opacity: 1;
-//     transform: scale(1);
-//   }
+@keyframes hideModal {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
 
-//   to {
-//     opacity: 0;
-//     transform: scale(0.7);
-//   }
-// }
+  to {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+}
