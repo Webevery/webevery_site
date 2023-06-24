@@ -2,7 +2,7 @@
 
 .wrapper {
   margin-top: 68px;
-  padding: 36px 1px 11px;
+  padding: 62px 1px 11px;
   width: 100vw;
   min-height: calc(100vh - 68px - 36px);
   display: flex;
@@ -19,18 +19,24 @@
   // @media screen and (min-width: $min_tablet) {
   // }
 
-  // @media screen and (min-width: $min_desktop_large) {
-  //   padding: 52px 0px 32px;
-  //   width: 100%;
-  //   height: 100%;
-  //   background-color: var(--main_bg_color_our_team);
-  //   text-align: center;
-  //   position: relative;
-  //   font-style: normal;
-  //   font-weight: 700;
-  //   letter-spacing: 0.05em;
-  //   color: var(--main_text_color_our_team);
-  // }
+  @media screen and (min-width: $min_desktop_large) {
+    padding: 62px 160px 32px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main_bg_color_our_team);
+    justify-content: space-around;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: var(--main_text_color_our_team);
+  }
+}
+
+.mapAndCountriesWrapper {
+  @media screen and (min-width: $min_desktop_large) {
+    position: relative;
+  }
 }
 
 .mapGeneralWrapper {
@@ -39,14 +45,16 @@
   align-items: center;
   max-width: 1366px;
   margin-bottom: 24px;
+
+  @media screen and (min-width: $min_desktop_large) {
+    margin-bottom: 48px;
+  }
+
 }
 
 .mapGeneral {
   width: 90%;
   height: 100%;
-  // width: 358px;
-  // height: 203px;
-
 
   // @media screen and (min-width: $min_tablet) {
   // }
@@ -59,25 +67,27 @@
 }
 
 .countriesWrapper {
-  width: 358px;
-  // width: 100%;
-  height: 27px;
-  margin: 0 auto 97px;
+  width: 100%;
+  margin-bottom: 97px;
   display: flex;
   align-items: center;
   justify-content: space-around;
 
-  // @media screen and (min-width: $min_tablet) {
-  // }
+  @media screen and (min-width: $min_tablet) {
+    width: 100%;
+  }
 
-  // @media screen and (min-width: $min_desktop_large) {
-  //   position: absolute;
-  //   top: 13%;
-  //   right: 23%;
-  //   text-align: left;
-  //   font-size: 12px;
-  //   line-height: 14px;
-  // }
+  @media screen and (min-width: $min_desktop_large) {
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+    top: 12%;
+    right: 3%;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 0px;
+  }
 }
 
 .countryOnGeneralMap {
@@ -94,11 +104,8 @@
   }
 }
 
-// .countryOnGeneralMap:not(:last-child) {
-// @media screen and (min-width: $min_tablet) {
-// }
-
-// @media screen and (min-width: $min_desktop_large) {
-//   margin-bottom: 9px;
-// }
-// }
+.countryOnGeneralMap:not(:last-child) {
+  @media screen and (min-width: $min_desktop_large) {
+    margin-bottom: 9px;
+  }
+}
