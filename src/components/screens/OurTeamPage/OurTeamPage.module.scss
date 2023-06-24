@@ -2,7 +2,7 @@
 
 .wrapper {
   margin-top: 68px;
-  padding: 36px 1px 11px;
+  padding: 62px 1px 11px;
   width: 100vw;
   min-height: calc(100vh - 68px - 36px);
   display: flex;
@@ -20,10 +20,11 @@
   // }
 
   @media screen and (min-width: $min_desktop_large) {
-    padding: 62px 0px 32px;
+    padding: 62px 160px 32px;
     width: 100%;
     height: 100%;
     background-color: var(--main_bg_color_our_team);
+    justify-content: space-around;
     text-align: center;
     font-style: normal;
     font-weight: 700;
@@ -44,6 +45,11 @@
   align-items: center;
   max-width: 1366px;
   margin-bottom: 24px;
+
+  @media screen and (min-width: $min_desktop_large) {
+    margin-bottom: 48px;
+  }
+
 }
 
 .mapGeneral {
@@ -61,14 +67,14 @@
 }
 
 .countriesWrapper {
-  width: 80%;
+  width: 100%;
   margin-bottom: 97px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 
   @media screen and (min-width: $min_tablet) {
-    width: 60%;
+    width: 100%;
   }
 
   @media screen and (min-width: $min_desktop_large) {
@@ -76,8 +82,8 @@
     flex-direction: column;
     align-items: flex-start;
     width: auto;
-    top: 34%;
-    right: 25%;
+    top: 12%;
+    right: 3%;
     font-size: 12px;
     line-height: 14px;
     margin-bottom: 0px;

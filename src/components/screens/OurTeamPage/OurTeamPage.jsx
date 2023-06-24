@@ -18,7 +18,7 @@ const OurTeamPage = () => {
   return (
     <section className={styles.wrapper}>
       {currentIndex === null ? (
-        <>
+        <div className={styles.mapAndCountriesWrapper}>
           <div className={styles.mapGeneralWrapper}>
             <svg width="728px" height="412px" className={styles.mapGeneral}>
               <use href={sprite + '#icon-mapGeneralWithoutCountries'} />
@@ -31,7 +31,7 @@ const OurTeamPage = () => {
               </li>
             ))}
           </ul>
-        </>
+        </div>
       ) : (
         <SliderInfo
           array={coworkersData}

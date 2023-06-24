@@ -207,7 +207,7 @@ export const coworkersData = [
     photo: vitaliiPavlovskyi,
     photoSmall: vitaliiPavlovskyiSmall,
     profession: 'Full Stack Developer',
-    quote: 'Ви господар свого життя. Не дозволяйте іншим людям писати Ваш сценарій.',
+    quote: 'Лише Ви самі є господарем свого життя. Не дозволяйте іншим людям писати Ваш сценарій.',
     quoteEn: 'You define your own life. Do not let other people write your script.',
     humor: 'Хороших людей багато, корисних мало.',
     city: 'Суми',
