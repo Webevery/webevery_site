@@ -9,13 +9,21 @@ export const SliderInfo = ({ array, currentIndex, setCurrentIndex }) => {
   const prevSlide = () => {
     if (currentIndex !== null && currentIndex !== 0) {
       setCurrentIndex(currentIndex - 1);
-    } else setCurrentIndex(array.length - 1);
+      // scrollToIndex(currentIndex);
+    } else {
+      setCurrentIndex(array.length - 1);
+      // scrollToIndex(array.length - 1);
+    }
   };
 
   const nextSlide = () => {
     if (currentIndex !== null && currentIndex !== array.length - 1) {
       setCurrentIndex(currentIndex + 1);
-    } else setCurrentIndex(0);
+      // scrollToIndex(currentIndex);
+    } else {
+      setCurrentIndex(0);
+      // scrollToIndex(0);
+    }
   };
 
   // ! Logic handleTouch
@@ -39,7 +47,7 @@ export const SliderInfo = ({ array, currentIndex, setCurrentIndex }) => {
       nextSlide();
     }
 
-    if (diff < 5) {
+    if (diff < -5) {
       prevSlide();
     }
 
@@ -77,13 +85,13 @@ export const SliderInfo = ({ array, currentIndex, setCurrentIndex }) => {
                 <p className={styles.profession}>{item.profession}</p>
 
                 <p className={styles.quote}>
-                  <svg className={styles.quoteIcon} >
+                  <svg className={styles.quoteIcon}>
                     <use href={`${sprite}#icon-quotation-marks`} />
                   </svg>
                   {item.quote}
                 </p>
                 <p className={styles.humor}>
-                  <svg className={styles.humorIcon} width="20px" height="20px" >
+                  <svg className={styles.humorIcon} width="20px" height="20px">
                     <use href={`${sprite}#icon-smile-light`} />
                   </svg>
                   {item.humor}
@@ -107,14 +115,13 @@ export const SliderInfo = ({ array, currentIndex, setCurrentIndex }) => {
 };
 
 export const SliderNav = ({ array, currentIndex, setCurrentIndex }) => {
-  const [touchPosition, setTouchPosition] = useState(null);
   const listRef = useRef(null);
 
   function scrollToIndex(index) {
     const list = listRef.current;
     const currentImg = list.querySelectorAll('img')[index];
     currentImg.scrollIntoView({
-      behavior: 'smooth',
+      behavior: 'auto',
       block: 'nearest',
       inline: 'center',
     });
@@ -123,55 +130,31 @@ export const SliderNav = ({ array, currentIndex, setCurrentIndex }) => {
   const prevSlide = () => {
     if (currentIndex !== null && currentIndex !== 0) {
       setCurrentIndex(currentIndex - 1);
-    } else setCurrentIndex(array.length - 1);
-    scrollToIndex(currentIndex);
+      scrollToIndex(currentIndex);
+    } else {
+      setCurrentIndex(array.length - 1);
+      scrollToIndex(array.length - 1);
+    }
   };
 
   const nextSlide = () => {
     if (currentIndex !== null && currentIndex !== array.length - 1) {
       setCurrentIndex(currentIndex + 1);
-    } else setCurrentIndex(0);
-    scrollToIndex(currentIndex);
+      scrollToIndex(currentIndex);
+    } else {
+      setCurrentIndex(0);
+      scrollToIndex(0);
+    }
   };
 
   const goToSlide = index => setCurrentIndex(index);
 
-  // ! Logic handleTouch
-
-  const handleTouchStart = e => {
-    const touchDown = e.touches[0].clientX;
-    setTouchPosition(touchDown);
-  };
-
-  const handleTouchMove = e => {
-    const touchDown = touchPosition;
-
-    if (touchDown === null) {
-      return;
-    }
-
-    const currentTouch = e.touches[0].clientX;
-    const diff = touchDown - currentTouch;
-
-    if (diff > 5) {
-      nextSlide();
-    }
-
-    if (diff < 5) {
-      prevSlide();
-    }
-
-    setTouchPosition(null);
-  };
-
   return (
     <>
-      <div
-        className={styles.sliderNavWrapper}
-        onTouchStart={handleTouchStart}
-        onTouchMove={handleTouchMove}
-      >
-        {currentIndex !== 0 ? <BtnSliderMax moveSlide={prevSlide} direction={'prev'} /> : null}
+      <div className={styles.sliderNavWrapper}>
+        {currentIndex !== 0 ? (
+          <BtnSliderMax moveSlide={prevSlide} direction={'prev'} />
+        ) : null}
 
         <div className={styles.photosWrapper} ref={listRef}>
           {array.map((item, index) => {
@@ -193,8 +176,9 @@ export const SliderNav = ({ array, currentIndex, setCurrentIndex }) => {
             );
           })}
         </div>
-        {currentIndex !== array.length - 1 ?
-          <BtnSliderMax moveSlide={nextSlide} direction={'next'} /> : null}
+        {currentIndex !== array.length - 1 ? (
+          <BtnSliderMax moveSlide={nextSlide} direction={'next'} />
+        ) : null}
 
         <div className={styles.dotsWrapper}>
           {array.map((_, index) => (
@@ -207,7 +191,7 @@ export const SliderNav = ({ array, currentIndex, setCurrentIndex }) => {
               }
               onClick={() => {
                 goToSlide(index);
-                scrollToIndex(currentIndex);
+                scrollToIndex(index);
               }}
             ></div>
           ))}
