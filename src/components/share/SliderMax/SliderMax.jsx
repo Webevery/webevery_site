@@ -1,65 +1,65 @@
-import React, { useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import styles from './SliderMax.module.scss';
 import BtnSliderMax from './BtnSliderMax';
 import sprite from 'images/sprite.svg';
 
 export const SliderInfo = ({ array, currentIndex, setCurrentIndex }) => {
-  // const [touchPosition, setTouchPosition] = useState(null);
+  const [touchPosition, setTouchPosition] = useState(null);
 
-  // const prevSlide = () => {
-  //     if (currentIndex !== null && currentIndex !== 0) {
-  //       setCurrentIndex(currentIndex - 1);
-  //       scrollToIndex(currentIndex);
-  //     } else {
-  //       setCurrentIndex(array.length - 1);
-  //       scrollToIndex(array.length - 1);
-  //     }
-  //   };
+  const prevSlide = () => {
+    if (currentIndex !== null && currentIndex !== 0) {
+      setCurrentIndex(currentIndex - 1);
+      // scrollToIndex(currentIndex);
+    } else {
+      setCurrentIndex(array.length - 1);
+      // scrollToIndex(array.length - 1);
+    }
+  };
 
-  // const nextSlide = () => {
-  //   if (currentIndex !== null && currentIndex !== array.length - 1) {
-  //     setCurrentIndex(currentIndex + 1);
-  //     scrollToIndex(currentIndex);
-  //   } else {
-  //     setCurrentIndex(0);
-  //     scrollToIndex(0);
-  //   }
-  // };
+  const nextSlide = () => {
+    if (currentIndex !== null && currentIndex !== array.length - 1) {
+      setCurrentIndex(currentIndex + 1);
+      // scrollToIndex(currentIndex);
+    } else {
+      setCurrentIndex(0);
+      // scrollToIndex(0);
+    }
+  };
 
   // ! Logic handleTouch
 
-  // const handleTouchStart = e => {
-  //   const touchDown = e.touches[0].clientX;
-  //   setTouchPosition(touchDown);
-  // };
+  const handleTouchStart = e => {
+    const touchDown = e.touches[0].clientX;
+    setTouchPosition(touchDown);
+  };
 
-  // const handleTouchMove = e => {
-  //   const touchDown = touchPosition;
+  const handleTouchMove = e => {
+    const touchDown = touchPosition;
 
-  //   if (touchDown === null) {
-  //     return;
-  //   }
+    if (touchDown === null) {
+      return;
+    }
 
-  //   const currentTouch = e.touches[0].clientX;
-  //   const diff = touchDown - currentTouch;
+    const currentTouch = e.touches[0].clientX;
+    const diff = touchDown - currentTouch;
 
-  //   if (diff > 5) {
-  //     nextSlide();
-  //   }
+    if (diff > 5) {
+      nextSlide();
+    }
 
-  //   if (diff < 5) {
-  //     prevSlide();
-  //   }
+    if (diff < -5) {
+      prevSlide();
+    }
 
-  //   setTouchPosition(null);
-  // };
+    setTouchPosition(null);
+  };
 
   return (
     <>
       <div
         className={styles.sliderInfoWrapper}
-        // onTouchStart={handleTouchStart}
-        // onTouchMove={handleTouchMove}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
       >
         {array.map((item, index) => {
           return (
@@ -115,7 +115,6 @@ export const SliderInfo = ({ array, currentIndex, setCurrentIndex }) => {
 };
 
 export const SliderNav = ({ array, currentIndex, setCurrentIndex }) => {
-  // const [touchPosition, setTouchPosition] = useState(null);
   const listRef = useRef(null);
 
   function scrollToIndex(index) {
@@ -150,41 +149,9 @@ export const SliderNav = ({ array, currentIndex, setCurrentIndex }) => {
 
   const goToSlide = index => setCurrentIndex(index);
 
-  // ! Logic handleTouch
-
-  // const handleTouchStart = e => {
-  //   const touchDown = e.touches[0].clientX;
-  //   setTouchPosition(touchDown);
-  // };
-
-  // const handleTouchMove = e => {
-  //   const touchDown = touchPosition;
-
-  //   if (touchDown === null) {
-  //     return;
-  //   }
-
-  //   const currentTouch = e.touches[0].clientX;
-  //   const diff = touchDown - currentTouch;
-
-  //   if (diff > 5) {
-  //     nextSlide();
-  //   }
-
-  //   if (diff < 5) {
-  //     prevSlide();
-  //   }
-
-  //   setTouchPosition(null);
-  // };
-
   return (
     <>
-      <div
-        className={styles.sliderNavWrapper}
-        // onTouchStart={handleTouchStart}
-        // onTouchMove={handleTouchMove}
-      >
+      <div className={styles.sliderNavWrapper}>
         {currentIndex !== 0 ? (
           <BtnSliderMax moveSlide={prevSlide} direction={'prev'} />
         ) : null}
