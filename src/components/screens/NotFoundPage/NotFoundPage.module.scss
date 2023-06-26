@@ -1,8 +1,14 @@
 .wrapper {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: calc(100vh - 36px);
+  background-image: url(../../../images/notFoundGlobe.png);
+  background-repeat: no-repeat;
+  background-size: 56%;
+  background-position-x: 98%;
+  background-position-y: center;
 }
 
 h1 {
