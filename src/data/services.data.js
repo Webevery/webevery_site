@@ -189,7 +189,6 @@ export const servicesData = [
       'Ілюстрація',
     ],
   },
-
   {
     id: 9,
     title: 'Веб дизайн',
