@@ -8,16 +8,20 @@ const OurContacts = () => {
       <ul className={styles.contactsList}>
         <li className={styles.contactsItem}>або зв’яжіться з нами</li>
         <li className={styles.contactsItem}>
-          <svg className={styles.iconItem}>
-            <use href={sprite + '#icon-telephone'} />
-          </svg>
-          +380 50 373 8465
+          <a href="tel:+380503738465">
+            <svg className={styles.iconItem}>
+              <use href={sprite + '#icon-telephone'} />
+            </svg>
+            +380 50 373 8465
+          </a>
         </li>
         <li className={styles.contactsItem}>
-          <svg className={styles.iconItem}>
-            <use href={sprite + '#envelope'} />
-          </svg>
-          inbox.webevery@gmail.com
+          <a href="mailto:inbox.webevery@gmail.com">
+            <svg className={styles.iconItem}>
+              <use href={sprite + '#envelope'} />
+            </svg>
+            inbox.webevery@gmail.com
+          </a>
         </li>
       </ul>
     </div>
