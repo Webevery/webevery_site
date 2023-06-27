@@ -81,14 +81,6 @@
 }
 
 .buttonOrderHero {
-  background-color: var(--main_color_btn);
-  color: #263238;
-  &:hover,
-  &:focus {
-    background-color: transparent;
-    color: var(--main_color_btn);
-  }
-
   @media screen and (max-width: $max_mobile) {
     width: 171px;
     height: 51px;
