@@ -27,8 +27,13 @@ export const ServicesItem = ({
   return (
     <section className={styles.servicesWrapper} key={id}>
       <h2>{title}</h2>
+
       <button
-        className={styles.whatIsItBtn}
+        className={
+          description
+            ? styles.whatIsItBtn
+            : `${styles.whatIsItBtn} ${styles.invisible}`
+        }
         // aria-expanded={ariaExpanded}
         aria-controls={id}
         onClick={() => {
@@ -38,6 +43,18 @@ export const ServicesItem = ({
       >
         {isClicked ? 'Зрозуміло!' : 'Що це..?'}
       </button>
+
+      {/* <button
+        className={styles.whatIsItBtn}
+        // aria-expanded={ariaExpanded}
+        aria-controls={id}
+        onClick={() => {
+          // eslint-disable-next-line
+          return setActiveId(id), isShown();
+        }}
+      >
+        {isClicked ? 'Зрозуміло!' : 'Що це..?'}
+      </button> */}
 
       <div className={styles.allDescrWrapper}>
         <ul

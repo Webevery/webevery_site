@@ -77,7 +77,7 @@
     font-size: 14px;
     border: none;
     background: none;
-    margin-bottom: 16px;
+
     text-decoration-line: underline;
     text-underline-offset: 3px;
     animation: pulse 5s infinite;
@@ -89,6 +89,11 @@
       filter: brightness(1.5);
     }
   }
+}
+
+.invisible {
+  opacity: 0;
+  animation: none;
 }
 
 @keyframes pulse {
@@ -109,6 +114,7 @@
 .allDescrWrapper {
   display: flex;
   width: 200%;
+  margin-top: 16px;
 }
 
 .servicesList {
