@@ -26,7 +26,13 @@ export const ServicesItem = ({
 
   return (
     <section className={styles.servicesWrapper} key={id}>
-      <h2>{title}</h2>
+      <h2
+        className={
+          description ? styles.title : `${styles.title} ${styles.toBottom}`
+        }
+      >
+        {title}
+      </h2>
 
       <button
         className={
@@ -44,18 +50,6 @@ export const ServicesItem = ({
         {isClicked ? 'Зрозуміло!' : 'Що це..?'}
       </button>
 
-      {/* <button
-        className={styles.whatIsItBtn}
-        // aria-expanded={ariaExpanded}
-        aria-controls={id}
-        onClick={() => {
-          // eslint-disable-next-line
-          return setActiveId(id), isShown();
-        }}
-      >
-        {isClicked ? 'Зрозуміло!' : 'Що це..?'}
-      </button> */}
-
       <div className={styles.allDescrWrapper}>
         <ul
           className={
@@ -66,7 +60,7 @@ export const ServicesItem = ({
             return (
               <DetailsItem
                 key={nanoid()}
-                className={`${styles.servicesList__item} `}
+                className={styles.servicesList__item}
                 item={item}
               />
             );

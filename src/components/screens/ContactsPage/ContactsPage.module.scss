@@ -72,13 +72,6 @@
     padding: 16px 24px;
     display: none;
 
-    background-color: var(--main_color_btn);
-    color: #263238;
-    &:focus,
-    &:hover {
-      background-color: transparent;
-      color: var(--main_color_btn);
-    }
     @media screen and (min-width: $min_tablet) {
       display: block;
     }
