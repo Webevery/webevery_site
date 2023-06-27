@@ -59,7 +59,7 @@
     );
   }
 
-  & h2,
+  & .title,
   & .whatIsItBtn {
     font-weight: 700;
     line-height: 1.18;
@@ -67,10 +67,14 @@
     color: var(--text_color_name_our_team);
   }
 
-  & h2 {
+  & .title {
     font-size: 16px;
     margin-bottom: 4px;
     transition-duration: 1s;
+  }
+
+  & .toBottom {
+    margin-bottom: 34px;
   }
 
   & .whatIsItBtn {
@@ -94,6 +98,8 @@
 .invisible {
   opacity: 0;
   animation: none;
+  cursor: inherit;
+  display: none;
 }
 
 @keyframes pulse {
@@ -134,6 +140,7 @@
     color: rgba(192, 215, 244, 1);
   }
 }
+
 .servicesListHidden {
   transform: translateX(-110%);
   transition-duration: 1s;
