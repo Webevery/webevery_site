@@ -17,7 +17,7 @@ const Footer = () => {
         <div className={styles.mailBlock}>
           <a
             className={styles.mailLink}
-            href="*"
+            href="mailto:inbox.webevery@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Mail"
@@ -26,7 +26,9 @@ const Footer = () => {
               <use href={sprite + `#envelope`} />
             </svg>
           </a>
-          <p className={styles.mailText}>inbox.webevery@gmail.com</p>
+          <a href="mailto:inbox.webevery@gmail.com" className={styles.mailText}>
+            inbox.webevery@gmail.com
+          </a>
         </div>
       </footer>
     </>
