@@ -103,7 +103,9 @@ const Slider = ({ array }) => {
             <div
               key={index}
               className={
-                slideIndex === index + 1 ? styles.dotActive : styles.dot
+                slideIndex === index + 1
+                  ? `${styles.dot} ${styles.dotActive}`
+                  : styles.dot
               }
               onClick={() => moveDots(index + 1)}
             ></div>
