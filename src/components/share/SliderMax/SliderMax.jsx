@@ -1,28 +1,33 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import styles from './SliderMax.module.scss';
 import BtnSliderMax from './BtnSliderMax';
 import sprite from 'images/sprite.svg';
 
-export const SliderInfo = ({ array, currentIndex, setCurrentIndex }) => {
+export const SliderInfo = ({
+  array,
+  currentIndex,
+  setCurrentIndex,
+  scrollToIndex,
+}) => {
   const [touchPosition, setTouchPosition] = useState(null);
 
   const prevSlide = () => {
     if (currentIndex !== null && currentIndex !== 0) {
       setCurrentIndex(currentIndex - 1);
-      // scrollToIndex(currentIndex);
+      scrollToIndex(currentIndex);
     } else {
       setCurrentIndex(array.length - 1);
-      // scrollToIndex(array.length - 1);
+      scrollToIndex(array.length - 1);
     }
   };
 
   const nextSlide = () => {
     if (currentIndex !== null && currentIndex !== array.length - 1) {
       setCurrentIndex(currentIndex + 1);
-      // scrollToIndex(currentIndex);
+      scrollToIndex(currentIndex);
     } else {
       setCurrentIndex(0);
-      // scrollToIndex(0);
+      scrollToIndex(0);
     }
   };
 
@@ -114,19 +119,13 @@ export const SliderInfo = ({ array, currentIndex, setCurrentIndex }) => {
   );
 };
 
-export const SliderNav = ({ array, currentIndex, setCurrentIndex }) => {
-  const listRef = useRef(null);
-
-  function scrollToIndex(index) {
-    const list = listRef.current;
-    const currentImg = list.querySelectorAll('img')[index];
-    currentImg.scrollIntoView({
-      behavior: 'auto',
-      block: 'nearest',
-      inline: 'center',
-    });
-  }
-
+export const SliderNav = ({
+  array,
+  currentIndex,
+  setCurrentIndex,
+  listRef,
+  scrollToIndex,
+}) => {
   const prevSlide = () => {
     if (currentIndex !== null && currentIndex !== 0) {
       setCurrentIndex(currentIndex - 1);
