@@ -189,6 +189,16 @@ form {
   line-height: 14px;
 }
 
+.contactsItem a {
+  display: flex;
+  align-items: center;
+  transition: all 300ms;
+}
+
+.contactsItem a:hover {
+  scale: (1.05);
+}
+
 .iconItem {
   display: flex;
   justify-content: center;
