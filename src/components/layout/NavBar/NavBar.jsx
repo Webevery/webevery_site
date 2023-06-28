@@ -10,6 +10,11 @@ import styles from './NavBar.module.scss';
 const Navbar = () => {
   const [nav, setNav] = useState(true);
 
+  function topFunction() {
+    document.body.scrollTop = 0; //For Safari
+    document.documentElement.scrollTop = 0;
+  }
+
   return (
     <>
       <header className={styles.headerNav}>
@@ -40,7 +45,7 @@ const Navbar = () => {
           }
         >
           {navData.map(el => (
-            <li key={el.id}>
+            <li key={el.id} onClick={topFunction}>
               <NavLink
                 to={el.path}
                 onClick={() => setNav(true)}
