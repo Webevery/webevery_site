@@ -1,15 +1,14 @@
-import React from 'react';
 import Portal from './Portal';
 import styles from './Modal.module.scss';
 
-function Backdrop({ isModalOpen, onClose, children }) {
+function Backdrop({ active, closeModal, children }) {
   return (
     <Portal>
       <div
         className={
-          isModalOpen ? styles.backdrop + ' ' + styles.active : styles.backdrop
+          active ? styles.backdrop + ' ' + styles.active : styles.backdrop
         }
-        onClick={onClose}
+        onClick={closeModal}
       >
         {children}
       </div>

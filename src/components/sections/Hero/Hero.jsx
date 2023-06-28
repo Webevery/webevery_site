@@ -6,11 +6,22 @@ import sprite from 'images/sprite.svg';
 import styles from './Hero.module.scss';
 
 const Hero = () => {
-  const [isModalOpen, setModalOpen] = useState(false);
+  const [modalActive, setModalActive] = useState(false);
+  const [shouldRender, setShouldRender] = useState(false);
 
-  const closeModal = () => {
-    setModalOpen(!isModalOpen);
-  };
+  function openModal() {
+    setShouldRender(true);
+    setTimeout(() => {
+      setModalActive(true);
+    }, 0);
+  }
+
+  function closeModal() {
+    setModalActive(false);
+    setTimeout(() => {
+      setShouldRender(false);
+    }, 1000);
+  }
 
   return (
     <section className={styles.containerHeroBg}>
@@ -23,15 +34,15 @@ const Hero = () => {
             <use href={sprite + '#icon-logo_mini_tablet'} />
           </svg>
           <Button
-            onClick={closeModal}
+            onClick={openModal}
             className={styles.buttonOrderHero}
             type="button"
             title="Замовити"
             ariaLabel={'Order'}
           />
-          {isModalOpen && (
-            <Modal onClose={closeModal} isModalOpen={isModalOpen}>
-              <Form isOpen={isModalOpen} closeModal={closeModal} />
+          {shouldRender && (
+            <Modal closeModal={closeModal} active={modalActive}>
+              <Form isOpen={modalActive} closeModal={closeModal} />
             </Modal>
           )}
         </div>
