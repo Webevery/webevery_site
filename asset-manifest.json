@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4e9551c5.css",
-    "main.js": "/static/js/main.86228402.js",
+    "main.js": "/static/js/main.0e1be4a4.js",
     "static/css/59.f99035d7.chunk.css": "/static/css/59.f99035d7.chunk.css",
     "static/js/59.4c39d3a0.chunk.js": "/static/js/59.4c39d3a0.chunk.js",
     "static/css/314.ccb7b115.chunk.css": "/static/css/314.ccb7b115.chunk.css",
@@ -16,7 +16,7 @@
     "static/js/45.0f15eb96.chunk.js": "/static/js/45.0f15eb96.chunk.js",
     "static/css/93.eb13c5b2.chunk.css": "/static/css/93.eb13c5b2.chunk.css",
     "static/js/93.ec76bad1.chunk.js": "/static/js/93.ec76bad1.chunk.js",
-    "static/media/sprite.svg": "/static/media/sprite.6741bd2a72239a8dd626d76eb973991c.svg",
+    "static/media/sprite.svg": "/static/media/sprite.5bcddbee5a98df86cb12690e2794b05e.svg",
     "static/media/backgroundHeroCompresed.webp": "/static/media/backgroundHeroCompresed.0660485d074428459054.webp",
     "static/media/petsMockup.png": "/static/media/petsMockup.f9c14cb746cee52fb346.png",
     "static/media/rudyMockup.png": "/static/media/rudyMockup.1a4408449006136f253d.png",
@@ -56,7 +56,7 @@
     "static/media/defaultCoworkerSmall.webp": "/static/media/defaultCoworkerSmall.493ae5d969561f58abcf.webp",
     "static/media/V.svg": "/static/media/V.d45ac0cd204ead949472f10d0e772bc8.svg",
     "main.4e9551c5.css.map": "/static/css/main.4e9551c5.css.map",
-    "main.86228402.js.map": "/static/js/main.86228402.js.map",
+    "main.0e1be4a4.js.map": "/static/js/main.0e1be4a4.js.map",
     "59.f99035d7.chunk.css.map": "/static/css/59.f99035d7.chunk.css.map",
     "59.4c39d3a0.chunk.js.map": "/static/js/59.4c39d3a0.chunk.js.map",
     "314.ccb7b115.chunk.css.map": "/static/css/314.ccb7b115.chunk.css.map",
@@ -74,6 +74,6 @@
   },
   "entrypoints": [
     "static/css/main.4e9551c5.css",
-    "static/js/main.86228402.js"
+    "static/js/main.0e1be4a4.js"
   ]
 }
