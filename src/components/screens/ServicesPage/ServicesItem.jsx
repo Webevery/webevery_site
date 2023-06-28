@@ -26,9 +26,20 @@ export const ServicesItem = ({
 
   return (
     <section className={styles.servicesWrapper} key={id}>
-      <h2>{title}</h2>
+      <h2
+        className={
+          description ? styles.title : `${styles.title} ${styles.toBottom}`
+        }
+      >
+        {title}
+      </h2>
+
       <button
-        className={styles.whatIsItBtn}
+        className={
+          description
+            ? styles.whatIsItBtn
+            : `${styles.whatIsItBtn} ${styles.invisible}`
+        }
         // aria-expanded={ariaExpanded}
         aria-controls={id}
         onClick={() => {
@@ -49,7 +60,7 @@ export const ServicesItem = ({
             return (
               <DetailsItem
                 key={nanoid()}
-                className={`${styles.servicesList__item} `}
+                className={styles.servicesList__item}
                 item={item}
               />
             );

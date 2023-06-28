@@ -59,7 +59,7 @@
     );
   }
 
-  & h2,
+  & .title,
   & .whatIsItBtn {
     font-weight: 700;
     line-height: 1.18;
@@ -67,17 +67,21 @@
     color: var(--text_color_name_our_team);
   }
 
-  & h2 {
+  & .title {
     font-size: 16px;
     margin-bottom: 4px;
     transition-duration: 1s;
+  }
+
+  & .toBottom {
+    margin-bottom: 34px;
   }
 
   & .whatIsItBtn {
     font-size: 14px;
     border: none;
     background: none;
-    margin-bottom: 16px;
+
     text-decoration-line: underline;
     text-underline-offset: 3px;
     animation: pulse 5s infinite;
@@ -89,6 +93,13 @@
       filter: brightness(1.5);
     }
   }
+}
+
+.invisible {
+  opacity: 0;
+  animation: none;
+  cursor: inherit;
+  display: none;
 }
 
 @keyframes pulse {
@@ -109,6 +120,7 @@
 .allDescrWrapper {
   display: flex;
   width: 200%;
+  margin-top: 16px;
 }
 
 .servicesList {
@@ -128,6 +140,7 @@
     color: rgba(192, 215, 244, 1);
   }
 }
+
 .servicesListHidden {
   transform: translateX(-110%);
   transition-duration: 1s;
@@ -168,15 +181,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-    background-color: var(--main_color_btn);
-    color: #263238;
-
-    & :focus,
-    &:hover {
-      background-color: transparent;
-      color: var(--main_color_btn);
-    }
   }
 }
 
