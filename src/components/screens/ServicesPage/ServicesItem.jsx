@@ -11,6 +11,7 @@ export const ServicesItem = ({
   daysCount,
   price,
   description,
+  image,
   onClick,
   activeId,
   setActiveId,
@@ -77,6 +78,16 @@ export const ServicesItem = ({
           {description}
         </p>
       </div>
+
+      {image && (
+        <img
+          src={image}
+          alt={title}
+          className={styles.serviceImage}
+          width={192}
+          height={204}
+        />
+      )}
 
       <div className={styles.btnWrapper}>
         <div className={styles.priceWrapper}>

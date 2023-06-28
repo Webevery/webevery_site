@@ -6,7 +6,7 @@ export const GetServices = ({ onClick }) => {
   const [activeId, setActiveId] = useState(0);
 
   return servicesData.map(
-    ({ id, details, title, daysCount, price, description }) => {
+    ({ id, details, title, daysCount, price, description, image }) => {
       return (
         <ServicesItem
           key={id}
@@ -16,6 +16,7 @@ export const GetServices = ({ onClick }) => {
           daysCount={daysCount}
           price={price}
           description={description}
+          image={image}
           onClick={onClick}
           activeId={activeId}
           setActiveId={setActiveId}
