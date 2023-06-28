@@ -14,8 +14,9 @@
   background-color: rgba(0, 0, 0, 0.55);
   z-index: 101;
 
-  transition: all 1s;
-  animation: hideModal 1s forwards;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 1s ease;
 
   @media screen and (min-width: $tablet) {
     background-color: rgba(0, 0, 0, 0.85);
@@ -26,61 +27,18 @@
   }
 }
 
+.backdrop.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
 .modalContent {
-  transition: all 1s;
-  animation: hideModalContent 1s forwards;
+  opacity: 0;
+  transform: translateX(100vw);
+  transition: all 1s ease;
 }
 
-.activeContent {
-  animation: showModalContent 1s forwards;
-}
-
-@keyframes showModalContent {
-  from {
-    opacity: 0;
-    transform: translateX(100vw);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes hideModalContent {
-  from {
-    opacity: 1;
-    transform: translateX(0);
-  }
-
-  to {
-    opacity: 0;
-    transform: translateX(100vw);
-  }
-}
-
-.active {
-  animation: showModal 0.7s forwards;
-}
-
-@keyframes showModal {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes hideModal {
-  from {
-    opacity: 1;
-    transform: scale(1);
-  }
-
-  to {
-    opacity: 0;
-    transform: scale(0.7);
-  }
+.modalContent.activeContent {
+  opacity: 1;
+  transform: translateX(0);
 }
