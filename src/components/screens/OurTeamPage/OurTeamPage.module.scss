@@ -49,21 +49,35 @@
   @media screen and (min-width: $min_desktop_large) {
     margin-bottom: 48px;
   }
-
 }
+// if use svg
+// .mapGeneral {
+//   width: 90%;
+//   height: 100%;
 
+//   // @media screen and (min-width: $min_tablet) {
+//   // }
+
+//   // @media screen and (min-width: $min_desktop_large) {
+//   //   width: 729px;
+//   //   height: 413px;
+//   //   margin: 0 auto 48px;
+//   // }
+// }
+
+// if use img
 .mapGeneral {
-  width: 90%;
-  height: 100%;
+  max-width: 90%;
+  max-height: 100%;
 
   // @media screen and (min-width: $min_tablet) {
   // }
 
-  // @media screen and (min-width: $min_desktop_large) {
-  //   width: 729px;
-  //   height: 413px;
-  //   margin: 0 auto 48px;
-  // }
+  @media screen and (min-width: $min_desktop_large) {
+    width: 728px;
+    height: 412px;
+    // margin: 0 auto 48px;
+  }
 }
 
 .countriesWrapper {
