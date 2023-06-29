@@ -106,9 +106,17 @@ export const SliderInfo = ({
                   <span className={styles.country}> {item.country}</span>
                 </p>
                 <div className={styles.mapWrapper}>
-                  <svg width="696px" height="393px" className={styles.map}>
+                  {/* <svg width="696px" height="393px" className={styles.map}>
                     <use href={`${sprite}#icon-map${item.location}`} />
-                  </svg>
+                  </svg> */}
+                  <img
+                    className={styles.map}
+                    src={item.map}
+                    alt={item.location}
+                    width={696}
+                    height={393}
+                    loading="lazy"
+                  />
                 </div>
               </div>
             </div>
