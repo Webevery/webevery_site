@@ -187,7 +187,7 @@ export const coworkersData = [
     photo: maksPadalka,
     photoSmall: maksPadalkaSmall,
     profession: 'Full Stack Developer',
-    quote: 'Успіх не є остаточним, невдача не є фатальною: важливою є сміливість продовжувати.',
+    quote: 'Успіх не є остаточним, невдача не є фатальною. Важливою є сміливість продовжувати.',
     quoteEn: 'Success is not final, failure is not fatal: it is the courage to continue that counts.',
     humor: 'Багато заробляю, але мало отримую.',
     city: 'Тренчин',
