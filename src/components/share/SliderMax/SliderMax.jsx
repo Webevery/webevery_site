@@ -159,9 +159,9 @@ export const SliderNav = ({
   return (
     <>
       <div className={styles.sliderNavWrapper}>
-        {currentIndex !== 0 ? (
-          <BtnSliderMax moveSlide={prevSlide} direction={'prev'} />
-        ) : null}
+        {/* {currentIndex !== 0 ? ( */}
+        <BtnSliderMax moveSlide={prevSlide} direction={'prev'} />
+        {/* ) : null} */}
 
         <div className={styles.photosWrapper} ref={listRef}>
           {array.map((item, index) => {
@@ -183,9 +183,9 @@ export const SliderNav = ({
             );
           })}
         </div>
-        {currentIndex !== array.length - 1 ? (
-          <BtnSliderMax moveSlide={nextSlide} direction={'next'} />
-        ) : null}
+        {/* {currentIndex !== array.length - 1 ? ( */}
+        <BtnSliderMax moveSlide={nextSlide} direction={'next'} />
+        {/* ) : null} */}
 
         <div className={styles.dotsWrapper}>
           {array.map((_, index) => (

@@ -270,6 +270,14 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+
+  @media screen and (min-width: $min_tablet) {
+    width: 200px;
+  }
+
+  @media screen and (min-width: $min_desktop) {
+    width: 300px;
+  }
 }
 
 .dot {
