@@ -1,4 +1,4 @@
-import { useModal } from '../../../hooks';
+import { useModal } from 'hooks';
 import Button from 'components/share/Button';
 import Modal from 'components/share/Modal';
 import Form from 'components/share/Form';
