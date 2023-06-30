@@ -1,26 +1,11 @@
-import { useState } from 'react';
+import { useModal } from '../../../hooks';
 import { GetServices } from './GetServices';
 import Modal from 'components/share/Modal';
 import Form from 'components/share/Form';
 import styles from './OurServices.module.scss';
 
 const OurServices = () => {
-  const [modalActive, setModalActive] = useState(false);
-  const [shouldRender, setShouldRender] = useState(false);
-
-  function openModal() {
-    setShouldRender(true);
-    setTimeout(() => {
-      setModalActive(true);
-    }, 0);
-  }
-
-  function closeModal() {
-    setModalActive(false);
-    setTimeout(() => {
-      setShouldRender(false);
-    }, 1000);
-  }
+  const { modalActive, shouldRender, openModal, closeModal } = useModal();
 
   return (
     <article className={styles.OurServices}>
