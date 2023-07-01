@@ -1,4 +1,4 @@
-import { useModal } from '../../../hooks';
+import { useModal } from 'hooks';
 import { GetServices } from './GetServices';
 import Modal from 'components/share/Modal';
 import Form from 'components/share/Form';

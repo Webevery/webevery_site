@@ -1,4 +1,4 @@
-import { useModal } from '../../../hooks';
+import { useModal } from 'hooks';
 import Button from '../../share/Button/Button';
 import { GetItem } from './GetItem';
 import { ContactsEmail } from './ContactsEmail';
