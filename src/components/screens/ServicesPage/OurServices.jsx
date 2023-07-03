@@ -1,24 +1,19 @@
-import styles from './OurServices.module.scss';
+import { useModal } from 'hooks';
 import { GetServices } from './GetServices';
-
-import React, { useState } from 'react';
-
 import Modal from 'components/share/Modal';
 import Form from 'components/share/Form';
+import styles from './OurServices.module.scss';
 
 const OurServices = () => {
-  const [isModalOpen, setModalOpen] = useState(false);
+  const { modalActive, shouldRender, openModal, closeModal } = useModal();
 
-  const closeModal = () => {
-    setModalOpen(!isModalOpen);
-  };
   return (
     <article className={styles.OurServices}>
-      <GetServices onClick={closeModal} />
+      <GetServices onClick={openModal} />
 
-      {isModalOpen && (
-        <Modal onClose={closeModal} isModalOpen={isModalOpen}>
-          <Form isOpen={isModalOpen} closeModal={closeModal} />
+      {shouldRender && (
+        <Modal closeModal={closeModal} active={modalActive}>
+          <Form isOpen={modalActive} closeModal={closeModal} />
         </Modal>
       )}
     </article>

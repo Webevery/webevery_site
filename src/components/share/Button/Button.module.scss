@@ -8,8 +8,8 @@
   letter-spacing: 0em;
   text-align: center;
 
-  color: var(--main_color_btn);
-  background-color: transparent;
+  background-color: var(--main_color_btn);
+  color: #263238;
   border: 1px solid var(--main_color_btn);
   border-radius: 6px;
   cursor: pointer;
@@ -18,7 +18,7 @@
 
   &:focus,
   &:hover {
-    background-color: var(--main_color_btn);
-    color: #263238;
+    color: var(--main_color_btn);
+    background-color: transparent;
   }
 }

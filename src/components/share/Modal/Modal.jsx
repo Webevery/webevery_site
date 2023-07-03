@@ -1,30 +1,26 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import Portal from './Portal';
 import Backdrop from './Backdrop';
 import styles from './Modal.module.scss';
 
-function Modal({ isModalOpen, onClose, children }) {
+function Modal({ active, closeModal, children }) {
   useEffect(() => {
     const onKeydown = e => {
       if (e.code !== 'Escape') return;
-      onClose();
+      closeModal();
     };
 
     window.addEventListener('keydown', onKeydown);
     return () => window.removeEventListener('keydown', onKeydown);
-  }, [onClose]);
+  }, [closeModal]);
 
-  function onBackdropClick(e) {
-    if (e.currentTarget === e.target) {
-      onClose();
-    }
-  }
   return (
     <Portal>
-      <Backdrop isModalOpen={isModalOpen} onClose={onBackdropClick}>
+      <Backdrop active={active} closeModal={closeModal}>
         <div
+          onClick={e => e.stopPropagation()}
           className={
-            isModalOpen
+            active
               ? styles.modalContent + ' ' + styles.activeContent
               : styles.modalContent
           }

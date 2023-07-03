@@ -1,17 +1,14 @@
-import styles from './ContactsPage.module.scss';
+import { useModal } from 'hooks';
 import Button from '../../share/Button/Button';
 import { GetItem } from './GetItem';
 import { ContactsEmail } from './ContactsEmail';
-import React, { useState } from 'react';
 import Modal from 'components/share/Modal';
 import Form from 'components/share/Form';
+import styles from './ContactsPage.module.scss';
 
 const ContactsPage = () => {
-  const [isModalOpen, setModalOpen] = useState(false);
+  const { modalActive, shouldRender, openModal, closeModal } = useModal();
 
-  const closeModal = () => {
-    setModalOpen(!isModalOpen);
-  };
   return (
     <section className={styles.contactsSection}>
       <div className={styles.contactsWrapper}>
@@ -20,13 +17,13 @@ const ContactsPage = () => {
         <Button
           title="Замовити дзвінок"
           className={styles.contactsBtn}
-          onClick={closeModal}
+          onClick={openModal}
         />
         <Form className={styles.contactsForm} />
       </div>
-      {isModalOpen && (
-        <Modal onClose={closeModal} isModalOpen={isModalOpen}>
-          <Form isOpen={isModalOpen} closeModal={closeModal} />
+      {shouldRender && (
+        <Modal closeModal={closeModal} active={modalActive}>
+          <Form isOpen={modalActive} closeModal={closeModal} />
         </Modal>
       )}
     </section>

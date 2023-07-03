@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import styles from './OurTeamPage.module.scss';
-import sprite from 'images/sprite.svg';
+// import sprite from 'images/sprite.svg';
+import mapGeneral from 'images/locationsMaps/mapGeneralWithoutCountries.png';
 import { coworkersData } from 'data';
 import { SliderNav, SliderInfo } from 'components/share/SliderMax';
 
@@ -35,9 +36,17 @@ const OurTeamPage = () => {
       {currentIndex === null ? (
         <div className={styles.mapAndCountriesWrapper}>
           <div className={styles.mapGeneralWrapper}>
-            <svg width="728px" height="412px" className={styles.mapGeneral}>
+            {/* <svg width="728px" height="412px" className={styles.mapGeneral}>
               <use href={sprite + '#icon-mapGeneralWithoutCountries'} />
-            </svg>
+            </svg> */}
+            <img
+              className={styles.mapGeneral}
+              src={mapGeneral}
+              alt="All coworker's locations"
+              width={728}
+              height={412}
+              loading="lazy"
+            />
           </div>
           <ul className={styles.countriesWrapper}>
             {uniqCountries.map((item, index) => (

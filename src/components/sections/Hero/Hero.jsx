@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useModal } from 'hooks';
 import Button from 'components/share/Button';
 import Modal from 'components/share/Modal';
 import Form from 'components/share/Form';
@@ -6,11 +6,7 @@ import sprite from 'images/sprite.svg';
 import styles from './Hero.module.scss';
 
 const Hero = () => {
-  const [isModalOpen, setModalOpen] = useState(false);
-
-  const closeModal = () => {
-    setModalOpen(!isModalOpen);
-  };
+  const { modalActive, shouldRender, openModal, closeModal } = useModal();
 
   return (
     <section className={styles.containerHeroBg}>
@@ -23,15 +19,15 @@ const Hero = () => {
             <use href={sprite + '#icon-logo_mini_tablet'} />
           </svg>
           <Button
-            onClick={closeModal}
+            onClick={openModal}
             className={styles.buttonOrderHero}
             type="button"
             title="Замовити"
             ariaLabel={'Order'}
           />
-          {isModalOpen && (
-            <Modal onClose={closeModal} isModalOpen={isModalOpen}>
-              <Form isOpen={isModalOpen} closeModal={closeModal} />
+          {shouldRender && (
+            <Modal closeModal={closeModal} active={modalActive}>
+              <Form isOpen={modalActive} closeModal={closeModal} />
             </Modal>
           )}
         </div>
