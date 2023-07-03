@@ -21,6 +21,7 @@ const FAQ = () => {
               href={item.href}
               activeIndex={activeIndex}
               setActiveIndex={setActiveIndex}
+              answerHeight={item.answerHeight}
             />
           );
         })}
