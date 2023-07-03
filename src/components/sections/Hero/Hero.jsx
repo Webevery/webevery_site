@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useModal } from 'hooks';
 import Button from 'components/share/Button';
 import Modal from 'components/share/Modal';
 import Form from 'components/share/Form';
@@ -6,22 +6,7 @@ import sprite from 'images/sprite.svg';
 import styles from './Hero.module.scss';
 
 const Hero = () => {
-  const [modalActive, setModalActive] = useState(false);
-  const [shouldRender, setShouldRender] = useState(false);
-
-  function openModal() {
-    setShouldRender(true);
-    setTimeout(() => {
-      setModalActive(true);
-    }, 0);
-  }
-
-  function closeModal() {
-    setModalActive(false);
-    setTimeout(() => {
-      setShouldRender(false);
-    }, 1000);
-  }
+  const { modalActive, shouldRender, openModal, closeModal } = useModal();
 
   return (
     <section className={styles.containerHeroBg}>

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useModal } from 'hooks';
 import Button from '../../share/Button/Button';
 import { GetItem } from './GetItem';
 import { ContactsEmail } from './ContactsEmail';
@@ -7,22 +7,7 @@ import Form from 'components/share/Form';
 import styles from './ContactsPage.module.scss';
 
 const ContactsPage = () => {
-  const [modalActive, setModalActive] = useState(false);
-  const [shouldRender, setShouldRender] = useState(false);
-
-  function openModal() {
-    setShouldRender(true);
-    setTimeout(() => {
-      setModalActive(true);
-    }, 0);
-  }
-
-  function closeModal() {
-    setModalActive(false);
-    setTimeout(() => {
-      setShouldRender(false);
-    }, 1000);
-  }
+  const { modalActive, shouldRender, openModal, closeModal } = useModal();
 
   return (
     <section className={styles.contactsSection}>
