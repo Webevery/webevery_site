@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { ReactComponent as Icon } from '../../../../../images/V.svg';
 import styles from './FAQItem.module.scss';
+import './FAQItem.module.scss';
 
 const FAQItem = ({
   question,
@@ -11,6 +12,7 @@ const FAQItem = ({
   id,
   href,
   link,
+  answerHeight,
 }) => {
   const [isClicked, setIsClicked] = useState(false);
 
@@ -25,7 +27,9 @@ const FAQItem = ({
     // eslint-disable-next-line
   }, [activeIndex]);
 
-  const answerStyles = isClicked ? styles.FAQanswer__visible : styles.FAQanswer;
+  const answerStyles = isClicked
+    ? `${styles.FAQanswer__visible} ${answerHeight}`
+    : styles.FAQanswer;
 
   const iconStyles = isClicked ? styles.FAQIcon__rotate : styles.FAQIcon;
 

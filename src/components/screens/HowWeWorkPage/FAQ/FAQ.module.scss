@@ -37,4 +37,18 @@
   justify-content: center;
 
   max-width: 900px;
+
+  @media (min-width: $min_tablet) and (max-width: $max_tablet) {
+    width: 700px;
+  }
+
+  @media (min-width: 480px) and (max-width: $max_mobile) {
+    width: 420px;
+    display: block;
+  }
+
+  @media (min-width: $min_mobile) and (max-width: 479px) {
+    width: 300px;
+    display: block;
+  }
 }

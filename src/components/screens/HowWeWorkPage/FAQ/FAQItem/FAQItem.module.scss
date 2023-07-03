@@ -1,12 +1,38 @@
 @import 'styles/_variables.scss';
 
+@mixin answerHeight(
+  $minMobileHeight,
+  $maxMobileHeight,
+  $tabletHeight,
+  $desktopHeight
+) {
+  @media (min-width: $min_mobile) and (max-width: 479px) {
+    height: $minMobileHeight;
+  }
+  @media (min-width: 480px) and (max-width: $max_mobile) {
+    height: $maxMobileHeight;
+  }
+
+  @media (min-width: $min_tablet) and (max-width: $max_tablet) {
+    height: $tabletHeight;
+  }
+
+  height: $desktopHeight;
+}
+
+@mixin fontParameters($fontWeight, $fontSize, $lineHeight, $letterSpacing) {
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  letter-spacing: $letterSpacing;
+}
+
 .FAQItem {
   &:not(:last-child) {
     margin-bottom: 32px;
   }
 
   display: flex;
-
   align-items: flex-start;
   flex-direction: column;
 
@@ -17,28 +43,23 @@
 
 .FAQQuestionContainer {
   display: flex;
-
   justify-content: space-between;
   cursor: pointer;
-  width: 100%;
-
   overflow: hidden;
+
+  width: 100%;
 
   padding-bottom: 22px;
 }
 
 .FAQQuestion {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-
-  letter-spacing: 0.05em;
+  @include fontParameters(700, 18px, 24px, 0.05em);
 
   margin-right: auto;
 
   width: 100%;
   flex-wrap: wrap;
+
   @media screen and (min-width: $min_tablet) {
     font-size: 20px;
   }
@@ -62,25 +83,15 @@
 }
 
 .FAQanswer {
-  // margin-left: 8px;
   margin-top: 0;
   margin-bottom: 0;
-
-  // animation: sweep 1s ease-in-out;
 
   display: flex;
   flex-wrap: wrap;
 
-  font-style: normal;
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 19px;
-  letter-spacing: 0.05em;
+  @include fontParameters(700, 13px, 19px, 0.05em);
 
   color: var(--main_text_color_our_team);
-  // transform: translateY(calc(-1.7em));
-
-  // transition-duration: 1s;
 
   transition: height 0.5s linear, opacity 0.5s linear;
 
@@ -92,41 +103,19 @@
     font-size: 16px;
   }
   &__visible {
-    // top: 0;
     margin: 0;
     margin-bottom: 5px;
-    // margin-left: 8px;
     opacity: 1;
-
-    height: 80px;
-
     overflow: auto;
 
     transition: height 0.5s linear, opacity 0.5s linear;
-    // transition-duration: 1s;
 
-    animation: sweep 1s ease-in-out;
-
-    font-style: normal;
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 19px;
-    letter-spacing: 0.05em;
+    @include fontParameters(700, 13px, 19px, 0.05em);
 
     color: var(--main_text_color_our_team);
+
     @media screen and (min-width: $min_tablet) {
       font-size: 16px;
-    }
-  }
-
-  @keyframes sweep {
-    0% {
-      max-height: 0;
-      opacity: 0;
-    }
-    100% {
-      max-height: 2000px;
-      opacity: 1;
     }
   }
 }
@@ -137,6 +126,52 @@
   border-bottom: 1px solid var(--text_color_name_our_team);
 }
 
-// ::-webkit-scrollbar {
-//   display: none;
-// }
+.first {
+  @include answerHeight(152px, 114px, 76px, 57px);
+}
+.second {
+  @include answerHeight(342px, 247px, 171px, 133px);
+}
+.third {
+  @include answerHeight(228px, 152px, 114px, 95px);
+}
+
+.fourth {
+  @include answerHeight(228px, 171px, 114px, 95px);
+}
+
+.fifth {
+  @include answerHeight(228px, 171px, 114px, 95px);
+}
+
+.sixth {
+  @include answerHeight(133px, 95px, 57px, 57px);
+}
+
+.seventh {
+  @include answerHeight(171px, 114px, 76px, 76px);
+}
+
+.eighth {
+  @include answerHeight(190px, 133px, 95px, 76px);
+}
+
+.ninth {
+  @include answerHeight(209px, 152px, 95px, 76px);
+}
+
+.tenth {
+  @include answerHeight(190px, 133px, 95px, 76px);
+}
+
+.eleventh {
+  @include answerHeight(95px, 76px, 57px, 38px);
+}
+
+.twelfth {
+  @include answerHeight(133px, 95px, 76px, 57px);
+}
+
+.thirteenth {
+  @include answerHeight(152px, 95px, 76px, 57px);
+}
