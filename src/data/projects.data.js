@@ -6,7 +6,7 @@ export const projectsData = [
   {
     id: '1',
     image: rudyMockup,
-    path: 'https://webevery.github.io/webevery_site/',
+    path: 'https://webevery-ruddy-shop.vercel.app/',
     name: 'www.Ruddy.com',
     text: 'Розроблений нами сайт для кафетерію призначений для покращення онлайн-присутності закладу та полегшення процесу оформлення замовлення.',
     detailedText:
