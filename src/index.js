@@ -10,11 +10,11 @@ import 'react-notifications-component/dist/theme.css';
 import './styles/_variables.scss';
 import './index.scss';
 
+import './translater/i18n';
 
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
 // import './index.scss';
-
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -26,5 +26,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         </ModalProvider>
       </HelmetProvider>
     </BrowserRouter>
-  </React.StrictMode >
+  </React.StrictMode>
 );
