@@ -3,6 +3,7 @@ import styles from './OurServices.module.scss';
 import { DetailsItem } from './DetailsItem';
 import { nanoid } from 'nanoid';
 import Button from 'components/share/Button';
+import { useTranslation } from 'react-i18next';
 
 export const ServicesItem = ({
   id,
@@ -17,6 +18,7 @@ export const ServicesItem = ({
   setActiveId,
 }) => {
   const [isClicked, setIsClicked] = useState(false);
+  const { t } = useTranslation();
 
   const isShown = () => (id === activeId ? setIsClicked(!isClicked) : null);
 
@@ -48,7 +50,7 @@ export const ServicesItem = ({
           return setActiveId(id), isShown();
         }}
       >
-        {isClicked ? 'Зрозуміло!' : 'Що це..?'}
+        {isClicked ? t('servicesItem.understand') : t('servicesItem.whatItIs')}
       </button>
 
       <div className={styles.allDescrWrapper}>
@@ -91,8 +93,13 @@ export const ServicesItem = ({
 
       <div className={styles.btnWrapper}>
         <div className={styles.priceWrapper}>
-          <p>{daysCount} днів</p>
-          <p>Ціна від {price} $</p>
+          <p>
+            {daysCount}
+            {t('servicesItem.days')}
+          </p>
+          <p>
+            {t('servicesItem.price')} {price} $
+          </p>
         </div>
         <Button
           type="button"

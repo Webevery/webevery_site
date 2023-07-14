@@ -1,11 +1,18 @@
-import { servicesData } from 'data';
+import { servicesData, currentLanguages, servicesDataEN } from 'data';
 import { ServicesItem } from './ServicesItem';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export const GetServices = ({ onClick }) => {
   const [activeId, setActiveId] = useState(0);
+  const { i18n } = useTranslation();
+  const currentLanguageServicesData = () => {
+    return i18n.language === currentLanguages.UA
+      ? servicesData
+      : servicesDataEN;
+  };
 
-  return servicesData.map(
+  return currentLanguageServicesData().map(
     ({ id, details, title, daysCount, price, description, image }) => {
       return (
         <ServicesItem

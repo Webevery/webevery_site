@@ -2,14 +2,21 @@ import React, { useState, useRef } from 'react';
 import styles from './OurTeamPage.module.scss';
 // import sprite from 'images/sprite.svg';
 import mapGeneral from 'images/locationsMaps/mapGeneralWithoutCountries.png';
-import { coworkersData } from 'data';
+import { coworkersData, coworkersDataEN, currentLanguages } from 'data';
 import { SliderNav, SliderInfo } from 'components/share/SliderMax';
+import { useTranslation } from 'react-i18next';
 
 const OurTeamPage = () => {
   const [currentIndex, setCurrentIndex] = useState(null);
+  const { i18n } = useTranslation();
 
   // создаёт массив всех локаций коллег
-  const allCountries = coworkersData.map(item => item.country);
+  const currentLanguageCoworkersData = () => {
+    return i18n.language === currentLanguages.UA
+      ? coworkersData
+      : coworkersDataEN;
+  };
+  const allCountries = currentLanguageCoworkersData().map(item => item.country);
   // создаёт массив уникальных локаций коллег
   const uniqCountries = allCountries.reduce((acc, item) => {
     if (acc.includes(item)) {
@@ -58,14 +65,22 @@ const OurTeamPage = () => {
         </div>
       ) : (
         <SliderInfo
-          array={coworkersData}
+          array={
+            i18n.language === currentLanguages.UA
+              ? coworkersData
+              : coworkersDataEN
+          }
           currentIndex={currentIndex}
           setCurrentIndex={setCurrentIndex}
           scrollToIndex={scrollToIndex}
         />
       )}
       <SliderNav
-        array={coworkersData}
+        array={
+          i18n.language === currentLanguages.UA
+            ? coworkersData
+            : coworkersDataEN
+        }
         currentIndex={currentIndex}
         setCurrentIndex={setCurrentIndex}
         scrollToIndex={scrollToIndex}

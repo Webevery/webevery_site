@@ -6,8 +6,10 @@ import OurContacts from './OurContacts';
 import ButtonClose from './ButtonClose';
 import ButtomSubmit from './ButtomSubmit';
 import styles from './Form.module.scss';
+import { useTranslation } from 'react-i18next';
 
 function Form({ isOpen, closeModal, className }) {
+  const { t } = useTranslation();
   const {
     userName,
     phone,
@@ -57,7 +59,7 @@ function Form({ isOpen, closeModal, className }) {
               className={
                 errorUserName && dirtyUserName ? styles.inputError : ' '
               }
-              label="Ім’я, Прізвище"
+              label={t('form.name')}
               placeholder=" "
               onChange={handleChange}
               onBlur={handleBlur}
@@ -115,7 +117,8 @@ function Form({ isOpen, closeModal, className }) {
             id="commentsId"
             name="comments"
             value={comments}
-            label="Опишіть Вашу Ідею"
+            // label="Опишіть Вашу Ідею"
+            label={t('form.idea')}
             placeholder=" "
             onChange={handleChange}
             onBlur={handleBlur}

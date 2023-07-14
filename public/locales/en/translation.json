@@ -1,4 +1,21 @@
 {
-  "hero": "Creating a website with an individual design",
-  "heroButton": "Order"
+  "HERO": {
+    "hero": "Creating a website with an individual design",
+    "heroButton": "Order"
+  },
+  "servicesItem": {
+    "understand": "Understood!",
+    "whatItIs": "What it is?",
+    "days": "days",
+    "price": "price"
+  },
+  "form": {
+    "buttonSubmit": "Send",
+    "name": "First Name Last Name",
+    "idea": "Describe Your Idea",
+    "contactUs": "or contact us"
+  },
+  "contactsPage": {
+    "contactsPage": "Order a call"
+  }
 }
