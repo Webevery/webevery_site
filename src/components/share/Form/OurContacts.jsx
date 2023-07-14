@@ -1,12 +1,14 @@
 import styles from './Form.module.scss';
 import sprite from 'images/sprite.svg';
+import { useTranslation } from 'react-i18next';
 
 const OurContacts = () => {
+  const { t } = useTranslation();
   return (
     <div className={styles.contactsWrap}>
       <hr />
       <ul className={styles.contactsList}>
-        <li className={styles.contactsItem}>або зв’яжіться з нами</li>
+        <li className={styles.contactsItem}>{t('form.contactUs')}</li>
         <li className={styles.contactsItem}>
           <a href="tel:+380503738465">
             <svg className={styles.iconItem}>

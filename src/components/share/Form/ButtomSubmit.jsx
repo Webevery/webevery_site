@@ -1,6 +1,8 @@
 import styles from './Form.module.scss';
+import { useTranslation } from 'react-i18next';
 
 const ButtomSubmit = ({ validForm }) => {
+  const { t } = useTranslation();
   return (
     <div>
       <button
@@ -11,7 +13,7 @@ const ButtomSubmit = ({ validForm }) => {
         }
         disabled={!validForm}
       >
-        Відправити
+        {t('form.buttonSubmit')}
       </button>
     </div>
   );

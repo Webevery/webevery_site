@@ -3,12 +3,14 @@ import { NavLink } from 'react-router-dom';
 import logo from './Logo_webery_lightyellow.svg';
 import smallLogo from './small_logo_lightyellow.svg';
 import sprite from 'images/sprite.svg';
-
-import { navData } from 'data';
+import { useTranslation } from 'react-i18next';
+import LanguageBtnBlock from '../../share/LanguageBtnBlock/LanguageBtnBlock';
+import { navData, currentLanguages } from 'data';
 import styles from './NavBar.module.scss';
 
 const Navbar = () => {
   const [nav, setNav] = useState(true);
+  const { i18n } = useTranslation();
 
   function topFunction() {
     document.body.scrollTop = 0; //For Safari
@@ -38,7 +40,7 @@ const Navbar = () => {
             loading="lazy"
           />
         </NavLink>
-
+        <LanguageBtnBlock />
         <ul
           className={
             nav ? styles.menuNav : styles.menuBurger + ' ' + styles.activeBurger
@@ -53,7 +55,7 @@ const Navbar = () => {
                   isActive ? styles.activeNavLinkNav : styles.navLinkNav
                 }
               >
-                {el.title}
+                {i18n.language === currentLanguages.UA ? el.title : el.titleEN}
               </NavLink>
             </li>
           ))}
