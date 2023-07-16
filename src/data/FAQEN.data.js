@@ -12,46 +12,46 @@ export const FAQdataEN = [
   },
   {
     id: 2,
-    question: 'Скільки часу знадобиться, щоб отримати готовий продукт?',
+    question: 'How long will it take to get the finished product?',
     answer:
-      'Необхідні часові рамки повністю залежать від вашого проекту. Першим кроком після звернення до нас є організація безкоштовної онлайн-зустрічі, яка дозволить нам зрозуміти складність вашого проекту. Коли ми зрозуміємо ваші вимоги до програмного забезпечення, ми зможемо надати попередню інформацію про витрати. Проте початкові терміни не завжди дотримуються, оскільки зовнішні обставини можуть змінити випуск кінцевого продукту. Потім ми надамо план реалізації вашого проекту та кроки, які ми пропонуємо виконати, перш ніж фактично почати роботу над вашим програмним рішенням.',
+      'The timeframe required depends entirely on your project. The first step after contacting us is to arrange a free online meeting to help us understand the complexity of your project. Once we understand your software requirements, we can provide a preliminary cost estimate. However, the initial timeline is not always met, as external circumstances can change the release of the final product. We will then provide a plan for the implementation of your project and the steps we suggest you take before starting work on your software solution.',
     answerHeight: styles.second,
   },
   {
     id: 3,
     question:
-      'Чи потрібно мені бути технічно підкованим, щоб працювати з вами?',
+      'Do I need to be tech-savvy to work with you?',
     answer:
-      'Звісно ж ні. Ми тут, щоб допомогти вам технічно реалізувати будь-які потреби вашого бізнесу, навіть без вашого технічного досвіду. Наявність технічного спеціаліста на вашому боці вітається, але не обов’язково. У нас можна простою мовою отримати поради щодо складних речей. Ми надаємо повну підтримку від першої зустрічі до кінцевого продукту і можемо навіть підтримувати його після.',
+      'Of course not. We are here to help you technically implement any of your business needs, even without your technical expertise. Having a techie on your side is encouraged, but not required. We can give you advice on complex things in simple language. We provide full support from the first meeting to the final product and can even maintain it afterwards.',
     answerHeight: styles.third,
   },
   {
     id: 4,
-    question: 'Як Ви гарантуєте якість продукції?',
+    question: 'How do you guarantee the quality of your products?',
     answer:
-      'Ми ділимо весь етап розробки на спринти, які зазвичай тривають два тижні. Після кожного спринту ви можете побачити готові частини продукту, перевірити їх і висловити свої думки та пропозиції. У нас також є спрощений процес тестування та забезпечення якості кожного продукту. Ви отримаєте проміжні результати і побачите, за що платите протягом усього періоду розробки.',
+      'We divide the entire development phase into sprints, which usually last two weeks. After each sprint, you can see the finished parts of the product, check them out, and give your thoughts and suggestions. We also have a simplified testing and quality assurance process for each product. You will get interim results and see what you are paying for throughout the development process.',
     answerHeight: styles.fourth,
   },
   {
     id: 5,
-    question: 'Що, якщо я хочу брати повну участь у процесі розробки?',
+    question: 'What if I want to be fully involved in the development process?',
     answer:
-      'Це можливо і навіть потрібно. Разом ми створимо продукт, який, безсумнівно, вирішить ваші проблеми та допоможе бізнесу. У нас прозорі процеси, ви знаєте кожного члена команди, який працює над тим, щоб зробити ваш продукт реальним. Ви також можете брати участь у наших плануваннях, ретроспективах і отримувати проміжні звіти про етапи розробки, перевіряти їх і пропонувати свої ідеї.',
+      'It is possible and even necessary. Together we will create a product that will undoubtedly solve your problems and help your business. We have transparent processes, and you know every team member who works to make your product a reality. You can also take part in our planning, retrospectives and receive interim reports on the development stages, check them and offer your ideas.',
     answerHeight: styles.fifth,
   },
   {
     id: 6,
     question:
-      'Чи можна оновити програмне забезпечення в майбутньому, коли з’являться нові технології?',
+      'Is it possible to update the software in the future when new technologies appear?',
     answer:
-      'Звичайно! Крім того, наші фахівці мають гарний досвід у таких справах. Ми проконсультуємо вас щодо низки технологій і необхідних рішень, щоб ваш продукт відповідав вимогам ринку та залишався сучасним.',
+      'Of course! Moreover, our specialists have good experience in such cases. We will advise you on a variety of technologies and solutions to ensure that your product meets market requirements and remains relevant.',
     answerHeight: styles.sixth,
   },
   {
     id: 7,
-    question: 'Що, якщо я прийду до вас із продуктом, який хочу вдосконалити?',
+    question: 'What if I come to you with a product that I want to improve?',
     answer:
-      'Якщо у вас вже є продукт і ви хочете його вдосконалити, розкажіть нам про ваші основні цілі та причини вашого звернення. Ми обговоримо ваші потреби, вивчимо ваш продукт, проведемо аудит і складемо план вдосконалення всього продукту або його окремих компонентів.',
+      'If you already have a product and want to improve it, please tell us about your main goals and reasons for applying. We will discuss your needs, examine your product, conduct an audit, and create a plan to improve the entire product or its individual components.',
     answerHeight: styles.seventh,
   },
   {
