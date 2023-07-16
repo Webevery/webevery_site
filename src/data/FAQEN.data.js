@@ -19,8 +19,7 @@ export const FAQdataEN = [
   },
   {
     id: 3,
-    question:
-      'Do I need to be tech-savvy to work with you?',
+    question: 'Do I need to be tech-savvy to work with you?',
     answer:
       'Of course not. We are here to help you technically implement any of your business needs, even without your technical expertise. Having a techie on your side is encouraged, but not required. We can give you advice on complex things in simple language. We provide full support from the first meeting to the final product and can even maintain it afterwards.',
     answerHeight: styles.third,
@@ -56,48 +55,47 @@ export const FAQdataEN = [
   },
   {
     id: 8,
-    question: 'Що станеться після того, як Ви закінчите мій продукт?',
+    question: 'What happens after you finish my product?',
     answer:
-      'Продовження роботи над проектом залежить від ваших подальших цілей. Ми завжди пропонуємо послуги підтримки та обслуговування продукту, якщо клієнт зацікавлений. Коли продукт стане масштабним, ми можемо організувати для вас спеціальну команду, яка розробить продукт і забезпечить його високу якість.',
+      'Continuing to work on the project depends on your future goals. We always offer product support and maintenance services if the client is interested. When the product becomes large-scale, we can organize a dedicated team for you to develop the product and ensure its high quality.',
     answerHeight: styles.eighth,
   },
   {
     id: 9,
     question:
-      'Чи гарантуєте Ви безпеку та конфіденційність нашої інтелектуальної власності?',
+      'Do you guarantee the security and confidentiality of our intellectual property?',
     answer:
-      'Так, саме тому наші клієнти довіряють нам. Ми прописуємо всі пункти щодо безпеки конфіденційності та інтелектуальної власності в Основних угодах про надання послуг і нерозголошення між нашою і вашою компанією. Конфіденційність, приватність і захист вашої інтелектуальної власності є для нас пріоритетом номер один.',
+      "Yes, that's why our clients trust us. We spell out all the security clauses regarding confidentiality and intellectual property in the Master Services and Non-Disclosure Agreements between our company and yours. Confidentiality, privacy and protection of your intellectual property are our number one priority.",
     answerHeight: styles.ninth,
   },
   {
     id: 10,
-    question: 'Як Ви обробляєте запити клієнтів на зміни?',
+    question: 'How do you handle customer requests for changes?',
     answer:
-      'Ми маємо стандартну процедуру обробки запитів на зміни від наших клієнтів. Перш за все, ми просимо їх схвалити будь-які запити на зміни. Після того, як клієнт схвалив запит, ми проводимо аналіз впливу. Це дозволяє нам надати замовнику терміни та вартість змін. Після затвердження вартості замовником ми вносимо зміни.',
+      'We have a standard procedure for handling change requests from our clients. First of all, we ask them to approve any change requests. Once the client has approved the request, we conduct an impact analysis. This allows us to provide the customer with a timeline and cost for the changes. After the customer approves the cost, we make the changes.',
     answerHeight: styles.tenth,
   },
   {
     id: 11,
-    question: 'Чи надаєте Ви послуги тестування програмного забезпечення?',
+    question: 'Do you provide software testing services?',
     answer:
-      'Звичайно! У нас налагоджені всі процеси тестування. Кожен продукт проходить ретельну перевірку як під час розробки, так і на завершальному етапі.',
+      'Of course! We have all the testing processes in place. Each product is thoroughly tested both during development and at the final stage.',
     answerHeight: styles.eleventh,
   },
   {
     id: 12,
-    question:
-      'Ви працюєте тільки віддалено чи можете приїхати до мене за потреби?',
+    question: 'Do you work only remotely or can you come to me if necessary?',
     answer:
-      'Зазвичай ми працюємо віддалено і маємо для цього налаштовані всі необхідні процеси. Також можливий виїзд наших спеціалістів до Вас в офіс. Місцезнаходження наших спеціалістів Ви можете подивитись у розділі ',
-    link: '"Команда".',
+      'We usually work remotely and have all the necessary processes set up for this. It is also possible for our specialists to visit your office. You can find the location of our specialists in the section ',
+    link: '"Team".',
     href: '/ourTeam',
     answerHeight: styles.twelfth,
   },
   {
     id: 13,
-    question: 'Яка процедура початку процесу розробки?',
+    question: 'What is the procedure for starting the development process?',
     answer:
-      'Перш за все, ми вивчаємо ваші вимоги і пропонуємо приблизну вартість і терміни. Отримавши підтвердження з вашого боку, ми підписуємо договір, формуємо команду, яка буде працювати над вашим проектом і починаємо процес розробки.',
+      'First of all, we study your requirements and offer an approximate cost and timeline. After receiving confirmation from you, we sign a contract, form a team that will work on your project and start the development process.',
     answerHeight: styles.thirteenth,
   },
 ];
