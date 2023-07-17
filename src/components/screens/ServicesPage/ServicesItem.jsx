@@ -103,7 +103,7 @@ export const ServicesItem = ({
         </div>
         <Button
           type="button"
-          title="Замовити"
+          title={t('servicesItem.orderBtn')}
           className={styles.mainBtn}
           onClick={onClick}
           ariaLabel={'Order'}

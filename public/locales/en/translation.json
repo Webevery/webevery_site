@@ -7,7 +7,8 @@
     "understand": "Understood!",
     "whatItIs": "What it is?",
     "days": "days",
-    "price": "price"
+    "price": "price",
+    "orderBtn": "Order"
   },
   "form": {
     "buttonSubmit": "Send",

@@ -7,7 +7,8 @@
     "understand": "Зрозуміло!",
     "whatItIs": "Що це..?",
     "days": "днів",
-    "price": "Ціна від"
+    "price": "Ціна від",
+    "orderBtn": "Замовити"
   },
   "form": {
     "buttonSubmit": "Відправити",
