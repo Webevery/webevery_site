@@ -6,6 +6,7 @@ import sprite from 'images/sprite.svg';
 import { useTranslation } from 'react-i18next';
 import LanguageBtnBlock from '../../share/LanguageBtnBlock/LanguageBtnBlock';
 import { navData, currentLanguages } from 'data';
+import Weather from '../../share/Wether';
 import styles from './NavBar.module.scss';
 
 const Navbar = () => {
@@ -75,6 +76,8 @@ const Navbar = () => {
             </svg>
           )}
         </button>
+
+        <Weather />
       </header>
     </>
   );
