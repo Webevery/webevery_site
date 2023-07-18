@@ -116,12 +116,79 @@
   animation: meteor 6250ms infinite ease-in;
 }
 
-[icon='sunny'] {
+/* [icon='sunny'] { */
+.sunny {
   --shadow: #fd6f21;
   --blend1: #fc5830;
   --blend2: #f98c24;
   --blend-to: 65%;
 }
+
+.sunny {
+  flex: none;
+  display: none;
+  position: relative;
+  font-size: calc(10em + 1vmin);
+  width: 0.25em;
+  height: 0.25em;
+  margin: 0.07em;
+  color: #e6e8db;
+  border-radius: 100%;
+  box-shadow: 0 0 0 0.01em var(--ring) inset, 0 0 0.005em -0.007em var(--shadow);
+  background: linear-gradient(
+    to var(--blend-dir),
+    var(--blend1) var(--blend-from),
+    var(--blend2) var(--blend-to)
+  );
+  /*   filter: saturate(0); */
+}
+/* [icon]:hover {
+  filter: saturate(1);
+} */
+.sunny::after {
+  content: attr(data-label);
+  position: absolute;
+  top: calc(100% + 1vmin);
+  left: 50%;
+  transform: translateX(-50%);
+  font: inherit;
+  font-size: 0.15em;
+}
+
+.sunny {
+  display: block;
+}
+
+/* SUNNY */
+/* --------------------- */
+.sun {
+  position: absolute;
+  top: 20%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 40%;
+  border-radius: 100%;
+  background: #ffeb3b;
+  box-shadow: 0 0 0 0.01em var(--ring) inset, 0 0 0.15em -0.015em var(--shadow);
+  transform-origin: 0.1em 0.1em;
+}
+.sun::after {
+  content: '';
+  position: absolute;
+  top: 0.1em;
+  left: 0;
+  will-change: transform;
+  transform: translate(-50%, -50%);
+  width: 0.1em;
+  height: 0.1em;
+  border-radius: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 0.1em 0 rgba(255, 255, 255, 0.3) inset,
+    -0.1em -0.1em 0 -1.8em rgba(255, 255, 255, 0.1);
+  animation: flare 12000ms infinite alternate linear;
+}
+
 [icon='cloudy'] {
   --shadow: #1378bb;
   --blend1: #1b9ce2;
@@ -144,36 +211,6 @@
   --shadow: #34c6d8;
   --blend1: #4b9cc2;
   --blend2: #9adbd9;
-}
-
-/* SUNNY */
-/* --------------------- */
-.sun {
-  position: absolute;
-  top: 20%;
-  left: 80%;
-  transform: translate(-50%, -50%);
-  width: 40%;
-  height: 40%;
-  border-radius: 100%;
-  background: #ffeb3b;
-  box-shadow: 0 0 0 0.02em var(--ring) inset, 0 0 0.3em -0.03em var(--shadow);
-  transform-origin: 0.1em 0.1em;
-}
-.sun::after {
-  content: '';
-  position: absolute;
-  top: 0.1em;
-  left: 0;
-  will-change: transform;
-  transform: translate(-50%, -50%);
-  width: 0.1em;
-  height: 0.1em;
-  border-radius: 100%;
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0 0.1em 0 rgba(255, 255, 255, 0.3) inset,
-    -0.1em -0.1em 0 0.2em rgba(255, 255, 255, 0.1);
-  animation: flare 12000ms infinite alternate linear;
 }
 
 /* CLOUDY */

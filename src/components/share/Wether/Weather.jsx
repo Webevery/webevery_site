@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import WeatherIcon from './weather-icons';
+// import WeatherIcon from './weather-icons';
+import WeatherSunny from './weather-icons/WeatherSunny';
 import styles from './Weather.module.scss';
 
 const Wether = () => {
@@ -49,7 +50,8 @@ const Wether = () => {
           <p> Loading weather data…</p>
         )}
       </div>
-      <WeatherIcon />
+      {/* <WeatherIcon /> */}
+      <WeatherSunny />
     </div>
   );
 };

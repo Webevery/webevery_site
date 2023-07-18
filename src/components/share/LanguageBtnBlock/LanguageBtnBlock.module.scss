@@ -6,7 +6,15 @@
   font: inherit;
   cursor: pointer;
   outline: inherit;
+  transition: all 250ms ease-in-out;
 }
 .img {
   background: transparent;
+}
+
+.button:hover {
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  transform: scale(1.25);
 }
