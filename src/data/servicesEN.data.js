@@ -88,7 +88,7 @@ export const servicesDataEN = [
       'Slider',
       'Blocks animation',
       'Up to 10-15 pages of development',
-      'Services categories up to 5-7',
+      'Service categories up to 5-7',
       'Content filling',
       'Price table, service price',
       'Gallery, portfolio',
