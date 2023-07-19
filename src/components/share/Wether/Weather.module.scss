@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   line-height: 3px;
-  @media (max-width: $max_tablet) {
+  @media (max-width: 1040px) {
     display: none;
   }
 }

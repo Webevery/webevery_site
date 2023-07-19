@@ -59,7 +59,9 @@ const Wether = () => {
         )}
       </div>
       {weatherData && (
-        <WeatherCurrentItem currentWeather={weatherData.weather[0].main} />
+        <div>
+          <WeatherCurrentItem currentWeather={weatherData.weather[0].main} />
+        </div>
       )}
     </div>
   );
