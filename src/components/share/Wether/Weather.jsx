@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-// import WeatherIcon from './weather-icons';
-import WeatherSunny from './weather-icons/WeatherSunny';
+import WeatherCurrentItem from './weather-current-item/WeatherCurrentItem';
 import styles from './Weather.module.scss';
 
 const Wether = () => {
@@ -9,8 +8,9 @@ const Wether = () => {
   const [latitude, setLatitude] = useState(50.450001);
   const [longitude, setLongitude] = useState(30.523333);
   const { i18n } = useTranslation();
-  // console.log();
-  console.log(weatherData);
+
+  // console.log(timestamp);
+  // console.log(weatherData);
 
   useEffect(() => {
     if (navigator.geolocation) {
@@ -40,18 +40,27 @@ const Wether = () => {
         {weatherData ? (
           <div className={styles.weatherDataContent}>
             <p>
-              &#128205; {weatherData.name}
+              &#128205;{weatherData.name}
               <span className={styles.sity}>{weatherData.sys.country}</span>
             </p>
-            <p> {weatherData.main.temp.toFixed()}°C</p>
-            {/* <p>Description: {weatherData.weather[0].description}</p> */}
+            <p className={styles.containerIcon}>
+              {weatherData.main.temp.toFixed()}°C
+              <img
+                className={styles.icon}
+                // src="https://openweathermap.org/img/wn/10d@2x.png"
+                src={`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`}
+                alt="weatherIcon"
+              />
+            </p>
+            <p>{weatherData.weather[0].description}</p>
           </div>
         ) : (
-          <p> Loading weather data…</p>
+          <p>Loading weather data…</p>
         )}
       </div>
-      {/* <WeatherIcon /> */}
-      <WeatherSunny />
+      {weatherData && (
+        <WeatherCurrentItem currentWeather={weatherData.weather[0].main} />
+      )}
     </div>
   );
 };

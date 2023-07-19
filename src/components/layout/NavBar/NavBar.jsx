@@ -42,6 +42,7 @@ const Navbar = () => {
           />
         </NavLink>
         <LanguageBtnBlock />
+        <div></div>
         <ul
           className={
             nav ? styles.menuNav : styles.menuBurger + ' ' + styles.activeBurger
@@ -76,7 +77,6 @@ const Navbar = () => {
             </svg>
           )}
         </button>
-
         <Weather />
       </header>
     </>

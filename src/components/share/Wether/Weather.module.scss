@@ -1,6 +1,12 @@
+@import 'styles/_variables';
+
 .container {
   display: flex;
   align-items: center;
+  line-height: 3px;
+  @media (max-width: $max_tablet) {
+    display: none;
+  }
 }
 .weatherDataContent {
   display: flex;
@@ -10,4 +16,17 @@
 }
 .sity {
   margin-left: 2px;
+}
+
+.icon {
+  width: 30px;
+  margin-left: 5px;
+  &:hover {
+    scale: 1.4;
+  }
+}
+
+.containerIcon {
+  display: flex;
+  align-items: center;
 }
