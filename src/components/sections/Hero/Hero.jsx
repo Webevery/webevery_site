@@ -4,6 +4,7 @@ import Modal from 'components/share/Modal';
 import Form from 'components/share/Form';
 import sprite from 'images/sprite.svg';
 import styles from './Hero.module.scss';
+
 import { useTranslation } from 'react-i18next';
 
 const Hero = () => {

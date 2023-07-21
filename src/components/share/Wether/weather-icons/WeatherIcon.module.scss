@@ -1,0 +1,642 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:200');
+
+:root {
+  --shadow: #fd6f21;
+  --ring: currentColor;
+  --blend1: #fc5830;
+  --blend2: #f98c24;
+  --blend-from: 0%;
+  --blend-to: 100%;
+  --blend-dir: top right;
+}
+
+/* SUPERMOON */
+.supermoon {
+  flex: none;
+  display: none;
+  position: relative;
+  font-size: calc(10em + 1vmin);
+  width: 0.25em;
+  height: 0.25em;
+  margin: 0.07em;
+  color: #e6e8db;
+  border-radius: 100%;
+  box-shadow: 0 0 0 0.01em var(--ring) inset, 0 0 0.05em -0.007em var(--shadow);
+  background: linear-gradient(
+    to var(--blend-dir),
+    var(--blend1) var(--blend-from),
+    var(--blend2) var(--blend-to)
+  );
+}
+
+.supermoon::after {
+  content: attr(data-label);
+  position: absolute;
+  top: calc(100% + 1vmin);
+  left: 50%;
+  transform: translateX(-50%);
+  font: inherit;
+  font-size: 0.15em;
+}
+
+.supermoon {
+  --shadow: #5133a5;
+  --blend1: #4054b2;
+  --blend2: #aa4cba;
+  --blend-to: 65%;
+  --blend-dir: bottom right;
+}
+
+.supermoon {
+  display: block;
+}
+
+.supermoon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(1px 1px at 50% 20%, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 30% 65%, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 15% 05%, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 37% 35%, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 65% 47%, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 42% 29%, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 73% 56%, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 24% 19%, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 31% 47%, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 18% 39%, #fff, rgba(0, 0, 0, 0));
+  background-repeat: repeat;
+  will-change: transform;
+  animation: revolve 120000ms linear infinite;
+}
+
+.moon {
+  position: absolute;
+  top: 20%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 40%;
+  border-radius: 100%;
+  background: radial-gradient(circle at bottom left, var(--ring), #fef07e);
+  box-shadow: 0 0 0 0.005em var(--ring) inset, 0 0 0.15em -0.015em var(--blend2);
+}
+
+.moon::before,
+.moon::after {
+  content: '';
+  position: absolute;
+  border-radius: 100%;
+  background-color: var(--blend1);
+  box-shadow: 0.01em 0.01em 0.1em 0 var(--blend1);
+}
+
+.moon::before {
+  top: 15%;
+  left: 55%;
+  width: 20%;
+  height: 20%;
+  opacity: 0.3;
+}
+
+.moon::after {
+  bottom: 50%;
+  left: 25%;
+  width: 15%;
+  height: 15%;
+  opacity: 0.2;
+}
+
+.meteor {
+  position: absolute;
+  background-color: #fff;
+  opacity: 0;
+  top: 20%;
+  left: 55%;
+  width: 1px;
+  height: 15px;
+  transform: rotate(45deg);
+  will-change: transform, opacity;
+  animation: meteor 6250ms infinite ease-in;
+}
+
+/* SUNNY */
+
+.sunny {
+  --shadow: #fd6f21;
+  --blend1: #fc5830;
+  --blend2: #f98c24;
+  --blend-to: 65%;
+}
+
+.sunny {
+  flex: none;
+  display: none;
+  position: relative;
+  font-size: calc(10em + 1vmin);
+  width: 0.25em;
+  height: 0.25em;
+  margin: 0.07em;
+  color: #e6e8db;
+  border-radius: 100%;
+  box-shadow: 0 0 0 0.01em var(--ring) inset, 0 0 0.005em -0.007em var(--shadow);
+  background: linear-gradient(
+    to var(--blend-dir),
+    var(--blend1) var(--blend-from),
+    var(--blend2) var(--blend-to)
+  );
+}
+
+.sunny::after {
+  content: attr(data-label);
+  position: absolute;
+  top: calc(100% + 1vmin);
+  left: 50%;
+  transform: translateX(-50%);
+  font: inherit;
+  font-size: 0.15em;
+}
+
+.sunny {
+  display: block;
+}
+
+.sun {
+  position: absolute;
+  top: 20%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 40%;
+  border-radius: 100%;
+  background: #ffeb3b;
+  box-shadow: 0 0 0 0.005em var(--ring) inset, 0 0 0.15em -0.015em var(--shadow);
+  transform-origin: 0.1em 0.1em;
+}
+
+.sun::after {
+  content: '';
+  position: absolute;
+  top: 0.1em;
+  left: 0;
+  will-change: transform;
+  transform: translate(-50%, -50%);
+  width: 0.1em;
+  height: 0.1em;
+  border-radius: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 0.1em 0 rgba(255, 255, 255, 0.3) inset,
+    -0.1em -0.1em 0 -1.8em rgba(255, 255, 255, 0.1);
+  animation: flare 12000ms infinite alternate linear;
+}
+
+.cloudy {
+  --shadow: #1378bb;
+  --blend1: #1b9ce2;
+  --blend2: #1378bb;
+  --shadow: #c9e8de;
+  --blend1: #758595;
+  --blend2: #e0e2e5;
+  --blend1: #1b9ce2;
+  --blend-to: 65%;
+  --blend-to: 90%;
+}
+
+/* CLOUDY */
+
+.cloudy {
+  flex: none;
+  display: none;
+  position: relative;
+  font-size: calc(10em + 1vmin);
+  width: 0.25em;
+  height: 0.25em;
+  margin: 0.07em;
+  color: #e6e8db;
+  border-radius: 100%;
+  box-shadow: 0 0 0 0.01em var(--ring) inset, 0 0 0.005em -0.007em var(--shadow);
+  background: linear-gradient(
+    to var(--blend-dir),
+    var(--blend1) var(--blend-from),
+    var(--blend2) var(--blend-to)
+  );
+}
+
+.cloudy::after {
+  content: attr(data-label);
+  position: absolute;
+  top: calc(100% + 1vmin);
+  left: 50%;
+  transform: translateX(-50%);
+  font: inherit;
+  font-size: 0.15em;
+}
+
+.cloud {
+  position: absolute;
+  top: 0.04em;
+  left: 60%;
+  width: 0.15em;
+  height: 0.05em;
+  border-radius: 0.1em;
+  background-color: #fff;
+  box-shadow: 0 0 0.1em 0.02em var(--ring) inset,
+    0 0 0.3em -0.03em var(--shadow);
+  animation: move 3000ms infinite ease-in-out;
+}
+
+.cloud + .cloud {
+  top: 25%;
+  left: 40%;
+  animation: move 3700ms infinite linear;
+}
+
+.cloud::before,
+.cloud::after {
+  content: '';
+  position: inherit;
+  border-radius: inherit;
+  background-color: inherit;
+  box-shadow: inherit;
+  bottom: 30%;
+}
+
+.cloud::before {
+  left: 0.01em;
+  width: 0.1em;
+  height: 0.1em;
+}
+
+.cloud::after {
+  left: 0.09em;
+  width: 0.05em;
+  height: 0.05em;
+}
+
+.cloudy {
+  display: block;
+}
+
+/* STORMY */
+
+.stormy {
+  flex: none;
+  display: none;
+  position: relative;
+  font-size: calc(10em + 1vmin);
+  width: 0.25em;
+  height: 0.25em;
+  margin: 0.07em;
+  color: #e6e8db;
+  border-radius: 100%;
+  box-shadow: 0 0 0 0.01em var(--ring) inset, 0 0 0.005em -0.007em var(--shadow);
+  background: linear-gradient(
+    to var(--blend-dir),
+    var(--blend1) var(--blend-from),
+    var(--blend2) var(--blend-to)
+  );
+}
+
+.stormy::after {
+  content: attr(data-label);
+  position: absolute;
+  top: calc(100% + 1vmin);
+  left: 50%;
+  transform: translateX(-50%);
+  font: inherit;
+  font-size: 0.15em;
+}
+
+.stormy {
+  --shadow: #34c6d8;
+  --blend1: #4b9cc2;
+  --blend2: #9adbd9;
+}
+
+.stormy::before {
+  --shadow: rgba(255, 255, 255, 0);
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* margin: 0.05em; */
+  border-radius: 100%;
+  opacity: 0.4;
+  will-change: background-color;
+  animation: flash 2300ms infinite linear 80ms;
+}
+
+.stormy .cloud {
+  --shadow: #c9e8de;
+  --ring: #f0f2f0;
+  background-color: var(--shadow);
+  font-size: 1.2em;
+  left: 50%;
+  will-change: background-color, transform, opacity;
+  animation: flash 2300ms infinite linear, move 3700ms infinite linear;
+}
+
+.stormy ul {
+  position: absolute;
+  list-style: none;
+  top: 0%;
+  left: 70%;
+  right: 0%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.stormy li,
+.stormy li::before,
+.stormy li::after {
+  position: absolute;
+  width: 0.005em;
+  height: 0.02em;
+  border-radius: 10%;
+  background-color: #eee;
+  opacity: 0;
+  will-change: transform, opacity;
+  animation: rain 2000ms infinite linear;
+  transform: rotate(25deg);
+}
+
+.stormy li::before,
+.stormy li::after {
+  content: '';
+}
+
+.stormy li:nth-child(5n + 3)::before,
+.stormy li:nth-child(11n + 7)::after,
+.stormy li:nth-child(2n + 1) {
+  top: 10%;
+  left: 68%;
+  animation-delay: 500ms;
+}
+
+.stormy li:nth-child(3n + 2)::after,
+.stormy li:nth-child(7n + 5)::after,
+.stormy li:nth-child(3n + 2) {
+  top: 5%;
+  left: 45%;
+  animation-delay: 1250ms;
+}
+
+.stormy li:nth-child(2n + 1)::before,
+.stormy li:nth-child(5n + 3)::after,
+.stormy li:nth-child(7n + 5) {
+  top: 4%;
+  left: 82%;
+  animation-delay: 750ms;
+}
+
+.stormy li:nth-child(11n + 7)::before,
+.stormy li:nth-child(3n + 2)::after,
+.stormy li:nth-child(7n + 5) {
+  top: 15%;
+  left: 15%;
+  animation-delay: 2000ms;
+}
+
+.stormy li:nth-child(7n + 5)::before,
+.stormy li:nth-child(2n + 1)::after,
+.stormy li:nth-child(11n + 7) {
+  top: 10%;
+  left: 33%;
+  animation-delay: 2500ms;
+}
+
+.stormy {
+  display: block;
+}
+
+/* SNOWY */
+
+.snowy {
+  flex: none;
+  display: none;
+  position: relative;
+  font-size: calc(10em + 1vmin);
+  width: 0.25em;
+  height: 0.25em;
+  margin: 0.07em;
+  color: #e6e8db;
+  border-radius: 100%;
+  box-shadow: 0 0 0 0.01em var(--ring) inset, 0 0 0.005em -0.007em var(--shadow);
+  background: linear-gradient(
+    to var(--blend-dir),
+    var(--blend1) var(--blend-from),
+    var(--blend2) var(--blend-to)
+  );
+}
+
+.snowy::after {
+  content: attr(data-label);
+  position: absolute;
+  top: calc(100% + 1vmin);
+  left: 50%;
+  transform: translateX(-50%);
+  font: inherit;
+  font-size: 0.15em;
+}
+
+.snowy {
+  --shadow: #c9e8de;
+  --blend1: #758595;
+  --blend2: #e0e2e5;
+  --blend-to: 90%;
+  --blend-dir: bottom left;
+}
+
+.snowy ul {
+  position: absolute;
+  list-style: none;
+  top: 0%;
+  left: 10%;
+  right: 0%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.snowy li::before,
+.snowy li::after {
+  content: '';
+  position: absolute;
+  list-style: none;
+  width: 0.015em;
+  height: 0.01em;
+  border-radius: 100%;
+  background-color: var(--ring);
+  will-change: transform, opacity;
+  animation: snow 3700ms infinite ease-out;
+  opacity: 0;
+}
+
+.snowy li:nth-child(2n + 1)::before,
+.snowy li:nth-child(13n + 11)::after {
+  top: -7%;
+  left: 40%;
+}
+
+.snowy li:nth-child(3n + 2)::before,
+.snowy li:nth-child(11n + 7)::after {
+  top: 5%;
+  left: 90%;
+  animation-delay: 1000ms;
+}
+
+.snowy li:nth-child(5n + 3)::before,
+.snowy li:nth-child(7n + 5)::after {
+  top: -10%;
+  left: 80%;
+  animation-delay: 2000ms;
+}
+
+.snowy li:nth-child(7n + 5)::before,
+.snowy li:nth-child(5n + 3)::after {
+  top: 10%;
+  left: 10%;
+  animation-delay: 1300ms;
+}
+
+.snowy li:nth-child(11n + 7)::before,
+.snowy li:nth-child(3n + 2)::after {
+  top: 20%;
+  left: 70%;
+  animation-delay: 1500ms;
+}
+
+.snowy li:nth-child(13n + 11)::before,
+.snowy li:nth-child(2n + 1)::after {
+  top: 35%;
+  left: 20%;
+  animation-delay: 500ms;
+}
+
+.snowman {
+  position: absolute;
+  bottom: 30%;
+  left: 40%;
+  width: 0.03em;
+  height: 0.03em;
+  opacity: 0.9;
+  background: var(--ring);
+  border-radius: 100%;
+}
+
+.snowman::after {
+  content: '';
+  position: absolute;
+  top: 90%;
+  left: 30%;
+  transform: translate(-50%, 0%);
+  width: 0.06em;
+  height: 0.07em;
+  border-radius: inherit;
+  background-color: var(--ring);
+}
+
+.snowman::before {
+  content: '';
+  position: absolute;
+  top: -554%;
+  left: 50%;
+  transform: translate(-55%, -50%);
+  width: 0.1em;
+  height: 0.4em;
+  border-radius: 60%;
+  border: 0.005em solid transparent;
+  border-bottom-color: var(--blend1);
+  will-change: border-radius;
+  animation: snowman 9000ms infinite ease-in;
+}
+
+.snowy {
+  display: block;
+}
+
+.body {
+  /* min-height: 100vh; */
+  font-size: calc(0.5em + 1vmin);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  font-family: 'Work Sans', sans-serif;
+  background: #212125;
+  color: #e6e8db;
+}
+
+@keyframes flare {
+  to {
+    transform: translate(-0.3em, 0.3em);
+    opacity: 0.4;
+    font-size: 0.2em;
+  }
+}
+@keyframes move {
+  50% {
+    transform: translateX(-0.05em);
+  }
+}
+@keyframes snow {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-0.1em, 15vmin);
+  }
+}
+@keyframes snowman {
+  50% {
+    border-radius: 60% 60% 30% 50%;
+  }
+}
+@keyframes flash {
+  49% {
+    background-color: var(--shadow);
+  }
+  51% {
+    background-color: var(--ring);
+  }
+  53% {
+    background-color: var(--shadow);
+  }
+  57% {
+    background-color: var(--ring);
+  }
+  85% {
+    background-color: var(--shadow);
+  }
+}
+@keyframes rain {
+  10% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-0.1em, 0.5em);
+  }
+}
+@keyframes revolve {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes meteor {
+  5% {
+    opacity: 1;
+  }
+  8% {
+    transform: translate(-0.6em, 0.6em) rotate(45deg);
+    opacity: 0;
+  }
+}
