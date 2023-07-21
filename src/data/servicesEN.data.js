@@ -14,9 +14,9 @@ export const servicesDataEN = [
       'Filling up to 3 pages',
       'Mobile-friendly adaptation',
       'Content filling',
-      'Image Gallery',
+      'Image gallery',
       'Feedback Form',
-      'Road route map',
+      'Route map',
       'Site Hosting',
     ],
   },
@@ -154,7 +154,7 @@ export const servicesDataEN = [
 
   {
     id: 7,
-    title: 'Testing',
+    title: 'Web-site testing',
     description:
       'Testing helps us to find errors, problems and defects on your website. That includes checking the response to user actions, correct data processing, displaying the correct content, etc. Detected defects can be fixed, so that your site can run smoothly and meet the needs of users.',
     image: '',
