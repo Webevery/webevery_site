@@ -52,7 +52,8 @@
 
   justify-content: space-around;
 
-  @media screen and (min-width: $min_tablet) {}
+  @media screen and (min-width: $min_tablet) {
+  }
 
   @media screen and (min-width: $min_desktop) {
     justify-content: flex-start;
@@ -62,11 +63,11 @@
 }
 
 .contentHero {
-  max-width: 360px;
-  padding: 0px 16px 0px 16px;
+  // max-width: 360px;
+  // padding: 0px 16px 0px 16px;
 
   @media screen and (min-width: $min_tablet) {
-    min-width: 458px;
+    // min-width: 458px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,11 +77,11 @@
     display: block;
   }
 
-  @media screen and (min-width: $min_desktop) {
-    max-width: 458px;
-  }
+  // @media screen and (min-width: $min_desktop) {
+  //   max-width: 458px;
+  // }
 }
-
+.textHero2,
 .textHero {
   font-weight: 600;
   font-size: 24px;
@@ -89,8 +90,6 @@
   margin-bottom: 70px;
 
   @media screen and (min-width: $min_tablet) {
-    font-size: 24px;
-    line-height: 28px;
     margin-bottom: 76px;
   }
 
@@ -99,7 +98,55 @@
   }
 }
 
+.textHero2Wrapper {
+  margin-bottom: 70px;
+  overflow: hidden;
+  width: 500px;
+  animation: typing 3s steps(26) forwards;
+
+  @media screen and (max-width: 360px) {
+    width: 300px;
+  }
+}
+@keyframes typing {
+  0% {
+    width: 0%;
+    border-right: 2px solid white;
+  }
+  99% {
+    border-right: 2px solid white;
+  }
+  100% {
+    // width: 340px;
+    width: 100%;
+    border-right: none;
+  }
+}
+
+.textHero2 {
+  font-size: 36px;
+  font-weight: bolder;
+  line-height: 1.2;
+
+  margin: 0;
+  width: 500px;
+  @media screen and (max-width: 375px) {
+    font-size: 20px;
+    text-align: center;
+    width: 300px;
+  }
+  @media screen and (min-width: 376px) and (max-width: 768px) {
+    font-size: 20px;
+    text-align: center;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .buttonOrderHero {
+  width: 200px;
+  opacity: 0;
   @media screen and (max-width: $max_mobile) {
     width: 171px;
     height: 51px;
@@ -111,6 +158,17 @@
     font-size: 16px;
     line-height: 19px;
     margin-bottom: 10px;
+  }
+
+  animation: buttonOrderHero 1s linear 3s forwards;
+}
+
+@keyframes buttonOrderHero {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
