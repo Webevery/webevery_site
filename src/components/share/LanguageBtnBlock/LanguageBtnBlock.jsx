@@ -10,7 +10,7 @@ const LanguageBtnBlock = () => {
     i18n.changeLanguage(language);
   };
   return (
-    <div>
+    <div className={styles.buttonsWpapper}>
       <button
         className={styles.button}
         type="button"

@@ -17,7 +17,10 @@ const Hero = () => {
           {/* <h1 className={styles.textHero}>
             Створення веб-сайту з індивідуальним дизайном
           </h1> */}
-          <h1 className={styles.textHero}>{t('HERO.hero')}</h1>
+          {/* <h1 className={styles.textHero}>{t('HERO.hero')}</h1> */}
+          <div className={styles.textHero2Wrapper}>
+            <h2 className={styles.textHero2}>Empowering your success</h2>
+          </div>
           <svg className={styles.logoHero}>
             <use href={sprite + '#icon-logo_mini_tablet'} />
           </svg>{' '}

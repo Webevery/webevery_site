@@ -62,6 +62,10 @@
   align-items: center;
   gap: 20px;
 
+  width: 604px;
+  display: flex;
+  justify-content: flex-end;
+
   @media (max-width: $max_tablet) {
     display: flex;
     flex-direction: column;
@@ -77,6 +81,9 @@
     background-color: black;
     transition: left 1000ms;
     gap: 16px;
+  }
+  @media (min-width: $min_desktop_large) {
+    width: 732px;
   }
 }
 
