@@ -1,0 +1,22 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px;
+  //   background-color: rgb(255, 255, 255);
+  overflow: hidden;
+  height: calc(100vh - 36px);
+
+  @media screen and (max-height: 425px) {
+    padding: 32px 64px 0px;
+  }
+}
+
+.title {
+  color: wheat;
+  text-align: center;
+}
+
+.sliderWrapper {
+  width: 90vw;
+}
