@@ -76,37 +76,19 @@
   @media screen and (min-width: $min_desktop) {
     display: block;
   }
-
-  // @media screen and (min-width: $min_desktop) {
-  //   max-width: 458px;
-  // }
-}
-.textHero2,
-.textHero {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 28px;
-  color: var(--light_color);
-  margin-bottom: 70px;
-
-  @media screen and (min-width: $min_tablet) {
-    margin-bottom: 76px;
-  }
-
-  @media screen and (min-width: $min_desktop) {
-    margin-bottom: 56px;
-  }
 }
 
-.textHero2Wrapper {
-  margin-bottom: 70px;
-  overflow: hidden;
+.textHero2WrapperUa {
   width: 500px;
-  animation: typing 3s steps(26) forwards;
+  overflow: hidden;
 
-  @media screen and (max-width: 360px) {
-    width: 300px;
-  }
+  animation: typing 3s steps(26) forwards;
+}
+.textHero2WrapperEn {
+  width: 500px;
+  overflow: hidden;
+
+  animation: typing 3s steps(26) forwards;
 }
 @keyframes typing {
   0% {
@@ -117,9 +99,17 @@
     border-right: 2px solid white;
   }
   100% {
-    // width: 340px;
     width: 100%;
     border-right: none;
+  }
+}
+.textHero2Wrapper {
+  margin-bottom: 70px;
+  // overflow: hidden;
+  // width: 500px;
+
+  @media screen and (max-width: 360px) {
+    width: 300px;
   }
 }
 
@@ -127,6 +117,7 @@
   font-size: 36px;
   font-weight: bolder;
   line-height: 1.2;
+  color: var(--light_color);
 
   margin: 0;
   width: 500px;

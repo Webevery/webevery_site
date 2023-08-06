@@ -8,19 +8,32 @@ import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
   const { modalActive, shouldRender, openModal, closeModal } = useModal();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  // console.log(i18n);
 
   return (
     <section className={styles.containerHeroBg}>
       <div className={styles.containerHero}>
         <div className={styles.contentHero}>
-          {/* <h1 className={styles.textHero}>
-            Створення веб-сайту з індивідуальним дизайном
-          </h1> */}
-          {/* <h1 className={styles.textHero}>{t('HERO.hero')}</h1> */}
-          <div className={styles.textHero2Wrapper}>
-            <h2 className={styles.textHero2}>Empowering your success</h2>
-          </div>
+          {i18n.language === 'ua' && (
+            <div
+              className={
+                styles.textHero2Wrapper + ' ' + styles.textHero2WrapperUa
+              }
+            >
+              <h1 className={styles.textHero2}>{t('HERO.hero')}</h1>
+            </div>
+          )}
+          {i18n.language === 'en' && (
+            <div
+              className={
+                styles.textHero2Wrapper + ' ' + styles.textHero2WrapperEn
+              }
+            >
+              <h1 className={styles.textHero2}>{t('HERO.hero')}</h1>
+            </div>
+          )}
           <svg className={styles.logoHero}>
             <use href={sprite + '#icon-logo_mini_tablet'} />
           </svg>{' '}
@@ -28,7 +41,6 @@ const Hero = () => {
             onClick={openModal}
             className={styles.buttonOrderHero}
             type="button"
-            // title="Замовити"
             title={t('HERO.heroButton')}
             ariaLabel={'Order'}
           />
