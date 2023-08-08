@@ -1,0 +1,31 @@
+@import 'styles/variables';
+
+.titleWrapEn {
+  overflow: hidden;
+  display: inline-block;
+
+  animation: typing 3s steps(26) forwards;
+
+  @media screen and (min-width: $min_tablet) {
+  }
+}
+@keyframes typing {
+  0% {
+    width: 0%;
+    border-right: 2px solid white;
+  }
+  99% {
+    border-right: 2px solid white;
+  }
+  100% {
+    width: 100%;
+    border-right: none;
+  }
+}
+
+.titleEn {
+  width: 264px;
+  @media screen and (min-width: $min_tablet) {
+    width: 320px;
+  }
+}
