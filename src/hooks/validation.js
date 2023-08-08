@@ -1,10 +1,11 @@
 import { useState, useEffect, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { Store } from 'react-notifications-component';
+import { useTranslation } from 'react-i18next';
 import { useModal } from './modal';
 
 export const useValidation = () => {
-
+    const { t } = useTranslation();
     const [userName, setUserName] = useState('');
     const [phone, setPhone] = useState('');
     const [mail, setMail] = useState('');
@@ -14,9 +15,9 @@ export const useValidation = () => {
     const [dirtyPhone, setDirtyPhone] = useState(false);
     const [dirtyMail, setDirtyMail] = useState(false);
 
-    const [errorUserName, setErrorUserName] = useState('Заповніть це поле');
-    const [errorPhone, setErrorPhone] = useState('Заповніть це поле');
-    const [errorMail, setErrorMail] = useState('Заповніть це поле');
+    const [errorUserName, setErrorUserName] = useState(t('formErrors.name'));
+    const [errorPhone, setErrorPhone] = useState(t('formErrors.phone'));
+    const [errorMail, setErrorMail] = useState(t('formErrors.email'));
     const [errorComments, setErrorComments] = useState('');
 
     const [validForm, setvalidForm] = useState(false);
@@ -54,8 +55,8 @@ export const useValidation = () => {
         reset();
         closeModal();
         Store.addNotification({
-            title: 'Чудово!',
-            message: 'Повідомлення надіслано!',
+            title: t('notification.title'),
+            message: t('notification.message'),
             type: 'success',
             insert: 'top',
             container: 'top-right',
@@ -76,17 +77,17 @@ export const useValidation = () => {
         setDirtyUserName(false);
         setDirtyMail(false);
         setDirtyPhone(false);
-        setErrorUserName('Заповніть це поле');
-        setErrorPhone('Заповніть це поле');
-        setErrorMail('Заповніть це поле');
+        setErrorUserName(t('formErrors.name'));
+        setErrorPhone(t('formErrors.phone'));
+        setErrorMail(t('formErrors.email'));
         setErrorComments('');
     };
 
     const validateName = value => {
         if (value.length < 2) {
-            setErrorUserName('Ім’я має бути довшим');
+            setErrorUserName(t('formErrors.shortName'));
             if (value.length === 0) {
-                setErrorUserName('Заповніть це поле');
+                setErrorUserName(t('formErrors.name'));
             }
         } else if (value.length > 30) {
             setErrorUserName('Ім’я має бути коротшим');
@@ -97,7 +98,7 @@ export const useValidation = () => {
 
     const validateComments = value => {
         if (value.length > 300) {
-            setErrorComments('Коментар має бути коротшим');
+            setErrorComments(t('formErrors.comment'));
         } else {
             setErrorComments('');
         }
@@ -107,20 +108,22 @@ export const useValidation = () => {
         let re = /\S+@\S+\.\S+/;
 
         if (!re.test(email)) {
-            setErrorMail('Не коректний email');
+            setErrorMail(t('formErrors.incorrectMail'));
         } else {
             setErrorMail('');
         }
+        if (email.length === 0) setErrorMail(t('formErrors.email'));
     }
 
     function validatePhone(phone) {
         let re = /^\+\d{12}$/;
 
         if (!re.test(phone)) {
-            setErrorPhone('Не вірний формат');
+            setErrorPhone(t('formErrors.incorrectPhone'));
         } else {
             setErrorPhone('');
         }
+        if (phone.length === 0) setErrorPhone(t('formErrors.phone'));
     }
 
     const handleChange = evt => {
