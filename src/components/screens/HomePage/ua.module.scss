@@ -1,0 +1,80 @@
+@import 'styles/variables';
+
+.titleWrapUa {
+  overflow: hidden;
+  display: inline-block;
+
+  animation: typingUa 3s steps(26) forwards;
+
+  @media screen and (min-width: $min_tablet) {
+  }
+}
+@keyframes typingUa {
+  0% {
+    width: 0%;
+    border-right: 2px solid white;
+  }
+  99% {
+    border-right: 2px solid white;
+  }
+  100% {
+    width: 100%;
+    border-right: none;
+  }
+}
+
+.titleUa {
+  width: 270px;
+  @media screen and (min-width: $min_tablet) {
+    width: 324px;
+  }
+}
+
+.titleWrapUa2 {
+  overflow: hidden;
+  display: inline-block;
+
+  animation: typingUa2 1.5s steps(13) 3s forwards;
+}
+@keyframes typingUa2 {
+  0% {
+    width: 0%;
+    border-right: 2px solid white;
+  }
+  99% {
+    border-right: 2px solid white;
+  }
+  100% {
+    width: 100%;
+    border-right: none;
+  }
+}
+
+.titleUa2 {
+  width: 150px;
+  opacity: 0;
+  margin-left: 57px;
+
+  animation: titleUa2 100ms linear 3s forwards;
+
+  @media screen and (min-width: $min_tablet) {
+    width: 180px;
+    margin-left: 0;
+  }
+  @media screen and (max-height: 420px) {
+    margin-left: 57px;
+    margin-right: auto;
+  }
+  @media screen and (orientation: portrait) {
+    margin-left: 57px;
+  }
+  @media screen and (orientation: portrait) and (min-width: $min_tablet) {
+    margin-left: 67px;
+  }
+}
+
+@keyframes titleUa2 {
+  to {
+    opacity: 1;
+  }
+}
