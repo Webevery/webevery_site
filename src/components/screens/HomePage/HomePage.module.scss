@@ -40,6 +40,10 @@
   @media screen and (min-width: $min_tablet) {
     font-size: 24px;
   }
+
+  @media screen and (min-width: $min_desktop) {
+    font-size: 32px;
+  }
 }
 
 .titleWrap {
@@ -52,6 +56,10 @@
     margin-bottom: 32px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  @media screen and (min-width: $min_desktop) {
+    height: 80px;
   }
 }
 
@@ -71,4 +79,28 @@
 
 .btn {
   width: 200px;
+  opacity: 0;
+  @media screen and (max-width: $max_mobile) {
+    width: 171px;
+    height: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 10px;
+  }
+
+  animation: buttonOrderHero 1s linear 3.5s forwards;
+}
+
+@keyframes buttonOrderHero {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

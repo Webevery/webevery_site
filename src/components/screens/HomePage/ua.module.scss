@@ -28,6 +28,9 @@
   @media screen and (min-width: $min_tablet) {
     width: 324px;
   }
+  @media screen and (min-width: $min_desktop) {
+    width: 432px;
+  }
 }
 
 .titleWrapUa2 {
@@ -70,6 +73,10 @@
   }
   @media screen and (orientation: portrait) and (min-width: $min_tablet) {
     margin-left: 67px;
+  }
+
+  @media screen and (min-width: $min_desktop) {
+    width: 232px;
   }
 }
 

@@ -18,5 +18,18 @@
   },
   "contactsPage": {
     "contactsPage": "Замовити дзвінок"
+  },
+  "formErrors": {
+    "name": "Введіть ім'я",
+    "phone": "Введіть телефон",
+    "email": "Введіть електронну пошту",
+    "incorrectPhone": "Не вірний формат",
+    "incorrectMail": "Не коректний email",
+    "shortName": "Ім’я має бути довшим",
+    "comment": "Коментар має бути коротшим"
+  },
+  "notification": {
+    "title": "Чудово!",
+    "message": "Повідомлення надіслано!"
   }
 }

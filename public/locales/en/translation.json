@@ -12,11 +12,24 @@
   },
   "form": {
     "buttonSubmit": "Send",
-    "name": "First Name Last Name",
+    "name": "Name",
     "idea": "Describe Your Idea",
     "contactUs": "or contact us"
   },
   "contactsPage": {
     "contactsPage": "Order a call"
+  },
+  "formErrors": {
+    "name": "Enter a name",
+    "phone": "Enter a phone",
+    "email": "Enter an email",
+    "incorrectPhone": "Incorrect format",
+    "incorrectMail": "Incorrect email",
+    "shortName": "Name should be longer",
+    "comment": "The comment should be shorter"
+  },
+  "notification": {
+    "title": "Great!",
+    "message": "Message sent!"
   }
 }
