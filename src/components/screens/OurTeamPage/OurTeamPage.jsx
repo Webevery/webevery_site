@@ -12,9 +12,9 @@ const OurTeamPage = () => {
 
   // создаёт массив всех локаций коллег
   const currentLanguageCoworkersData = () => {
-    return i18n.language === currentLanguages.UA
-      ? coworkersData
-      : coworkersDataEN;
+    return i18n.language === currentLanguages.EN
+      ? coworkersDataEN
+      : coworkersData;
   };
   const allCountries = currentLanguageCoworkersData().map(item => item.country);
   // создаёт массив уникальных локаций коллег
@@ -66,9 +66,9 @@ const OurTeamPage = () => {
       ) : (
         <SliderInfo
           array={
-            i18n.language === currentLanguages.UA
-              ? coworkersData
-              : coworkersDataEN
+            i18n.language === currentLanguages.EN
+              ? coworkersDataEN
+              : coworkersData
           }
           currentIndex={currentIndex}
           setCurrentIndex={setCurrentIndex}
@@ -77,9 +77,9 @@ const OurTeamPage = () => {
       )}
       <SliderNav
         array={
-          i18n.language === currentLanguages.UA
-            ? coworkersData
-            : coworkersDataEN
+          i18n.language === currentLanguages.EN
+            ? coworkersDataEN
+            : coworkersData
         }
         currentIndex={currentIndex}
         setCurrentIndex={setCurrentIndex}

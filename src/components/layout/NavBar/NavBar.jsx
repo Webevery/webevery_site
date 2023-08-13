@@ -40,41 +40,51 @@ const Navbar = () => {
             loading="lazy"
           />
         </NavLink>
-        <LanguageBtnBlock />
-        <ul
-          className={
-            nav ? styles.menuNav : styles.menuBurger + ' ' + styles.activeBurger
-          }
-        >
-          {navData.map(el => (
-            <li key={el.id} onClick={topFunction}>
-              <NavLink
-                to={el.path}
-                onClick={() => setNav(true)}
-                className={({ isActive }) =>
-                  isActive ? styles.activeNavLinkNav : styles.navLinkNav
-                }
-              >
-                {i18n.language === currentLanguages.UA ? el.title : el.titleEN}
-              </NavLink>
-            </li>
-          ))}
-        </ul>
-        <button
-          onClick={() => setNav(!nav)}
-          className={styles.mobileBtnNav}
-          aria-label="BurgerMenu"
-        >
-          {nav ? (
-            <svg width="100%" height="100%">
-              <use href={sprite + '#icon-burger-menu'} />
-            </svg>
-          ) : (
-            <svg width="100%" height="100%">
-              <use href={sprite + '#icon-close-white'} />
-            </svg>
-          )}
-        </button>
+
+        <div className={styles.navContainer}>
+          <LanguageBtnBlock desk={styles.desk} />
+          <ul
+            className={
+              nav
+                ? styles.menuNav
+                : styles.menuBurger + ' ' + styles.activeBurger
+            }
+          >
+            {navData.map(el => (
+              <li key={el.id} onClick={topFunction}>
+                <NavLink
+                  to={el.path}
+                  onClick={() => setNav(true)}
+                  className={({ isActive }) =>
+                    isActive ? styles.activeNavLinkNav : styles.navLinkNav
+                  }
+                >
+                  {i18n.language === currentLanguages.UA
+                    ? el.title
+                    : el.titleEN}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
+
+          <LanguageBtnBlock mobile={styles.mobile} />
+
+          <button
+            onClick={() => setNav(!nav)}
+            className={styles.mobileBtnNav}
+            aria-label="BurgerMenu"
+          >
+            {nav ? (
+              <svg width="100%" height="100%">
+                <use href={sprite + '#icon-burger-menu'} />
+              </svg>
+            ) : (
+              <svg width="100%" height="100%">
+                <use href={sprite + '#icon-close-white'} />
+              </svg>
+            )}
+          </button>
+        </div>
       </header>
     </>
   );

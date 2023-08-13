@@ -7,9 +7,9 @@ export const GetServices = ({ onClick }) => {
   const [activeId, setActiveId] = useState(0);
   const { i18n } = useTranslation();
   const currentLanguageServicesData = () => {
-    return i18n.language === currentLanguages.UA
-      ? servicesData
-      : servicesDataEN;
+    return i18n.language === currentLanguages.EN
+      ? servicesDataEN
+      : servicesData;
   };
 
   return currentLanguageServicesData().map(
