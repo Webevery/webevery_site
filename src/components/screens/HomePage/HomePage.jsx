@@ -14,6 +14,7 @@ import sprite from 'images/sprite.svg';
 const HomePage = () => {
   const { modalActive, shouldRender, openModal, closeModal } = useModal();
   const { t, i18n } = useTranslation();
+  console.log(i18n);
 
   return (
     <section className={styles.home}>
