@@ -166,3 +166,23 @@
     border-radius: 8px;
   }
 }
+
+.navContainer {
+  display: flex;
+  align-items: center;
+}
+
+.desk {
+  display: none;
+  @media (max-width: $max_tablet) {
+    display: block;
+    margin-right: 24px;
+  }
+}
+
+.mobile {
+  margin-left: 84px;
+  @media (max-width: $max_tablet) {
+    display: none;
+  }
+}

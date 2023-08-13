@@ -18,7 +18,15 @@ const HomePage = () => {
 
   return (
     <section className={styles.home}>
-      {i18n.language === 'ua' ? (
+      {i18n.language === 'en' ? (
+        <div className={styles.titleWrap}>
+          <div className={en.titleWrapEn}>
+            <h1 className={styles.title + ' ' + en.titleEn}>
+              Empowering your success
+            </h1>
+          </div>
+        </div>
+      ) : (
         <div className={styles.titleWrap}>
           <div className={ua.titleWrapUa}>
             <h1 className={styles.title + ' ' + ua.titleUa}>
@@ -27,14 +35,6 @@ const HomePage = () => {
           </div>
           <div className={ua.titleWrapUa2}>
             <h2 className={styles.title + ' ' + ua.titleUa2}>вашого успіху</h2>
-          </div>
-        </div>
-      ) : (
-        <div className={styles.titleWrap}>
-          <div className={en.titleWrapEn}>
-            <h1 className={styles.title + ' ' + en.titleEn}>
-              Empowering your success
-            </h1>
           </div>
         </div>
       )}

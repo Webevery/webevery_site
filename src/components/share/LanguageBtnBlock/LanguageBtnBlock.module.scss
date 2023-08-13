@@ -1,16 +1,122 @@
-.buttonsWpapper {
-  display: flex;
+@import 'styles/_variables';
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  color: #fff;
 }
 
-.button {
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 0;
-  font: inherit;
+.dropBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  column-gap: 16px;
+  padding: 7px 16px;
+
+  border-radius: 24px;
+  border: 1px solid #fff;
+
+  // background-color: initial;
+  background-color: transparent;
+  color: #ffffff;
+
+  outline: none;
   cursor: pointer;
-  outline: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  &:hover {
+    color: var(--main_color_btn);
+    border: 1px solid var(--main_color_btn);
+    .svg {
+      rotate: 0deg;
+    }
+  }
 }
-.img {
-  background: transparent;
+.changeLangItem {
+  color: #000;
+  border-radius: 16px;
+  background-color: #000;
 }
+
+.svg {
+  width: 16px;
+  height: 16px;
+  rotate: 180deg;
+}
+
+.svgActive {
+  rotate: 0deg;
+}
+
+.dropdownContent {
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+
+  width: 85px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+  // border-radius: 16px;
+  // border: 1px solid #fff;
+
+  row-gap: 8px;
+  opacity: 0;
+}
+
+.dropdownContentActive {
+  opacity: 1;
+}
+
+.label {
+  width: 85px;
+  display: block;
+
+  border-color: transparent;
+  outline: none;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0;
+  transform: translateY(0em);
+  &:hover {
+    color: var(--main_color_btn);
+    font-size: 16px;
+  }
+}
+
+.input {
+  max-width: 0;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+// select > option {
+//   border: none;
+//   background-color: transparent;
+// }
+
+// .buttonsWpapper {
+//   display: flex;
+// }
+
+// .button {
+//   background: none;
+//   color: inherit;
+//   border: none;
+//   padding: 0;
+//   font: inherit;
+//   cursor: pointer;
+//   outline: inherit;
+// }
+// .img {
+//   background: transparent;
+// }
