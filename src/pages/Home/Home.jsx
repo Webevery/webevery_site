@@ -1,6 +1,8 @@
 import React from 'react';
 
-import HomePage from 'components/screens/HomePage';
+// import HomePage from 'components/screens/HomePage';
+import HomePage from 'components/screens/Hero';
+
 import { Helmet } from 'react-helmet-async';
 
 const Home = () => {
