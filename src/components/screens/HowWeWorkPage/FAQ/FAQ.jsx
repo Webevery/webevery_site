@@ -10,7 +10,7 @@ const FAQ = () => {
   const { i18n } = useTranslation();
 
   const currentLanguageFAQData = () => {
-    return i18n.language === currentLanguages.UA ? FAQdata : FAQdataEN;
+    return i18n.language === currentLanguages.EN ? FAQdataEN : FAQdata;
   };
 
   return (

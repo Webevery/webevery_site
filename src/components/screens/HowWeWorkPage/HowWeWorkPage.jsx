@@ -8,7 +8,6 @@ const HowWeWorkPage = () => {
     <>
       <h2 className={styles.HowWeWorkTitle}>How we work</h2>
       <FAQ />
-      {/* <BackToTop /> */}
     </>
   );
 };
