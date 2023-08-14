@@ -59,9 +59,9 @@ const Navbar = () => {
                     isActive ? styles.activeNavLinkNav : styles.navLinkNav
                   }
                 >
-                  {i18n.language === currentLanguages.UA
-                    ? el.title
-                    : el.titleEN}
+                  {i18n.language === currentLanguages.EN
+                    ? el.titleEN
+                    : el.title}
                 </NavLink>
               </li>
             ))}

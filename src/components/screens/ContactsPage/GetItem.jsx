@@ -8,9 +8,9 @@ export const GetItem = () => {
   const { i18n } = useTranslation();
 
   const currentLanguageContactsData = () => {
-    return i18n.language === currentLanguages.UA
-      ? contactsData
-      : contactsDataEN;
+    return i18n.language === currentLanguages.EN
+      ? contactsDataEN
+      : contactsData;
   };
   return (
     <ul className={styles.contactsList}>
