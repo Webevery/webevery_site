@@ -19,7 +19,7 @@ const Home = () => {
 
         <link rel="canonical" href="https://webevery.dev/" />
       </Helmet>
-
+      <h1 className="seoTitle">Розширення можливостей вашого успіху </h1>
       <HomePage />
     </>
   );
