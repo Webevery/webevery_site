@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { useModal } from 'hooks';
 
 import styles from './HomePage.module.scss';
-import ua from './ua.module.scss';
+// import ua from './ua.module.scss';
 import en from './en.module.scss';
 
 import Button from 'components/share/Button';
@@ -13,12 +13,20 @@ import sprite from 'images/sprite.svg';
 
 const HomePage = () => {
   const { modalActive, shouldRender, openModal, closeModal } = useModal();
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   // console.log(i18n.language);
 
   return (
     <section className={styles.home}>
-      {i18n.language === 'en' ? (
+      <div className={styles.titleWrap}>
+        <div className={en.titleWrapEn}>
+          <h2 className={styles.title + ' ' + en.titleEn}>
+            Empowering your success
+          </h2>
+        </div>
+      </div>
+
+      {/* {i18n.language === 'en' ? (
         <div className={styles.titleWrap}>
           <div className={en.titleWrapEn}>
             <h1 className={styles.title + ' ' + en.titleEn}>
@@ -37,7 +45,7 @@ const HomePage = () => {
             <h2 className={styles.title + ' ' + ua.titleUa2}>вашого успіху</h2>
           </div>
         </div>
-      )}
+      )} */}
 
       <svg className={styles.logo}>
         <use href={sprite + '#icon-logo_mini_tablet'}></use>
