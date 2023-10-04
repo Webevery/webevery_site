@@ -2,6 +2,7 @@ import rudyMockup from 'components/screens/OurProjectsPage/rudyMockup.png';
 import icecreamMockup from 'components/screens/OurProjectsPage/icecreamMockup.png';
 import petsMockup from 'components/screens/OurProjectsPage/petsMockup.png';
 import pets from '../components/screens/OurWorks/images/pets.webp';
+import watches from '../components/screens/OurWorks/images/watches_card.webp';
 import icecream from '../components/screens/OurWorks/images/icecream.webp';
 import rudy from '../components/screens/OurWorks/images/rudy.webp';
 import architrave from '../components/screens/OurWorks/images/architrave.webp';
@@ -52,6 +53,16 @@ export const projectsData = [
     text: 'Наш сайт для пошуку та продажу тварин надає цілу низку можливостей для поціновувачів тварин та їх потенційних власників.',
     detailedText:
       "Наш сайт для пошуку та продажу тварин надає цілу низку можливостей для поціновувачів тварин та їх потенційних власників. По-перше, він полегшує процес продажу та купівлі домашніх улюбленців, забезпечуючи зручну та безпечну платформу для зустрічі продавців та покупців. По-друге, наш сайт присвячений допомозі бездомним тваринам, надаючи їм можливість знайти нову сім'ю та отримати турботу та увагу, які їм необхідні. По-третє, сайт надає велику інформацію про догляд за тваринами, що допомагає власникам знайти потрібні рекомендації та поради, пов'язані з їхніми конкретними породами та потребами. Наш сайт пропонує функціонал особистої сторінки, де користувачі можуть ділитися фотографіями та історіями своїх улюбленців, встановлювати контакти з іншими власниками та створювати спільноти за спільними інтересами.",
+  },
+  {
+    id: v4(),
+    image: watches,
+    img: watches,
+    path: 'https://dkolod.github.io/watches/',
+    name: 'www.watches.com',
+    text: 'Наш магазин годинників - це місце, де час стає не просто вимірюванням, а джерелом елегантності та стилю.',
+    detailedText:
+      'Наші досвідчені консультанти завжди готові допомогти вам обрати ідеальні годинники, що відповідають вашим потребам і стилю.',
   },
   {
     id: v4(),
