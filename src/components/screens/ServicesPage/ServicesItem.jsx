@@ -92,7 +92,7 @@ export const ServicesItem = ({
       )}
 
       <div className={styles.btnWrapper}>
-        {/* <div className={styles.priceWrapper}>
+        <div className={styles.priceWrapper}>
           <p>
             {daysCount}
             {t('servicesItem.days')}
@@ -100,7 +100,7 @@ export const ServicesItem = ({
           <p>
             {t('servicesItem.price')} {price} $
           </p>
-        </div> */}
+        </div>
         <Button
           type="button"
           title={t('servicesItem.orderBtn')}
