@@ -92,15 +92,14 @@ export const ServicesItem = ({
       )}
 
       <div className={styles.btnWrapper}>
-        {/* <div className={styles.priceWrapper}>
-          <p>
-            {daysCount}
-            {t('servicesItem.days')}
-          </p>
+        <div className={styles.priceWrapper}>
+          {/* <p>
+            {daysCount} {t('servicesItem.days')}
+          </p> */}
           <p>
             {t('servicesItem.price')} {price} $
           </p>
-        </div> */}
+        </div>
         <Button
           type="button"
           title={t('servicesItem.orderBtn')}

@@ -3,16 +3,16 @@ import styles from '../components/screens/HowWeWorkPage/FAQ/FAQItem/FAQItem.modu
 export const FAQdataEN = [
   {
     id: 1,
-    question: 'How much does it cost to develop a software product?',
+    question: 'How much does it cost to develop a website?',
     answer:
-      'Our experience allows us to advise and calculate the budget and timeline exactly according to your needs, taking into account all possible risks. To do this, contact us and share your ideas. You can find out more detailed information in the section',
+      'Our experience allows us to consult and estimate the budget and timelines specifically tailored to your needs, taking into account all possible risks. To do this, please contact us and share your ideas. You can find more detailed information in the section."',
     link: '"Services".',
     href: '/services',
     answerHeight: styles.first,
   },
   {
     id: 2,
-    question: 'How long will it take to get the finished product?',
+    question: 'How long will does  it take to get the finished product?',
     answer:
       'The timeframe required depends entirely on your project. The first step after contacting us is to arrange a free online meeting to help us understand the complexity of your project. Once we understand your software requirements, we can provide a preliminary cost estimate. However, the initial timeline is not always met, as external circumstances can change the release of the final product. We will then provide a plan for the implementation of your project and the steps we suggest you take before starting work on your software solution.',
     answerHeight: styles.second,
@@ -26,7 +26,7 @@ export const FAQdataEN = [
   },
   {
     id: 4,
-    question: 'How do you guarantee the quality of your products?',
+    question: 'How does Webevery guarantee the quality of your products?',
     answer:
       'We divide the entire development phase into sprints, which usually last two weeks. After each sprint, you can see the finished parts of the product, check them out, and give your thoughts and suggestions. We also have a simplified testing and quality assurance process for each product. You will get interim results and see what you are paying for throughout the development process.',
     answerHeight: styles.fourth,
