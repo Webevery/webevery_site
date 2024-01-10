@@ -2,7 +2,7 @@ export const socialData = [
   {
     id: 1,
     name: 'instagram',
-    path: 'https://www.instagram.com/web.every/',
+    path: 'https://www.instagram.com/webevery.dev/',
     arialabel: 'instagram',
   },
   {
