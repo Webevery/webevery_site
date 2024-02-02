@@ -12,7 +12,12 @@ import 'swiper/css/pagination';
 import './styles.css';
 
 // import required modules
-import { EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
+import {
+  EffectCoverflow,
+  Navigation,
+  Pagination,
+  Autoplay,
+} from 'swiper/modules';
 
 import styles from './OurWorks.module.scss';
 
@@ -23,7 +28,7 @@ const OurWorks = () => {
         effect={'coverflow'}
         grabCursor={true}
         centeredSlides={true}
-        // loop={true}
+        loop={true}
         freeMode={true}
         slidesPerView={'auto'}
         coverflowEffect={{
@@ -37,8 +42,12 @@ const OurWorks = () => {
           clickable: true,
           dynamicBullets: true,
         }}
-        speed={1000}
-        modules={[EffectCoverflow, Pagination, Navigation]}
+        speed={1200}
+        autoplay={{
+          delay: 2400,
+          pauseOnMouseEnter: true,
+        }}
+        modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
       >
         {projectsData.map(({ id, img, path, name }) => {
           return (
